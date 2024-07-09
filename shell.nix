@@ -18,6 +18,9 @@ pkgs.mkShell {
     python-pkgs.scipy
     python-pkgs.pandas
     python-pkgs.geopandas
+    python-pkgs.ipy
+    python-pkgs.jupyterlab
+    python-pkgs.notebook
   ]))
   ];
 
