@@ -7,7 +7,7 @@ You'll find left over original init code in density_map.ipynb and the original d
 
 All of the columns of the dataframe are given here:
 
-0   ED_ID                 The ID for each ED as given by the state iirc   \     
+0   ED_ID                 The ID for each ED as given by the state iirc\     
 1   ENGLISH               Name of the ED in English\
 2   GAEILGE               Name of the ED in Irish\
 3   CONTAE                Resident County in English\

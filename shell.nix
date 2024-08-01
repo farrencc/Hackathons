@@ -21,6 +21,7 @@ pkgs.mkShell {
     python-pkgs.ipy
     python-pkgs.jupyterlab
     python-pkgs.notebook
+    python-pkgs.geopy
   ]))
   ];
 
