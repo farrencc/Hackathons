@@ -1,0 +1,101 @@
+\ProvidesPackage{tpsa-theme}
+
+% Load required packages
+\RequirePackage{beamerthemesplit}
+\RequirePackage{tikz}
+\RequirePackage{graphicx}
+\RequirePackage{amsmath, amssymb}
+
+% Define colors
+\definecolor{tpsaBlue}{RGB}{0, 51, 102}
+\definecolor{tpsaLightBlue}{RGB}{173, 216, 230}
+\definecolor{tpsaGray}{RGB}{128, 128, 128}
+
+% Set theme options
+\mode<presentation>{
+  \useinnertheme{rectangles}
+  \useoutertheme{infolines}
+  \usecolortheme[named=tpsaBlue]{structure}
+  \setbeamertemplate{blocks}[rounded][shadow=true]
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{footline}[dot navigation]
+}
+
+% Title page
+\setbeamertemplate{title page}{
+  \vbox{}
+  \vfill
+  \begin{centering}
+    \includegraphics[width=2cm]{tpsa.png}\par
+    \vskip1em
+    {\usebeamerfont{title}\inserttitle\par}
+    \vskip0.5em
+    {\usebeamerfont{subtitle}\insertsubtitle\par}
+    \vskip1em
+    {\usebeamerfont{author}\insertauthor\par}
+    \vskip1em
+    {\usebeamerfont{institute}\insertinstitute\par}
+    \vskip1em
+    {\usebeamerfont{date}\insertdate\par}
+    \vfill
+  \end{centering}
+  \vfill
+}
+
+% Section pages
+\setbeamertemplate{section page}{
+\vskip2cm
+  \begin{centering}
+  \includegraphics[width = 1cm]{2560x1440-white-solid-color-background.jpg}
+    \vskip2em
+    \includegraphics[width=3cm]{tpsa.png}\par
+    \vskip1em
+    \vspace{1.5cm}
+    \begin{beamercolorbox}[sep=12pt,center]{part title}
+      \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+    \vfill
+  \end{centering}
+}
+
+% Define font settings
+\setbeamerfont{title}{size=\LARGE, series=\bfseries}
+\setbeamerfont{frametitle}{size=\large, series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\normalsize, series=\mdseries}
+\setbeamerfont{author}{size=\normalsize}
+\setbeamerfont{institute}{size=\normalsize}
+\setbeamerfont{date}{size=\normalsize}
+\setbeamerfont{section title}{size=\large, series=\bfseries}
+
+% Define color settings
+\setbeamercolor{title}{fg=tpsaBlue}
+\setbeamercolor{frametitle}{fg=white, bg=tpsaBlue}
+\setbeamercolor{framesubtitle}{fg=tpsaGray}
+\setbeamercolor{section title}{fg=tpsaBlue}
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{block title}{bg=tpsaBlue, fg=white}
+\setbeamercolor{block body}{bg=tpsaLightBlue, fg=black}
+
+% Custom block environments
+\newenvironment{tpsablock}[1]{%
+  \begin{block}{#1}
+}{%
+  \end{block}
+}
+
+% Dot navigation footer
+\makeatletter
+\setbeamertemplate{footline}{
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{frame footer}
+    \hfill
+    \tikz \foreach \i in {1,...,\inserttotalframenumber} {
+      \ifnum \i = \insertframenumber
+        \node[fill=tpsaBlue,circle,inner sep=1pt] (dot) at (\i*0.15,0) {};
+      \else
+        \node[draw=tpsaBlue,thick,circle,inner sep=1pt] (dot) at (\i*0.15,0) {};
+      \fi
+    };
+    \hfill
+  \end{beamercolorbox}
+}
+\makeatother

@@ -1,0 +1,411 @@
+\documentclass{beamer}
+\usepackage{amsmath}
+\usepackage{tpsa-theme}
+\usepackage{braket}
+\usepackage{bbold}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage[thinc]{esdiff}
+\usepackage{bigints}
+\usepackage{enumerate}
+\usepackage{wasysym}
+\usepackage{pythonhighlight}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{esint}
+\usepackage{mathtools}
+\usepackage{cancel}
+\usepackage{hyperref}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+
+\title{2024 Hackathon Prep}
+\author{Cas}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{Singular Value Decomposition}
+\sectionpage
+\subsection{Background of SVD}
+\begin{frame}{Introduction to SVD}
+    \begin{itemize}
+        \item SVD is a factorization of a real or complex matrix[5].
+        \item It's one of the most widely used algorithms for data processing, reduced-order modeling, and high-dimensional statistics[1].
+        \item SVD can be thought of as a data-driven generalization of the Fourier transform[1].
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Mathematical Foundation of SVD}
+    For a matrix $A \in \mathbb{R}^{m \times n}$, SVD is given by:
+    \[
+    A = U\Sigma V^T
+    \]
+    where:
+    \begin{itemize}
+        \item $U$ is an $m \times m$ orthonormal matrix
+        \item $\Sigma$ is an $m \times n$ diagonal matrix with non-negative real numbers
+        \item $V$ is an $n \times n$ orthonormal matrix[2]
+    \end{itemize}
+    Since the convention is to use $\Sigma$ as a matrix here, in the proof that follows we'll assume summation over repeated indices when they're only free on one side of the equation. Hopefully it'll be clear but if not - it can clarified.
+\end{frame}
+\subsection{Proof for SVD}
+\begin{frame}{Proof of the Validity of SVD I.}
+Let $M \in \mathbb{R}^{m\times n}$ be a real-valued $m\times n$ matrix.\footnote{This can be extended to $\mathbb{C}$ but is outside of the scope of this workshop.} \par We define $N\coloneqq A^TA$ a symmetric, since $A^TA = A_{ji}A_{jk}$, and positive semi-definite, since $\underline{v}^TA^TA\underline{v} = (A\underline{v})^2 \ge 0$.\\
+By the Spectral Thm. $\exists$ orthonormal $V$ and diagonal $\Lambda$ s.t. \begin{equation}
+    N=V\Lambda V^T = \lambda_i \underline{v}_i\underline{v}_i^T
+\end{equation} Where we choose $\underline{v}_i$ to be the $i$th unit eigenvector. \\Since $N$ is PSD, $\lambda_i \in \mathbb{R^{\ge 0}}\implies \lambda_i=\sigma_i^2$. So we deal with the case $\lambda_i \ne 0$ first then $\lambda_i =0$.
+\end{frame}
+\begin{frame}{Proof of the Validity of SVD II.}
+Attacking the case where $\lambda_i \ne 0$:\\
+    Let $\underline{u}_i = \frac{A\underline{v}_i}{\sigma_i}$. We have\begin{align}
+        N \underline{u}_i &= A A^T A\frac{\mathbf{v_i}}{\sigma_i}\\ &= \sigma_i^2 \frac{A\underline{v}_i}{\sigma_i} = \sigma_i^2 \underline{u}_i
+    \end{align} $\therefore \underline{u}_i$ is an eigenvector of $N$. \\Squaring it shows that $\underline{u}_i$ is a unit eigenvector of $N$. \\
+We define \begin{equation}
+    U\coloneqq \underline{u}_i I_i^{m\times m},V \coloneqq \underline{v}_i I_i^{n\times n}, \Sigma = \sigma_i I_i^{m\times n}
+\end{equation}We can rearrange to find,
+\begin{equation}
+    U=A\frac{\underline{v}_i}{\sigma_i}I_i^{m\times m} = A\underline{v}_i (\Sigma)^{-1}_{ii} = AV\Sigma^{-1}
+\end{equation}
+Finally, $A = U \Sigma V^T$.
+\end{frame}
+\begin{frame}{Proof of the Validity of SVD III.}
+    In the case where $\lambda_i = 0$.\\ 
+    This is actually pretty trivial. All we have to permute our matrices until $\Sigma$ can be represented by
+    \begin{equation}
+        \Sigma = \begin{pmatrix}
+            \Tilde{\Sigma} & 0\\
+            0 & \cancel{\Sigma}
+        \end{pmatrix}
+    \end{equation}
+    Where $\Tilde{\Sigma}$ are made from all the $\sigma_i \ne 0$ and $\cancel{\Sigma}$ are all the $\sigma_j = 0$.\\
+    We use the same strategy here as may have been mentioned on the previous slide where we effectively fudge the dimensions by adding in rows or columns that do not effect the answer so as to appease the dimensionality. \\
+    So finally, we know that we can decompose the matrix $A$ in this way. \hfill \qed
+    \end{frame}
+\subsection{Towards Applications}
+\begin{frame}{Properties of SVD}
+    \begin{itemize}
+        \item The columns of $U$ are left singular vectors of $A$
+        \item The columns of $V$ are right singular vectors of $A$
+        \item The diagonal entries of $\Sigma$ are singular values of $A$[2]
+        \item SVD can be applied to any matrix, square or rectangular[5]
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Geometric Interpretation of SVD}
+    \begin{itemize}
+        \item SVD can be visualized as mapping a unit sphere to an ellipsoid
+        \item Non-zero singular values represent the lengths of the semi-axes of this ellipsoid.
+        \item This transformation can effectively be broken down into 3 stages.
+    \end{itemize}
+    \begin{enumerate}
+        \item A rotation due to $V^T$
+        \item A stretching along the singular valued direction into some ellipsoid due to $\Sigma$.
+        \item A finaly rotation due to $U$.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{Applications of SVD in Data Science}
+    SVD has numerous applications in data science, including:
+    \begin{itemize}
+        \item Dimensionality Reduction
+        \item Noise Reduction
+        \item Latent Semantic Analysis
+        \item Image Compression
+    \end{itemize}
+\end{frame}
+\begin{frame}{Linear Regression}
+The simplest application of those previously mentioned is probably linear regression in the context of dimensionality reduction. \par 
+The idea of linear regression is to simply find the $\underline{x}$ for which $A\underline{x} = \mathbf{b}$ for some given $A$ and $\mathbf{b}$. This becomes a non-trivality when $A$ is not square.
+\begin{align}
+    A \underline{x} = \underline{b} &\rightsquigarrow \underline{x} \sim A^{-1}\underline{b}\\
+    A^{-1}A = I \implies A^{-1} U\Sigma V^T &= I \implies A^{-1} U\Sigma = V\\
+    \Sigma^{-1} &\coloneqq \frac{1}{\sigma_i}I_i^{n\times m}\\ 
+    \implies A^{-1} &= U^T \Sigma^{-1} V
+\end{align}
+The structure of this result makes sense and we've solved our linear regression problem. 
+\end{frame}
+
+\begin{frame}{SVD in Principal Component Analysis (PCA)}
+    \begin{itemize}
+        \item PCA is a crucial application of SVD in data science
+        \item It's used for feature extraction and dimensionality reduction
+        \item PCA finds the directions of maximum variance in high-dimensional data[2]
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{SVD in Document Ranking}
+    \begin{itemize}
+        \item SVD can be used to rank documents in a collection
+        \item The top left singular vector of the term-document matrix represents the best-fit direction for the collection
+        \item Documents can be ranked based on their projection along this direction[2]
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{SVD in Clustering}
+    \begin{itemize}
+        \item SVD can be applied to clustering problems, such as mixture models
+        \item It's particularly useful for clustering mixtures of spherical Gaussians
+        \item SVD helps in separating clusters in high-dimensional spaces[2][4]
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Computational Aspects of SVD}
+    \begin{itemize}
+        \item SVD can be computed using iterative methods like the power method
+        \item Modern algorithms and libraries make SVD computation efficient for large datasets
+        \item In practice, SVD is often implemented using specialized numerical linear algebra libraries[1][3]
+    \end{itemize}
+\end{frame}
+\subsection{Conclusion}
+\begin{frame}{Conclusion}
+    \begin{itemize}
+        \item SVD is a powerful tool in linear algebra and data science
+        \item It provides insights into the structure of data and linear transformations
+        \item Applications range from dimensionality reduction to document ranking and clustering
+        \item Understanding SVD is crucial for many advanced data science techniques
+    \end{itemize}
+\end{frame}
+
+\section{The Lyuapunov Exponent}
+\sectionpage
+\subsection{Background to the Lyapunov Exponent}
+\begin{frame}{Introduction to the Lyapunov Exponent}
+\begin{itemize}
+    \item The Lyapunov exponent is a fundamental concept in dynamical systems theory
+    \item It quantifies the rate of separation of infinitesimally close trajectories
+    \item Named after Russian mathematician Aleksandr Lyapunov (1857-1918)
+    \item Introduced in the late 19th century, gained prominence in chaos theory in the 1960s
+    \item Crucial for characterizing stability, chaos, and predictability in nonlinear systems
+    \item Applied across various fields: physics, biology, economics, and more
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Definition}
+\begin{equation}
+    \lambda = \lim_{t \to \infty} \lim_{\delta Z(0) \to 0} \frac{1}{t} \ln \frac{|\delta Z(t)|}{|\delta Z(0)|}
+\end{equation}
+\begin{itemize}
+    \item $\delta Z(0)$: Initial separation vector in phase space
+    \item $\delta Z(t)$: Separation after time $t$
+\end{itemize}
+Alternatively, for discrete systems where some $x_{n+1}$ is given by $f(x_n)$ we define the Lyapunov exponent as from a starting location $x_0$ as
+\begin{equation}
+    \lambda(x_0) = \lim_{n \to \infty} \frac{1}{n}\sum_{i=0}^{n-1}\ln \abs{f'(x_i)}
+\end{equation}
+\begin{itemize}
+    \item Positive $\lambda$: Exponential divergence (chaos)
+    \item Negative $\lambda$: Convergence (stability)
+\end{itemize}
+\note{
+    \begin{itemize}
+        \item For a dynamical system, the Lyapunov exponent $\lambda$ is defined as shown in the equation.
+        \item Where $\delta Z(0)$ is the initial separation vector between two infinitesimally close trajectories and $\delta Z(t)$ is the separation after time $t$.
+        \item A positive Lyapunov exponent indicates exponential divergence of nearby trajectories - a hallmark of chaos.
+        \item A negative Lyapunov exponent indicates convergence to a stable fixed point or periodic orbit.
+    \end{itemize}
+}
+\end{frame}
+
+\begin{frame}{Spectrum of Lyapunov Exponents}
+\begin{itemize}
+    \item $n$-dimensional system $\iff$ there are $n$ Lyapunov exponents with $\{\lambda_1, \lambda_2, ..., \lambda_n\}$ called the \textit{Lyapunov Spectrum}
+    \item Typically ordered from largest to smallest: $\lambda_1 \geq \lambda_2 \geq ... \geq \lambda_n$
+    \item $\lambda_1$ is the most important for determining overall system behavior
+    \item Sum of all exponents ($\sum_{i=1}^n \lambda_i$) relates to the rate of change of the phase space volume
+    \begin{align*}
+        \sum_{i=1}^n \lambda_i=0  &\implies \text{Conservative (since $\nexists$ a change in phase space volume)}\\
+        \sum_{i=1}^n \lambda_i<0 &\implies \text{Dissipative (phase space volume $\to 0$)}\\
+        \sum_{i=1}^n \lambda_i >0 &\implies \text{Chaotic}
+    \end{align*}
+    \item Use the Lyapunov spectrum to estimate the fractal dimension of strange (chaotic) attractors
+\end{itemize}
+\end{frame}
+\subsection{Calculation Methods}
+\begin{frame}{Calculation Methods}
+\begin{enumerate}
+    \item Direct method:
+    \begin{itemize}
+        \item Numerically evolve the system and measure separation of nearby trajectories
+        \item Simple but can be computationally intensive and sensitive to numerical errors
+    \end{itemize}
+    \item Jacobian method:
+    \begin{itemize}
+        \item Compute the Jacobian matrix along a trajectory
+        \item Use eigenvalues of the Jacobian to determine Lyapunov exponents
+        \item More efficient for systems with known equations
+    \end{itemize}
+    \item Methods for experimental data:
+    \begin{itemize}
+        \item Wolf's method: Tracks evolution of nearby trajectories in reconstructed phase space
+        \item Rosenstein's algorithm: Uses a least-squares fit to determine exponential divergence rate
+        \item These methods handle noise and finite data length better than direct numerical approaches
+    \end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}{Overview of Calculation Methods}
+\begin{itemize}
+    \item Lyapunov exponents quantify the rate of separation of infinitesimally close trajectories
+    \item Analytical calculation is often impossible for complex systems
+    \item Numerical methods are crucial for estimating Lyapunov exponents
+    \item We will focus on two primary methods:
+    \begin{itemize}
+        \item Direct Method
+        \item Jacobian Method
+    \end{itemize}
+    \item Both methods aim to estimate the Lyapunov spectrum: $\{\lambda_1, \lambda_2, ..., \lambda_n\}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Direct Method: Concept}
+\begin{itemize}
+    \item Based on the definition of Lyapunov exponents
+    \item Directly measures the growth of perturbations in the system
+    \item Steps:
+    \begin{enumerate}
+        \item Choose an initial condition and a small perturbation
+        \item Evolve both the original and perturbed trajectories
+        \item Measure the rate of separation
+        \item Periodically renormalize to avoid numerical overflow
+    \end{enumerate}
+    \item Advantages: Conceptually simple, works for systems without explicit equations
+    \item Disadvantages: Can be computationally intensive, sensitive to numerical errors
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Direct Method: Algorithm}
+\begin{algorithm}[H]
+\caption{Direct Method for Largest Lyapunov Exponent}
+\begin{algorithmic}[1]
+\State Choose initial condition $x_0$ and perturbation $\delta_0$
+\State Set $t = 0$, $\lambda = 0$
+\While{$t < T_{max}$}
+    \State Evolve $x_0$ to $x(t)$ and $x_0 + \delta_0$ to $y(t)$
+    \State $d = \|y(t) - x(t)\|$
+    \State $\lambda = \lambda + \ln(d/\|\delta_0\|)$
+    \State Renormalize: $y(t) = x(t) + \delta_0 \cdot (y(t) - x(t))/d$
+    \State $t = t + \Delta t$
+\EndWhile
+\State $\lambda = \lambda / (t \cdot \ln 2)$
+\end{algorithmic}
+\end{algorithm}
+\end{frame}
+
+\begin{frame}{Jacobian Method: Concept}
+\begin{itemize}
+    \item Uses the linearization of the system dynamics
+    \item Based on the evolution of tangent vectors
+    \item Steps:
+    \begin{enumerate}
+        \item Compute the Jacobian matrix along a trajectory
+        \item Evolve a set of orthonormal tangent vectors
+        \item Periodically orthonormalize these vectors (e.g., using Gran-Schmidt)
+        \item Calculate Lyapunov exponents from the growth rates
+    \end{enumerate}
+    \item Advantages: Can compute full Lyapunov spectrum, often more accurate
+    \item Disadvantages: Requires explicit system equations, more complex implementation
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Jacobian Method: Mathematical Formulation}
+For a system $\dot{x}_i = f_i(x)$:
+\begin{itemize}
+    \item Jacobian matrix: $J_{ij}(t) = \frac{\partial f_i}{\partial x^j}\big|_{x(t)}$
+    \item Defines the tangent space evolution matrix $\xi$: $\dot{\xi} = J(t)\xi$
+    \item Lyapunov exponents:
+    $$\lambda_i = \lim_{t\to\infty} \frac{1}{t} \ln \frac{\|\xi_i(t)\|}{\|\xi_i(0)\|}$$
+    \item In practice, we use:
+    $$\lambda_i \approx \frac{1}{t_k} \sum_{j=1}^k \ln \|r_{ii}^{(j)}\|$$
+    where $r_{ii}^{(j)}$ are diagonal elements from Gran-Schmidt (QR Decomposition)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Jacobian Method: Algorithm}
+\begin{algorithm}[H]
+\caption{Jacobian Method for Lyapunov Spectrum}
+\begin{algorithmic}[1]
+\State Choose initial condition $x_0$ and orthonormal basis $\{\xi_i\}$
+\State Set $t = 0$, $\lambda_i = 0$ for $i = 1,\ldots,n$
+\While{$t < T_{max}$}
+    \State Compute Jacobian $J(t)$ at $x(t)$
+    \State Evolve $x(t)$ and $\{\xi_i\}$ for time $\Delta t$
+    \State Perform QR decomposition on $[\xi_1 \cdots \xi_n] = QR$
+    \For{$i = 1$ to $n$}
+        \State $\lambda_i = \lambda_i + \ln |R_{ii}|$
+    \EndFor
+    \State Set $\{\xi_i\} = \{Q_i\}$ (columns of $Q$)
+    \State $t = t + \Delta t$
+\EndWhile
+\State $\lambda_i = \lambda_i / (t \cdot \ln 2)$ for $i = 1,\ldots,n$
+\end{algorithmic}
+\end{algorithm}
+\end{frame}
+
+\begin{frame}{Comparison of Methods}
+\begin{table}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Aspect} & \textbf{Direct Method} & \textbf{Jacobian Method} \\
+\hline
+Complexity & Lower & Higher \\
+Accuracy & Moderate & Higher \\
+Full spectrum & No (typically) & Yes \\
+Equation needed & No & Yes \\
+Computational cost & Moderate & Higher \\
+Noise sensitivity & Higher & Lower \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}{Practical Considerations}
+\begin{itemize}
+    \item Choice of integration method is crucial (e.g., Runge-Kutta)
+    \item Time step and total integration time affect accuracy
+    \item For the Direct Method:
+    \begin{itemize}
+        \item Choice of initial perturbation size is important
+        \item Frequent renormalization is necessary
+    \end{itemize}
+    \item For the Jacobian Method:
+    \begin{itemize}
+        \item Accurate Jacobian computation is critical
+        \item QR decomposition frequency affects performance
+    \end{itemize}
+    \item Validation against known results is recommended
+    \item Consider using multiple methods for cross-verification
+\end{itemize}
+\end{frame}
+\begin{frame}{Applications}
+\begin{itemize}
+    \item Physics:
+    \begin{itemize}
+        \item Characterizing chaos in fluid dynamics, celestial mechanics, and plasma physics
+        \item Studying stability of particle orbits in accelerators
+    \end{itemize}
+    \item Biology:
+    \begin{itemize}
+        \item Analyzing heart rate variability and EEG signals
+        \item Modeling population dynamics and ecosystem stability
+    \end{itemize}
+    \item Economics:
+    \begin{itemize}
+        \item Assessing stability of financial markets
+        \item Predicting economic time series
+    \end{itemize}
+    \item Climate Science:
+    \begin{itemize}
+        \item Studying predictability of weather and climate models
+        \item Analyzing long-term climate stability
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+\end{document}
+
