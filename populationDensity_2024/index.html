@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Graph Diffusion Equation Over the Irish EDs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            gap: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .slider-container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        .slider-section {
+            text-align: center;
+            background-color: white;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+        }
+        input[type="range"] {
+            width: 100%;
+            margin: 20px 0;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        .title {
+            padding: 50px; /* Add padding around the title */
+            font-size: 36px; /* Make the font size large */
+            font-weight: bold; /* Optional: make the text bold */
+            text-align: center; /* Optional: center the text */
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="title">Demonstrating how time-evolution shows the diffusion of population spread over a graph representation of the EDs of Ireland.</h1>
+<div class="grid-container">
+    <div class="slider-container">
+        <div class="slider-section">
+            <h2>Time Evolved Graph Diffusion</h2>
+            <img id="slider-image1" src="diffusion_plots/plot_1.png" alt="1">
+            <input type="range" id="image-slider1" min="1" max="15" value="1">
+        </div>
+    </div>
+</div>
+
+<script>
+    function setupSlider(sliderId, imageId, imagePrefix) {
+        const slider = document.getElementById(sliderId);
+        const image = document.getElementById(imageId);
+
+        slider.addEventListener('input', () => {
+            const value = slider.value;
+            image.src = `diffusion_plots/plot_${value}.png`;
+        });
+
+        // Trigger initial load
+        const event = new Event('input');
+        slider.dispatchEvent(event);
+    }
+
+    setupSlider('image-slider1', 'slider-image1', '1');
+</script>
+
+
+</body>
+</html>
