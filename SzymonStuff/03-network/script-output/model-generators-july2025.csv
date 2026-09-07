@@ -1,0 +1,289 @@
+gen_id,description,fuel,bus,prorata_groups,pmax_mw,mean_mw,capacity_factor
+EWIC,EWIC,interconnector,WOO_I_Z_380,ROI/1,530.0,139.579,0.2634
+GLK,Greenlink,interconnector,LWN_I_Z_220,ROI/1,514.0,376.147,0.7318
+M,Moyle,interconnector,BYC_N_Z_275,NI/4,452.0,175.789,0.3889
+DV1,Dromdeeveen Windfarm,wind,GLE_I_Z_110,"ROI-W/2,ROI-SW/3a,ROI-SW/3b,ROI-SW/3c,ROI/1,ROI/1",22.854,5.717,0.2501
+SB1,Sliabh Bawn Windfarm,wind,SLB_I_Z_110,"ROI-NW/4,ROI-W/1,ROI-W/2,ROI/1",49.094,12.28,0.2501
+KD1,Knockalassa Windfarm,wind,SLC_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",22.854,5.717,0.2501
+RD1,Boolinrudda Windfarm,wind,SLC_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",38.091,9.528,0.2501
+OY1,Oweninny Wind Farm,wind,SKY_I_Z_110,"ROI-NW/4,ROI-W/1,ROI-W/2,ROI-W/6,ROI-W/7,ROI-W/8,ROI/1",75.335,18.844,0.2501
+OY2,Oweninny 2 Windfarm,wind,SKY_I_Z_110,"ROI-NW/4,ROI-W/1,ROI-W/2,ROI-W/6,ROI-W/7,ROI-W/8,ROI/1",70.256,17.573,0.2501
+KW1,Knockawarriga 1 Windfarm,wind,TRI_I_Z_110,"ROI-W/2,ROI/1",19.045,4.764,0.2501
+TN2,Tournafulla Generatot Unit,wind,TRI_I_Z_110,"ROI-W/2,ROI/1",14.559,3.642,0.2501
+MYM,Molly Mountain Wind Farm,wind,AGH_N_Z_110,"NI/2,NI/3,NI/4",12.697,3.176,0.2501
+SL2,Slieve Rushen Windfarm,wind,AGH_N_Z_110,"NI/2,NI/3,NI/4",45.709,11.433,0.2501
+CBY,Corby Knowe Windfarm,wind,ANT_N_Z_110,NI/4,4.571,1.143,0.2501
+ABK,ESB Arklow Bank,wind,ARK_I_Z_110,ROI/1,21.669,5.42,0.2501
+RL1,Raheenleagh,wind,ARK_I_Z_110,ROI/1,29.795,7.453,0.2501
+YR1,Ballycumber Windfarm,wind,ARK_I_Z_110,ROI/1,15.236,3.811,0.2501
+AH1,Athea Wind Farm,wind,ATE_I_Z_110,"ROI-W/2,ROI-W/2,ROI/1",29.076,7.273,0.2501
+XT1,Beenanaspuck and Tobertoreen Windfarm,wind,ATE_I_Z_110,"ROI-W/2,ROI-W/2,ROI/1",20.315,5.081,0.2501
+BW1,Ballywater Windfarm,wind,BWR_I_Z_110,ROI/1,35.551,8.892,0.2501
+RHY,Rathsherry Wind Farm,wind,BMA_N_Z_110,NI/4,17.903,4.478,0.2501
+EGH,Elginny Hill Wind Farm,wind,BMA_N_Z_110,NI/4,19.469,4.87,0.2501
+BF1,Barranafaddock Windfarm,wind,BAR_I_T_110,"ROI-W/2,ROI/1",27.425,6.86,0.2501
+SS1,Sheskin Windfarm,wind,BK_I_Z_110,ROI/1,14.22,3.557,0.2501
+MC1,Airoshin Generator Unit,wind,BIN_I_Z_110,"ROI-NW/1,ROI-NW/3,ROI-NW/4,ROI-W/2,ROI/1",10.073,2.52,0.2501
+YV2,Clogheravaddy WF 2,wind,BIN_I_Z_110,"ROI-NW/1,ROI-NW/3,ROI-NW/4,ROI-W/2,ROI/1",9.142,2.287,0.2501
+BG1,Boggeragh Windfarm Generator Unit,wind,BGH_I_Z_110,"ROI-W/2,ROI/1",48.248,12.068,0.2501
+BG2,Boggeragh 2 Windfarm,wind,BGH_I_Z_110,"ROI-W/2,ROI/1",55.612,13.91,0.2501
+ES1,Esk Windfarm,wind,BGH_I_Z_110,"ROI-W/2,ROI/1",19.638,4.912,0.2501
+CD1,Carraigcannon Windfarm,wind,BGH_I_Z_110,"ROI-W/2,ROI/1",16.929,4.235,0.2501
+QA1,Moanvane Windfarm,wind,BGN_I_Z_110,ROI/1,47.74,11.941,0.2501
+BT1,Booltiagh Windfarm,wind,BOL_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",16.929,4.235,0.2501
+BT2,Booltiagh 2 Wind Farm,wind,BOL_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",10.157,2.541,0.2501
+LY1,Lissycasey Windfarm,wind,BOL_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",11.343,2.837,0.2501
+SF1,Sorrell Island 1 Windfarm,wind,BOL_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",20.315,5.081,0.2501
+SF2,Sorrell Island 2 Windfarm,wind,BOL_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",7.237,1.81,0.2501
+BJ1,Boolynagleragh Windfarm,wind,BOL_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",31.302,7.83,0.2501
+BKY,Brockaghboy,wind,BRO_N_Z_110,"NI/1,NI/4,NI/5",40.207,10.057,0.2501
+GE1,Gortahile Windfarm Ltd Generator Unit,wind,CLW_I_Z_110,ROI/1,16.929,4.235,0.2501
+CNH,Carn Hill Wind Farm,wind,CAR_N_Z_110,NI/4,11.681,2.922,0.2501
+XA1,Carrigdangan Windfarm,wind,CDN_I_Z_110,"ROI-W/2,ROI/1",45.963,11.497,0.2501
+MX1,Raheen Barr Wind Farm,wind,CBR_I_Z_110,"ROI-NW/4,ROI-W/1,ROI-W/2,ROI-W/6,ROI/1",15.829,3.959,0.2501
+AS1,Acres Windfarm,wind,CF_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/2,ROI/1",14.813,3.705,0.2501
+CP1,Cappawhite,wind,CTN_I_Z_110,"ROI-W/1,ROI-W/2,ROI-W/4,ROI/1",44.016,11.01,0.2501
+CP3,Cappawhite B Windfarm,wind,CTN_I_Z_110,"ROI-W/1,ROI-W/2,ROI-W/4,ROI/1",11.962,2.992,0.2501
+GM1,Garracummer Wind Farm Ltd,wind,CTN_I_Z_110,"ROI-W/1,ROI-W/2,ROI-W/4,ROI/1",32.165,8.046,0.2501
+GU1,Glenough Windfarm,wind,CTN_I_Z_110,"ROI-W/1,ROI-W/2,ROI-W/4,ROI/1",27.51,6.881,0.2501
+GY1,Glencarbry Windfarm,wind,CTN_I_Z_110,"ROI-W/1,ROI-W/2,ROI-W/4,ROI/1",27.933,6.987,0.2501
+KQ1,Knocknatallig Windfarm,wind,CHA_I_Z_110,"ROI-W/2,ROI-SW/3c,ROI/1",15.49,3.875,0.2501
+PO1,Castlepook Windfarm,wind,CHA_I_Z_110,"ROI-W/2,ROI-SW/3c,ROI/1",28.018,7.008,0.2501
+CJ1,Pallas Generator Unit,wind,CLH_I_Z_110,"ROI-W/2,ROI/1",32.038,8.014,0.2501
+CJ2,Clahane 2 Windfarm,wind,CLH_I_Z_110,"ROI-W/2,ROI/1",11.85,2.964,0.2501
+CL1,Cloghboola Wind Farm,wind,CBL_I_Z_110,ROI-W/2,38.937,9.739,0.2501
+DA1,Glanaruddery 1 Windfarm,wind,CBL_I_Z_110,ROI-W/2,16.929,4.235,0.2501
+DA2,Glanaruddery 2 Windfarm,wind,CBL_I_Z_110,ROI-W/2,10.157,2.541,0.2501
+KI1,Cloghanaleskirt Windfarm,wind,CBL_I_Z_110,ROI-W/2,9.734,2.435,0.2501
+OA1,Croaghonagh Windfarm,wind,CLO_I_Z_110,ROI/1,76.181,19.055,0.2501
+GAR,Garves Wind Farm,wind,CPS_N_Z_110,"NI/1,NI/4",12.697,3.176,0.2501
+GRU,Gruig Wind Farm,wind,CPS_N_Z_110,"NI/1,NI/4",21.161,5.293,0.2501
+DMR,Dunmore Wind Farm,wind,CPS_N_Z_110,"NI/1,NI/4",17.776,4.446,0.2501
+DBG,Dunbeg Wind Farm,wind,CPS_N_Z_110,"NI/1,NI/4",35.551,8.892,0.2501
+MBY,Monnaboy Wind Farm,wind,CPS_N_Z_110,"NI/1,NI/4",10.157,2.541,0.2501
+CG1,Coomagearlahy Generator Unit,wind,CGL_I_Z_110,"ROI-W/2,ROI/1",35.974,8.998,0.2501
+CG2,SWS Green Energy Gen Unit (Sillahertane),wind,CGL_I_Z_110,"ROI-W/2,ROI/1",7.195,1.8,0.2501
+CG3,SWS Kilgarvan Ext Inchincoosh,wind,CGL_I_Z_110,"ROI-W/2,ROI/1",25.394,6.352,0.2501
+YT1,Cleanrath,wind,CTG_I_Z_110,"ROI-W/2,ROI/1",36.093,9.028,0.2501
+GD1,Grousemount Windfarm,wind,CTG_I_Z_110,"ROI-W/2,ROI/1",96.665,24.179,0.2501
+DL1,Cordal 1 Windfarm,wind,CDL_I_Z_110,"ROI-W/2,ROI/1",30.472,7.622,0.2501
+DL2,Cordal 2 Windfarm,wind,CDL_I_Z_110,"ROI-W/2,ROI/1",45.709,11.433,0.2501
+OG1,Coollegrean Windfarm,wind,CDL_I_Z_110,"ROI-W/2,ROI/1",14.813,3.705,0.2501
+ST1,Scartaglen 1 Windfarm,wind,CDL_I_Z_110,"ROI-W/2,ROI/1",29.203,7.305,0.2501
+ST2,Scartaglen 2 Windfarm,wind,CDL_I_Z_110,"ROI-W/2,ROI/1",4.063,1.016,0.2501
+TM2,Tullynamoyle Windfarm 2,wind,CDY_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/1,ROI-W/2,ROI/1",8.719,2.181,0.2501
+TM3,Tullynamoyle 3 Windfarm,wind,CDY_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/1,ROI-W/2,ROI/1",11.495,2.875,0.2501
+KG2,Dunneil Windfarm (Kingsmountain Phase 2),wind,CUN_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/1,ROI-W/2,ROI-W/6,ROI-W/8,ROI/1",9.353,2.34,0.2501
+KGM,Kingsmountain Generator Unit,wind,CUN_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/1,ROI-W/2,ROI-W/6,ROI-W/8,ROI/1",21.161,5.293,0.2501
+MM1,Magheramore Windfarm,wind,DLT_I_Z_110,"ROI-NW/4,ROI-W/1,ROI-W/2,ROI-W/6,ROI/1",34.535,8.638,0.2501
+DY1,Derrybrien Wind Farm,wind,DYN_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",50.364,12.598,0.2501
+NC1,Cloghan Wind Farm,wind,DEY_I_Z_110,ROI/1,28.78,7.199,0.2501
+DR1,Dromada Windfarm Generator Unit,wind,DRO_I_Z_110,"ROI-W/2,ROI/1",24.124,6.034,0.2501
+CNV,Cornavarrow Wind Farm,wind,DRQ_N_Z_110,"NI/2,NI/3",32.504,8.13,0.2501
+CCG,Castlecraig Wind Farm,wind,DRQ_N_Z_110,"NI/2,NI/3",21.161,5.293,0.2501
+GR1,Grove Hill Windfarm,wind,DDK_I_Z_110,ROI/1,13.628,3.409,0.2501
+CRO,Crockagarran Wind Farm,wind,DUN_N_Z_110,NI/4,14.813,3.705,0.2501
+BA1,Ballybane Generator Unit,wind,DMY_I_Z_110,"ROI-W/2,ROI/1",23.658,5.918,0.2501
+BA2,Ballybane Wind Farm Phase 2,wind,DMY_I_Z_110,"ROI-W/2,ROI/1",11.046,2.763,0.2501
+BA3,Ballybane Wind Farm Phase 3,wind,DMY_I_Z_110,"ROI-W/2,ROI/1",3.767,0.942,0.2501
+KV1,Kilaveenoge 1 WF,wind,DMY_I_Z_110,"ROI-W/2,ROI/1",20.992,5.251,0.2501
+CAL,Callagheen Wind Farm,wind,ENN_N_Z_110,"NI/2,NI/3,NI/4",14.305,3.578,0.2501
+ORA,Ora More Wind Farm,wind,ENN_N_Z_110,"NI/2,NI/3,NI/4",12.697,3.176,0.2501
+CZ1,Coomacheo Generator Unit,wind,GRO_I_Z_110,"ROI-W/2,ROI/1",50.131,12.539,0.2501
+CGR,Craiggore Windfarm,wind,RSK_N_Z_110,"NI/1,NI/4,NI/5",19.892,4.976,0.2501
+EVG,Evishagaran Windfarm,wind,RSK_N_Z_110,"NI/1,NI/4,NI/5",39.614,9.909,0.2501
+DS1,Derrysallagh Windfarm,wind,GRV_I_Z_110,"NI/1,NI/4,NI/5,ROI-NW/3,ROI-NW/4,ROI-W/1,ROI-W/2,ROI/1",27.087,6.775,0.2501
+GH1,Garvagh Glebe Generator Unit,wind,GRV_I_Z_110,"NI/1,NI/4,NI/5,ROI-NW/3,ROI-NW/4,ROI-W/1,ROI-W/2,ROI/1",22.008,5.505,0.2501
+GH2,Tullynahaw Generator Unit,wind,GRV_I_Z_110,"NI/1,NI/4,NI/5,ROI-NW/3,ROI-NW/4,ROI-W/1,ROI-W/2,ROI/1",18.622,4.658,0.2501
+GLC,Midas Generator Unit,wind,GAE_I_Z_110,"ROI-W/2,ROI/1",25.224,6.309,0.2501
+MR1,Mauricetown Windfarm,wind,GLE_I_Z_110,"ROI-W/2,ROI-SW/3a,ROI-SW/3b,ROI-SW/3c,ROI/1,ROI/1",11.681,2.922,0.2501
+TR1,Taurbeg Wind Farm,wind,GLE_I_Z_110,"ROI-W/2,ROI-SW/3a,ROI-SW/3b,ROI-SW/3c,ROI/1,ROI/1",21.415,5.357,0.2501
+GJ1,Bunnyconnellan Windfarm,wind,GLR_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/1,ROI-W/2,ROI-W/6,ROI-W/8,ROI/1",23.701,5.928,0.2501
+XL1,Black Lough WFPS,wind,GLR_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/1,ROI-W/2,ROI-W/6,ROI-W/8,ROI/1",10.581,2.647,0.2501
+XR1,Carrowleagh Windfarm,wind,GLR_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/1,ROI-W/2,ROI-W/6,ROI-W/8,ROI/1",28.906,7.23,0.2501
+GO1,Barnesmore (Golagh) Windfarm,wind,GOL_I_T_110,ROI/1,10.157,2.541,0.2501
+SD1,Slieve Divena Wind Farm,wind,GWE_I_Z_110,"NI/2,ROI/1",25.394,6.352,0.2501
+SD2,Slieve Divena 2 Wind Farm,wind,GWE_I_Z_110,"NI/2,ROI/1",15.913,3.98,0.2501
+AKN,Altamuskin Wind Farm,wind,GWE_I_Z_110,"NI/2,ROI/1",11.935,2.985,0.2501
+STS,Shantavny Scotch Wind Farm,wind,GWE_I_Z_110,"NI/2,ROI/1",13.628,3.409,0.2501
+TGS,Teiges Wind Farm,wind,GWE_I_Z_110,"NI/2,ROI/1",10.581,2.647,0.2501
+MUR,Murley Mountain Windfarm,wind,GWE_I_Z_110,"NI/2,ROI/1",18.283,4.573,0.2501
+MH1,Monaincha Wind Farm,wind,IKE_I_T_110,"ROI-W/1,ROI-W/2,ROI/1",30.43,7.612,0.2501
+OE1,Cloncreen Wind Farm,wind,CUS_I_Z_110,ROI/1,63.484,15.879,0.2501
+KH1,Kill Hill Wind Farm Limited,wind,KHL_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",30.472,7.622,0.2501
+EGL,Eglish Wind Farm,wind,KMT_N_Z_110,"NI/2,NI/4",12.697,3.176,0.2501
+CKT,Carrickatane Windfarm,wind,KMT_N_Z_110,"NI/2,NI/4",17.522,4.383,0.2501
+KZ1,Kelwin Power Plant,wind,KPG_I_Z_110,"ROI-W/2,ROI/1",31.361,7.844,0.2501
+LM1,Leanamore Windfarm,wind,KPG_I_Z_110,"ROI-W/2,ROI/1",15.236,3.811,0.2501
+KC1,Knockacummer Wind Farm,wind,KCR_I_Z_110,"NI/4,ROI-W/2,ROI-SW/3a,ROI-SW/3b,ROI-SW/3c,ROI/1",84.646,21.173,0.2501
+KU1,Knockalough WFPS,wind,KLH_I_Z_110,"ROI-W/1,ROI-W/2,ROI-W/3,ROI/1",28.441,7.114,0.2501
+YW1,Yellow River Windfarm,wind,DER_I_Z_110,ROI/1,85.492,21.384,0.2501
+INW1_1,Knock South Windfarm,wind,KNY_I_Z_110,ROI/1,1.981,0.495,0.2501
+UF1,Ardderroo Windfarm,wind,KNY_I_Z_110,ROI/1,77.197,19.309,0.2501
+BKL,Ballykeel Windfarm,wind,LAR_N_Z_110,NI/4,13.628,3.409,0.2501
+LL1,Lenalea Windfarm,wind,LNA_I_Z_110,"ROI-NW/1,ROI-NW/3,ROI-NW/4,ROI-W/2,ROI/1",25.478,6.373,0.2501
+CAR,Cark Wind Farm,wind,LET_I_Z_110,ROI/1,12.697,3.176,0.2501
+CUH,Cuillagh Generator Unit,wind,LET_I_Z_110,ROI/1,10.056,2.515,0.2501
+BM1,Beam Hill Wind Farm,wind,LET_I_Z_110,ROI/1,11.85,2.964,0.2501
+SN1,Sorne Hill Generator Unit,wind,LET_I_Z_110,ROI/1,32.927,8.236,0.2501
+ALT,Altahullion (1) Wind Farm,wind,LIM_N_Z_110,"NI/1,NI/4,NI/5",22.008,5.505,0.2501
+AL2,Altahullion (2) Wind Farm,wind,LIM_N_Z_110,"NI/1,NI/4,NI/5",9.904,2.477,0.2501
+BU1,Bruckana Wind Farm Limited,wind,LSN_I_Z_110,"ROI-W/1,ROI-W/2,ROI-W/5,ROI/1",33.858,8.469,0.2501
+LS1,Lisheen Windfarm Phase 1,wind,LSN_I_Z_110,"ROI-W/1,ROI-W/2,ROI-W/5,ROI/1",30.472,7.622,0.2501
+LS2,Lisheen Wind Farm 2 Ltd,wind,LSN_I_Z_110,"ROI-W/1,ROI-W/2,ROI-W/5,ROI/1",19.469,4.87,0.2501
+LS3,Lisheen III Wind Farm,wind,LSN_I_Z_110,"ROI-W/1,ROI-W/2,ROI-W/5,ROI/1",24.378,6.098,0.2501
+LA1,Drumlins Windfarm,wind,LSA_I_Z_110,ROI-NE/1,41.307,10.332,0.2501
+BY1,Ballycadden Wind Farm,wind,LWD_I_Z_110,ROI/1,12.697,3.176,0.2501
+BY2,Ballycadden Wind Farm Phase 2,wind,LWD_I_Z_110,ROI/1,7.787,1.948,0.2501
+CK1,Castledockrell Windfarm (Gen Unit),wind,LWD_I_Z_110,ROI/1,35.043,8.765,0.2501
+GT1,Gibbet Hill Windfarm,wind,LWD_I_Z_110,ROI/1,12.528,3.134,0.2501
+CNY,Cloonty Wind Farm,wind,LOG_N_Z_110,"NI/1,NI/4,NI/5",7.787,1.948,0.2501
+CUR,Curryfree Wind Farm,wind,LMR_N_Z_110,"NI/1,NI/4",12.697,3.176,0.2501
+BN1,Bawnmore Windfarm,wind,MAC_I_Z_110,"ROI-W/2,ROI/1",20.315,5.081,0.2501
+CRI,Crighshane Wind Farm,wind,MKL_N_Z_110,"NI/2,NI/4",27.256,6.818,0.2501
+CHU,Church Hill Wind Farm,wind,MKL_N_Z_110,"NI/2,NI/4",15.575,3.896,0.2501
+TNG,Thornog Wind Farm,wind,MKL_N_Z_110,"NI/2,NI/4",16.929,4.235,0.2501
+SRN,Seegronan Wind Farm,wind,MKL_N_Z_110,"NI/2,NI/4",11.935,2.985,0.2501
+TMA,Tievenameenta Wind Farm,wind,MKL_N_Z_110,"NI/2,NI/4",29.203,7.305,0.2501
+GA2,Gartnaneane Generator Unit,wind,MTH_I_Z_110,ROI/1,8.888,2.223,0.2501
+RR2,Raragh 2 Windfarm,wind,MTH_I_Z_110,ROI/1,9.734,2.435,0.2501
+VB1,Taghart Windfarm,wind,MTH_I_Z_110,ROI/1,19.553,4.891,0.2501
+MCT,Meentycat Generator Unit,wind,MEE_I_Z_110,"ROI-NW/2,ROI-NW/3,ROI-NW/4,ROI-W/2,ROI/1",71.915,17.988,0.2501
+MP9,Moneypoint Windfarm,wind,MP_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",14.601,3.652,0.2501
+MO1,Mount Lucas Wind Farm Limited,wind,MLC_I_Z_110,ROI/1,67.717,16.938,0.2501
+MB1,Mulreavy Windfarm,wind,MRY_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/2,ROI/1",76.054,19.024,0.2501
+MB2,Meenadreen South 2 Windfarm,wind,MRY_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/2,ROI/1",4.571,1.143,0.2501
+LEN,Lendrums Bridge (1) Wind Farm,wind,OMA_N_Z_110,"NI/2,NI/4",6.145,1.537,0.2501
+LEN1,Lendrums Bridge (2) Wind Farm,wind,OMA_N_Z_110,"NI/2,NI/4",5.028,1.258,0.2501
+HUN,Hunter's Hill Wind Farm,wind,OMA_N_Z_110,"NI/2,NI/4",16.929,4.235,0.2501
+TAP,Tappaghan Wind Farm,wind,OMA_N_Z_110,"NI/2,NI/4",24.124,6.034,0.2501
+SCR,Screggagh Wind Farm,wind,OMA_N_Z_110,"NI/2,NI/4",16.929,4.235,0.2501
+LMT,Long Mountain Wind Farm,wind,RSK_N_Z_110,"NI/1,NI/4,NI/5",23.362,5.844,0.2501
+AVN,Altaveedan Wind Farm,wind,RSK_N_Z_110,"NI/1,NI/4,NI/5",15.236,3.811,0.2501
+GW1,Grouselodge Windfarm (Gen Unit),wind,RAT_I_Z_110,"ROI-W/1,ROI-W/2,ROI-SW/2,ROI/1",12.697,3.176,0.2501
+RC1,Rathcahill West Windfarm,wind,RAT_I_Z_110,"ROI-W/1,ROI-W/2,ROI-SW/2,ROI/1",10.581,2.647,0.2501
+BD1,Bindoo Generator Unit,wind,RRU_I_Z_110,"ROI-NE/1,ROI/1",40.63,10.163,0.2501
+ML1,Mountain Lodge Wind Farm,wind,RRU_I_Z_110,"ROI-NE/1,ROI/1",25.919,6.483,0.2501
+KM1,Knocknagoum Windfarm Limited,wind,REM_I_Z_110,ROI-W/2,37.54,9.39,0.2501
+MU1,Muingnaminnane Generator Unit,wind,REM_I_Z_110,ROI-W/2,12.528,3.134,0.2501
+LG1,Leitir Guingaid Wind Farm phase 1,wind,SAL_I_Z_110,"ROI-W/1,ROI-W/2,ROI-W/3,ROI/1",34.62,8.66,0.2501
+AL1,Carrickallen Windfarm,wind,SKL_I_Z_110,"ROI-NE/1,ROI/1",17.352,4.34,0.2501
+SK1,Slieve Kirk Wind Farm,wind,KMT_N_Z_110,"NI/2,NI/4",62.299,15.583,0.2501
+DN1,Derrinlough Windfarm,wind,DAL_I_T_110,"ROI-W/1,ROI-W/2,ROI/1",88.878,22.231,0.2501
+KF1,Killala Windfarm,wind,TAW_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/1,ROI-W/2,ROI-W/6,ROI-W/7,ROI-W/8,ROI/1",16.252,4.065,0.2501
+AC1,Cnoc Windfarms,wind,THU_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",9.734,2.435,0.2501
+BS1,Ballybay Wind Farm,wind,THU_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",11.681,2.922,0.2501
+YC2,Cronalaght 2,wind,TIV_I_Z_110,ROI/1,14.601,3.652,0.2501
+TE1,Timahoe North Solar Farm,wind,TEN_I_Z_110,ROI/1,59.252,14.821,0.2501
+BCW,Ballincollig Hill Generator Unit,wind,TRL_I_Z_110,"ROI-W/2,ROI/1",11.258,2.816,0.2501
+TUR,Tursillagh Windfarm,wind,TRL_I_Z_110,"ROI-W/2,ROI/1",12.849,3.214,0.2501
+GFB,Gortfinbar Wind Farm,wind,TRE_N_Z_110,"NI/2,NI/4",12.697,3.176,0.2501
+CNR,Cregganconroe Wind Farm,wind,TRE_N_Z_110,"NI/2,NI/4",11.681,2.922,0.2501
+INT,Inishative Wind Farm,wind,TRE_N_Z_110,"NI/2,NI/4",11.681,2.922,0.2501
+CDN,Crockandun Wind Farm,wind,TRE_N_Z_110,"NI/2,NI/4",12.697,3.176,0.2501
+CKD,Crockdun Wind Farm,wind,TRE_N_Z_110,"NI/2,NI/4",10.581,2.647,0.2501
+KW2,Knockawarriga 2 Windfarm,wind,TRI_I_Z_110,"ROI-W/2,ROI/1",5.587,1.397,0.2501
+MMR,Moanmore Windfarm Generator Unit,wind,TBK_I_T_110,"ROI-W/1,ROI-W/2,ROI/1",10.665,2.668,0.2501
+TK1,Tullabrack Windfarm,wind,TBK_I_T_110,"ROI-W/1,ROI-W/2,ROI/1",11.681,2.922,0.2501
+SO1,Seecon Windfarm,wind,UGL_I_Z_110,"ROI-W/1,ROI-W/2,ROI-W/3,ROI/1",88.878,22.231,0.2501
+UG1,Uggool Wind Farm,wind,UGL_I_Z_110,"ROI-W/1,ROI-W/2,ROI-W/3,ROI/1",54.173,13.55,0.2501
+BX1,Ballymartin Wind Farm Phase 1,wind,WAT_I_Z_110,ROI/1,5.079,1.27,0.2501
+BX2,Ballymartin Wind Farm Phase 2,wind,WAT_I_Z_110,ROI/1,7.618,1.906,0.2501
+CNS,Carnsore Point Generator Unit,wind,WEX_I_Z_110,ROI/1,10.073,2.52,0.2501
+RF1,Richfield Generator Unit,wind,WEX_I_Z_110,ROI/1,22.854,5.717,0.2501
+WS1,Woodhouse Wind Farm,wind,WHO_I_Z_110,ROI/1,16.929,4.235,0.2501
+HS1,Hilltown Solar Farm,solar,BAL_I_Z_110,ROI/1,11.46,2.985,0.2604
+NA1,Blundelstown Solar Farm,solar,BLU_I_Z_110,ROI/1,68.76,17.908,0.2604
+YM1,Ballymacadam Solar Farm,solar,CAH_I_Z_110,ROI/1,24.066,6.268,0.2604
+QB1,Gaskinstown Solar Farm,solar,DEE_I_Z_110,ROI/1,97.41,25.369,0.2604
+HT1,Hortland Solar Farm,solar,DFR_I_Z_110,DFR_I_Z_110,16.044,4.178,0.2604
+IA1,Gallanstown Solar,solar,GAN_I_Z_110,ROI-NE/2,136.374,35.517,0.2604
+IA2,Harlockstown Solar Farm,solar,GAN_I_Z_110,ROI-NE/2,36.214,9.431,0.2604
+NB1,Gillinstown Solar Farm,solar,GRH_I_Z_110,ROI-NE/2,108.87,28.354,0.2604
+LRP,Lough Road PV Solar Farm,solar,LIS_N_Z_110,NI/4,28.879,7.521,0.2604
+BDP,Ballinderry Road PV Solar Farm,solar,LIS_N_Z_110,NI/4,19.39,5.05,0.2604
+MRP,Maghaberry Road PV Solar Farm,solar,LIS_N_Z_110,NI/4,23.413,6.098,0.2604
+LO1,Lysaghtstown Solar Farm,solar,LGT_I_Z_110,ROI/1,99.702,25.966,0.2604
+JG1,Knockglass Solar Farm,solar,MAC_I_Z_110,"ROI-W/2,ROI/1",4.584,1.194,0.2604
+DZ1,Dunmurry Springs Solar Farm,solar,NEW_I_Z_110,ROI/1,13.752,3.582,0.2604
+BNP,Rasharkin PV (Bann Road PV) Solar Farm,solar,RSK_N_Z_110,"NI/1,NI/4,NI/5",34.162,8.897,0.2604
+RT1,Rathnaskilloge Solar Farm,solar,RTO_I_Z_110,ROI/1,108.87,28.354,0.2604
+RO1,Rosspile Solar,solar,ROP_I_Z_110,ROI/1,108.87,28.354,0.2604
+TL1,Tullabeg Solar Farm,solar,TTU_I_Z_110,ROI/1,57.3,14.923,0.2604
+LPS,Lisahally Biomass Generator,biomass,CPS_N_Z_110,"NI/1,NI/4",17.6,17.6,1.0
+MP1,Moneypoint 1 Generator Unit,coal,MP_I_Z_380,"ROI-W/1,ROI-W/2,ROI/1",285.0,285.0,1.0
+MP2,Moneypoint 2 Generator Unit,coal,MP_I_Z_380,"ROI-W/1,ROI-W/2,ROI/1",285.0,285.0,1.0
+MP3,Moneypoint 3 Generator Unit,coal,MP_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",285.0,285.0,1.0
+BGT1,Ballylumford GT1,distillate,BPS_N_Z_110,NI/4,58.0,58.0,1.0
+BGT2,Ballylumford GT2,distillate,BPS_N_Z_110,NI/4,58.0,58.0,1.0
+C30,Coolkeeragh,distillate,CPS_N_Z_110,"NI/1,NI/4",53.0,53.0,1.0
+ED3,Cushaling Power,distillate,CUS_I_Z_110,ROI/1,58.0,58.0,1.0
+ED5,Cushaling Power,distillate,CUS_I_Z_110,ROI/1,58.0,58.0,1.0
+RP1,Rhode Peaking 1 Generator Unit,distillate,DER_I_Z_110,ROI/1,52.0,52.0,1.0
+RP2,Rhode Peaking 2 Generator Unit,distillate,DER_I_Z_110,ROI/1,52.0,52.0,1.0
+KZ3,Kelwin 3 Diesel Unit,distillate,KPG_I_Z_110,"ROI-W/2,ROI/1",2.0,2.0,1.0
+KGT1,Kilroot - GT1,distillate,KPS_N_Z_275,NI/4,29.2,29.2,1.0
+KGT2,Kilroot - GT2,distillate,KPS_N_Z_275,NI/4,29.2,29.2,1.0
+KGT3,Kilroot - GT3,distillate,KPS_N_Z_275,NI/4,41.61,41.61,1.0
+KGT4,Kilroot - GT4,distillate,KPS_N_Z_275,NI/4,41.61,41.61,1.0
+TB5,Tarbert 5 TEG,distillate,TB_I_Z_220,ROI/1,160.0,160.0,1.0
+SQ1,Shannonbridge 1 TEG,distillate,SH_I_Z_110,ROI/1,260.0,260.0,1.0
+TP1,Tawnaghmore Peaking 1 Generator Unit,distillate,TAW_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/1,ROI-W/2,ROI-W/6,ROI-W/7,ROI-W/8,ROI/1",52.0,52.0,1.0
+TP3,Tawnaghmore Peaking 3 Generator Unit,distillate,TAW_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/1,ROI-W/2,ROI-W/6,ROI-W/7,ROI-W/8,ROI/1",52.0,52.0,1.0
+B10,Ballylumford Generator Unit B10,gas,BPS_N_Z_110,NI/4,101.0,101.0,1.0
+DG1,Huntstown TEG,gas,FIN_I_Z_110,ROI/1,50.0,50.0,1.0
+HN2,VPL Generation Unit,gas,HN_I_Z_220,ROI/1,400.0,400.0,1.0
+HNC,HPC1 Generation Unit,gas,HN_I_Z_220,ROI/1,342.0,342.0,1.0
+NICG2,Contour Global APTG,gas,LIS_N_Z_110,NI/4,3.021,3.021,1.0
+NW8,North Wall5 Generator Unit,gas,NW_I_Z_220,ROI/1,200.0,200.0,1.0
+TYC,Tynagh Generator Unit,gas,TYN_I_Z_220,ROI/1,404.0,404.0,1.0
+AA1,Ardnacrusha 1 Generator Unit,hydro,AA_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",21.0,21.0,1.0
+AA2,Ardnacrusha 2 Generator Unit,hydro,AA_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",22.0,22.0,1.0
+AA3,Ardnacrusha 3 Generator Unit,hydro,AA_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",19.0,19.0,1.0
+AA4,Ardnacrusha 4 Generator Unit,hydro,AA_I_Z_110,"ROI-W/1,ROI-W/2,ROI/1",24.0,24.0,1.0
+CU1,Clady Generating Station,hydro,BIN_I_Z_110,"ROI-NW/1,ROI-NW/3,ROI-NW/4,ROI-W/2,ROI/1",4.3,4.3,1.0
+LE3,Carrigadrohid Generator Unit,hydro,CD_I_Z_110,ROI/1,8.0,8.0,1.0
+ER3,Erne 3 Generator Unit,hydro,CF_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/2,ROI/1",22.5,22.5,1.0
+ER4,Erne 4 Generator Unit,hydro,CF_I_Z_110,"ROI-NW/3,ROI-NW/4,ROI-W/2,ROI/1",22.5,22.5,1.0
+ER1,Erne 1 Generator Unit,hydro,CL_I_Z_110,ROI/1,10.0,10.0,1.0
+ER2,Erne 2 Generator Unit,hydro,CL_I_Z_110,ROI/1,10.0,10.0,1.0
+LE1,Inniscarra (Lee unit 1) Generator Unit,hydro,IA_I_Z_110,ROI/1,15.0,15.0,1.0
+LE2,Lee unit 2 Generator Unit,hydro,IA_I_Z_110,ROI/1,4.0,4.0,1.0
+LI1,Liffey 1 Generator Unit,hydro,PA_I_Z_110,ROI/1,15.0,15.0,1.0
+LI2,Liffey 2 Generator Unit,hydro,PA_I_Z_110,ROI/1,15.0,15.0,1.0
+LI3,Liffey 3 Hydro Unit,hydro,PA_I_Z_110,ROI/1,0.18,0.18,1.0
+LI4,Liffey 4 Generator Unit,hydro,PA_I_Z_110,ROI/1,4.0,4.0,1.0
+LI5,Liffey 5 Generator Unit,hydro,PA_I_Z_110,ROI/1,4.0,4.0,1.0
+AT1,AGHADA CT11 Generator Unit,multi_fuel,AD_I_Z_220,ROI/1,90.0,90.0,1.0
+AT2,AGHADA CT12 Generator Unit,multi_fuel,AD_I_Z_220,ROI/1,90.0,90.0,1.0
+AT4,AGHADA CT14 Generator Unit,multi_fuel,AD_I_Z_220,ROI/1,90.0,90.0,1.0
+AD2,Aghada 2 Generator Unit,multi_fuel,AD_I_Z_220,ROI/1,449.0,449.0,1.0
+SK3,Sealrock 3 Generator Unit,multi_fuel,AUG_I_Z_110,ROI/1,83.0,83.0,1.0
+SK4,Sealrock 4 Generator Unit,multi_fuel,AUG_I_Z_110,ROI/1,83.0,83.0,1.0
+B31,Ballylumford Generator Unit B31,multi_fuel,BPS_N_Z_275,NI/4,247.0,247.0,1.0
+B32,Ballylumford Generator Unit B32,multi_fuel,BPS_N_Z_275,NI/4,247.0,247.0,1.0
+CGT8,Coolkeeragh,multi_fuel,CPS_N_Z_110,"NI/1,NI/4",425.0,425.0,1.0
+FG2,Corduff_OCGT,multi_fuel,CDU_I_Z_110,ROI/1,63.5,63.5,1.0
+IW1,Indaver - Meath Waste - Generator,multi_fuel,DRY_I_Z_110,ROI/1,17.0,17.0,1.0
+WG1,Whitegate Generator Unit,multi_fuel,GGO_I_Z_220,ROI/1,444.0,444.0,1.0
+GI4,Great Island CCGT,multi_fuel,GI_I_Z_220,ROI/1,464.0,464.0,1.0
+IL1,Grange Power IL1 Generator,multi_fuel,INC_I_Z_220,ROI/1,18.54,18.54,1.0
+IL2,Grange Power IL2 Generator,multi_fuel,INC_I_Z_220,ROI/1,18.54,18.54,1.0
+IL3,Grange Power IL3 Generator,multi_fuel,INC_I_Z_220,ROI/1,18.54,18.54,1.0
+IL4,Grange Power IL4 Generator,multi_fuel,INC_I_Z_220,ROI/1,18.54,18.54,1.0
+IL5,Grange Power IL5 Generator,multi_fuel,INC_I_Z_220,ROI/1,18.54,18.54,1.0
+IL6,Grange Power IL6 Generator,multi_fuel,INC_I_Z_220,ROI/1,18.54,18.54,1.0
+DB1,Dublin Bay Generator Unit,multi_fuel,ISH_I_Z_220,ROI/1,415.0,415.0,1.0
+IS3,Ringngsend_OCGT,multi_fuel,ISH_I_Z_220,ROI/1,63.5,63.5,1.0
+KGT6,Kilroot GT6,multi_fuel,KPS_N_Z_275,NI/4,350.0,350.0,1.0
+KGT7,Kilroot GT7,multi_fuel,KPS_N_Z_275,NI/4,350.0,350.0,1.0
+PB7,Poolbeg_OCGT,multi_fuel,PB_I_Z_220,ROI/1,63.5,63.5,1.0
+DW1,Dublin Waste to Energy,multi_fuel,PB_I_Z_220,ROI/1,61.5,61.5,1.0
+PBA,Shellybanks PBA,multi_fuel,SHL_I_Z_220,ROI/1,240.0,240.0,1.0
+PBB,Shellybanks PBB,multi_fuel,SHL_I_Z_220,ROI/1,236.0,236.0,1.0
+CMN,Carnmeen Generator,multi_fuel,TAN_N_Z_110,NI/4,20.0,20.0,1.0
+ED1,Edenderry Power Supply,peat,CUS_I_Z_110,ROI/1,118.0,118.0,1.0
+TH1,Turlough Hill 1 Generator Unit,pump_storage,TH_I_Z_220,ROI/1,73.0,73.0,1.0
+TH2,Turlough Hill 2 Generator Unit,pump_storage,TH_I_Z_220,ROI/1,73.0,73.0,1.0
+TH3,Turlough Hill 3 Generator Unit,pump_storage,TH_I_Z_220,ROI/1,73.0,73.0,1.0
+TH4,Turlough Hill 4 Generator Unit,pump_storage,TH_I_Z_220,ROI/1,73.0,73.0,1.0

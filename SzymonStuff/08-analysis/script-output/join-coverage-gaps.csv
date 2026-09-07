@@ -1,0 +1,21 @@
+farm,mec_mw,county,seai_node,model_bus,model_station,station_agrees,groups_via_model,groups_via_wdt_station,kind,groups_model_is_missing,missing_regions
+Arklow Bank Wind Farm (1),25.2,Offshore,Arklow,ARK_I_Z_110,Arklow,yes,ROI/1,ROI-SE/1,"model has nationwide only, WDT adds regional",ROI-SE/1,ROI-SE
+Ballywater (1),31.5,Wexford,Ballywater 110 kV,BWR_I_Z_110,Ballywater,yes,ROI/1,ROI-SE/1;ROI-SE/4,"model has nationwide only, WDT adds regional",ROI-SE/1;ROI-SE/4,ROI-SE
+Sorne Hill Wind Farm,31.5,Donegal,SORNE HILL,LET_I_Z_110,Letterkenny,no,ROI/1,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,"model has nationwide only, WDT adds regional",ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,ROI-NW;ROI-W
+Richfield Wind Farm (2),6.75,Wexford,Wexford,WEX_I_Z_110,Wexford,yes,ROI/1,ROI-SE/1,"model has nationwide only, WDT adds regional",ROI-SE/1,ROI-SE
+Beam Hill Wind Farm,14.0,Donegal,Trillick,LET_I_Z_110,Letterkenny,no,ROI/1,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,"model has nationwide only, WDT adds regional",ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,ROI-NW;ROI-W
+Richfield Wind Farm,20.25,Wexford,Wexford,WEX_I_Z_110,Wexford,yes,ROI/1,ROI-SE/1,"model has nationwide only, WDT adds regional",ROI-SE/1,ROI-SE
+Ballywater (2),10.5,Wexford,Ballywater 110 kV,BWR_I_Z_110,Ballywater,yes,ROI/1,ROI-SE/1;ROI-SE/4,"model has nationwide only, WDT adds regional",ROI-SE/1;ROI-SE/4,ROI-SE
+Sorne Hill (2),7.4,Donegal,SORNE HILL,LET_I_Z_110,Letterkenny,no,ROI/1,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,"model has nationwide only, WDT adds regional",ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,ROI-NW;ROI-W
+Gortahile Wind Farm,21.0,Laois,Carlow,CLW_I_Z_110,Carlow,yes,ROI/1,ROI-SE/2,"model has nationwide only, WDT adds regional",ROI-SE/2,ROI-SE
+Castledockrell (2),2.0,Wexford,Castledockrell 110 kV,LWD_I_Z_110,Lodgewood,no,ROI/1,ROI-SE/1;ROI-SE/4,"model has nationwide only, WDT adds regional",ROI-SE/1;ROI-SE/4,ROI-SE
+Castledockrell (3),3.3,Wexford,Castledockrell 110 kV,LWD_I_Z_110,Lodgewood,no,ROI/1,ROI-SE/1;ROI-SE/4,"model has nationwide only, WDT adds regional",ROI-SE/1;ROI-SE/4,ROI-SE
+Castledockrell (1),20.0,Wexford,Castledockrell 110 kV,LWD_I_Z_110,Lodgewood,no,ROI/1,ROI-SE/1;ROI-SE/4,"model has nationwide only, WDT adds regional",ROI-SE/1;ROI-SE/4,ROI-SE
+Castledockrell (4),16.1,Wexford,Castledockrell 110 kV,LWD_I_Z_110,Lodgewood,no,ROI/1,ROI-SE/1;ROI-SE/4,"model has nationwide only, WDT adds regional",ROI-SE/1;ROI-SE/4,ROI-SE
+Ballycadden Wind Farm (1),14.45,Wexford,Crory,LWD_I_Z_110,Lodgewood,no,ROI/1,ROI-SE/1;ROI-SE/4,"model has nationwide only, WDT adds regional",ROI-SE/1;ROI-SE/4,ROI-SE
+Ballycadden Wind Farm (2),9.762,Wexford,Crory,LWD_I_Z_110,Lodgewood,no,ROI/1,ROI-SE/1;ROI-SE/4,"model has nationwide only, WDT adds regional",ROI-SE/1;ROI-SE/4,ROI-SE
+Gibbet Hill Wind Farm,14.8,Wexford,Crory,LWD_I_Z_110,Lodgewood,no,ROI/1,ROI-SE/1;ROI-SE/4,"model has nationwide only, WDT adds regional",ROI-SE/1;ROI-SE/4,ROI-SE
+Woodhouse (1),20.0,Waterford,Woodhouse 110 kV,WHO_I_Z_110,Woodhouse,yes,ROI/1,ROI-SE/2,"model has nationwide only, WDT adds regional",ROI-SE/2,ROI-SE
+Raheenleagh (1),35.2,Wicklow,Arklow,ARK_I_Z_110,Arklow,yes,ROI/1,ROI-SE/1,"model has nationwide only, WDT adds regional",ROI-SE/1,ROI-SE
+Ballycumber Wind Farm,18.0,Wicklow,Arklow,ARK_I_Z_110,Arklow,yes,ROI/1,ROI-SE/1,"model has nationwide only, WDT adds regional",ROI-SE/1,ROI-SE
+Cronalaght Wind Farm 2,17.96,Donegal,Ardnagappary,TIV_I_Z_110,Tievebrack,no,ROI/1,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,"model has nationwide only, WDT adds regional",ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,ROI-NW;ROI-W

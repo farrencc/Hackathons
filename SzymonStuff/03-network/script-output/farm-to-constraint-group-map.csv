@@ -1,0 +1,314 @@
+farm,county,mec_mw,lat,lon,seai_node,model_gen_id,model_gen_desc,match_score,station_agrees,matched,model_bus,model_station,groups_via_model,groups_via_wdt_station,routes_overlap
+Bellacorrick Wind Farm,Mayo,6.45,54.13188,-9.55089,Bellacorick,,tullabrack,54.5,no,no,,,,,n/a
+Corrie Mt.,Leitrim,4.8,54.12974,-8.15305,Arigna,,oramore,53.3,no,no,,,,,n/a
+Mount Cronalaght,Donegal,4.98,55.06299,-8.21801,Letterkenny,,cronalaght2,76.9,no,no,,,,,n/a
+Golagh (1),Donegal,15.0,54.68884,-7.94564,Golagh 110 kV,,booltiagh,66.7,no,no,,,,,n/a
+Drumlough Hill Wind Farm,Donegal,4.8,55.20423,-7.43853,Trillick,,grove hill,58.3,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Kilronan,Roscommon,5.0,54.0806,-8.14681,Arigna,,seegronan,58.8,no,no,,,,,n/a
+Cark,Donegal,15.0,54.89689,-7.89681,Letterkenny,CAR,cark,100.0,yes,yes,LET_I_Z_110,Letterkenny,ROI/1,,n/a
+Spion Kop Wind Farm,Leitrim,1.2,54.13457,-8.13828,Arigna,,knock south,50.0,no,no,,,,,n/a
+Crockahenny,Donegal,5.0,55.14621,-7.27113,Trillick,,crockandun,76.2,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Knock South Wind Farm (Inverin),Galway,2.64,53.26524,-9.36817,Screeb,,knocksouth,74.1,no,no,,,,,n/a
+Knock South Wind Farm (2),Galway,0.69,53.26504,-9.36902,Screeb,INW1_1,knock south,100.0,no,yes,KNY_I_Z_110,Knockranny,ROI/1,,n/a
+Currabwee Wind Farm,Cork,4.62,51.68146,-9.12122,Dunmanway,,curryfree,66.7,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,n/a
+Milane Hill Wind Farm,Cork,5.94,51.68954,-9.21252,Dunmanway,,kill hill,70.0,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,n/a
+Anarget Wind Farm (1),Donegal,1.98,54.75216,-8.16834,Cathaleens Fall,,leanamore,62.5,no,no,,,,,n/a
+Beenageeha Wind Farm,Kerry,3.96,52.33341,-9.56454,Tralee,,tievenameenta,60.9,no,no,,,,ROI-SW/1;ROI-W/2,n/a
+Largan Hill,Roscommon,5.94,53.94809,-8.56746,Tonroe,,carnhill,77.8,no,no,,,,,n/a
+Tursillagh Wind Farm,Kerry,15.0,52.31364,-9.59672,Tralee,TUR,tursillagh,100.0,yes,yes,TRL_I_Z_110,Tralee,ROI-W/2;ROI/1,ROI-SW/1;ROI-W/2,yes
+Beale Hill (1),Kerry,1.65,52.56425,-9.63362,Trien,,beam hill,84.2,no,no,,,,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,n/a
+Culliagh Wind Farm (Meenbog),Donegal,11.88,54.87108,-7.88446,Letterkenny,,callagheen,72.0,no,no,,,,,n/a
+CORNEEN Wind Farm,Cavan,3.0,54.13351,-7.63757,Gortawee,,cloncreen,75.0,no,no,,,,,n/a
+Black Banks (1),Leitrim,3.4,54.14423,-8.19508,Corderry,,esbarklowbank,60.9,no,no,,,,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,n/a
+Carnsore Wind Farm,Wexford,11.9,52.1784,-6.36185,Wexford,,carnsorepoint,76.2,yes,no,,,,ROI-SE/1,n/a
+Kingsmountain (1),Sligo,23.75,54.20434,-8.79027,Cunghill 110 kV,KGM,kingsmountain,100.0,yes,yes,CUN_I_Z_110,Cunghill,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/8;ROI/1,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/8,yes
+Meenadreen Wind Farm,Donegal,3.4,54.66355,-7.96094,Cathaleens Fall,,meenadreensouth2,76.9,no,no,,,,,n/a
+Burtonport Harbour Single Turbine,Donegal,0.66,54.98066,-8.44019,Binbane,,murley mountain,41.7,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Beale Hill (2),Kerry,2.55,52.56357,-9.63342,Trien,,beam hill,84.2,no,no,,,,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,n/a
+Arklow Bank Wind Farm (1),Offshore,25.2,52.79204,-6.08844,Arklow,ABK,esbarklowbank,87.0,yes,yes,ARK_I_Z_110,Arklow,ROI/1,ROI-SE/1,no
+Raheen Barr Wind Farm,Mayo,18.7,53.90499,-9.33614,Castlebar,MX1,raheen barr,100.0,yes,yes,CBR_I_Z_110,Castlebar,ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6;ROI/1,ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6,yes
+Curraghgraigue Wind Farm,Tipperary,2.55,52.79588,-8.10519,NENAGH,,craiggore,60.9,no,no,,,,,n/a
+Meenanilta Wind Farm (1),Donegal,2.55,54.84931,-7.82996,Letterkenny,,meentycat,63.2,no,no,,,,,n/a
+Cuillalea Wind Farm,Mayo,3.4,53.84851,-9.07269,Castlebar,,killala,75.0,no,no,,,,ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6,n/a
+Mounvaun (Mienvee) Wind Farm,Tipperary,0.66,52.64966,-8.1442,Ardnacrusha,,moanvane,60.9,no,no,,,,ROI-SW/1;ROI-W/1;ROI-W/2,n/a
+Sonnagh Old Phase 1,Galway,7.65,53.13075,-8.63791,Somerset,,monnaboy,52.6,no,no,,,,,n/a
+Meenanilta Wind Farm (2),Donegal,2.45,54.84977,-7.81766,Letterkenny,,meentycat,63.2,no,no,,,,,n/a
+Tursillagh (2) Wind Farm,Kerry,6.8,52.31472,-9.60607,Tralee,TUR,tursillagh,100.0,yes,yes,TRL_I_Z_110,Tralee,ROI-W/2;ROI/1,ROI-SW/1;ROI-W/2,yes
+Meentycat (1),Donegal,70.96,54.86948,-7.86227,Meentycat 110 kV,MCT,meentycat,100.0,yes,yes,MEE_I_Z_110,Meentycat,ROI-NW/2;ROI-NW/3;ROI-NW/4;ROI-W/2;ROI/1,ROI-NW/2;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,yes
+Gartnaneane (1) Wind Farm,Cavan,10.5,53.94437,-6.9271,Meath Hill,GA2,gartnaneane,100.0,yes,yes,MTH_I_Z_110,Meath Hill,ROI/1,,n/a
+Gartnaneane II Wind Farm,Cavan,4.5,53.88908,-6.96897,Meath Hill,GA2,gartnaneane,91.7,yes,yes,MTH_I_Z_110,Meath Hill,ROI/1,,n/a
+Anarget Wind Farm (2),Donegal,0.02,54.75181,-8.17149,Cathaleens Fall,,leanamore,62.5,no,no,,,,,n/a
+Moanmore Wind Farm,Clare,12.6,52.67087,-9.48816,Tullabrack,MMR,moanmore,100.0,yes,yes,TBK_I_T_110,Tullabrack,ROI-W/1;ROI-W/2;ROI/1,ROI-SW/1;ROI-W/1;ROI-W/2,yes
+Coomatallin Wind Farm,Cork,5.95,51.65733,-9.09266,Dunmanway,,altahullion,63.6,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,n/a
+Mount Eagle Wind Farm,Kerry,5.1,52.24202,-9.32286,Tralee,,mountainlodge,69.6,no,no,,,,ROI-SW/1;ROI-W/2,n/a
+Greenoge Wind Farm,Carlow,4.99,52.65731,-6.7234,Crane,,grouselodge,63.2,no,no,,,,ROI-SE/1;ROI-SE/4,n/a
+Ballywater (1),Wexford,31.5,52.53779,-6.25103,Ballywater 110 kV,BW1,ballywater,100.0,yes,yes,BWR_I_Z_110,Ballywater,ROI/1,ROI-SE/1;ROI-SE/4,no
+Cronelea Upper Wind Farm,Wicklow,2.55,52.77711,-6.55741,Carlow,,carrowleagh,50.0,no,no,,,,ROI-SE/2,n/a
+Booltiagh (1),Clare,19.45,52.78007,-9.24603,Booltiagh 110 kV,BT1,booltiagh,100.0,yes,yes,BOL_I_Z_110,Booltiagh,ROI-W/1;ROI-W/2;ROI/1,ROI-SW/1;ROI-W/1;ROI-W/2,yes
+Black Banks (2),Leitrim,6.8,54.14423,-8.19508,Corderry,,esbarklowbank,60.9,no,no,,,,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,n/a
+Altagowlan Wind Farm,Roscommon,7.65,54.12265,-8.1442,Corderry,,altaveedan,60.0,no,no,,,,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,n/a
+Moneenatieve Wind Farm (1),Leitrim,3.96,54.14306,-8.15867,Corderry,,meentycat,57.1,no,no,,,,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,n/a
+Derrybrien (1),Galway,59.5,53.0937,-8.60794,Derrybrien 110 kV,DY1,derrybrien,100.0,yes,yes,DYN_I_Z_110,Derrybrien,ROI-W/1;ROI-W/2;ROI/1,ROI-SW/1;ROI-W/1;ROI-W/2,yes
+Gneeves Wind Farm,Cork,9.35,52.0132,-9.12046,Knockearagh,,garves,61.5,no,no,,,,ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,n/a
+Dundalk IT Wind Turbine,Louth,0.5,53.98363,-6.39114,Dundalk,,dunneilkingsmountain2,48.6,no,no,,,,,n/a
+Ballinveny Wind Farm,Tipperary,2.55,52.81694,-7.95314,NENAGH,,ballybane,63.2,no,no,,,,,n/a
+Ballinlough Wind Farm,Tipperary,2.55,52.8302,-8.0115,NENAGH,,blacklough,66.7,no,no,,,,,n/a
+Geevagh Wind Farm,Sligo,4.95,54.14229,-8.26852,Corderry,,boggeragh,62.5,no,no,,,,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,n/a
+Coomagearlahy (1),Kerry,42.5,51.93401,-9.32139,Coomagearlahy 110 kV,CG1,coomagearlahy,100.0,no,yes,CGL_I_Z_110,Coomagearlah,ROI-W/2;ROI/1,,n/a
+Taurbeg Wind Farm,Cork,26.0,52.25023,-9.1355,Glenlara,TR1,taurbeg,100.0,yes,yes,GLE_I_Z_110,Glenlara,ROI-SW/3a;ROI-SW/3b;ROI-SW/3c;ROI-W/2;ROI/1,ROI-SW/3a;ROI-SW/3b;ROI-SW/3c;ROI-SW/5;ROI-SW/6;ROI-SW/7;ROI-SW/8;ROI-W/2,yes
+Carrig Wind Farm,Tipperary,2.55,53.02927,-7.97835,Dallow,,carrigdangan,66.7,no,no,,,,ROI-W/1;ROI-W/2,n/a
+Skehanagh Wind Farm,Tipperary,4.25,53.02006,-7.98323,Dallow,,cleanrath,55.6,no,no,,,,ROI-W/1;ROI-W/2,n/a
+Lahanaght Hill Wind Farm,Cork,4.25,51.65077,-9.21759,Dunmanway,,hunter s hill,59.3,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,n/a
+Sorne Hill Wind Farm,Donegal,31.5,55.12662,-7.3556,SORNE HILL,SN1,sorne hill,100.0,no,yes,LET_I_Z_110,Letterkenny,ROI/1,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,no
+Dunmore Wind Farm,Louth,1.7,53.78772,-6.53281,Drybridge,DMR,dunmore,100.0,no,yes,CPS_N_Z_110,Coolkeeragh Power Station,NI/1;NI/4,,n/a
+Richfield Wind Farm (2),Wexford,6.75,52.21499,-6.59192,Wexford,RF1,richfield,100.0,yes,yes,WEX_I_Z_110,Wexford,ROI/1,ROI-SE/1,no
+Beam Hill Wind Farm,Donegal,14.0,55.19066,-7.43083,Trillick,BM1,beam hill,100.0,no,yes,LET_I_Z_110,Letterkenny,ROI/1,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,no
+Richfield Wind Farm,Wexford,20.25,52.21674,-6.59423,Wexford,RF1,richfield,100.0,yes,yes,WEX_I_Z_110,Wexford,ROI/1,ROI-SE/1,no
+Kilvinane Wind Farm,Cork,4.5,51.70564,-8.99188,Bandon,,kilaveenoge1,57.1,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-W/2,n/a
+Kealkil Wind Farm,Cork,8.5,51.81242,-9.32022,Ballylickey,,kelwin,61.5,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/4;ROI-SW/5;ROI-SW/8;ROI-W/2,n/a
+Carrane Hill Wind Farm,Sligo,3.4,54.13885,-8.23341,Corderry,,carn hill,85.7,no,no,,,,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,n/a
+Tournafulla Wind Farm (1),Limerick,7.5,52.37564,-9.1618,Trien,TN2,tournafulla,100.0,yes,yes,TRI_I_Z_110,Trien,ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,yes
+Lackan Wind Farm,Sligo,6.0,54.24563,-9.07094,Moy,,bruckana,57.1,no,no,,,,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/7;ROI-W/8,n/a
+Cronelea Wind Farm,Wicklow,4.99,52.78057,-6.54758,Carlow,,carrowleagh,63.2,no,no,,,,ROI-SE/2,n/a
+Midas (1),Kerry,29.8,51.9259,-9.30698,Glanlee 110 kV,GLC,midas,100.0,yes,yes,GAE_I_Z_110,Glanlee,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,yes
+Ballywater (2),Wexford,10.5,52.53779,-6.25103,Ballywater 110 kV,BW1,ballywater,100.0,yes,yes,BWR_I_Z_110,Ballywater,ROI/1,ROI-SE/1;ROI-SE/4,no
+Killybegs Wind Farm,Donegal,2.55,54.65832,-8.45894,Binbane,,tullabeg,58.8,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Mullananalt Wind Farm,Monaghan,7.5,54.07674,-6.91241,Meath Hill,,tullynahaw,57.1,no,no,,,,,n/a
+Tournafulla (2) Wind Farm,Limerick,17.2,52.37564,-9.1618,Trien,TN2,tournafulla,100.0,yes,yes,TRI_I_Z_110,Trien,ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,yes
+Mountain Lodge (2),Cavan,24.8,54.0215,-7.10795,Ratrussan 110 kV,ML1,mountain lodge,100.0,yes,yes,RRU_I_Z_110,Ratrussan,ROI-NE/1;ROI/1,ROI-NE/1,yes
+Mounvaun (Mienvee) Wind Farm (2),Tipperary,0.19,52.64822,-8.14235,Ardnacrusha,,moanvane,60.9,no,no,,,,ROI-SW/1;ROI-W/1;ROI-W/2,n/a
+Pallas Wind Farm,Kerry,37.8,52.37859,-9.54775,Clahane 110 kV,CJ1,pallas,100.0,yes,yes,CLH_I_Z_110,Clahane,ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,yes
+Coomacheo (1),Cork,41.225,52.02128,-9.15883,Garrow 110 kV,CZ1,coomacheo,100.0,yes,yes,GRO_I_Z_110,Garrow,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/6;ROI-SW/8;ROI-W/2,yes
+Meenachullalan Wind Farm,Donegal,11.9,54.69008,-8.49225,Binbane,,monaincha,52.2,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Lurganboy Wind Farm,Donegal,4.99,55.11289,-7.61794,Letterkenny,,brockaghboy,50.0,no,no,,,,,n/a
+Ballybane (Glanta Commons) Wind Farm,Cork,19.55,51.63174,-9.37996,Ballylickey,,ballybane,58.1,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/4;ROI-SW/5;ROI-SW/8;ROI-W/2,n/a
+Knockawarriga Wind Farm,Limerick,22.5,52.3424,-9.2054,Trien,KW1,knockawarriga1,96.3,yes,yes,TRI_I_Z_110,Trien,ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,yes
+Lios na Carraige,Cavan,0.017,53.90663,-6.79055,Meath Hill,,carraigcannon,62.1,no,no,,,,,n/a
+Loughderryduff Wind Farm,Donegal,7.65,54.81998,-8.38053,Binbane,,loughroadpv,56.0,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Beallough Wind Farm,Waterford,1.7,52.2733,-7.3413,Butlerstown,,blacklough,73.7,no,no,,,,,n/a
+Mount Eagle Wind Farm (2),Kerry,1.7,52.24184,-9.32234,Tralee,,mountainlodge,69.6,no,no,,,,ROI-SW/1;ROI-W/2,n/a
+Mountain Lodge Wind Farm,Cavan,3.0,54.0215,-7.10795,Shankill,ML1,mountain lodge,100.0,no,yes,RRU_I_Z_110,Ratrussan,ROI-NE/1;ROI/1,ROI-NE/1,yes
+Mountain Lodge (3),Cavan,5.82,54.0215,-7.10795,Ratrussan 110 kV,ML1,mountain lodge,100.0,yes,yes,RRU_I_Z_110,Ratrussan,ROI-NE/1;ROI/1,ROI-NE/1,yes
+Coomagearlahy (2),Kerry,8.5,51.88791,-9.3084,Coomagearlahy 110 kV,CG1,coomagearlahy,100.0,no,yes,CGL_I_Z_110,Coomagearlah,ROI-W/2;ROI/1,,n/a
+Ballybane 2 (Glanta Commons) Wind Farm,Cork,8.4,51.63174,-9.37996,Ballylickey,,ballybane2,60.6,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/4;ROI-SW/5;ROI-SW/8;ROI-W/2,n/a
+Glackmore Hill (1),Donegal,0.6,55.12489,-7.26092,SORNE HILL,,grove hill,66.7,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Glackmore Hill (3),Donegal,0.3,55.12236,-7.26948,SORNE HILL,,grove hill,66.7,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Glackmore Hill (2),Donegal,1.4,55.12261,-7.26897,SORNE HILL,,grove hill,66.7,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Meenkeeragh Wind Farm,Donegal,4.2,55.12962,-7.39199,SORNE HILL,,raheenleagh,63.6,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Dunmore 2,Louth,1.8,53.78598,-6.5331,Drybridge,DMR,dunmore,93.3,no,yes,CPS_N_Z_110,Coolkeeragh Power Station,NI/1;NI/4,,n/a
+Coomagearlahy (3),Kerry,30.0,51.93528,-9.34796,Coomagearlahy 110 kV,CG1,coomagearlahy,100.0,no,yes,CGL_I_Z_110,Coomagearlah,ROI-W/2;ROI/1,,n/a
+Sorne Hill (2),Donegal,7.4,55.131,-7.35548,SORNE HILL,SN1,sorne hill,100.0,no,yes,LET_I_Z_110,Letterkenny,ROI/1,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,no
+Coomacheo (2),Cork,18.0,52.02128,-9.15883,Garrow 110 kV,CZ1,coomacheo,100.0,yes,yes,GRO_I_Z_110,Garrow,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/6;ROI-SW/8;ROI-W/2,yes
+Lisheen (1),Tipperary,36.0,52.75727,-7.69116,Lisheen 110 kV,LS1,lisheen1,93.3,yes,yes,LSN_I_Z_110,Lisheen,ROI-W/1;ROI-W/2;ROI-W/5;ROI/1,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/5;ROI-W/9,yes
+Meentycat (2),Donegal,14.0,54.8814,-7.8839,Meentycat 110 kV,MCT,meentycat,100.0,yes,yes,MEE_I_Z_110,Meentycat,ROI-NW/2;ROI-NW/3;ROI-NW/4;ROI-W/2;ROI/1,ROI-NW/2;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,yes
+Bindoo (1a),Cavan,48.0,54.00494,-7.13691,Ratrussan 110 kV,BD1,bindoo,100.0,yes,yes,RRU_I_Z_110,Ratrussan,ROI-NE/1;ROI/1,ROI-NE/1,yes
+Rahora Wind Farm,Kilkenny,4.25,52.39542,-7.05253,Waterford,,oramore,61.5,no,no,,,,ROI-SE/1,n/a
+Knockastanna Wind Farm,Limerick,7.5,52.66336,-8.21394,Ardnacrusha,,knockalassa,69.6,no,no,,,,ROI-SW/1;ROI-W/1;ROI-W/2,n/a
+WEDcross Wind Farm,Cork,4.5,52.15308,-9.2286,Knockearagh,,rosspile,50.0,no,no,,,,ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,n/a
+Derrynadivva Wind Farm (prev. Raheen Bar 2),Mayo,8.5,53.90558,-9.33921,Castlebar,,derrysallagh,58.3,no,no,,,,ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6,n/a
+Dromada (1),Limerick,28.5,52.43443,-9.22223,Dromada 110 kV,DR1,dromada,100.0,yes,yes,DRO_I_Z_110,Dromada,ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/7;ROI-W/2,yes
+Boggeragh (1),Cork,57.0,52.03491,-8.92067,Boggeragh 110 kV,BG1,boggeragh,100.0,yes,yes,BGH_I_Z_110,Boggeragh,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,yes
+Cronelea Upper Wind Farm (2),Wicklow,1.7,52.78006,-6.54733,Carlow,,carrowleagh,50.0,no,no,,,,ROI-SE/2,n/a
+Cronelea Wind Farm (2),Wicklow,4.5,52.77985,-6.55528,Carlow,,carrowleagh,63.2,no,no,,,,ROI-SE/2,n/a
+Mace Upper Wind Farm,Mayo,2.55,53.76764,-8.96826,Dalton,,ballycumber,50.0,no,no,,,,ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6,n/a
+Muingnaminnane Wind Farm,Kerry,15.3,52.28952,-9.53907,Reamore,MU1,muingnaminnane,100.0,yes,yes,REM_I_Z_110,Reamore,ROI-W/2,ROI-SW/1;ROI-W/2,yes
+Reenascreena Wind Farm,Cork,4.5,51.62333,-9.03632,Dunmanway,,tievenameenta,64.0,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,n/a
+Slievereagh Wind Farm (1),Limerick,3.0,52.37308,-8.38933,Tipperary,,slieverushen,69.6,no,no,,,,,n/a
+Ballincollig Hill Wind Farm (Lee Strand),Kerry,15.0,52.30806,-9.59285,Tralee,,ballincollighill,78.0,yes,no,,,,ROI-SW/1;ROI-W/2,n/a
+Kingsmountain (2),Sligo,11.05,54.21342,-8.82151,Cunghill 110 kV,KGM,kingsmountain,100.0,yes,yes,CUN_I_Z_110,Cunghill,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/8;ROI/1,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/8,yes
+Garvagh - Glebe/Tullynahaw,Roscommon,22.0,54.11298,-8.12521,Garvagh 110 kV,,garvaghglebe,70.6,yes,no,,,,NI/1;NI/5;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,n/a
+Garvagh - Glebe (1a),Leitrim,26.0,54.15129,-8.20074,Garvagh 110 kV,GH1,garvagh glebe,100.0,yes,yes,GRV_I_Z_110,Garvagh,NI/1;NI/4;NI/5;ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI/1,NI/1;NI/5;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,yes
+Shannagh (Kilcar),Donegal,2.55,54.66827,-8.58271,Binbane,,croaghonagh,53.8,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Flughland,Donegal,9.2,55.14176,-7.27582,SORNE HILL,,cloghan,62.5,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Gortahile Wind Farm,Laois,21.0,52.82348,-7.05877,Carlow,GE1,gortahile,100.0,yes,yes,CLW_I_Z_110,Carlow,ROI/1,ROI-SE/2,no
+Cuillalea Wind Farm (2),Mayo,1.59,53.84836,-9.076,Castlebar,,killala,75.0,no,no,,,,ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6,n/a
+Donaghmede Fr Collins Park Wind Farm,Dublin,0.25,53.40759,-6.16214,Grange (DR),,ballinderry road pv,44.4,no,no,,,,,n/a
+Tullow Mushroom Growers Ltd,Carlow,0.133,52.84718,-6.75898,Carlow,,grove hill,48.5,no,no,,,,ROI-SE/2,n/a
+Carrons (A&B) Wind Farm,Limerick,4.99,52.54103,-9.06966,Rathkeale,,carrigdangan,58.3,no,no,,,,ROI-SW/1;ROI-SW/2;ROI-W/1;ROI-W/2,n/a
+Owenstown,Kildare,0.018,53.40647,-6.55331,Griffinrath,,gaskinstown,60.0,no,no,,,,,n/a
+Castledockrell (2),Wexford,2.0,52.58798,-6.63755,Castledockrell 110 kV,CK1,castledockrell,100.0,no,yes,LWD_I_Z_110,Lodgewood,ROI/1,ROI-SE/1;ROI-SE/4,no
+Castledockrell (3),Wexford,3.3,52.58798,-6.63755,Castledockrell 110 kV,CK1,castledockrell,100.0,no,yes,LWD_I_Z_110,Lodgewood,ROI/1,ROI-SE/1;ROI-SE/4,no
+Castledockrell (1),Wexford,20.0,52.58798,-6.63755,Castledockrell 110 kV,CK1,castledockrell,100.0,no,yes,LWD_I_Z_110,Lodgewood,ROI/1,ROI-SE/1;ROI-SE/4,no
+Castledockrell (4),Wexford,16.1,52.58798,-6.63755,Castledockrell 110 kV,CK1,castledockrell,100.0,no,yes,LWD_I_Z_110,Lodgewood,ROI/1,ROI-SE/1;ROI-SE/4,no
+Lenanavea (Burren) Wind Farm,Mayo,4.65,53.91947,-9.34315,Castlebar,,leanamore,58.3,no,no,,,,ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6,n/a
+Country Crest,Dublin,0.5,53.54781,-6.17544,Glasmore,,cloncreen,57.1,no,no,,,,,n/a
+Crocane Wind Farm,Cork,1.7,51.84315,-8.15662,Midleton,,crockandun,70.6,no,no,,,,ROI-SE/2;ROI-W/2,n/a
+Drumlough Hill (2) (Lough Doo),Donegal,9.99,55.20031,-7.44198,Trillick,,derrinlough,50.0,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Rathcahill West Wind Farm,Limerick,12.5,52.40325,-9.13071,Rathkeale,RC1,rathcahill west,100.0,yes,yes,RAT_I_Z_110,Rathkeale,ROI-SW/2;ROI-W/1;ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/2;ROI-W/1;ROI-W/2,yes
+Corkermore Wind Farm Phase 1,Donegal,9.99,54.71339,-8.35619,Binbane,,oramore,66.7,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Dromdeeveen Wind Farm (1),Limerick,10.5,52.33213,-9.03913,Glenlara,DV1,dromdeeveen,100.0,yes,yes,GLE_I_Z_110,Glenlara,ROI-SW/3a;ROI-SW/3b;ROI-SW/3c;ROI-W/2;ROI/1,ROI-SW/3a;ROI-SW/3b;ROI-SW/3c;ROI-SW/5;ROI-SW/6;ROI-SW/7;ROI-SW/8;ROI-W/2,yes
+Grouse Lodge Wind Farm,Limerick,15.0,52.52102,-9.10399,Rathkeale,GW1,grouselodge,100.0,yes,yes,RAT_I_Z_110,Rathkeale,ROI-SW/2;ROI-W/1;ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/2;ROI-W/1;ROI-W/2,yes
+Carraigcannon Wind Farm,Cork,20.0,52.06694,-8.89213,BOGGERAGH,CD1,carraigcannon,100.0,yes,yes,BGH_I_Z_110,Boggeragh,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,yes
+Ballymartin (1) (Smithstown),Kilkenny,6.0,52.38731,-7.1075,Waterford,,ballymartin1,66.7,yes,no,,,,ROI-SE/1,n/a
+CURRAGHGRAIGUE (2) Wind Farm,Tipperary,2.44,52.7977,-8.10252,NENAGH,,craiggore,60.9,no,no,,,,,n/a
+Bawnmore (Burren/Carraignimma),Cork,24.0,51.95115,-8.90539,Macroom,,bawnmore,47.1,yes,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-W/2,n/a
+Moneenatieve Wind Farm (2),Leitrim,0.29,54.1322,-8.15831,Corderry,,meentycat,57.1,no,no,,,,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,n/a
+Anarget Wind Farm (3),Donegal,0.5,54.75522,-8.16753,Cathaleens Fall,,leanamore,62.5,no,no,,,,,n/a
+Seltanaveeny Wind Farm,Roscommon,4.6,54.10932,-8.11667,Arigna,,altaveedan,63.6,no,no,,,,,n/a
+Tullynamoyle,Leitrim,9.0,54.22673,-8.1349,Corderry,TM2,tullynamoyle2,96.0,yes,yes,CDY_I_Z_110,Corderry,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI/1,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,yes
+Skrine Wind Farm,Roscommon,4.6,53.56926,-8.18186,Lanesborough,,sheskin,61.5,no,no,,,,,n/a
+Dromdeeveen Wind Farm (2),Limerick,16.5,52.32759,-9.03025,Glenlara,DV1,dromdeeveen,100.0,yes,yes,GLE_I_Z_110,Glenlara,ROI-SW/3a;ROI-SW/3b;ROI-SW/3c;ROI-W/2;ROI/1,ROI-SW/3a;ROI-SW/3b;ROI-SW/3c;ROI-SW/5;ROI-SW/6;ROI-SW/7;ROI-SW/8;ROI-W/2,yes
+Meenanilta (3),Donegal,3.4,54.84964,-7.82297,Letterkenny,,meentycat,63.2,no,no,,,,,n/a
+Glenough Wind Farm,Tipperary,33.0,52.64681,-8.06993,Cauteen,GU1,glenough,100.0,yes,yes,CTN_I_Z_110,Cauteen,ROI-W/1;ROI-W/2;ROI-W/4;ROI/1,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/4,yes
+"St Patricks Missionary Society, Co. Wicklow",Wicklow,0.13,52.9016,-6.55834,Stratford,,sws green energy sillahertane,37.1,no,no,,,,,n/a
+Carrowleagh Wind Farm (1),Mayo,34.15,54.13342,-8.95431,Glenree,XR1,carrowleagh,100.0,yes,yes,GLR_I_Z_110,Glenree,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/8;ROI/1,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/8,yes
+Caherdowney Wind Farm,Cork,10.0,52.00258,-9.11823,Garrow,,magheramore,54.5,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/6;ROI-SW/8;ROI-W/2,n/a
+Knockaneden Wind Farm,Kerry,9.0,51.93682,-10.09892,Oughtragh,,crockandun,66.7,no,no,,,,ROI-SW/1;ROI-W/2,n/a
+Ballycadden Wind Farm (1),Wexford,14.45,52.64631,-6.53021,Crory,BY1,ballycadden,100.0,no,yes,LWD_I_Z_110,Lodgewood,ROI/1,ROI-SE/1;ROI-SE/4,no
+Ballycadden Wind Farm (2),Wexford,9.762,52.6437,-6.52547,Crory,BY1,ballycadden,100.0,no,yes,LWD_I_Z_110,Lodgewood,ROI/1,ROI-SE/1;ROI-SE/4,no
+Clydaghroe Wind Farm,Kerry,4.99,51.9904,-9.16118,Garrow,,callagheen,60.0,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/6;ROI-SW/8;ROI-W/2,n/a
+Meade Potato Company,Meath,0.3,53.78885,-6.61339,Drybridge,,meenadreen south 2,47.4,no,no,,,,,n/a
+Ballaman (Kennystown) Wind Farm,Wexford,3.6,52.62309,-6.54371,Crory,,gallanstown,69.0,no,no,,,,ROI-SE/1;ROI-SE/4,n/a
+Templederry Wind Farm,Tipperary,3.9,52.77732,-8.14788,NENAGH,,rathsherry,47.6,no,no,,,,,n/a
+Shalvey Poultry WT,Cavan,0.017,54.02433,-7.05622,Shankill,,shantavny scotch,47.1,no,no,,,,ROI-NE/1,n/a
+Garracummer Wind Farm,Tipperary,36.9,52.63954,-8.18679,Cauteen,GM1,garracummer,100.0,yes,yes,CTN_I_Z_110,Cauteen,ROI-W/1;ROI-W/2;ROI-W/4;ROI/1,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/4,yes
+Ballymartin (2) - Smithstown,Kilkenny,8.28,52.39137,-7.10623,Waterford,,ballymartin1,66.7,yes,no,,,,ROI-SE/1,n/a
+Gibbet Hill Wind Farm,Wexford,14.8,52.67925,-6.57786,Crory,GT1,gibbet hill,100.0,no,yes,LWD_I_Z_110,Lodgewood,ROI/1,ROI-SE/1;ROI-SE/4,no
+Lisheen (1a),Tipperary,23.0,52.75096,-7.6817,Lisheen 110 kV,LS1,lisheen1,93.3,yes,yes,LSN_I_Z_110,Lisheen,ROI-W/1;ROI-W/2;ROI-W/5;ROI/1,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/5;ROI-W/9,yes
+Meenkeeragh Wind Farm (2),Donegal,0.4,55.12962,-7.39199,Sorne Hill,,raheenleagh,63.6,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Garranereagh Wind Farm,Cork,8.75,51.81586,-8.93248,Bandon,,barnesmoregolagh,64.3,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-W/2,n/a
+Knocknalour Wind Farm G3,Wexford,3.95,52.68158,-6.5573,Crory,,knockalough,83.3,no,no,,,,ROI-SE/1;ROI-SE/4,n/a
+Knocknalour Wind Farm (1),Wexford,5.0,52.68103,-6.56411,Crory,,knockalough,81.8,no,no,,,,ROI-SE/1;ROI-SE/4,n/a
+Ballynancoran Wind Farm,Wexford,4.0,52.66709,-6.52637,Crory,,ballycadden,66.7,no,no,,,,ROI-SE/1;ROI-SE/4,n/a
+Booltiagh (2),Clare,12.0,52.77416,-9.24088,Booltiagh 110 kV,BT1,booltiagh,100.0,yes,yes,BOL_I_Z_110,Booltiagh,ROI-W/1;ROI-W/2;ROI/1,ROI-SW/1;ROI-W/1;ROI-W/2,yes
+Knocknagoum (1),Kerry,42.55,52.32747,-9.52978,Reamore,KM1,knocknagoum,100.0,yes,yes,REM_I_Z_110,Reamore,ROI-W/2,ROI-SW/1;ROI-W/2,yes
+Knocknagoum (2),Kerry,1.8,52.28909,-9.54489,Reamore,KM1,knocknagoum,100.0,yes,yes,REM_I_Z_110,Reamore,ROI-W/2,ROI-SW/1;ROI-W/2,yes
+Pluckanes Wind Farm,Cork,0.85,52.00261,-8.70068,Kilbarry,,bruckana,58.8,no,no,,,,,n/a
+Athea (1a),Limerick,34.35,52.439,-9.29803,Athea 110 kV,AH1,athea,100.0,yes,yes,ATE_I_Z_110,Athea,ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/7;ROI-W/2,yes
+Knockacummer (1) (Temp)(Glentanemacelligot1),Cork,100.0,52.2597,-9.10046,Glenlara,,knockacummer,55.8,no,no,,,,ROI-SW/3a;ROI-SW/3b;ROI-SW/3c;ROI-SW/5;ROI-SW/6;ROI-SW/7;ROI-SW/8;ROI-W/2,n/a
+Mountlucas (1),Offaly,79.2,53.27339,-7.23669,Mountlucas 110 kV,MO1,mountlucas,100.0,yes,yes,MLC_I_Z_110,Mountlucas,ROI/1,,n/a
+Hollyford(Holyford) Wind Farm,Tipperary,9.0,52.64665,-8.06968,Cauteen,,sorne hill,42.9,no,no,,,,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/4,n/a
+Leitir Guingaid Wind Farm,Galway,40.9,53.28606,-9.1961,Salthill,LG1,leitirguingaid1,96.6,yes,yes,SAL_I_Z_110,Salthill,ROI-W/1;ROI-W/2;ROI-W/3;ROI/1,ROI-W/1;ROI-W/2;ROI-W/3,yes
+Monaincha Bog Wind Farm (Gate 3),Tipperary,32.55,52.9371,-7.719,Ikerrin,MH1,monaincha,85.7,yes,yes,IKE_I_T_110,Ikerrin,ROI-W/1;ROI-W/2;ROI/1,ROI-SE/2;ROI-W/1;ROI-W/2;ROI-W/9,yes
+Monaincha Bog Wind Farm (Gate 2),Tipperary,3.4,52.9371,-7.719,Ikerrin,MH1,monaincha,85.7,yes,yes,IKE_I_T_110,Ikerrin,ROI-W/1;ROI-W/2;ROI/1,ROI-SE/2;ROI-W/1;ROI-W/2;ROI-W/9,yes
+Ballycurreen Wind Farm,Waterford,4.99,52.02935,-7.59787,Dungarvan,,ballycumber,69.6,no,no,,,,,n/a
+Carrickeeny Wind Farm,Leitrim,7.65,54.33093,-8.27743,Sligo,,carrickallen,78.3,no,no,,,,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-W/1;ROI-W/2,n/a
+Wind Energy Project (Janssen),Cork,2.0,51.8297,-8.34406,Barnahealy,,seegronan,48.3,no,no,,,,,n/a
+Bruckana,Tipperary,39.6,52.78504,-7.67058,Lisheen,BU1,bruckana,100.0,yes,yes,LSN_I_Z_110,Lisheen,ROI-W/1;ROI-W/2;ROI-W/5;ROI/1,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/5;ROI-W/9,yes
+DePuy 3MW Wind Turbine,Cork,2.5,51.82681,-8.30545,Barnahealy,,derrybrien,48.0,no,no,,,,,n/a
+Burtonstown,Meath,0.15,53.61716,-6.51079,Drybridge,,blundelstown,69.6,no,no,,,,,n/a
+Burtonstown Autoproducer,Meath,0.15,53.61716,-6.51079,Drybridge,,mauricetown,51.4,no,no,,,,,n/a
+Kill Hill (1) - phase 1,Tipperary,36.0,52.5394,-7.78429,Kill Hill 110 kV,KH1,killhill,94.1,yes,yes,KHL_I_Z_110,Kill Hill,ROI-W/1;ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/9,yes
+Slievereagh Wind Farm (2),Limerick,1.6,52.37308,-8.38933,Tipperary,,slieverushen,69.6,no,no,,,,,n/a
+Faughary Wind Farm,Leitrim,6.0,54.34015,-8.13758,Sligo,,taghart,66.7,no,no,,,,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-W/1;ROI-W/2,n/a
+Ballybane 2A (Glanta Commons) Wind Farm,Cork,11.5,51.63174,-9.37996,Ballylickey,,ballybane2,58.8,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/4;ROI-SW/5;ROI-SW/8;ROI-W/2,n/a
+Garracummer (2),Tipperary,1.0,52.64373,-8.14826,Cauteen,GM1,garracummer,100.0,yes,yes,CTN_I_Z_110,Cauteen,ROI-W/1;ROI-W/2;ROI-W/4;ROI/1,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/4,yes
+Woodhouse (1),Waterford,20.0,52.08133,-7.77707,Woodhouse 110 kV,WS1,woodhouse,100.0,yes,yes,WHO_I_Z_110,Woodhouse,ROI/1,ROI-SE/2,no
+Barranafaddock Wind Farm,Waterford,32.4,52.17701,-8.10422,Barrymore,BF1,barranafaddock,100.0,yes,yes,BAR_I_T_110,Barrymore,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/11;ROI-W/2,yes
+Acres Wind Farm,Donegal,17.5,54.52597,-8.1911,Cathaleens Fall,AS1,acres,100.0,no,yes,CF_I_Z_110,Cathaleen’s Fall,ROI-NW/3;ROI-NW/4;ROI-W/2;ROI/1,,n/a
+Carrownaweelaun Wind Farm,Clare,4.6,52.63405,-9.72443,Tullabrack,,carrowleagh,61.5,no,no,,,,ROI-SW/1;ROI-W/1;ROI-W/2,n/a
+Leabeg Wind Farm,Offaly,4.25,53.23457,-7.76825,Dallow,,tullabeg,71.4,no,no,,,,ROI-W/1;ROI-W/2,n/a
+Cloghboola (1),Kerry,46.0,52.33052,-9.43813,Cloghboola 110 kV,CL1,cloghboola,100.0,yes,yes,CBL_I_Z_110,Cloghboola,ROI-W/2,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,yes
+Boggeragh (2),Cork,65.7,52.03769,-8.90892,Boggeragh 110 kV,BG1,boggeragh,100.0,yes,yes,BGH_I_Z_110,Boggeragh,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,yes
+Roosky Wind Farm,Roscommon,3.6,53.87815,-8.58547,Tonroe,,brockaghboy,47.1,no,no,,,,,n/a
+Collon Wind Power Limited (Gate 2),Louth,0.7,53.78598,-6.5331,Drybridge,,cloghan,61.5,no,no,,,,,n/a
+Collon Wind Power Limited (Gate 3),Louth,2.3,53.78598,-6.5331,Drybridge,,cloghan,61.5,no,no,,,,,n/a
+Raheenleagh (1),Wicklow,35.2,52.79604,-6.29139,Arklow,RL1,raheenleagh,100.0,yes,yes,ARK_I_Z_110,Arklow,ROI/1,ROI-SE/1,no
+Tesco Donabate,Dublin,0.499,53.48883,-6.19092,Glasmore,,cloonty,50.0,no,no,,,,,n/a
+Grove Hill Windfarm (formerly Tullynageer WF),Monaghan,16.1,54.19072,-6.7005,Dundalk,GR1,grove hill,100.0,yes,yes,DDK_I_Z_110,Dundalk,ROI/1,,n/a
+Michael Aylward,Kilkenny,0.5,52.33311,-7.0702,Waterford,,richfield,52.2,no,no,,,,ROI-SE/1,n/a
+Mulreavy Ext (Meenadreen South (2)),Donegal,5.4,54.65669,-7.97193,Mulreavy 110kV,,meenadreensouth2,76.9,yes,no,,,,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Glencarbry Wind Farm,Tipperary,33.0,52.62274,-8.10262,Cauteen,GY1,glencarbry,100.0,yes,yes,CTN_I_Z_110,Cauteen,ROI-W/1;ROI-W/2;ROI-W/4;ROI/1,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/4,yes
+Lisdowney Wind Farm,Kilkenny,9.2,52.78451,-7.43014,PORTLAOISE 110KV,,gillinstown,60.0,no,no,,,,,n/a
+Beale Hill (3) Wind Farm,Kerry,1.3,52.56499,-9.63595,Trien,,beam hill,84.2,no,no,,,,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,n/a
+Sliabh Bawn (1),Roscommon,58.0,53.74907,-8.05379,Sliabh Bawn 110kV,SB1,sliabh bawn,100.0,yes,yes,SLB_I_Z_110,Sliabh Bawn,ROI-NW/4;ROI-W/1;ROI-W/2;ROI/1,ROI-NW/4;ROI-NW/5;ROI-W/1;ROI-W/2,yes
+Killaveenoge Windfarm - (Derryvacorneen merge with Barrboy),Cork,7.8,51.73676,-9.25215,Dunmanway,KV1,kilaveenoge1,91.7,yes,yes,DMY_I_Z_110,Dunmanway,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,yes
+KWT Energy Ltd,Waterford,0.49,52.22154,-7.42565,Dungarvan,,corby knowe,47.6,no,no,,,,,n/a
+Kilmeedy Wind Farm,Limerick,4.7,52.42507,-8.89114,Charleville,,slieve kirk,52.6,no,no,,,,ROI-SW/3c;ROI-W/2,n/a
+Ballyduff Wind Farm,Wexford,0.6,52.64619,-6.48038,Crory,,ballycumber,60.0,no,no,,,,ROI-SE/1;ROI-SE/4,n/a
+Ballyduff Wind Farm,Wexford,4.0,52.64585,-6.48121,Crory,,ballycumber,60.0,no,no,,,,ROI-SE/1;ROI-SE/4,n/a
+Ballybane 3 (Glanta Commons) Wind Farm,Cork,4.45,51.63174,-9.37996,Ballylickey,,ballybane3,60.6,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/4;ROI-SW/5;ROI-SW/8;ROI-W/2,n/a
+Ballybane 2A (Glanta Commons) Wind Farm Extension,Cork,1.55,51.63174,-9.37996,Ballylickey,,ballybane2,58.8,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-SW/4;ROI-SW/5;ROI-SW/8;ROI-W/2,n/a
+Ugool (1),Galway,64.0,53.36676,-9.35275,Uggool 110kV,UG1,uggool,90.9,yes,yes,UGL_I_Z_110,Uggool,ROI-W/1;ROI-W/2;ROI-W/3;ROI/1,ROI-W/1;ROI-W/2;ROI-W/3,yes
+Mulreavy (Mulreavy (1)),Donegal,89.85,54.65262,-7.93577,Mulreavy 110kV,,mulreavy,66.7,yes,no,,,,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Ballon Wind,Carlow,0.499,52.72471,-6.80361,Carlow,,ballybane,66.7,no,no,,,,ROI-SE/2,n/a
+Cooly Wind Farm,Donegal,4.0,55.21545,-7.10369,Trillick,,cloonty,66.7,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Kilberehert Wind Farm,Cork,4.799,52.26157,-8.85751,Charleville,,kilaveenoge1,52.2,no,no,,,,ROI-SW/3c;ROI-W/2,n/a
+Seecon (1),Galway,105.0,53.35261,-9.37227,Uggool 110kV,SO1,seecon,100.0,yes,yes,UGL_I_Z_110,Uggool,ROI-W/1;ROI-W/2;ROI-W/3;ROI/1,ROI-W/1;ROI-W/2;ROI-W/3,yes
+Tullabrack Wind Farm,Clare,13.8,52.67926,-9.47809,Tullabrack,TK1,tullabrack,100.0,yes,yes,TBK_I_T_110,Tullabrack,ROI-W/1;ROI-W/2;ROI/1,ROI-SW/1;ROI-W/1;ROI-W/2,yes
+Moneypoint (1),Clare,17.25,52.6102,-9.42321,Moneypoint 110kV,MP9,moneypoint,100.0,yes,yes,MP_I_Z_110,Moneypoint,ROI-W/1;ROI-W/2;ROI/1,ROI-SW/1;ROI-W/1;ROI-W/2,yes
+Killin Hill Wind Farm,Donegal,6.0,54.70406,-8.29082,Binbane,,kill hill,90.0,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Ballybay Wind Farm (Tullaroan),Kilkenny,13.8,52.66182,-7.50859,Thurles,,ballybay,64.0,yes,no,,,,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/9,n/a
+Foyle Wind Farm (prev Holmes Hill),Kilkenny,9.6,52.63908,-7.46157,Thurles,,rosspile,46.2,no,no,,,,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/9,n/a
+Grady Joinery Wind Farm,Mayo,2.5,53.96938,-8.74769,Tonroe,,glanaruddery1,48.0,no,no,,,,,n/a
+Gurteen Lower Wind Farm,Tipperary,2.3,52.63057,-7.59564,Thurles,,raheenleagh,52.2,no,no,,,,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/9,n/a
+Killaveenoge Windfarm (Derryvacorneen merge with Barrboy Windfarm),Cork,17.0,51.82301,-9.24685,Dunmanway,KV1,kilaveenoge1,91.7,yes,yes,DMY_I_Z_110,Dunmanway,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,yes
+Tullynamoyle Wind Farm 3 (Carrane Hill Merged Capacity),Leitrim,1.598,54.22673,-8.1349,Corderry,TM3,tullynamoyle 3,100.0,yes,yes,CDY_I_Z_110,Corderry,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI/1,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,yes
+Tullynamoyle Wind Farm 3 (Formerly Geevagh 2),Leitrim,11.98,54.22673,-8.1349,Corderry,TM3,tullynamoyle 3,100.0,yes,yes,CDY_I_Z_110,Corderry,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI/1,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,yes
+An Cnoc,Tipperary,11.5,52.64734,-7.52819,Thurles,,cregganconroe,52.6,no,no,,,,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/9,n/a
+Cappawhite A Wind Farm (Gate 2),Tipperary,2.92,52.59596,-8.15288,Cauteen,CP1,cappawhite,95.2,yes,yes,CTN_I_Z_110,Cauteen,ROI-W/1;ROI-W/2;ROI-W/4;ROI/1,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/4,yes
+Cappawhite A Wind Farm (Gate 3),Tipperary,49.08,52.59596,-8.15288,Cauteen,CP1,cappawhite,95.2,yes,yes,CTN_I_Z_110,Cauteen,ROI-W/1;ROI-W/2;ROI-W/4;ROI/1,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/4,yes
+Tullynamoyle 2 Wind Farm,Leitrim,10.225,54.22891,-8.12057,CORDERRY,TM2,tullynamoyle 2,100.0,yes,yes,CDY_I_Z_110,Corderry,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI/1,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,yes
+Knocknatallig Wind Farm (formerly Buttevant Wind Farm),Cork,18.3,52.28959,-8.62096,Charleville,KQ1,knocknatallig,100.0,yes,yes,CHA_I_Z_110,Charleville,ROI-SW/3c;ROI-W/2;ROI/1,ROI-SW/3c;ROI-W/2,yes
+Castlepook (1),Cork,33.1,52.2868,-8.54293,Charleville,PO1,castlepook,100.0,yes,yes,CHA_I_Z_110,Charleville,ROI-SW/3c;ROI-W/2;ROI/1,ROI-SW/3c;ROI-W/2,yes
+Scartaglen 2 Wind Farm,Kerry,3.8,52.16251,-9.31517,Cordal,ST2,scartaglen 2,100.0,yes,yes,CDL_I_Z_110,Cordal,ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/5;ROI-SW/6;ROI-SW/7;ROI-SW/8;ROI-W/2,yes
+Scartaglen Wind Farm,Kerry,35.45,52.16251,-9.31517,Cordal,ST1,scartaglen1,95.2,yes,yes,CDL_I_Z_110,Cordal,ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/5;ROI-SW/6;ROI-SW/7;ROI-SW/8;ROI-W/2,yes
+Curraghderrig,Kerry,4.5,52.55337,-9.59778,Trien,,rathsherry,52.2,no,no,,,,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,n/a
+Meenaward Wind Farm (Formerly Beam Hill 2),Donegal,6.9,55.1977,-7.44046,Trillick,,meentycat,55.6,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Liffey Autoproduction Project,Cavan,1.6,53.85156,-7.20439,Shankill,,murley mountain,40.9,no,no,,,,ROI-NE/1,n/a
+Liffey Autoproduction Project (extension),Cavan,1.417,53.85156,-7.20439,Shankill,,murley mountain,40.9,no,no,,,,ROI-NE/1,n/a
+Teevurcher Wind Farm,Meath,9.0,53.88258,-6.91994,Meath Hill,,taurbeg,47.1,no,no,,,,,n/a
+Leanamore Wind Farm (Tarbert Wind Farm),Kerry,18.0,52.5392,-9.4245,Kilpaddoge,,leanamore,72.0,yes,no,,,,ROI-SW/1;ROI-W/2,n/a
+Meenwaun Windfarm Ext.,Offaly,9.99,53.16067,-7.9203,Dallow,,seegronan,58.8,no,no,,,,ROI-W/1;ROI-W/2,n/a
+Cloonlusk Wind Farm,Galway,4.25,53.46896,-8.8009,Cloon,,cloonty,62.5,no,no,,,,,n/a
+Coollegrean Wind Farm,Kerry,18.5,52.26426,-9.26842,Cordal,OG1,coollegrean,100.0,yes,yes,CDL_I_Z_110,Cordal,ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/5;ROI-SW/6;ROI-SW/7;ROI-SW/8;ROI-W/2,yes
+Ballagh Wind Farm,Limerick,4.6,52.3689,-9.08422,Trien,,callagheen,70.6,no,no,,,,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,n/a
+Gortnacloghy Wind Farm,Limerick,4.4,52.3645,-9.08606,Trien,,gortahile,57.1,no,no,,,,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,n/a
+Glanaruddery 2 (formerly Dromadda More 2),Kerry,12.0,52.3119,-9.46113,Cloghboola,DA2,glanaruddery 2,100.0,yes,yes,CBL_I_Z_110,Cloghboola,ROI-W/2,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,yes
+Glanaruddery 1 (formerly Dromadda More Wind Farm),Kerry,20.0,52.3119,-9.46113,Cloghboola,DA1,glanaruddery 1,100.0,yes,yes,CBL_I_Z_110,Cloghboola,ROI-W/2,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,yes
+Cordal (2),Kerry,54.0,52.23195,-9.27612,Cordal 110kV,DL1,cordal1,92.3,yes,yes,CDL_I_Z_110,Cordal,ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/5;ROI-SW/6;ROI-SW/7;ROI-SW/8;ROI-W/2,yes
+Cordal (1),Kerry,35.85,52.22987,-9.28134,Cordal 110kV,DL1,cordal1,92.3,yes,yes,CDL_I_Z_110,Cordal,ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/5;ROI-SW/6;ROI-SW/7;ROI-SW/8;ROI-W/2,yes
+Cloghaneleskirt Wind Farm,Kerry,12.55,52.34316,-9.53319,Cloghboola,KI1,cloghanaleskirt,93.3,yes,yes,CBL_I_Z_110,Cloghboola,ROI-W/2,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,yes
+Clahane,Kerry,13.8,52.37859,-9.54775,Clahane 110kV,CJ2,clahane2,93.3,yes,yes,CLH_I_Z_110,Clahane,ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,yes
+Cappawhite B Wind Farm (Cappagh White),Tipperary,13.18,52.60156,-8.16308,Cauteen,,cappawhiteb,64.7,yes,no,,,,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/4,n/a
+Kelwin Power,Kerry,37.05,52.52976,-9.51322,Kelwin,KZ1,kelwin,100.0,no,yes,KPG_I_Z_110,Kilpaddoge,ROI-W/2;ROI/1,,n/a
+Rathnacally Wind Farm,Cork,4.45,52.32958,-8.69844,Charleville,,rathnaskilloge,64.0,no,no,,,,ROI-SW/3c;ROI-W/2,n/a
+Glantaunyalkeen Windfarm,Kerry,9.999,52.32962,-9.43825,Cloghboola,,gartnaneane,53.8,no,no,,,,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,n/a
+Carrickallen Wind Farm,Cavan,22.0,54.01578,-7.17074,Shankill,AL1,carrickallen,100.0,yes,yes,SKL_I_Z_110,Shankill,ROI-NE/1;ROI/1,ROI-NE/1,yes
+Knockalassa (formerly Keelderry),Galway,26.875,53.07873,-8.66922,Slievecallan 110kV,KD1,knockalassa,100.0,yes,yes,SLC_I_Z_110,Slievecallan,ROI-W/1;ROI-W/2;ROI/1,,n/a
+Boolinrudda (formerly Boolynagleragh & Glenmore),Clare,44.515,52.83082,-9.2891,Slievecallan 110kV,RD1,boolinrudda,100.0,yes,yes,SLC_I_Z_110,Slievecallan,ROI-W/1;ROI-W/2;ROI/1,,n/a
+Kilbranish Wind Farm,Carlow,2.5,52.65731,-6.7234,Crane,,swskilgarvaninchincoosh,54.5,no,no,,,,ROI-SE/1;ROI-SE/4,n/a
+Magheramore and Cloontooa Wind Farm,Mayo,40.8,53.76319,-8.91727,Dalton,,magheramore,64.7,yes,no,,,,ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6,n/a
+Corvin Wind Turbine,Donegal,2.1,55.13482,-7.38929,SORNE HILL,,corbyknowe,52.2,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Patrick Costello Wind Turbine,Tipperary,0.495,52.65773,-8.05545,Cahir,,carrickatane,50.0,no,no,,,,,n/a
+Knockalough (1),Galway,33.6,53.30015,-9.24356,Knockranny 110kV,KU1,knockalough,100.0,no,yes,KLH_I_Z_110,Knockalough,ROI-W/1;ROI-W/2;ROI-W/3;ROI/1,,n/a
+Mossedge Wind Farm,Donegal,0.5,55.11874,-7.27871,SORNE HILL,,grouselodge,63.2,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Ballycumber Wind Farm,Wicklow,18.0,52.83341,-6.46814,Arklow,YR1,ballycumber,100.0,yes,yes,ARK_I_Z_110,Arklow,ROI/1,ROI-SE/1,no
+Tullynamalra Wind Farm,Monaghan,2.638,54.06045,-6.81313,Meath Hill,,tullynahaw,72.7,no,no,,,,,n/a
+Carrowleagh Wind Farm Ext. (2),Sligo,2.65,54.13342,-8.95431,Glenree,XR1,carrowleagh,100.0,yes,yes,GLR_I_Z_110,Glenree,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/8;ROI/1,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/8,yes
+Killala Wind Farm (Phase 1),Mayo,19.2,54.1911,-9.2242,TAWNAGHMORE,KF1,killala,100.0,yes,yes,TAW_I_Z_110,Tawnaghmore,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/7;ROI-W/8;ROI/1,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/7;ROI-W/8,yes
+Ballincurry Wind Farm Ltd (Glengoole),Tipperary,4.6,52.61546,-7.6267,Thurles,,ballincollighill,55.6,no,no,,,,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/9,n/a
+Gortnahalla,Tipperary,0.499,52.71748,-7.99964,Thurles,,gortahile,70.0,no,no,,,,ROI-SE/2;ROI-SW/11;ROI-W/1;ROI-W/2;ROI-W/9,n/a
+Rossaveel Wind Farm,Galway,3.0,53.49648,-9.98356,Screeb,,rosspile,58.8,no,no,,,,,n/a
+Lissycasey Wind Farm,Clare,13.399,52.75986,-9.20756,BOOLTIAGH,LY1,lissycasey,100.0,yes,yes,BOL_I_Z_110,Booltiagh,ROI-W/1;ROI-W/2;ROI/1,ROI-SW/1;ROI-W/1;ROI-W/2,yes
+Cronalaght Wind Farm 2,Donegal,17.96,55.06047,-8.21593,Ardnagappary,YC2,cronalaght 2,100.0,no,yes,TIV_I_Z_110,Tievebrack,ROI/1,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,no
+Oweninny Power (1),Mayo,89.0,54.13546,-9.54839,Srahnakilly 110kV,OY1,oweninny,100.0,yes,yes,SKY_I_Z_110,Srahnakilly,ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/7;ROI-W/8;ROI/1,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/7;ROI-W/8,yes
+Sorrell Island (Glenmore) Wind Farm Extension,Clare,24.0,52.76613,-9.26415,BOOLTIAGH,,sorrell island 1,76.9,yes,no,,,,ROI-SW/1;ROI-W/1;ROI-W/2,n/a
+Boolynagleragh (1),Clare,36.98,52.78038,-9.15265,Booltiagh,BJ1,boolynagleragh,100.0,yes,yes,BOL_I_Z_110,Booltiagh,ROI-W/1;ROI-W/2;ROI/1,ROI-SW/1;ROI-W/1;ROI-W/2,yes
+Cleanrath Wind Farm,Cork,42.64,51.87628,-9.13891,Coomataggart,YT1,cleanrath,100.0,yes,yes,CTG_I_Z_110,Coomataggart,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/6;ROI-SW/8;ROI-W/2,yes
+Derrysallagh Wind Farm (Formerly Kilronan 2),Roscommon,34.0,54.09669,-8.18717,GARVAGH,DS1,derrysallagh,100.0,yes,yes,GRV_I_Z_110,Garvagh,NI/1;NI/4;NI/5;ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI/1,NI/1;NI/5;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/7;ROI-W/1;ROI-W/2,yes
+Grousemount WF,Kerry,114.2,51.8727,-9.31473,Coomataggart 110kV,GD1,grousemount,100.0,yes,yes,CTG_I_Z_110,Coomataggart,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/6;ROI-SW/8;ROI-W/2,yes
+Clogheravaddy Wind Farm (Phase 1),Donegal,9.2,54.71453,-8.26917,Binbane,YV2,clogheravaddy2,96.3,yes,yes,BIN_I_Z_110,Binbane,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-W/2;ROI/1,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,yes
+Bunnyconnellan Wind Farm,Mayo,28.0,54.10074,-8.99399,Glenree,GJ1,bunnyconnellan,100.0,yes,yes,GLR_I_Z_110,Glenree,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/8;ROI/1,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/8,yes
+Boolard Wind Farm,Cork,4.45,52.32472,-8.75735,Charleville,,boolinrudda,66.7,no,no,,,,ROI-SW/3c;ROI-W/2,n/a
+Moyvane Wind,Kerry,0.499,52.46235,-9.38666,Trien,,moanvane,80.0,no,no,,,,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,n/a
+Raragh 2 Wind Farm,Cavan,11.5,53.93158,-7.58663,Meath Hill,RR2,raragh 2,100.0,yes,yes,MTH_I_Z_110,Meath Hill,ROI/1,,n/a
+Enros - Sorne Hill Single Turbine,Donegal,2.3,55.13528,-7.35579,SORNE HILL,,sornehill,50.0,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Kiltumper Wind Farm,Clare,4.69,52.74964,-9.31183,BOOLTIAGH,,ballycumber,50.0,no,no,,,,ROI-SW/1;ROI-W/1;ROI-W/2,n/a
+Three Trees,Donegal,4.25,55.12562,-7.26262,SORNE HILL,,teiges,50.0,no,no,,,,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,n/a
+Bunnahowen Wind Farm (Temp),Mayo,2.55,54.19183,-9.89028,Bellacorick,,bunnyconnellan,58.3,no,no,,,,,n/a
+Derrynadivva Extension,Mayo,6.8,53.91947,-9.34315,Castlebar,,derrysallagh,58.3,no,no,,,,ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6,n/a
+Cahermurphy Wind Farm,Clare,6.0,52.76817,-9.3366,BOOLTIAGH,,rathsherry,57.1,no,no,,,,ROI-SW/1;ROI-W/1;ROI-W/2,n/a
+Kilpatrick Wind,Cork,0.499,51.77449,-8.70062,Bandon,,tullabrack,50.0,no,no,,,,ROI-SE/2;ROI-SW/1;ROI-W/2,n/a
+Beenanaspock and Tobertooreen Wind Farm,Kerry,23.15,52.43443,-9.22223,Athea 110kV,XT1,beenanaspuck and tobertoreen,94.7,yes,yes,ATE_I_Z_110,Athea,ROI-W/2;ROI/1,ROI-SW/1;ROI-SW/7;ROI-W/2,yes
+Knockawarriga Extension (Knockacummer & Caherlevoy) Wind,Limerick,6.6,52.34467,-9.21968,Trien,,knockawarriga 1,50.0,yes,no,,,,ROI-SW/1;ROI-SW/10;ROI-SW/7;ROI-SW/9;ROI-W/2,n/a
+Black Lough Wind Farm,Sligo,12.5,54.15886,-8.95546,Glenree,XL1,black lough,100.0,yes,yes,GLR_I_Z_110,Glenree,ROI-NW/3;ROI-NW/4;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/8;ROI/1,ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-W/1;ROI-W/2;ROI-W/6;ROI-W/8,yes
+Ballynultagh Wind Farm,Wicklow,0.499,52.77748,-6.54217,Carlow,,boolynagleragh,61.5,no,no,,,,ROI-SE/2,n/a
+Mauricetown (Glenduff) Wind Farm,Limerick,13.8,52.34119,-9.04342,Glenlara,,mauricetown,73.3,yes,no,,,,ROI-SW/3a;ROI-SW/3b;ROI-SW/3c;ROI-SW/5;ROI-SW/6;ROI-SW/7;ROI-SW/8;ROI-W/2,n/a
+Esk Wind Farm Phase 2,Cork,12.0,52.05718,-8.80907,BOGGERAGH,ES1,esk,85.7,yes,yes,BGH_I_Z_110,Boggeragh,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,yes
+Esk Wind Farm Phase 1,Cork,5.4,52.06055,-8.80254,BOGGERAGH,ES1,esk,85.7,yes,yes,BGH_I_Z_110,Boggeragh,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,yes
+Esk Wind Farm Phase 1,Cork,5.95,52.06055,-8.80254,BOGGERAGH,ES1,esk,85.7,yes,yes,BGH_I_Z_110,Boggeragh,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,yes
+Sorrell Island (Glenmore) WF Ext,Clare,8.0,52.76613,-9.26415,BOOLTIAGH,,sorrell island 1,76.9,yes,no,,,,ROI-SW/1;ROI-W/1;ROI-W/2,n/a
+Carrigdangan (formerly Barnadivane),Cork,54.3,51.81869,-8.94914,Dunmanway 110kV,XA1,carrigdangan,100.0,no,yes,CDN_I_Z_110,Carrigdangan,ROI-W/2;ROI/1,ROI-SE/2;ROI-SW/1;ROI-SW/5;ROI-SW/8;ROI-W/2,yes
+Clogheravaddy Wind Farm (Phase 2),Donegal,10.8,54.70715,-8.26854,Binbane,YV2,clogheravaddy2,96.3,yes,yes,BIN_I_Z_110,Binbane,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-W/2;ROI/1,ROI-NW/1;ROI-NW/3;ROI-NW/4;ROI-NW/5;ROI-NW/6;ROI-W/2,yes
+Patrick Costello Wind Turbine Ext,Tipperary,0.13,52.65773,-8.05545,CAHIR,,carrickatane,50.0,no,no,,,,,n/a

@@ -1,0 +1,515 @@
+group_id,region,group_name,context,station,pdf_page
+NI/1,NI,Constraint Group number 1 – NW Northern,intact,Brockaghboy,9
+NI/1,NI,Constraint Group number 1 – NW Northern,intact,Lisaghmore,9
+NI/1,NI,Constraint Group number 1 – NW Northern,intact,Coleraine,9
+NI/1,NI,Constraint Group number 1 – NW Northern,intact,Loguestown,9
+NI/1,NI,Constraint Group number 1 – NW Northern,intact,Coolkeeragh,9
+NI/1,NI,Constraint Group number 1 – NW Northern,intact,Rasharkin,9
+NI/1,NI,Constraint Group number 1 – NW Northern,intact,Limavady,9
+NI/1,NI,Constraint Group number 1 – NW Northern,intact,Garvagh,9
+NI/2,NI,Constraint Group number 2 – NW Southern,intact,Aghyoule,9
+NI/2,NI,Constraint Group number 2 – NW Southern,intact,Gort,9
+NI/2,NI,Constraint Group number 2 – NW Southern,intact,Drumquin,9
+NI/2,NI,Constraint Group number 2 – NW Southern,intact,Magherakeel,9
+NI/2,NI,Constraint Group number 2 – NW Southern,intact,Strabane,9
+NI/2,NI,Constraint Group number 2 – NW Southern,intact,Omagh,9
+NI/2,NI,Constraint Group number 2 – NW Southern,intact,Enniskillen,9
+NI/2,NI,Constraint Group number 2 – NW Southern,intact,Tremoge,9
+NI/2,NI,Constraint Group number 2 – NW Southern,intact,Killymallaght,9
+NI/2,NI,Constraint Group number 2 – NW Southern,intact,Slieve Kirk,9
+NI/3,NI,Constraint group number 3 – Oma-Dromore,intact,Aghyoule,10
+NI/3,NI,Constraint group number 3 – Oma-Dromore,intact,Drumquin,10
+NI/3,NI,Constraint group number 3 – Oma-Dromore,intact,Enniskillen,10
+NI/5,NI,Constraint group number 5 – Kells - Rasharkin,intact,Brockaghboy,10
+NI/5,NI,Constraint group number 5 – Kells - Rasharkin,intact,Garvagh,10
+NI/5,NI,Constraint group number 5 – Kells - Rasharkin,intact,Coleraine,10
+NI/5,NI,Constraint group number 5 – Kells - Rasharkin,intact,Loguestown,10
+NI/5,NI,Constraint group number 5 – Kells - Rasharkin,intact,Limavady,10
+NI/5,NI,Constraint group number 5 – Kells - Rasharkin,intact,Rasharkin,10
+ROI-NW/1,ROI-NW,North West Constraint Group 1: Letterkenny A1 Busbar Flows,intact,Ardnagappary,12
+ROI-NW/1,ROI-NW,North West Constraint Group 1: Letterkenny A1 Busbar Flows,intact,Binbane,12
+ROI-NW/1,ROI-NW,North West Constraint Group 1: Letterkenny A1 Busbar Flows,intact,Lenalea,12
+ROI-NW/1,ROI-NW,North West Constraint Group 1: Letterkenny A1 Busbar Flows,intact,Sorne Hill,12
+ROI-NW/1,ROI-NW,North West Constraint Group 1: Letterkenny A1 Busbar Flows,intact,Trillick,12
+ROI-NW/1,ROI-NW,North West Constraint Group 1: Letterkenny A1 Busbar Flows,outage,Ardnagappary,12
+ROI-NW/1,ROI-NW,North West Constraint Group 1: Letterkenny A1 Busbar Flows,outage,Binbane,12
+ROI-NW/1,ROI-NW,North West Constraint Group 1: Letterkenny A1 Busbar Flows,outage,Lenalea,12
+ROI-NW/1,ROI-NW,North West Constraint Group 1: Letterkenny A1 Busbar Flows,outage,Sorne Hill,12
+ROI-NW/1,ROI-NW,North West Constraint Group 1: Letterkenny A1 Busbar Flows,outage,Trillick,12
+ROI-NW/2,ROI-NW,North West Constraint Group 2: Letterkenny A2 Busbar Flows,intact,Meentycat,14
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Ardnagappary,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Meentycat,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Binbane,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Moy,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Cathaleen's Fall,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Mulreavy,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Corderry,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Sligo,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Cunghill,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Sorne Hill,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Garvagh,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Tawnaghmore,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Glenree,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Trillick,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,intact,Lenalea,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Ardnagappary,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Meentycat,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Binbane,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Moy,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Cathaleen's Fall,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Mulreavy,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Corderry,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Sligo,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Cunghill,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Sorne Hill,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Garvagh,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Tawnaghmore,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Glenree,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Trillick,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Lenalea,16
+ROI-NW/3,ROI-NW,North West Constraint Group 3: Sligo to Flagford or Flagford 220/110 kV,outage,Srahnakilly,16
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Ardnagappary,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Meentycat,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Binbane,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Moy,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Castlebar,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Mulreavy,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Cathaleen's Fall,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Sliabh Bawn,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Corderry,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Sligo,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Cunghill,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Sorne Hill,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Dalton,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Srahnakilly,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Garvagh,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Tawnaghmore,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Glenree,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Trillick,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,intact,Lenalea,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Ardnagappary,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Meentycat,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Binbane,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Moy,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Castlebar,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Mulreavy,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Cathaleen's Fall,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Sliabh Bawn,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Corderry,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Sligo,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Cunghill,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Sorne Hill,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Dalton,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Srahnakilly,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Garvagh,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Tawnaghmore,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Glenree,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Trillick,21
+ROI-NW/4,ROI-NW,North West Constraint Group 4: Carrick-on-Shannon to Arva Flows,outage,Lenalea,21
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Ardnagappary,23
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Lenalea,23
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Binbane,23
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Meentycat,23
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Cathaleen's Fall,23
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Mulreavy,23
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Corderry,23
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Sliabh Bawn,23
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Cunghill,23
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Sligo,23
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Garvagh,23
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Sorne Hill,23
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Glenree,23
+ROI-NW/5,ROI-NW,North West Constraint Group 5 (Outage Driven): Sliabh Bawn to Lanesboro,intact,Trillick,23
+ROI-NW/6,ROI-NW,North West Constraint Group 6 (Outage Driven): Binbane to Cathaleen's Fall,intact,Ardnagappary,24
+ROI-NW/6,ROI-NW,North West Constraint Group 6 (Outage Driven): Binbane to Cathaleen's Fall,intact,Mulreavy,24
+ROI-NW/6,ROI-NW,North West Constraint Group 6 (Outage Driven): Binbane to Cathaleen's Fall,intact,Binbane,24
+ROI-NW/6,ROI-NW,North West Constraint Group 6 (Outage Driven): Binbane to Cathaleen's Fall,intact,Sorne Hill,24
+ROI-NW/6,ROI-NW,North West Constraint Group 6 (Outage Driven): Binbane to Cathaleen's Fall,intact,Lenalea,24
+ROI-NW/6,ROI-NW,North West Constraint Group 6 (Outage Driven): Binbane to Cathaleen's Fall,intact,Trillick,24
+ROI-NW/6,ROI-NW,North West Constraint Group 6 (Outage Driven): Binbane to Cathaleen's Fall,intact,Meentycat,24
+ROI-NW/7,ROI-NW,North West Constraint Group 7 Corderry to Srananagh Flows (Retired),intact,Corderry,24
+ROI-NW/7,ROI-NW,North West Constraint Group 7 Corderry to Srananagh Flows (Retired),intact,Garvagh,24
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Ardnacrusha,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Knockalough,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Booltiagh,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Lisheen,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Buffy,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Moneypoint,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Castlebar,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Moy,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Cauteen,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Rathkeale,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Corderry,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Salthill,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Cunghill,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Sliabh Bawn,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Dallow,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Slieve Callan,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Dalton,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Sligo,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Derrybrien,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Srahnakilly,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Garvagh,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Tawnaghmore,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Glenree,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Thurles,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Ikerrin,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Tullabrack,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Kill Hill,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,intact,Uggool,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Ardnacrusha,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Knockalough,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Booltiagh,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Lisheen,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Buffy,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Moneypoint,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Castlebar,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Moy,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Cauteen,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Rathkeale,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Corderry,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Salthill,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Cunghill,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Sliabh Bawn,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Dallow,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Slieve Callan,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Dalton,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Sligo,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Derrybrien,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Srahnakilly,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Garvagh,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Tawnaghmore,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Glenree,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Thurles,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Ikerrin,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Tullabrack,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Kill Hill,26
+ROI-W/1,ROI-W,West Constraint Group 1: Lanesboro to Mullingar or Lanesboro Busbar Flows,outage,Uggool,26
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Ardnacrusha,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Glenree,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Ardnagappary,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Ikerrin,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Athea,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Kill Hill,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Ballylickey,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Kilpaddoge,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Bandon,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Knockacummer,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Barrymore,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Knockalough,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Binbane,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Knockearagh,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Boggeragh,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Lenalea,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Booltiagh,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Lisheen,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Buffy,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Macroom,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Carrigdangan,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Meentycat,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Castlebar,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Midleton,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Cathaleen's Fall,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Moneypoint,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Cauteen,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Moy,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Charleville,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Mulreavy,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Clahane,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Oughtragh,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Cloghboola,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Rathkeale,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Coolnanoonagh,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Reamore,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Coomagearlaghy,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Salthill,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Coomataggart,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Sliabh Bawn,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Cordal,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Slieve Callan,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Corderry,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Sligo,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Cunghill,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Sorne Hill,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Dallow,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Srahnakilly,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Dalton,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Tawnaghmore,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Derrybrien,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Thurles,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Dromada,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Tobertoreen,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Dunmanway,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Tralee,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Garrow,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Trien,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Garvagh,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Trillick,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Glanlee,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Tullabrack,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Glenlara,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,intact,Uggool,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Ardnacrusha,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Glenree,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Ardnagappary,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Ikerrin,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Athea,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Kill Hill,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Ballylickey,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Kilpaddoge,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Bandon,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Knockacummer,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Barrymore,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Knockalough,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Binbane,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Knockearagh,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Boggeragh,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Lenalea,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Booltiagh,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Lisheen,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Buffy,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Macroom,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Carrigdangan,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Meentycat,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Castlebar,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Midleton,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Cathaleen's Fall,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Moneypoint,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Cauteen,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Moy,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Charleville,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Mulreavy,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Clahane,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Oughtragh,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Cloghboola,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Rathkeale,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Coolnanoonagh,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Reamore,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Coomagearlaghy,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Salthill,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Coomataggart,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Sliabh Bawn,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Cordal,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Slieve Callan,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Corderry,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Sligo,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Cunghill,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Sorne Hill,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Dallow,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Srahnakilly,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Dalton,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Tawnaghmore,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Derrybrien,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Thurles,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Dromada,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Tobertoreen,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Dunmanway,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Tralee,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Garrow,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Trien,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Garvagh,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Trillick,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Glanlee,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Tullabrack,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Glenlara,33
+ROI-W/2,ROI-W,West Constraint Group 2: Shannonbridge to Maynooth Flows,outage,Uggool,33
+ROI-W/3,ROI-W,West Constraint Group 3: Salthill To Galway Salthill To Cashla and Knockranny,intact,Buffy,36
+ROI-W/3,ROI-W,West Constraint Group 3: Salthill To Galway Salthill To Cashla and Knockranny,intact,Knockalough,36
+ROI-W/3,ROI-W,West Constraint Group 3: Salthill To Galway Salthill To Cashla and Knockranny,intact,Salthill,36
+ROI-W/3,ROI-W,West Constraint Group 3: Salthill To Galway Salthill To Cashla and Knockranny,intact,Uggool,36
+ROI-W/4,ROI-W,West Constraint Group 4: Cauteen 110 kV Station Voltage Stability,intact,Cauteen,36
+ROI-W/5,ROI-W,West Constraint Group 5: Lisheen to Thurles Flows,intact,Lisheen,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,intact,Castlebar,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,intact,Moy,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,intact,Cunghill,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,intact,Srahnakilly,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,intact,Dalton,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,intact,Tawnaghmore,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,intact,Glenree,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,outage,Castlebar,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,outage,Moy,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,outage,Cunghill,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,outage,Srahnakilly,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,outage,Dalton,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,outage,Tawnaghmore,37
+ROI-W/6,ROI-W,West Constraint Group 6: Castlebar To Cloon or Dalton To Cashla Flows,outage,Glenree,37
+ROI-W/7,ROI-W,West Constraint Group 7: Moy To Glenree Flows,intact,Moy,40
+ROI-W/7,ROI-W,West Constraint Group 7: Moy To Glenree Flows,intact,Tawnaghmore,40
+ROI-W/7,ROI-W,West Constraint Group 7: Moy To Glenree Flows,intact,Srahnakilly,40
+ROI-W/8,ROI-W,West Constraint Group 8: Cunghill To Sligo Flows,intact,Cunghill,41
+ROI-W/8,ROI-W,West Constraint Group 8: Cunghill To Sligo Flows,intact,Srahnakilly,41
+ROI-W/8,ROI-W,West Constraint Group 8: Cunghill To Sligo Flows,intact,Glenree,41
+ROI-W/8,ROI-W,West Constraint Group 8: Cunghill To Sligo Flows,intact,Tawnaghmore,41
+ROI-W/8,ROI-W,West Constraint Group 8: Cunghill To Sligo Flows,intact,Moy,41
+ROI-W/9,ROI-W,West Constraint Group 9 (Outage Driven): Thurles Instability,intact,Ikerrin,42
+ROI-W/9,ROI-W,West Constraint Group 9 (Outage Driven): Thurles Instability,intact,Lisheen,42
+ROI-W/9,ROI-W,West Constraint Group 9 (Outage Driven): Thurles Instability,intact,Kill Hill,42
+ROI-W/9,ROI-W,West Constraint Group 9 (Outage Driven): Thurles Instability,intact,Thurles,42
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Ardnacrusha,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Dunmanway,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Athea,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Garrow,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Ballylickey,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Glanlee,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Bandon,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Kilpaddoge,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Boggeragh,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Knockearagh,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Booltiagh,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Macroom,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Carrigdangan,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Moneypoint,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Clahane,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Oughtragh,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Cloghboola,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Rathkeale,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Coolnanoonagh,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Reamore,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Coomagearlaghy,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Slieve Callan,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Coomataggart,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Tobertoreen,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Cordal,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Tralee,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Derrybrien,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Trien,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Dromada,44
+ROI-SW/1,ROI-SW,South West Constraint Group 1: Moneypoint 400/220 kV Transformer 2,intact,Tullabrack,44
+ROI-SW/2,ROI-SW,South West Constraint Group 2: Rathkeale to Limerick Flows,intact,Rathkeale,45
+ROI-SW/3a,ROI-SW,South West Constraint Group 3a: Glenlara to Ballynahulla Flows,intact,Knockacummer,45
+ROI-SW/3a,ROI-SW,South West Constraint Group 3a: Glenlara to Ballynahulla Flows,outage,Glenlara,45
+ROI-SW/3a,ROI-SW,South West Constraint Group 3a: Glenlara to Ballynahulla Flows,outage,Knockacummer,45
+ROI-SW/3b,ROI-SW,South West Constraint Group 3b: Glenlara to Charleville Flows,intact,Glenlara,46
+ROI-SW/3b,ROI-SW,South West Constraint Group 3b: Glenlara to Charleville Flows,intact,Knockacummer,46
+ROI-SW/3c,ROI-SW,South West Constraint Group 3c: Charleville to Mallow Flows,intact,Charleville,47
+ROI-SW/3c,ROI-SW,South West Constraint Group 3c: Charleville to Mallow Flows,intact,Glenlara,47
+ROI-SW/3c,ROI-SW,South West Constraint Group 3c: Charleville to Mallow Flows,intact,Knockacummer,47
+ROI-SW/4,ROI-SW,South West Constraint Group 4: Ballylickey Voltage Stability,intact,Ballylickey,47
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,intact,Ballylickey,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,intact,Dunmanway,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,intact,Boggeragh,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,intact,Garrow,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,intact,Carrigdangan,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,intact,Glanlee,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,intact,Coomagearlaghy,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,intact,Knockearagh,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,intact,Coomataggart,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,intact,Macroom,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,intact,Cordal,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,outage,Ballylickey,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,outage,Dunmanway,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,outage,Boggeragh,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,outage,Garrow,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,outage,Carrigdangan,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,outage,Glanlee,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,outage,Coomagearlaghy,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,outage,Knockearagh,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,outage,Coomataggart,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,outage,Macroom,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,outage,Cordal,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,outage,Glenlara,48
+ROI-SW/5,ROI-SW,South West Constraint Group 5 (Outage Driven): Dunmanway to Bandon Flows,outage,Knockacummer,48
+ROI-SW/6,ROI-SW,South West Constraint Group 6 (Outage Driven): Garrow to Clonkeen Flows,intact,Coomataggart,50
+ROI-SW/6,ROI-SW,South West Constraint Group 6 (Outage Driven): Garrow to Clonkeen Flows,intact,Cordal,50
+ROI-SW/6,ROI-SW,South West Constraint Group 6 (Outage Driven): Garrow to Clonkeen Flows,intact,Garrow,50
+ROI-SW/6,ROI-SW,South West Constraint Group 6 (Outage Driven): Garrow to Clonkeen Flows,outage,Coomataggart,50
+ROI-SW/6,ROI-SW,South West Constraint Group 6 (Outage Driven): Garrow to Clonkeen Flows,outage,Cordal,50
+ROI-SW/6,ROI-SW,South West Constraint Group 6 (Outage Driven): Garrow to Clonkeen Flows,outage,Garrow,50
+ROI-SW/6,ROI-SW,South West Constraint Group 6 (Outage Driven): Garrow to Clonkeen Flows,outage,Glenlara,50
+ROI-SW/6,ROI-SW,South West Constraint Group 6 (Outage Driven): Garrow to Clonkeen Flows,outage,Knockacummer,50
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,intact,Athea,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,intact,Dromada,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,intact,Clahane,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,intact,Tobertoreen,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,intact,Cloghboola,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,intact,Trien,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,intact,Cordal,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,outage,Athea,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,outage,Dromada,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,outage,Clahane,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,outage,Tobertoreen,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,outage,Cloghboola,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,outage,Trien,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,outage,Cordal,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,outage,Glenlara,52
+ROI-SW/7,ROI-SW,South West Constraint Group 7 (Outage Driven): Knockanure to Kilpaddoge,outage,Knockacummer,52
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,intact,Ballylickey,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,intact,Cordal,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,intact,Boggeragh,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,intact,Dunmanway,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,intact,Carrigdangan,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,intact,Garrow,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,intact,Coomagearlaghy,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,intact,Glanlee,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,intact,Coomataggart,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,intact,Knockearagh,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,outage,Ballylickey,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,outage,Cordal,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,outage,Boggeragh,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,outage,Dunmanway,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,outage,Carrigdangan,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,outage,Garrow,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,outage,Coomagearlaghy,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,outage,Glanlee,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,outage,Coomataggart,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,outage,Knockearagh,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,outage,Glenlara,55
+ROI-SW/8,ROI-SW,South West Constraint Group 8 (Outage Driven): Clashavoon to Macroom Flows,outage,Knockacummer,55
+ROI-SW/9,ROI-SW,South West Constraint Group 9 (Outage Driven): Trien to Knockanure Flows,intact,Clahane,57
+ROI-SW/9,ROI-SW,South West Constraint Group 9 (Outage Driven): Trien to Knockanure Flows,intact,Cloghboola,57
+ROI-SW/9,ROI-SW,South West Constraint Group 9 (Outage Driven): Trien to Knockanure Flows,intact,Trien,57
+ROI-SW/9,ROI-SW,South West Constraint Group 9 (Outage Driven): Trien to Knockanure Flows,outage,Clahane,57
+ROI-SW/9,ROI-SW,South West Constraint Group 9 (Outage Driven): Trien to Knockanure Flows,outage,Cloghboola,57
+ROI-SW/9,ROI-SW,South West Constraint Group 9 (Outage Driven): Trien to Knockanure Flows,outage,Trien,57
+ROI-SW/10,ROI-SW,South West Constraint Group 10 (Outage Driven): Clahane to Tralee Flows,intact,Clahane,58
+ROI-SW/10,ROI-SW,South West Constraint Group 10 (Outage Driven): Clahane to Tralee Flows,intact,Cloghboola,58
+ROI-SW/10,ROI-SW,South West Constraint Group 10 (Outage Driven): Clahane to Tralee Flows,intact,Trien,58
+ROI-SW/11,ROI-SW,South West Constraint Group 11 (Outage Driven): Cauteen to Killonan Flows,intact,Barrymore,59
+ROI-SW/11,ROI-SW,South West Constraint Group 11 (Outage Driven): Cauteen to Killonan Flows,intact,Lisheen,59
+ROI-SW/11,ROI-SW,South West Constraint Group 11 (Outage Driven): Cauteen to Killonan Flows,intact,Cauteen,59
+ROI-SW/11,ROI-SW,South West Constraint Group 11 (Outage Driven): Cauteen to Killonan Flows,intact,Thurles,59
+ROI-SW/11,ROI-SW,South West Constraint Group 11 (Outage Driven): Cauteen to Killonan Flows,intact,Kill Hill,59
+ROI-SE/1,ROI-SE,South East Constraint Group 1 (Outage Driven): Arklow to Ballybeg Flows,intact,Arklow,60
+ROI-SE/1,ROI-SE,South East Constraint Group 1 (Outage Driven): Arklow to Ballybeg Flows,intact,Crory,60
+ROI-SE/1,ROI-SE,South East Constraint Group 1 (Outage Driven): Arklow to Ballybeg Flows,intact,Ballywater,60
+ROI-SE/1,ROI-SE,South East Constraint Group 1 (Outage Driven): Arklow to Ballybeg Flows,intact,Great Island,60
+ROI-SE/1,ROI-SE,South East Constraint Group 1 (Outage Driven): Arklow to Ballybeg Flows,intact,Banoge,60
+ROI-SE/1,ROI-SE,South East Constraint Group 1 (Outage Driven): Arklow to Ballybeg Flows,intact,Rosspile,60
+ROI-SE/1,ROI-SE,South East Constraint Group 1 (Outage Driven): Arklow to Ballybeg Flows,intact,Castledockrell,60
+ROI-SE/1,ROI-SE,South East Constraint Group 1 (Outage Driven): Arklow to Ballybeg Flows,intact,Waterford,60
+ROI-SE/1,ROI-SE,South East Constraint Group 1 (Outage Driven): Arklow to Ballybeg Flows,intact,Crane,60
+ROI-SE/1,ROI-SE,South East Constraint Group 1 (Outage Driven): Arklow to Ballybeg Flows,intact,Wexford,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Ballylickey,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Garrow,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Bandon,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Glanlee,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Barrymore,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Ikerrin,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Boggeragh,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Kill Hill,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Carlow,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Lisheen,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Carrigdangan,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Macroom,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Cauteen,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Midleton,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Coomagearlaghy,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Thurles,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Coomataggart,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Woodhouse,60
+ROI-SE/2,ROI-SE,South East Constraint Group 2 (Outage Driven): Arklow to Ballybeg Secondary,intact,Dunmanway,60
+ROI-SE/3,ROI-SE,South East Constraint Group 3 (Outage Driven): Thornsberry to Derryiron Flows,intact,Mount Lucas,61
+ROI-SE/3,ROI-SE,South East Constraint Group 3 (Outage Driven): Thornsberry to Derryiron Flows,intact,Kilcumber,61
+ROI-SE/4,ROI-SE,South East Constraint Group 4 (Outage Driven): Crane to Wexford Flows,intact,Ballywater,62
+ROI-SE/4,ROI-SE,South East Constraint Group 4 (Outage Driven): Crane to Wexford Flows,intact,Crory,62
+ROI-SE/4,ROI-SE,South East Constraint Group 4 (Outage Driven): Crane to Wexford Flows,intact,Banoge,62
+ROI-SE/4,ROI-SE,South East Constraint Group 4 (Outage Driven): Crane to Wexford Flows,intact,Crane,62
+ROI-SE/4,ROI-SE,South East Constraint Group 4 (Outage Driven): Crane to Wexford Flows,intact,Castledockrell,62
+ROI-SE/4,ROI-SE,South East Constraint Group 4 (Outage Driven): Crane to Wexford Flows,intact,Gallanstown,62
+ROI-SE/4,ROI-SE,South East Constraint Group 4 (Outage Driven): Crane to Wexford Flows,intact,Garballagh,62
+ROI-NE/1,ROI-NE,North East Constraint Group 1: Ratrussan to Louth Flows,intact,Ratrussan,63
+ROI-NE/1,ROI-NE,North East Constraint Group 1: Ratrussan to Louth Flows,intact,Shankill,63
+ROI-NE/2,ROI-NE,North East Constraint Group 2: Platin to Drybridge Flows,intact,Garballagh,64
+ROI-NE/2,ROI-NE,North East Constraint Group 2: Platin to Drybridge Flows,intact,Gallanstown,64
+NI/4,NI,Constraint group number 4 – All NI,all-generation,,10
+ROI-ALL/1,ROI-ALL,Constraint group number 1 – All IE,all-generation,,65

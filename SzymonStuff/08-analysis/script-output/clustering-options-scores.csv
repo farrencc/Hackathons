@@ -1,0 +1,4 @@
+method,n_clusters,median_cluster_size,avg_memberships_per_farm,omega_index,best_match_f1,recall_side_f1
+1 threshold >= 0.30 (overlapping),48,4,1.77,-0.0011,0.5833,0.4018
+2 fuzzy c-means 1.0/k (overlapping),20,60,9.15,-0.0393,0.3832,0.555
+3 spectral (disjoint),20,6,1.0,-0.0111,0.5301,0.4524

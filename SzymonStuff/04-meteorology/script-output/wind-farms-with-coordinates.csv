@@ -1,0 +1,314 @@
+farm,county,node_110kv,dso_tso,mec_mw,status,year,lat,lon
+Bellacorrick Wind Farm,Mayo,Bellacorick,DSO,6.45,Connected,1992,54.13188,-9.55089
+Corrie Mt.,Leitrim,Arigna,DSO,4.8,Connected,1997,54.12974,-8.15305
+Mount Cronalaght,Donegal,Letterkenny,DSO,4.98,Connected,1997,55.06299,-8.21801
+Golagh (1),Donegal,Golagh 110 kV,TSO,15.0,Connected,1997,54.68884,-7.94564
+Drumlough Hill Wind Farm,Donegal,Trillick,DSO,4.8,Connected,1997,55.20423,-7.43853
+Kilronan,Roscommon,Arigna,DSO,5.0,Connected,1997,54.0806,-8.14681
+Cark,Donegal,Letterkenny,DSO,15.0,Connected,1997,54.89689,-7.89681
+Spion Kop Wind Farm,Leitrim,Arigna,DSO,1.2,Connected,1997,54.13457,-8.13828
+Crockahenny,Donegal,Trillick,DSO,5.0,Connected,1998,55.14621,-7.27113
+Knock South Wind Farm (Inverin),Galway,Screeb,DSO,2.64,Connected,1999,53.26524,-9.36817
+Knock South Wind Farm (2),Galway,Screeb,DSO,0.69,Connected,1999,53.26504,-9.36902
+Currabwee Wind Farm,Cork,Dunmanway,DSO,4.62,Connected,1999,51.68146,-9.12122
+Milane Hill Wind Farm,Cork,Dunmanway,DSO,5.94,Connected,2000,51.68954,-9.21252
+Anarget Wind Farm (1),Donegal,Cathaleens Fall,DSO,1.98,Connected,2000,54.75216,-8.16834
+Beenageeha Wind Farm,Kerry,Tralee,DSO,3.96,Connected,2000,52.33341,-9.56454
+Largan Hill,Roscommon,Tonroe,DSO,5.94,Connected,2000,53.94809,-8.56746
+Tursillagh Wind Farm,Kerry,Tralee,DSO,15.0,Connected,2000,52.31364,-9.59672
+Beale Hill (1),Kerry,Trien,DSO,1.65,Connected,2000,52.56425,-9.63362
+Culliagh Wind Farm (Meenbog),Donegal,Letterkenny,DSO,11.88,Connected,2000,54.87108,-7.88446
+CORNEEN Wind Farm,Cavan,Gortawee,DSO,3.0,Connected,2001,54.13351,-7.63757
+Black Banks (1),Leitrim,Corderry,DSO,3.4,Connected,2001,54.14423,-8.19508
+Carnsore Wind Farm,Wexford,Wexford,DSO,11.9,Connected,2002,52.1784,-6.36185
+Kingsmountain (1),Sligo,Cunghill 110 kV,TSO,23.75,Connected,2003,54.20434,-8.79027
+Meenadreen Wind Farm,Donegal,Cathaleens Fall,DSO,3.4,Connected,2003,54.66355,-7.96094
+Burtonport Harbour Single Turbine,Donegal,Binbane,DSO,0.66,Connected,2003,54.98066,-8.44019
+Beale Hill (2),Kerry,Trien,DSO,2.55,Connected,2003,52.56357,-9.63342
+Arklow Bank Wind Farm (1),Offshore,Arklow,DSO,25.2,Connected,2003,52.79204,-6.08844
+Raheen Barr Wind Farm,Mayo,Castlebar,DSO,18.7,Connected,2003,53.90499,-9.33614
+Curraghgraigue Wind Farm,Tipperary,NENAGH,DSO,2.55,Connected,2004,52.79588,-8.10519
+Meenanilta Wind Farm (1),Donegal,Letterkenny,DSO,2.55,Connected,2004,54.84931,-7.82996
+Cuillalea Wind Farm,Mayo,Castlebar,DSO,3.4,Connected,2004,53.84851,-9.07269
+Mounvaun (Mienvee) Wind Farm,Tipperary,Ardnacrusha,DSO,0.66,Connected,2004,52.64966,-8.1442
+Sonnagh Old Phase 1,Galway,Somerset,DSO,7.65,Connected,2004,53.13075,-8.63791
+Meenanilta Wind Farm (2),Donegal,Letterkenny,DSO,2.45,Connected,2004,54.84977,-7.81766
+Tursillagh (2) Wind Farm,Kerry,Tralee,DSO,6.8,Connected,2004,52.31472,-9.60607
+Meentycat (1),Donegal,Meentycat 110 kV,TSO,70.96,Connected,2004,54.86948,-7.86227
+Gartnaneane (1) Wind Farm,Cavan,Meath Hill,DSO,10.5,Connected,2004,53.94437,-6.9271
+Gartnaneane II Wind Farm,Cavan,Meath Hill,DSO,4.5,Connected,2004,53.88908,-6.96897
+Anarget Wind Farm (2),Donegal,Cathaleens Fall,DSO,0.02,Connected,2004,54.75181,-8.17149
+Moanmore Wind Farm,Clare,Tullabrack,DSO,12.6,Connected,2004,52.67087,-9.48816
+Coomatallin Wind Farm,Cork,Dunmanway,DSO,5.95,Connected,2005,51.65733,-9.09266
+Mount Eagle Wind Farm,Kerry,Tralee,DSO,5.1,Connected,2005,52.24202,-9.32286
+Greenoge Wind Farm,Carlow,Crane,DSO,4.99,Connected,2005,52.65731,-6.7234
+Ballywater (1),Wexford,Ballywater 110 kV,TSO,31.5,Connected,2005,52.53779,-6.25103
+Cronelea Upper Wind Farm,Wicklow,Carlow,DSO,2.55,Connected,2005,52.77711,-6.55741
+Booltiagh (1),Clare,Booltiagh 110 kV,TSO,19.45,Connected,2005,52.78007,-9.24603
+Black Banks (2),Leitrim,Corderry,DSO,6.8,Connected,2005,54.14423,-8.19508
+Altagowlan Wind Farm,Roscommon,Corderry,DSO,7.65,Connected,2005,54.12265,-8.1442
+Moneenatieve Wind Farm (1),Leitrim,Corderry,DSO,3.96,Connected,2005,54.14306,-8.15867
+Derrybrien (1),Galway,Derrybrien 110 kV,TSO,59.5,Connected,2005,53.0937,-8.60794
+Gneeves Wind Farm,Cork,Knockearagh,DSO,9.35,Connected,2005,52.0132,-9.12046
+Dundalk IT Wind Turbine,Louth,Dundalk,DSO,0.5,Connected,2006,53.98363,-6.39114
+Ballinveny Wind Farm,Tipperary,NENAGH,DSO,2.55,Connected,2006,52.81694,-7.95314
+Ballinlough Wind Farm,Tipperary,NENAGH,DSO,2.55,Connected,2006,52.8302,-8.0115
+Geevagh Wind Farm,Sligo,Corderry,DSO,4.95,Connected,2006,54.14229,-8.26852
+Coomagearlahy (1),Kerry,Coomagearlahy 110 kV,TSO,42.5,Connected,2006,51.93401,-9.32139
+Taurbeg Wind Farm,Cork,Glenlara,DSO,26.0,Connected,2006,52.25023,-9.1355
+Carrig Wind Farm,Tipperary,Dallow,DSO,2.55,Connected,2006,53.02927,-7.97835
+Skehanagh Wind Farm,Tipperary,Dallow,DSO,4.25,Connected,2006,53.02006,-7.98323
+Lahanaght Hill Wind Farm,Cork,Dunmanway,DSO,4.25,Connected,2006,51.65077,-9.21759
+Sorne Hill Wind Farm,Donegal,SORNE HILL,DSO,31.5,Connected,2006,55.12662,-7.3556
+Dunmore Wind Farm,Louth,Drybridge,DSO,1.7,Connected,2006,53.78772,-6.53281
+Richfield Wind Farm (2),Wexford,Wexford,DSO,6.75,Connected,2006,52.21499,-6.59192
+Beam Hill Wind Farm,Donegal,Trillick,DSO,14.0,Connected,2006,55.19066,-7.43083
+Richfield Wind Farm,Wexford,Wexford,DSO,20.25,Connected,2006,52.21674,-6.59423
+Kilvinane Wind Farm,Cork,Bandon,DSO,4.5,Connected,2006,51.70564,-8.99188
+Kealkil Wind Farm,Cork,Ballylickey,DSO,8.5,Connected,2006,51.81242,-9.32022
+Carrane Hill Wind Farm,Sligo,Corderry,DSO,3.4,Connected,2006,54.13885,-8.23341
+Tournafulla Wind Farm (1),Limerick,Trien,DSO,7.5,Connected,2007,52.37564,-9.1618
+Lackan Wind Farm,Sligo,Moy,DSO,6.0,Connected,2007,54.24563,-9.07094
+Cronelea Wind Farm,Wicklow,Carlow,DSO,4.99,Connected,2007,52.78057,-6.54758
+Midas (1),Kerry,Glanlee 110 kV,TSO,29.8,Connected,2007,51.9259,-9.30698
+Ballywater (2),Wexford,Ballywater 110 kV,TSO,10.5,Connected,2007,52.53779,-6.25103
+Killybegs Wind Farm,Donegal,Binbane,DSO,2.55,Connected,2007,54.65832,-8.45894
+Mullananalt Wind Farm,Monaghan,Meath Hill,DSO,7.5,Connected,2008,54.07674,-6.91241
+Tournafulla (2) Wind Farm,Limerick,Trien,DSO,17.2,Connected,2008,52.37564,-9.1618
+Mountain Lodge (2),Cavan,Ratrussan 110 kV,TSO,24.8,Connected,2008,54.0215,-7.10795
+Mounvaun (Mienvee) Wind Farm (2),Tipperary,Ardnacrusha,DSO,0.19,Connected,2008,52.64822,-8.14235
+Pallas Wind Farm,Kerry,Clahane 110 kV,TSO,37.8,Connected,2008,52.37859,-9.54775
+Coomacheo (1),Cork,Garrow 110 kV,TSO,41.225,Connected,2008,52.02128,-9.15883
+Meenachullalan Wind Farm,Donegal,Binbane,DSO,11.9,Connected,2008,54.69008,-8.49225
+Lurganboy Wind Farm,Donegal,Letterkenny,DSO,4.99,Connected,2008,55.11289,-7.61794
+Ballybane (Glanta Commons) Wind Farm,Cork,Ballylickey,DSO,19.55,Connected,2008,51.63174,-9.37996
+Knockawarriga Wind Farm,Limerick,Trien,DSO,22.5,Connected,2008,52.3424,-9.2054
+Lios na Carraige,Cavan,Meath Hill,DSO,0.017,Connected,2008,53.90663,-6.79055
+Loughderryduff Wind Farm,Donegal,Binbane,DSO,7.65,Connected,2008,54.81998,-8.38053
+Beallough Wind Farm,Waterford,Butlerstown,DSO,1.7,Connected,2008,52.2733,-7.3413
+Mount Eagle Wind Farm (2),Kerry,Tralee,DSO,1.7,Connected,2008,52.24184,-9.32234
+Mountain Lodge Wind Farm,Cavan,Shankill,DSO,3.0,Connected,2009,54.0215,-7.10795
+Mountain Lodge (3),Cavan,Ratrussan 110 kV,TSO,5.82,Connected,2009,54.0215,-7.10795
+Coomagearlahy (2),Kerry,Coomagearlahy 110 kV,TSO,8.5,Connected,2009,51.88791,-9.3084
+Ballybane 2 (Glanta Commons) Wind Farm,Cork,Ballylickey,DSO,8.4,Connected,2009,51.63174,-9.37996
+Glackmore Hill (1),Donegal,SORNE HILL,DSO,0.6,Connected,2009,55.12489,-7.26092
+Glackmore Hill (3),Donegal,SORNE HILL,DSO,0.3,Connected,2009,55.12236,-7.26948
+Glackmore Hill (2),Donegal,SORNE HILL,DSO,1.4,Connected,2009,55.12261,-7.26897
+Meenkeeragh Wind Farm,Donegal,SORNE HILL,DSO,4.2,Connected,2009,55.12962,-7.39199
+Dunmore 2,Louth,Drybridge,DSO,1.8,Energised,2009,53.78598,-6.5331
+Coomagearlahy (3),Kerry,Coomagearlahy 110 kV,TSO,30.0,Connected,2009,51.93528,-9.34796
+Sorne Hill (2),Donegal,SORNE HILL,DSO,7.4,Connected,2009,55.131,-7.35548
+Coomacheo (2),Cork,Garrow 110 kV,TSO,18.0,Connected,2009,52.02128,-9.15883
+Lisheen (1),Tipperary,Lisheen 110 kV,TSO,36.0,Connected,2009,52.75727,-7.69116
+Meentycat (2),Donegal,Meentycat 110 kV,TSO,14.0,Connected,2009,54.8814,-7.8839
+Bindoo (1a),Cavan,Ratrussan 110 kV,TSO,48.0,Connected,2009,54.00494,-7.13691
+Rahora Wind Farm,Kilkenny,Waterford,DSO,4.25,Connected,2009,52.39542,-7.05253
+Knockastanna Wind Farm,Limerick,Ardnacrusha,DSO,7.5,Connected,2009,52.66336,-8.21394
+WEDcross Wind Farm,Cork,Knockearagh,DSO,4.5,Connected,2009,52.15308,-9.2286
+Derrynadivva Wind Farm (prev. Raheen Bar 2),Mayo,Castlebar,DSO,8.5,Connected,2009,53.90558,-9.33921
+Dromada (1),Limerick,Dromada 110 kV,TSO,28.5,Connected,2009,52.43443,-9.22223
+Boggeragh (1),Cork,Boggeragh 110 kV,TSO,57.0,Connected,2009,52.03491,-8.92067
+Cronelea Upper Wind Farm (2),Wicklow,Carlow,DSO,1.7,Connected,2009,52.78006,-6.54733
+Cronelea Wind Farm (2),Wicklow,Carlow,DSO,4.5,Connected,2009,52.77985,-6.55528
+Mace Upper Wind Farm,Mayo,Dalton,DSO,2.55,Connected,2010,53.76764,-8.96826
+Muingnaminnane Wind Farm,Kerry,Reamore,DSO,15.3,Connected,2010,52.28952,-9.53907
+Reenascreena Wind Farm,Cork,Dunmanway,DSO,4.5,Connected,2010,51.62333,-9.03632
+Slievereagh Wind Farm (1),Limerick,Tipperary,DSO,3.0,Connected,2010,52.37308,-8.38933
+Ballincollig Hill Wind Farm (Lee Strand),Kerry,Tralee,DSO,15.0,Connected,2010,52.30806,-9.59285
+Kingsmountain (2),Sligo,Cunghill 110 kV,TSO,11.05,Connected,2010,54.21342,-8.82151
+Garvagh - Glebe/Tullynahaw,Roscommon,Garvagh 110 kV,TSO,22.0,Connected,2010,54.11298,-8.12521
+Garvagh - Glebe (1a),Leitrim,Garvagh 110 kV,TSO,26.0,Connected,2010,54.15129,-8.20074
+Shannagh (Kilcar),Donegal,Binbane,DSO,2.55,Connected,2010,54.66827,-8.58271
+Flughland,Donegal,SORNE HILL,DSO,9.2,Connected,2010,55.14176,-7.27582
+Gortahile Wind Farm,Laois,Carlow,DSO,21.0,Connected,2010,52.82348,-7.05877
+Cuillalea Wind Farm (2),Mayo,Castlebar,DSO,1.59,Connected,2010,53.84836,-9.076
+Donaghmede Fr Collins Park Wind Farm,Dublin,Grange (DR),DSO,0.25,Connected,2010,53.40759,-6.16214
+Tullow Mushroom Growers Ltd,Carlow,Carlow,DSO,0.133,Connected,2010,52.84718,-6.75898
+Carrons (A&B) Wind Farm,Limerick,Rathkeale,DSO,4.99,Energised,2010,52.54103,-9.06966
+Owenstown,Kildare,Griffinrath,DSO,0.018,Connected,2010,53.40647,-6.55331
+Castledockrell (2),Wexford,Castledockrell 110 kV,TSO,2.0,Connected,2011,52.58798,-6.63755
+Castledockrell (3),Wexford,Castledockrell 110 kV,TSO,3.3,Connected,2011,52.58798,-6.63755
+Castledockrell (1),Wexford,Castledockrell 110 kV,TSO,20.0,Connected,2011,52.58798,-6.63755
+Castledockrell (4),Wexford,Castledockrell 110 kV,TSO,16.1,Connected,2011,52.58798,-6.63755
+Lenanavea (Burren) Wind Farm,Mayo,Castlebar,DSO,4.65,Connected,2011,53.91947,-9.34315
+Country Crest,Dublin,Glasmore,DSO,0.5,Connected,2011,53.54781,-6.17544
+Crocane Wind Farm,Cork,Midleton,DSO,1.7,Connected,2011,51.84315,-8.15662
+Drumlough Hill (2) (Lough Doo),Donegal,Trillick,DSO,9.99,Connected,2011,55.20031,-7.44198
+Rathcahill West Wind Farm,Limerick,Rathkeale,DSO,12.5,Connected,2011,52.40325,-9.13071
+Corkermore Wind Farm Phase 1,Donegal,Binbane,DSO,9.99,Connected,2011,54.71339,-8.35619
+Dromdeeveen Wind Farm (1),Limerick,Glenlara,DSO,10.5,Connected,2011,52.33213,-9.03913
+Grouse Lodge Wind Farm,Limerick,Rathkeale,DSO,15.0,Connected,2011,52.52102,-9.10399
+Carraigcannon Wind Farm,Cork,BOGGERAGH,DSO,20.0,Connected,2011,52.06694,-8.89213
+Ballymartin (1) (Smithstown),Kilkenny,Waterford,DSO,6.0,Connected,2011,52.38731,-7.1075
+CURRAGHGRAIGUE (2) Wind Farm,Tipperary,NENAGH,DSO,2.44,Connected,2011,52.7977,-8.10252
+Bawnmore (Burren/Carraignimma),Cork,Macroom,DSO,24.0,Connected,2011,51.95115,-8.90539
+Moneenatieve Wind Farm (2),Leitrim,Corderry,DSO,0.29,Connected,2011,54.1322,-8.15831
+Anarget Wind Farm (3),Donegal,Cathaleens Fall,DSO,0.5,Energised,2011,54.75522,-8.16753
+Seltanaveeny Wind Farm,Roscommon,Arigna,DSO,4.6,Connected,2011,54.10932,-8.11667
+Tullynamoyle,Leitrim,Corderry,DSO,9.0,Connected,2011,54.22673,-8.1349
+Skrine Wind Farm,Roscommon,Lanesborough,DSO,4.6,Connected,2011,53.56926,-8.18186
+Dromdeeveen Wind Farm (2),Limerick,Glenlara,DSO,16.5,Connected,2011,52.32759,-9.03025
+Meenanilta (3),Donegal,Letterkenny,DSO,3.4,Connected,2012,54.84964,-7.82297
+Glenough Wind Farm,Tipperary,Cauteen,DSO,33.0,Connected,2012,52.64681,-8.06993
+"St Patricks Missionary Society, Co. Wicklow",Wicklow,Stratford,DSO,0.13,Energised,2012,52.9016,-6.55834
+Carrowleagh Wind Farm (1),Mayo,Glenree,DSO,34.15,Connected,2012,54.13342,-8.95431
+Caherdowney Wind Farm,Cork,Garrow,DSO,10.0,Energised,2012,52.00258,-9.11823
+Knockaneden Wind Farm,Kerry,Oughtragh,DSO,9.0,Connected,2012,51.93682,-10.09892
+Ballycadden Wind Farm (1),Wexford,Crory,DSO,14.45,Connected,2012,52.64631,-6.53021
+Ballycadden Wind Farm (2),Wexford,Crory,DSO,9.762,Energised,2012,52.6437,-6.52547
+Clydaghroe Wind Farm,Kerry,Garrow,DSO,4.99,Connected,2012,51.9904,-9.16118
+Meade Potato Company,Meath,Drybridge,DSO,0.3,Connected,2013,53.78885,-6.61339
+Ballaman (Kennystown) Wind Farm,Wexford,Crory,DSO,3.6,Connected,2013,52.62309,-6.54371
+Templederry Wind Farm,Tipperary,NENAGH,DSO,3.9,Connected,2013,52.77732,-8.14788
+Shalvey Poultry WT,Cavan,Shankill,DSO,0.017,Energised,2013,54.02433,-7.05622
+Garracummer Wind Farm,Tipperary,Cauteen,DSO,36.9,Connected,2013,52.63954,-8.18679
+Ballymartin (2) - Smithstown,Kilkenny,Waterford,DSO,8.28,Energised,2013,52.39137,-7.10623
+Gibbet Hill Wind Farm,Wexford,Crory,DSO,14.8,Energised,2013,52.67925,-6.57786
+Lisheen (1a),Tipperary,Lisheen 110 kV,TSO,23.0,Connected,2013,52.75096,-7.6817
+Meenkeeragh Wind Farm (2),Donegal,Sorne Hill,DSO,0.4,Connected,2013,55.12962,-7.39199
+Garranereagh Wind Farm,Cork,Bandon,DSO,8.75,Connected,2013,51.81586,-8.93248
+Knocknalour Wind Farm G3,Wexford,Crory,DSO,3.95,Connected,2013,52.68158,-6.5573
+Knocknalour Wind Farm (1),Wexford,Crory,DSO,5.0,Energised,2013,52.68103,-6.56411
+Ballynancoran Wind Farm,Wexford,Crory,DSO,4.0,Energised,2013,52.66709,-6.52637
+Booltiagh (2),Clare,Booltiagh 110 kV,TSO,12.0,Connected,2013,52.77416,-9.24088
+Knocknagoum (1),Kerry,Reamore,DSO,42.55,Energised,2013,52.32747,-9.52978
+Knocknagoum (2),Kerry,Reamore,DSO,1.8,Energised,2013,52.28909,-9.54489
+Pluckanes Wind Farm,Cork,Kilbarry,DSO,0.85,Energised,2013,52.00261,-8.70068
+Athea (1a),Limerick,Athea 110 kV,TSO,34.35,Connected,2013,52.439,-9.29803
+Knockacummer (1) (Temp)(Glentanemacelligot1),Cork,Glenlara,TSO,100.0,Connected,2013,52.2597,-9.10046
+Mountlucas (1),Offaly,Mountlucas 110 kV,TSO,79.2,Connected,2013,53.27339,-7.23669
+Hollyford(Holyford) Wind Farm,Tipperary,Cauteen,DSO,9.0,Energised,2013,52.64665,-8.06968
+Leitir Guingaid Wind Farm,Galway,Salthill,DSO,40.9,Energised,2014,53.28606,-9.1961
+Monaincha Bog Wind Farm (Gate 3),Tipperary,Ikerrin,DSO,32.55,Energised,2014,52.9371,-7.719
+Monaincha Bog Wind Farm (Gate 2),Tipperary,Ikerrin,DSO,3.4,Energised,2014,52.9371,-7.719
+Ballycurreen Wind Farm,Waterford,Dungarvan,DSO,4.99,Energised,2014,52.02935,-7.59787
+Carrickeeny Wind Farm,Leitrim,Sligo,DSO,7.65,Energised,2014,54.33093,-8.27743
+Wind Energy Project (Janssen),Cork,Barnahealy,DSO,2.0,Energised,2014,51.8297,-8.34406
+Bruckana,Tipperary,Lisheen,DSO,39.6,Energised,2014,52.78504,-7.67058
+DePuy 3MW Wind Turbine,Cork,Barnahealy,DSO,2.5,Energised,2014,51.82681,-8.30545
+Burtonstown,Meath,Drybridge,DSO,0.15,Energised,2014,53.61716,-6.51079
+Burtonstown Autoproducer,Meath,Drybridge,DSO,0.15,Energised,2014,53.61716,-6.51079
+Kill Hill (1) - phase 1,Tipperary,Kill Hill 110 kV,TSO,36.0,Connected,2014,52.5394,-7.78429
+Slievereagh Wind Farm (2),Limerick,Tipperary,DSO,1.6,Energised,2015,52.37308,-8.38933
+Faughary Wind Farm,Leitrim,Sligo,DSO,6.0,Energised,2014,54.34015,-8.13758
+Ballybane 2A (Glanta Commons) Wind Farm,Cork,Ballylickey,DSO,11.5,Energised,2015,51.63174,-9.37996
+Garracummer (2),Tipperary,Cauteen,DSO,1.0,Energised,2015,52.64373,-8.14826
+Woodhouse (1),Waterford,Woodhouse 110 kV,TSO,20.0,Connected,2015,52.08133,-7.77707
+Barranafaddock Wind Farm,Waterford,Barrymore,DSO,32.4,Energised,2015,52.17701,-8.10422
+Acres Wind Farm,Donegal,Cathaleens Fall,DSO,17.5,Energised,2015,54.52597,-8.1911
+Carrownaweelaun Wind Farm,Clare,Tullabrack,DSO,4.6,Energised,2015,52.63405,-9.72443
+Leabeg Wind Farm,Offaly,Dallow,DSO,4.25,Energised,2015,53.23457,-7.76825
+Cloghboola (1),Kerry,Cloghboola 110 kV,TSO,46.0,Connected,2015,52.33052,-9.43813
+Boggeragh (2),Cork,Boggeragh 110 kV,TSO,65.7,Connected,2015,52.03769,-8.90892
+Roosky Wind Farm,Roscommon,Tonroe,DSO,3.6,Connected,2015,53.87815,-8.58547
+Collon Wind Power Limited (Gate 2),Louth,Drybridge,DSO,0.7,Energised,2016,53.78598,-6.5331
+Collon Wind Power Limited (Gate 3),Louth,Drybridge,DSO,2.3,Energised,2016,53.78598,-6.5331
+Raheenleagh (1),Wicklow,Arklow,DSO,35.2,Energised,2016,52.79604,-6.29139
+Tesco Donabate,Dublin,Glasmore,DSO,0.499,Energised,2016,53.48883,-6.19092
+Grove Hill Windfarm (formerly Tullynageer WF),Monaghan,Dundalk,DSO,16.1,Energised,2016,54.19072,-6.7005
+Michael Aylward,Kilkenny,Waterford,DSO,0.5,Energised,2016,52.33311,-7.0702
+Mulreavy Ext (Meenadreen South (2)),Donegal,Mulreavy 110kV,TSO,5.4,Connected,2016,54.65669,-7.97193
+Glencarbry Wind Farm,Tipperary,Cauteen,DSO,33.0,Energised,2016,52.62274,-8.10262
+Lisdowney Wind Farm,Kilkenny,PORTLAOISE 110KV,DSO,9.2,Energised,2016,52.78451,-7.43014
+Beale Hill (3) Wind Farm,Kerry,Trien,DSO,1.3,Energised,2016,52.56499,-9.63595
+Sliabh Bawn (1),Roscommon,Sliabh Bawn 110kV,TSO,58.0,Connected,2016,53.74907,-8.05379
+Killaveenoge Windfarm - (Derryvacorneen merge with Barrboy),Cork,Dunmanway,DSO,7.8,Energised,2016,51.73676,-9.25215
+KWT Energy Ltd,Waterford,Dungarvan,DSO,0.49,Energised,2016,52.22154,-7.42565
+Kilmeedy Wind Farm,Limerick,Charleville,DSO,4.7,Energised,2016,52.42507,-8.89114
+Ballyduff Wind Farm,Wexford,Crory,DSO,0.6,Energised,2017,52.64619,-6.48038
+Ballyduff Wind Farm,Wexford,Crory,DSO,4.0,Energised,2017,52.64585,-6.48121
+Ballybane 3 (Glanta Commons) Wind Farm,Cork,Ballylickey,DSO,4.45,Energised,2017,51.63174,-9.37996
+Ballybane 2A (Glanta Commons) Wind Farm Extension,Cork,Ballylickey,DSO,1.55,Energised,2017,51.63174,-9.37996
+Ugool (1),Galway,Uggool 110kV,TSO,64.0,Connected,2017,53.36676,-9.35275
+Mulreavy (Mulreavy (1)),Donegal,Mulreavy 110kV,TSO,89.85,Connected,2017,54.65262,-7.93577
+Ballon Wind,Carlow,Carlow,DSO,0.499,Energised,2017,52.72471,-6.80361
+Cooly Wind Farm,Donegal,Trillick,DSO,4.0,Energised,2017,55.21545,-7.10369
+Kilberehert Wind Farm,Cork,Charleville,DSO,4.799,Connected,2017,52.26157,-8.85751
+Seecon (1),Galway,Uggool 110kV,TSO,105.0,Connected,2017,53.35261,-9.37227
+Tullabrack Wind Farm,Clare,Tullabrack,DSO,13.8,Connected,2017,52.67926,-9.47809
+Moneypoint (1),Clare,Moneypoint 110kV,TSO,17.25,Connected,2017,52.6102,-9.42321
+Killin Hill Wind Farm,Donegal,Binbane,DSO,6.0,Energised,2017,54.70406,-8.29082
+Ballybay Wind Farm (Tullaroan),Kilkenny,Thurles,DSO,13.8,Energised,2017,52.66182,-7.50859
+Foyle Wind Farm (prev Holmes Hill),Kilkenny,Thurles,DSO,9.6,Energised,2017,52.63908,-7.46157
+Grady Joinery Wind Farm,Mayo,Tonroe,DSO,2.5,Energised,2017,53.96938,-8.74769
+Gurteen Lower Wind Farm,Tipperary,Thurles,DSO,2.3,Energised,2017,52.63057,-7.59564
+Killaveenoge Windfarm (Derryvacorneen merge with Barrboy Windfarm),Cork,Dunmanway,DSO,17.0,Energised,2017,51.82301,-9.24685
+Tullynamoyle Wind Farm 3 (Carrane Hill Merged Capacity),Leitrim,Corderry,DSO,1.598,Energised,2017,54.22673,-8.1349
+Tullynamoyle Wind Farm 3 (Formerly Geevagh 2),Leitrim,Corderry,DSO,11.98,Energised,2017,54.22673,-8.1349
+An Cnoc,Tipperary,Thurles,DSO,11.5,Energised,2017,52.64734,-7.52819
+Cappawhite A Wind Farm (Gate 2),Tipperary,Cauteen,DSO,2.92,Energised,2017,52.59596,-8.15288
+Cappawhite A Wind Farm (Gate 3),Tipperary,Cauteen,DSO,49.08,Energised,2017,52.59596,-8.15288
+Tullynamoyle 2 Wind Farm,Leitrim,CORDERRY,DSO,10.225,Energised,2017,54.22891,-8.12057
+Knocknatallig Wind Farm (formerly Buttevant Wind Farm),Cork,Charleville,DSO,18.3,Energised,2017,52.28959,-8.62096
+Castlepook (1),Cork,Charleville,DSO,33.1,Energised,2017,52.2868,-8.54293
+Scartaglen 2 Wind Farm,Kerry,Cordal,DSO,3.8,Energised,2017,52.16251,-9.31517
+Scartaglen Wind Farm,Kerry,Cordal,DSO,35.45,Energised,2017,52.16251,-9.31517
+Curraghderrig,Kerry,Trien,DSO,4.5,Energised,2017,52.55337,-9.59778
+Meenaward Wind Farm (Formerly Beam Hill 2),Donegal,Trillick,DSO,6.9,Energised,2017,55.1977,-7.44046
+Liffey Autoproduction Project,Cavan,Shankill,DSO,1.6,Energised,2017,53.85156,-7.20439
+Liffey Autoproduction Project (extension),Cavan,Shankill,DSO,1.417,Energised,2017,53.85156,-7.20439
+Teevurcher Wind Farm,Meath,Meath Hill,DSO,9.0,Energised,2017,53.88258,-6.91994
+Leanamore Wind Farm (Tarbert Wind Farm),Kerry,Kilpaddoge,DSO,18.0,Energised,2017,52.5392,-9.4245
+Meenwaun Windfarm Ext.,Offaly,Dallow,DSO,9.99,Energised,2017,53.16067,-7.9203
+Cloonlusk Wind Farm,Galway,Cloon,DSO,4.25,Energised,2018,53.46896,-8.8009
+Coollegrean Wind Farm,Kerry,Cordal,DSO,18.5,Energised,2018,52.26426,-9.26842
+Ballagh Wind Farm,Limerick,Trien,DSO,4.6,Energised,2018,52.3689,-9.08422
+Gortnacloghy Wind Farm,Limerick,Trien,DSO,4.4,Energised,2018,52.3645,-9.08606
+Glanaruddery 2 (formerly Dromadda More 2),Kerry,Cloghboola,DSO,12.0,Energised,2018,52.3119,-9.46113
+Glanaruddery 1 (formerly Dromadda More Wind Farm),Kerry,Cloghboola,DSO,20.0,Energised,2018,52.3119,-9.46113
+Cordal (2),Kerry,Cordal 110kV,TSO,54.0,Connected,2018,52.23195,-9.27612
+Cordal (1),Kerry,Cordal 110kV,TSO,35.85,Connected,2018,52.22987,-9.28134
+Cloghaneleskirt Wind Farm,Kerry,Cloghboola,DSO,12.55,Energised,2018,52.34316,-9.53319
+Clahane,Kerry,Clahane 110kV,TSO,13.8,Connected,2018,52.37859,-9.54775
+Cappawhite B Wind Farm (Cappagh White),Tipperary,Cauteen,DSO,13.18,Connected,2018,52.60156,-8.16308
+Kelwin Power,Kerry,Kelwin,TSO,37.05,Connected,2018,52.52976,-9.51322
+Rathnacally Wind Farm,Cork,Charleville,DSO,4.45,Connected,2018,52.32958,-8.69844
+Glantaunyalkeen Windfarm,Kerry,Cloghboola,DSO,9.999,Energised,2018,52.32962,-9.43825
+Carrickallen Wind Farm,Cavan,Shankill,DSO,22.0,Energised,2018,54.01578,-7.17074
+Knockalassa (formerly Keelderry),Galway,Slievecallan 110kV,TSO,26.875,Connected,2018,53.07873,-8.66922
+Boolinrudda (formerly Boolynagleragh & Glenmore),Clare,Slievecallan 110kV,TSO,44.515,Connected,2018,52.83082,-9.2891
+Kilbranish Wind Farm,Carlow,Crane,DSO,2.5,Energised,2018,52.65731,-6.7234
+Magheramore and Cloontooa Wind Farm,Mayo,Dalton,DSO,40.8,Energised,2018,53.76319,-8.91727
+Corvin Wind Turbine,Donegal,SORNE HILL,DSO,2.1,Energised,2018,55.13482,-7.38929
+Patrick Costello Wind Turbine,Tipperary,Cahir,DSO,0.495,Energised,2018,52.65773,-8.05545
+Knockalough (1),Galway,Knockranny 110kV,TSO,33.6,Connected,2019,53.30015,-9.24356
+Mossedge Wind Farm,Donegal,SORNE HILL,DSO,0.5,Energised,2019,55.11874,-7.27871
+Ballycumber Wind Farm,Wicklow,Arklow,DSO,18.0,Energised,2019,52.83341,-6.46814
+Tullynamalra Wind Farm,Monaghan,Meath Hill,DSO,2.638,Energised,2019,54.06045,-6.81313
+Carrowleagh Wind Farm Ext. (2),Sligo,Glenree,DSO,2.65,Energised,2019,54.13342,-8.95431
+Killala Wind Farm (Phase 1),Mayo,TAWNAGHMORE,DSO,19.2,Energised,2019,54.1911,-9.2242
+Ballincurry Wind Farm Ltd (Glengoole),Tipperary,Thurles,DSO,4.6,Energised,2019,52.61546,-7.6267
+Gortnahalla,Tipperary,Thurles,DSO,0.499,Energised,2019,52.71748,-7.99964
+Rossaveel Wind Farm,Galway,Screeb,DSO,3.0,Energised,2019,53.49648,-9.98356
+Lissycasey Wind Farm,Clare,BOOLTIAGH,DSO,13.399,Energised,2019,52.75986,-9.20756
+Cronalaght Wind Farm 2,Donegal,Ardnagappary,DSO,17.96,Energised,2019,55.06047,-8.21593
+Oweninny Power (1),Mayo,Srahnakilly 110kV,TSO,89.0,Connected,2019,54.13546,-9.54839
+Sorrell Island (Glenmore) Wind Farm Extension,Clare,BOOLTIAGH,DSO,24.0,Energised,2019,52.76613,-9.26415
+Boolynagleragh (1),Clare,Booltiagh,DSO,36.98,Energised,2019,52.78038,-9.15265
+Cleanrath Wind Farm,Cork,Coomataggart,DSO,42.64,Energised,2019,51.87628,-9.13891
+Derrysallagh Wind Farm (Formerly Kilronan 2),Roscommon,GARVAGH,DSO,34.0,Energised,2019,54.09669,-8.18717
+Grousemount WF,Kerry,Coomataggart 110kV,TSO,114.2,Connected,2019,51.8727,-9.31473
+Clogheravaddy Wind Farm (Phase 1),Donegal,Binbane,DSO,9.2,Energised,2019,54.71453,-8.26917
+Bunnyconnellan Wind Farm,Mayo,Glenree,DSO,28.0,Energised,2019,54.10074,-8.99399
+Boolard Wind Farm,Cork,Charleville,DSO,4.45,Energised,2019,52.32472,-8.75735
+Moyvane Wind,Kerry,Trien,DSO,0.499,Energised,2019,52.46235,-9.38666
+Raragh 2 Wind Farm,Cavan,Meath Hill,DSO,11.5,Energised,2019,53.93158,-7.58663
+Enros - Sorne Hill Single Turbine,Donegal,SORNE HILL,DSO,2.3,Energised,2019,55.13528,-7.35579
+Kiltumper Wind Farm,Clare,BOOLTIAGH,DSO,4.69,Energised,2019,52.74964,-9.31183
+Three Trees,Donegal,SORNE HILL,DSO,4.25,Energised,2019,55.12562,-7.26262
+Bunnahowen Wind Farm (Temp),Mayo,Bellacorick,DSO,2.55,Energised,2019,54.19183,-9.89028
+Derrynadivva Extension,Mayo,Castlebar,DSO,6.8,Energised,2019,53.91947,-9.34315
+Cahermurphy Wind Farm,Clare,BOOLTIAGH,DSO,6.0,Energised,2020,52.76817,-9.3366
+Kilpatrick Wind,Cork,Bandon,DSO,0.499,Energised,2020,51.77449,-8.70062
+Beenanaspock and Tobertooreen Wind Farm,Kerry,Athea 110kV,TSO,23.15,Connected,2020,52.43443,-9.22223
+Knockawarriga Extension (Knockacummer & Caherlevoy) Wind,Limerick,Trien,DSO,6.6,Energised,2020,52.34467,-9.21968
+Black Lough Wind Farm,Sligo,Glenree,DSO,12.5,Energised,2020,54.15886,-8.95546
+Ballynultagh Wind Farm,Wicklow,Carlow,DSO,0.499,Energised,2020,52.77748,-6.54217
+Mauricetown (Glenduff) Wind Farm,Limerick,Glenlara,DSO,13.8,Energised,2020,52.34119,-9.04342
+Esk Wind Farm Phase 2,Cork,BOGGERAGH,DSO,12.0,Energised,2020,52.05718,-8.80907
+Esk Wind Farm Phase 1,Cork,BOGGERAGH,DSO,5.4,Energised,2020,52.06055,-8.80254
+Esk Wind Farm Phase 1,Cork,BOGGERAGH,DSO,5.95,Energised,2020,52.06055,-8.80254
+Sorrell Island (Glenmore) WF Ext,Clare,BOOLTIAGH,DSO,8.0,Energised,2020,52.76613,-9.26415
+Carrigdangan (formerly Barnadivane),Cork,Dunmanway 110kV,TSO,54.3,Connected,2021,51.81869,-8.94914
+Clogheravaddy Wind Farm (Phase 2),Donegal,Binbane,DSO,10.8,Connected,2022,54.70715,-8.26854
+Patrick Costello Wind Turbine Ext,Tipperary,CAHIR,DSO,0.13,Energised,2022,52.65773,-8.05545
