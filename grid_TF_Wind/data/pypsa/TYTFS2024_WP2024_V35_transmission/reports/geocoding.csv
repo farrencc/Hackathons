@@ -1,0 +1,550 @@
+bus,station,bus_count,psse_names,kv,jurisdiction,osm,osm_name,osm_voltage_kv,operator,lat,lon,method,score,runner_up,runner_up_score,voltage_check,note
+1021,ARDNACRUSHA,2,ARDNACRUSHA,110,IE,way/200626863,Ardnacrusha 110kV Substation,110,EirGrid,52.7049873,-8.6163685,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+1041,AGHADA,2,AGHADA,220;110,IE,way/104388599,Aghada 220kV Substation,220,EirGrid,51.8356384,-8.227215,exact,100.0,,,agrees,2 objects share this name and lie within 0.2 km of each other - one site mapped more than once; the highest-voltage of them is taken
+1042,AGHADA,2,AGHADA,220;110,IE,way/104388599,Aghada 220kV Substation,220,EirGrid,51.8356384,-8.227215,exact,100.0,,,agrees,2 objects share this name and lie within 0.2 km of each other - one site mapped more than once; the highest-voltage of them is taken
+1052,AGHADA_B,1,AGHADA_B,220,IE,way/1413017181,Aghada BESS 2,,ESB Generation and Wholesale Markets,51.8324792,-8.2298695,prefix,98.0,,,silent,'AGHADA B' is a prefix of exactly one OSM name and the voltage agrees. 2 objects share this name and lie within 0.5 km of each other - one site mapped more than once; the highest-voltage of them is taken
+1061,ARIGNA,1,ARIGNA,110,IE,way/374819486,Arigna 110kV Substation,110;20,EirGrid,54.0945702,-8.0755119,exact,100.0,,,agrees,
+1062,AGH_AT14,1,AGH_AT14,220,IE,way/1413017181,Aghada BESS 2,,,51.8324792,-8.2298695,coupled,95.0,AGHADA,57.14285714285714,not applied: placed from a neighbour,"bus 1062 is joined to bus 1052 (AGHADA_B) by a zero-impedance branch, so it is inside the same station"
+1071,AGANNYGAL,1,AGANNYGAL,110,IE,way/200362903,Agannygal 110kV Substation,110,EirGrid,53.0367354,-8.5499195,exact,100.0,,,agrees,
+1072,AGHT2102,1,AGHT2102,220,IE,way/104388599,Aghada 220kV Substation,,,51.8356384,-8.227215,coupled,95.0,OMAGH,46.15384615384615,not applied: placed from a neighbour,"bus 1072 is joined to bus 1041 (AGHADA) by the station's own transformer, so it is inside the same station"
+1081,AHANE,1,AHANE,110,IE,way/208150180,Ahane 110kV Substation,110;20;10,EirGrid,52.6617276,-8.5076209,exact,100.0,,,agrees,
+1091,ADAMSTOWN,1,ADAMSTOWN,110,IE,way/438027242,Adamstown 110kV Substation,110;20,EirGrid,53.3403233,-6.4790891,exact,100.0,,,agrees,
+1101,ANNER,1,ANNER,110,IE,way/235794888,Anner 110kV Substation,110,EirGrid,52.3719788,-7.6492028,exact,100.0,,,agrees,
+1121,ARKLOW,2,ARKLOW,220;110,IE,way/147525695,Arklow 220kV Substation,220;110;38;10,EirGrid,52.8151839,-6.147732,exact,100.0,,,agrees,
+1122,ARKLOW,2,ARKLOW,220;110,IE,way/147525695,Arklow 220kV Substation,220;110;38;10,EirGrid,52.8151839,-6.147732,exact,100.0,,,agrees,
+1131,ATHEA,1,ATHEA,110,IE,way/439831815,Athea Substation,110,EirGrid,52.43755,-9.3004089,exact,100.0,,,agrees,
+1141,ATHLONE,1,ATHLONE,110,IE,way/1131166134,Athlone 110 kV Substation,110;38;10,EirGrid,53.4230436,-7.9745082,exact,100.0,,,agrees,
+1161,AUGHINISH,1,AUGHINISH,110,IE,way/211196263,Aughinish 110kV Substation,110,EirGrid,52.6252455,-9.0514195,exact,100.0,,,agrees,
+1181,ARVA,1,ARVA,110,IE,way/152415113,Arva 220kV Substation,220;110;20,EirGrid,53.9086252,-7.4943716,exact,100.0,,,agrees,
+1201,ARTANE,1,ARTANE,110,IE,way/445314428,Artane 110kV Substation,110;10,EirGrid,53.382358,-6.2094672,exact,100.0,,,agrees,
+1211,BALLYVOUSKIL,3,BALLYVOUSKIL,220;110,IE,way/547590959,Ballyvouskill 220kV Substation,220;110,EirGrid,52.0059847,-9.0797175,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'BALLYVOUSKIL', a prefix of exactly one OSM name."
+1212,BALLYVOUSKIL,3,BALLYVOUSKIL,220;110,IE,way/547590959,Ballyvouskill 220kV Substation,220;110,EirGrid,52.0059847,-9.0797175,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'BALLYVOUSKIL', a prefix of exactly one OSM name."
+1221,ATHY,1,ATHY,110,IE,way/143927977,Athy 110kV Substation,110;20;10,EirGrid,52.9934345,-6.9993402,exact,100.0,,,agrees,
+1231,BALLYWATER,1,BALLYWATER,110,IE,way/143423158,Ballywater 110kV Substation,110,EirGrid,52.5378526,-6.2495207,exact,100.0,,,agrees,
+1251,BOOLTIAGH,1,BOOLTIAGH,110,IE,way/212731351,Booltiagh 110 kV Substation,110;38;20,EirGrid,52.7756037,-9.240483,exact,100.0,,,agrees,
+1271,BALTRASNA,1,BALTRASNA,110,IE,way/266052564,Baltrasna 110kV Substation,110;20,EirGrid,53.5454415,-6.4401389,exact,100.0,,,agrees,
+1281,BALLYLICKEY,1,BALLYLICKEY,110,IE,way/237476488,Ballylickey 110kV Substation,110;38,EirGrid,51.7239932,-9.4296621,exact,100.0,,,agrees,
+1301,BALLYBEG,1,BALLYBEG,110,IE,way/144584625,Ballybeg 110kV Substation,110;10,EirGrid,52.9909581,-6.0958665,exact,100.0,,,agrees,
+1311,CORDAL,1,CORDAL,110,IE,way/819550308,Cordal 110kV Substation,110;33,EirGrid,52.2145657,-9.2855811,exact,100.0,,,agrees,
+1321,BLAKE,2,BLAKE|BLAKE T,110,IE,way/265386067,Blake 110 kV Substation,110;38;10,EirGrid,53.2886399,-6.8812414,exact,100.0,,,agrees,
+1331,BLUNDELSTOWN,1,BLUNDELSTOWN,110,IE,way/1125304097,Blundelstown 110 kV Substation,110,EirGrid,53.444432,-6.5335903,exact,100.0,,,agrees,
+1341,BINBANE,1,BINBANE,110,IE,way/193416842,Binbane 110 kV Substation,110;38,EirGrid,54.7189369,-8.2634291,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+1351,BARODA,1,BARODA,110,IE,way/455037784,Baroda 110kV Substation,110;38,EirGrid,53.1859251,-6.7752554,exact,100.0,,,agrees,
+1361,BALLYDINE,1,BALLYDINE,110,IE,way/172572963,Ballydine 110kV Substation,110;38;10,EirGrid,52.361399,-7.5207213,exact,100.0,,,agrees,
+1371,BARNAGEERAGH,1,BARNAGEERAGH,110,IE,way/1003253888,Barnageeragh 110kV Substation,110;20,EirGrid,53.4042822,-6.3698501,exact,100.0,,,agrees,
+1381,BARNAHELY,1,BARNAHELY,110,IE,way/79803764,Barnahely 110 kV Substation,110;38;20,EirGrid,51.8284805,-8.3442652,exact,100.0,,,agrees,
+1401,BELLACORICK,2,BELLACORICK,110,IE,way/205659794,Bellacorick 110 kV Substation,110;38;20,EirGrid,54.1205007,-9.5787377,exact,100.0,,,agrees,
+1411,AIRTON,1,AIRTON,110,IE,way/697470447,Airton 110kV Substation,110;20,EirGrid,53.2968693,-6.3674201,exact,100.0,,,agrees,
+1421,BLACKROCK,1,BLACKROCK,110,IE,way/371316756,Blackrock 110kV Substation,110;38,EirGrid,53.2914859,-6.1746313,exact,100.0,,,agrees,
+1431,BALLYRAGGET,1,BALLYRAGGET,110,IE,way/1009395517,Ballyragget 110 kV Substation,110;38;20,EirGrid,52.7988347,-7.342814,exact,100.0,,,agrees,
+1441,BANDON,1,BANDON,110,IE,way/186166560,Bandon 110kV Substation,110;38;10,EirGrid,51.7739278,-8.733195,exact,100.0,,,agrees,
+1451,CLOGHRAN,1,CLOGHRAN,110,IE,way/684177183,Cloghran 110kV Substation,110;20,EirGrid,53.4034934,-6.3610231,exact,100.0,,,agrees,
+1461,BARRYMORE,1,BARRYMORE,110,IE,way/236651495,Barrymore 110kV Substation,110;38,EirGrid,52.0958683,-8.2546807,exact,100.0,,,agrees,
+1471,BELCAMP,2,BELCAMP,220;110,IE,way/714018181,Belcamp 220kV Substation,220;110,EirGrid,53.409766,-6.2025287,exact,100.0,,,agrees,
+1472,BELCAMP,2,BELCAMP,220;110,IE,way/714018181,Belcamp 220kV Substation,220;110,EirGrid,53.409766,-6.2025287,exact,100.0,,,agrees,
+1481,BUTLERSTOWN,1,BUTLERSTOWN,110,IE,way/235590778,Butlerstown 110kV Substation,110;38,EirGrid,52.2286078,-7.1703735,exact,100.0,,,agrees,
+1491,DEENES,1,DEENES,110,IE,way/1125141927,Deenes 110 kV Substation,110,EirGrid,53.6475064,-6.4407825,exact,100.0,,,agrees,
+1501,BRINNY,2,BRINNY,110,IE,way/235933652,Brinny 110kV Substation,110,EirGrid,51.7851436,-8.7045456,exact,100.0,,,agrees,
+1511,CLOGHBOOLA,1,CLOGHBOOLA,110,IE,way/494790508,Cloghboola 110kV Substation,110;20,EirGrid,52.3305984,-9.4380864,exact,100.0,,,agrees,
+1521,BOGTOWN,1,BOGTOWN,110,IE,,,,,,,weak,70.58823529411764,BISHOPSTOWN,66.66666666666667,,"best candidate 'LOGUESTOWN' (way/193197077) scored 71, below 92"
+1522,CLONEE,1,CLONEE,220,IE,way/516752881,Clonee 220kV Substation,220;20,EirGrid,53.4167869,-6.426741,exact,100.0,,,agrees,
+1531,BALLYADAM,1,BALLYADAM,110,IE,,,,,,,weak,82.35294117647058,BALLYMUN,70.58823529411764,,"best candidate 'BALLYARD' (way/209985873) scored 82, below 92"
+1541,BANOGE,1,BANOGE,110,IE,way/185706609,Banoge 110kV,110,EirGrid,52.6502648,-6.2725523,exact,100.0,,,agrees,
+1551,BOGGERAGH,1,BOGGERAGH,110,IE,way/186889661,Boggeragh 110kV Substation,110;38;33,EirGrid,52.0384891,-8.9086408,exact,100.0,,,agrees,
+1561,COOLDERRIG,1,COOLDERRIG,110,IE,way/1456366384,Coolderrig 110 kV Substation,110;20,EirGrid,53.32992,-6.4525519,exact,100.0,,,agrees,
+1571,ARDNAGAPPARY,1,ARDNAGAPPARY,110,IE,way/705295479,Ardnagappary 110kV Substation,110;38,EirGrid,55.0566404,-8.2688178,exact,100.0,,,agrees,
+1581,CABRA,1,CABRA,110,IE,way/374690911,Cabra 110 kV Substation,110;10,EirGrid,53.372675,-6.3003671,exact,100.0,,,agrees,
+1601,CLASHAVOON,3,CLASHAVOON,220;110,IE,way/186889669,Clashavoon 220 kV Substation,220;110,EirGrid,51.938191,-8.9141082,exact,100.0,,,agrees,
+1602,CLASHAVOON,3,CLASHAVOON,220;110,IE,way/186889669,Clashavoon 220 kV Substation,220;110,EirGrid,51.938191,-8.9141082,exact,100.0,,,agrees,
+1611,CLONKEEN,2,CLONKEEN,110,IE,way/179214131,Clonkeen 110kV Substation,110,EirGrid,51.9841297,-9.2997624,exact,100.0,,,agrees,
+1621,COOLROE,1,COOLROE,110,IE,way/373209904,Coolroe 110kV Substation,110;20,EirGrid,51.8859966,-8.6360252,exact,100.0,,,agrees,
+1631,CORDERRY,1,CORDERRY,110,IE,way/189376942,Corderry 110kV Substation,110,EirGrid,54.1988681,-8.197639,exact,100.0,,,agrees,
+1641,CASHLA,3,CASHLA,220;110,IE,way/42998577,Cashla 220 kV Substation,220;110,EirGrid,53.3081124,-8.8534296,exact,100.0,,,agrees,
+1642,CASHLA,3,CASHLA,220;110,IE,way/42998577,Cashla 220 kV Substation,220;110,EirGrid,53.3081124,-8.8534296,exact,100.0,,,agrees,
+1651,CLAHANE,1,CLAHANE,110,IE,way/210599157,Clahane 110kV Substation,110,EirGrid,52.3787738,-9.548026,exact,100.0,,,agrees,
+1661,CASTLEBAR,1,CASTLEBAR,110,IE,way/200167853,Castlebar 110 kV Substation,110;38,EirGrid,53.8665266,-9.2692746,exact,100.0,,,agrees,
+1671,KILCUMBER,1,KILCUMBER,110,IE,way/1051161785,Kilcumber 110kV Substation,110;33,EirGrid,53.2901576,-7.092703,exact,100.0,,,agrees,
+1681,CARRIGADROHI,1,CARRIGADROHI,110,IE,way/179838650,Carrigadrohid 110kV Substation,110,EirGrid,51.8978487,-8.8633008,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'CARRIGADROHI', a prefix of exactly one OSM name. 2 objects share this name; only one is tagged at this station's voltage"
+1691,CENTRAL PARK,2,CENTRAL PARK,110,IE,way/470024318,Central Park 110kV Substation,110,EirGrid,53.2702392,-6.2060635,exact,100.0,,,agrees,
+1701,CATH_FALL,1,CATH_FALL,110,IE,way/183986064,Cathleen's Fall 110kV Substation,110;38;10.5,EirGrid,54.4987533,-8.1769822,alias,100.0,,,agrees (not applied: alias),"the same station as CATH FALL, on the other busbar"
+1711,CROMCASTLE,2,CROMCASTLE,110,IE,way/822400580,Cromcastle 110kV Substation,110;10,EirGrid,53.4030295,-6.2276046,exact,100.0,,,agrees,
+1721,CAHIR,1,CAHIR,110,IE,way/374590823,Cahir 110kV Substation,110;38;10,EirGrid,52.3769959,-7.8984212,exact,100.0,,,agrees,
+1731,CROMCASTLE,2,CROMCASTLE,110,IE,way/822400580,Cromcastle 110kV Substation,110;10,EirGrid,53.4030295,-6.2276046,exact,100.0,,,agrees,
+1741,CARRICKMINES,2,CARRICKMINES,220;110,IE,way/35150701,Carrickmines 220 kV Substation,220;110;38;10,EirGrid,53.2562454,-6.1967385,exact,100.0,,,agrees,
+1742,CARRICKMINES,2,CARRICKMINES,220;110,IE,way/35150701,Carrickmines 220 kV Substation,220;110;38;10,EirGrid,53.2562454,-6.1967385,exact,100.0,,,agrees,
+1761,CLIFF,1,CLIFF,110,IE,way/183986059,Cliff 110kV Substation,110;10.5,EirGrid,54.4875201,-8.1042024,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+1781,CASTLEFARM,2,CASTLEFARM,110,IE,way/975408238,Castlefarm 110kV Substation,110;22,EirGrid,52.6298482,-9.0544843,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+1801,COOKSTOWN,1,COOKSTOWN,110,IE,way/98142043,Cookstown 110kV Substation,110;38;10,EirGrid,53.2931796,-6.3781277,exact,100.0,,,agrees,
+1810,DARNDALE,1,DARNDALE,110,IE,way/697464725,Darndale 110kV Substation,110;10,EirGrid,53.407848,-6.2241754,exact,100.0,,,agrees,
+1811,CLUTTERLAND,1,CLUTTERLAND,110,IE,way/1107158570,Clutterland 110 kV Substation,110,EirGrid,53.3179126,-6.4497145,exact,100.0,,,agrees,
+1821,CLOON,1,CLOON,110,IE,way/198780339,Cloon 110 kV Substation,110;38;20;10,EirGrid,53.4834794,-8.8482757,exact,100.0,,,agrees,
+1831,SCREEB,1,SCREEB,110,IE,way/251226613,Screeb 110kV Substation,110;38,EirGrid,53.3804345,-9.5853139,exact,100.0,,,agrees,
+1841,CRANE,1,CRANE,110,IE,way/185706501,Crane 110kV Substation,110;38;20,EirGrid,52.5323772,-6.5144397,exact,100.0,,,agrees,
+1851,CHERRYWOOD,1,CHERRYWOOD,110,IE,way/355532596,Cherrywood 110kV Substation,110;38;10,EirGrid,53.2433051,-6.1567888,exact,100.0,,,agrees,
+1861,CARRICK ON S,1,CARRICK ON S,110,IE,way/195423192,Carrick-on-Shannon 110kV Substation,110;38;10,EirGrid,53.9373054,-8.1088425,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'CARRICK ON S', a prefix of exactly one OSM name."
+1871,COLLEGE PARK,1,COLLEGE PARK,110,IE,way/446020910,College Park 110kV Substation,110;10,EirGrid,53.4105364,-6.3761003,exact,100.0,,,agrees,
+1881,CHARLEVILLE,1,CHARLEVILLE,110,IE,way/237476600,Charleville 110kV Substation,110;38;20;10,EirGrid,52.3301844,-8.6941349,exact,100.0,,,agrees,
+1901,CARLOW,1,CARLOW,110,IE,way/170568529,Carlow 110kV Substation,110;38,EirGrid,52.8325066,-6.8445771,exact,100.0,,,agrees,
+1921,COW CROSS,1,COW CROSS,110,IE,way/191715059,Cow Cross 110kV Substation,110;38;10,EirGrid,51.8651043,-8.3012481,exact,100.0,,,agrees,
+1931,CUNGHILL,1,CUNGHILL,110,IE,way/179714187,Cunghill 110kV Substation,110;38,EirGrid,54.1111523,-8.6491987,exact,100.0,,,agrees,
+1941,CUSHALING,1,CUSHALING,110,IE,way/219457456,Cushaling 110kV Substation,110,EirGrid,53.2891013,-7.0847828,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+1951,CARROWBEG,1,CARROWBEG,110,IE,way/179305213,Carrowbeg 110 kV Substation,110;38;20;10,EirGrid,53.8093444,-9.5059925,exact,100.0,,,agrees,
+1961,CASTLEVIEW,1,CASTLEVIEW,110,IE,way/154686756,Castleview 110kV Substation,110;10,EirGrid,51.9009511,-8.3704585,exact,100.0,,,agrees,
+1971,COOMAGEARLAH,1,COOMAGEARLAH,110,IE,way/179214119,Coomagearlahy Substation,110,EirGrid,51.9385387,-9.311485,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'COOMAGEARLAH', a prefix of exactly one OSM name. 2 objects share this name; only one is tagged at this station's voltage"
+1981,CORRACLASSY,1,CORRACLASSY,110,IE,way/198834347,Corraclassy 110kV Substation,110,EirGrid,54.1527414,-7.7446161,exact,100.0,,,agrees,
+1991,CASTLEDOCKRE,1,CASTLEDOCKRE,110,IE,way/460310631,Castledockrell 110kV Substation,110;20,EirGrid,52.5904745,-6.6343018,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'CASTLEDOCKRE', a prefix of exactly one OSM name. 2 objects share this name; only one is tagged at this station's voltage"
+2001,CULLENAGH,2,CULLENAGH,220;110,IE,way/150124101,Cullenagh 220 kV Substation,220;110,EirGrid,52.2493148,-7.2796709,exact,100.0,,,agrees,
+2002,CULLENAGH,2,CULLENAGH,220;110,IE,way/150124101,Cullenagh 220 kV Substation,220;110,EirGrid,52.2493148,-7.2796709,exact,100.0,,,agrees,
+2021,CITY WEST,1,CITY WEST,110,IE,way/98203610,Citywest 110kV Substation,110;10,EirGrid,53.2892499,-6.4163263,fuzzy,94.11764705882352,WEST CENTRAL,66.66666666666667,agrees,token-sort score 94 against 'CITYWEST'.
+2041,CORDUFF,3,CORDUFF,220;110,IE,way/183749097,Corduff 220kV Substation,220;110,EirGrid,53.4193712,-6.3649353,exact,100.0,,,agrees,
+2042,CORDUFF,3,CORDUFF,220;110,IE,way/183749097,Corduff 220kV Substation,220;110,EirGrid,53.4193712,-6.3649353,exact,100.0,,,agrees,
+2052,CORDUFFB,1,CORDUFFB,220,IE,way/183749097,Corduff 220kV Substation,220;110,EirGrid,53.4193712,-6.3649353,fuzzy,93.33333333333331,CARRYDUFF,70.58823529411764,agrees,token-sort score 93 against 'CORDUFF'.
+2072,CRUISERATH,1,CRUISERATH,220,IE,way/1003253882,Cruiserath 220kV Substation,220,EirGrid,53.4146281,-6.3817801,exact,100.0,,,agrees,
+2090,KNOCKRANNY A,1,KNOCKRANNY A,110,IE,,,,,,,weak,90.9090909090909,KNOCKRAHA,66.66666666666667,,"best candidate 'KNOCKRANNY' (way/665898646) scored 91, below 92"
+2091,KNOCKRANNY,1,KNOCKRANNY,110,IE,way/665898646,Knockranny 110kV Substation,110;38,EirGrid,53.3598717,-9.289752,exact,100.0,,,agrees,
+2101,DUNDALK,1,DUNDALK,110,IE,way/266244304,Dundalk 110kV Substation,110;38;10,EirGrid,54.0053368,-6.4237884,exact,100.0,,,agrees,
+2111,UGGOOL,1,UGGOOL,110,IE,way/589030589,Uggool 110kV Substation,110;33,EirGrid,53.3536722,-9.3355257,exact,100.0,,,agrees,
+2121,DRUMLINE,1,DRUMLINE,110,IE,way/207628559,Drumline 110kV Substation,110;38;20,EirGrid,52.7239924,-8.8613742,exact,100.0,,,agrees,
+2131,DROMADA,1,DROMADA,110,IE,way/439833711,Dromada 110kV Substation,110,EirGrid,52.4434711,-9.2344983,exact,100.0,,,agrees,
+2141,DUNGARVAN,1,DUNGARVAN,110,IE,way/243503443,Dungarvan 110kV Substation,110;38,EirGrid,52.1082836,-7.6536881,exact,100.0,,,agrees,
+2161,DOON,2,DOON|DOON_CAP,110,IE,way/374590824,Doon 110kV Substation,110;38;20;10,EirGrid,52.3836007,-7.6676498,exact,100.0,,,agrees,
+2171,KNOCKALOUGH,1,KNOCKALOUGH,110,IE,way/1115737898,Knockalough Substation,110;20,EirGrid,53.3058138,-9.2491169,exact,100.0,,,agrees,
+2181,DRYBRIDGE,1,DRYBRIDGE,110,IE,way/265890836,Drybridge 110kV Substation,110;38,EirGrid,53.7247696,-6.4010215,exact,100.0,,,agrees,
+2202,DUNSTOWN,2,DUNSTOWN,380;220,IE,way/88144450,Dunstown 400kV Substation,400;220,EirGrid,53.1543743,-6.6881005,exact,100.0,,,agrees,
+2204,DUNSTOWN,2,DUNSTOWN,380;220,IE,way/88144450,Dunstown 400kV Substation,400;220,EirGrid,53.1543743,-6.6881005,exact,100.0,,,agrees,
+2221,DUNMANWAY,2,DUNMANWAY,110,IE,way/235929741,Dunmanway 110kV Station,110;38;20;10,EirGrid,51.7232312,-9.0897487,exact,100.0,,,agrees,
+2225,DUNMANWAY,2,DUNMANWAY,110,IE,way/235929741,Dunmanway 110kV Station,110;38;20;10,EirGrid,51.7232312,-9.0897487,exact,100.0,,,agrees,
+2231,DERRYBRIEN,1,DERRYBRIEN,110,IE,,,,,,,weak,77.77777777777779,DERRYBEG,77.77777777777779,,"best candidate 'DERRYLIN' (way/692196934) scored 78, below 92"
+2241,DALLOW,2,DALLOW|DALLOW T,110,IE,way/513993739,Dallow 110kV Substation,110;38,EirGrid,53.1259869,-7.928076,exact,100.0,,,agrees,
+2251,DARDISTOWN,1,DARDISTOWN,110,IE,way/458047174,Dardistown 110 kV Substation,110,EirGrid,53.4212033,-6.2342099,exact,100.0,,,agrees,
+2261,DERRYIRON,5,DERRYIRON,110,IE,way/219769028,Derryiron 110 kV Substation,110,EirGrid,53.3581344,-7.2138473,exact,100.0,,,agrees,
+2281,DALTON_A1,1,DALTON_A1,110,IE,,,,,,,weak,80.0,RANDALSTOWN,70.0,,"best candidate 'DALTON' (way/201208741) scored 80, below 92"
+2301,DUNFIRTH,1,DUNFIRTH,110,IE,way/266499715,Dunfierth 110kV Substation,110;20,EirGrid,53.3880882,-6.8293304,fuzzy,94.11764705882352,MOUNTRATH,58.82352941176471,agrees,token-sort score 94 against 'DUNFIERTH'.
+2321,DRUMKEEN,1,DRUMKEEN,110,IE,way/183549487,Drumkeen 110kV Substation,110,EirGrid,54.8631648,-7.7722302,exact,100.0,,,agrees,
+2361,ENNIS,1,ENNIS,110,IE,way/52291514,Ennis 110kV Substation,110;38;10,EirGrid,52.860201,-8.9358728,exact,100.0,,,agrees,
+2391,KILL HILL,1,KILL HILL,110,IE,way/521548109,Kill Hill 110kV Substation,110;38,EirGrid,52.5172741,-7.8209426,exact,100.0,,,agrees,
+2401,MOUNT LUCAS,1,MOUNT LUCAS,110,IE,way/507859235,Mount Lucas 110kV Substation,110;20,EirGrid,53.262337,-7.2520289,exact,100.0,,,agrees,
+2421,CORKAGH,1,CORKAGH,110,IE,way/513703422,Corkagh 110kV Substation,110,EirGrid,53.3238429,-6.4476689,exact,100.0,,,agrees,
+2481,FASS EAST,1,FASS EAST,110,IE,,,,,,,weak,63.1578947368421,LUCAN EAST,63.1578947368421,,"best candidate 'OMAGH EAST' (way/1058410282) scored 63, below 92"
+2491,FASS WEST,1,FASS WEST,110,IE,,,,,,,weak,70.0,OMAGH WEST,63.1578947368421,,"best candidate 'WEST OFFALY' (way/182914658) scored 70, below 92"
+2521,FLAGFORD,2,FLAGFORD,220;110,IE,way/194575030,Flagford 220kV Substation,220;110,EirGrid,53.9116793,-8.1238358,exact,100.0,,,agrees,
+2522,FLAGFORD,2,FLAGFORD,220;110,IE,way/194575030,Flagford 220kV Substation,220;110,EirGrid,53.9116793,-8.1238358,exact,100.0,,,agrees,
+2541,FRN ST A,1,FRN ST A,110,IE,,,,,,,weak,66.66666666666667,SAINT LAWRENCES PK,62.06896551724138,,"best candidate 'BATH SAINT' (node/9609280789) scored 67, below 92"
+2551,FRN ST B,1,FRN ST B,110,IE,,,,,,,weak,66.66666666666667,SLIABH BAWN WIND FARM,56.25,,"best candidate 'BATH SAINT' (node/9609280789) scored 67, below 92"
+2561,FIN_URBAN,1,FIN_URBAN,110,IE,way/404371901,Huntstown Power Station,,,53.4124627,-6.3257744,coupled,95.0,FERBANE,62.5,not applied: placed from a neighbour,"bus 2561 is joined to bus 25674 (HUNTSTOW) by a zero-impedance branch, so it is inside the same station"
+2562,FINGLAS,1,FINGLAS,220,IE,way/27144164,Finglas 220 kV Substation,220;110,EirGrid,53.4055029,-6.3149241,exact,100.0,,,agrees,
+2563,FINGLAS220,1,FINGLAS220B,220,IE,way/27144164,Finglas 220 kV Substation,,,53.4055029,-6.3149241,coupled,95.0,BALTINGLASS,57.14285714285714,not applied: placed from a neighbour,"bus 2563 is joined to bus 2562 (FINGLAS) by a zero-impedance branch, so it is inside the same station"
+2571,FIN_RURAL,1,FIN_RURAL,110,IE,way/27144164,Finglas 220 kV Substation,,,53.4055029,-6.3149241,coupled,95.0,FINNEA,53.333333333333336,not applied: placed from a neighbour,"bus 2571 is joined to bus 2562 (FINGLAS) by the station's own transformer, so it is inside the same station"
+2581,FINGLAS B5,1,FINGLAS B5,110,IE,,,,,,,weak,82.35294117647058,BALTINGLASS,66.66666666666667,,"best candidate 'FINGLAS' (way/27144164) scored 82, below 92"
+2591,FORTUNESTOWN,1,FORTUNESTOWN,110,IE,way/448710346,Fortunestown 110kV Substation,110;10,EirGrid,53.2829452,-6.4171604,exact,100.0,,,agrees,
+2671,GARVAGH,1,GARVAGH,110,IE,way/202980108,Garvagh Glebe 110kV Substation,110;20,EirGrid,54.1504588,-8.1924874,prefix,98.0,,,agrees,'GARVAGH' is a prefix of exactly one OSM name and the voltage agrees. 2 objects share this name and lie within 0.0 km of each other - one site mapped more than once; the highest-voltage of them is taken
+2681,GILRA,1,GILRA,110,IE,way/215062045,Gilra 110kV Substation,110,EirGrid,53.9144475,-7.9859944,exact,100.0,,,agrees,
+2691,GARBALLAGH,1,GARBALLAGH,110,IE,way/1097376510,Garballagh 110 kV Substation,110,EirGrid,53.6572305,-6.4586834,exact,100.0,,,agrees,
+2701,GLASMORE,1,GLASMORE,110,IE,way/27045289,Glasmore 110kV Substation,110;38;0.4,EirGrid,53.4677716,-6.2384064,exact,100.0,,,agrees,
+2721,GRIFFINRATH,2,GRIFFINRATH,110,IE,way/257886373,Griffinrath 110kV Substation,110;38,EirGrid,53.3435573,-6.5644585,exact,100.0,,,agrees,
+2731,GLANLEE,1,GLANLEE,110,IE,way/179214114,Glanlee 110kV Substation,110,EirGrid,51.925463,-9.3067693,exact,100.0,,,agrees,
+2741,GREAT ISLAND,2,GREAT ISLAND,220;110,IE,way/96278380,Great Island 220kV Substation,220;110;38,EirGrid,52.2815845,-6.99172,exact,100.0,,,agrees,2 objects share this name and lie within 0.2 km of each other - one site mapped more than once; the highest-voltage of them is taken
+2742,GREAT ISLAND,2,GREAT ISLAND,220;110,IE,way/96278380,Great Island 220kV Substation,220;110;38,EirGrid,52.2815845,-6.99172,exact,100.0,,,agrees,2 objects share this name and lie within 0.2 km of each other - one site mapped more than once; the highest-voltage of them is taken
+2761,GRANGE,1,GRANGE,110,IE,way/438119450,Grange 110kV Substation,110;38,EirGrid,53.3996226,-6.1520925,exact,100.0,,,agrees,3 objects share this name; only one is tagged at this station's voltage
+2771,GARROW,1,GARROW,110,IE,way/217487275,Garrow 110kV Substation,110;20,EirGrid,52.0026938,-9.131237,exact,100.0,,,agrees,
+2781,GALWAY,1,GALWAY,110,IE,way/161472995,Galway 110kV Substation,110;38;10,EirGrid,53.290063,-9.0132121,exact,100.0,,,agrees,
+2791,GALLANSTOWN,1,GALLANSTOWN,110,IE,relation/18566637,Ballymacarney Solar Farm,,Statkraft,53.450696,-6.3653809,prefix,98.0,,,silent,'GALLANSTOWN' is a prefix of exactly one OSM name and the voltage agrees.
+2801,GOLAGH,2,GOLAGH|GOLAGH T,110,IE,way/183084855,Golagh 110kV Substation,110;38,EirGrid,54.6871253,-7.9351078,exact,100.0,,,agrees,
+2821,GORTAWEE,1,GORTAWEE,110,IE,way/199125367,Gortawee 110kV Station,110;38,EirGrid,54.1291946,-7.5811846,exact,100.0,,,agrees,
+2841,GORMAN,3,GORMAN|GORMAN ESS,220;110,IE,way/264852019,Gorman 220kV Substation,220;110,EirGrid,53.7009328,-6.6442071,exact,100.0,,,agrees,
+2842,GORMAN,3,GORMAN|GORMAN ESS,220;110,IE,way/264852019,Gorman 220kV Substation,220;110,EirGrid,53.7009328,-6.6442071,exact,100.0,,,agrees,
+2852,GLANAGOW,1,GLANAGOW,220,IE,way/361261945,Glanagow 220 kV Substation,220,EirGrid,51.8150801,-8.2496363,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+2861,GRANGE CASTL,1,GRANGE CASTL,110,IE,way/98820685,Grange Castle 110kV Substation,110;38;20;10,EirGrid,53.3299746,-6.4452964,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'GRANGE CASTL', a prefix of exactly one OSM name. 3 objects share this name and lie within 1.2 km of each other - one site mapped more than once; the highest-voltage of them is taken"
+2870,CLOGHER,4,CLOGHER,110,IE,way/705880940,Clogher 110kV Substation,110,EirGrid,54.6870462,-7.9951038,exact,100.0,,,agrees,
+2871,CLOGHER,4,CLOGHER,110,IE,way/705880940,Clogher 110kV Substation,110,EirGrid,54.6870462,-7.9951038,exact,100.0,,,agrees,
+2881,GLENLARA,2,GLENLARA,110,IE,way/374587161,Glenlara 110kV Substation,110;38,EirGrid,52.2053487,-9.023808,exact,100.0,,,agrees,
+2941,HAROLDS CROS,1,HAROLDS CROS,110,IE,way/61842646,Harolds Cross 110kV Station,110;10,EirGrid,53.3290125,-6.2754277,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'HAROLDS CROS', a prefix of exactly one OSM name."
+2951,HEUSTON SQUA,1,HEUSTON SQUA,110,IE,way/445318192,Heuston Square 110kV Substation,110;10,EirGrid,53.3451523,-6.3000097,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'HEUSTON SQUA', a prefix of exactly one OSM name."
+2962,HUNTSTOWN,1,HUNTSTOWN,220,IE,way/374962479,Huntstown 220 kV Substation,220,EirGrid,53.4109851,-6.3249285,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+2972,HUNTSTOWN 2,1,HUNTSTOWN 2,220,IE,,,,,,,weak,90.0,HUNTSTOWN TEG,75.0,,"best candidate 'HUNTSTOWN' (way/374962479) scored 90, below 92"
+3061,INISCARRA,1,INISCARRA,110,IE,way/373209905,Inniscarra 110kV Substation,110;38;10.5,EirGrid,51.9017859,-8.661073,fuzzy,94.73684210526316,KILCARRAGH,63.1578947368421,agrees,token-sort score 95 against 'INNISCARRA'. 3 objects share this name; only one is tagged at this station's voltage
+3081,INCH_CITY,1,INCH_CITY,110,IE,way/456199341,Inchicore 220kV Substation,,,53.3337774,-6.3391212,coupled,95.0,GARDEN CITY,60.0,not applied: placed from a neighbour,"bus 3081 is joined to bus 3082 (INCHICORE) by the station's own transformer, so it is inside the same station"
+3082,INCHICORE,2,INCHICORE,220,IE,way/456199341,Inchicore 220kV Substation,220;110;38,EirGrid,53.3337774,-6.3391212,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+3091,INCH_COUNTRY,1,INCH_COUNTRY,110,IE,way/456199341,Inchicore 220kV Substation,,,53.3337774,-6.3391212,coupled,95.0,INCHICORE CENTRAL,62.06896551724138,not applied: placed from a neighbour,"bus 3091 is joined to bus 3082 (INCHICORE) by the station's own transformer, so it is inside the same station"
+3101,IKERRIN,1,IKERRIN,110,IE,way/158575778,Ikerrin 110kV Substation,110;38,EirGrid,52.91857,-7.7713595,exact,100.0,,,agrees,
+3122,IRISHTOWN,1,IRISHTOWN,220,IE,way/1368163958,Irishtown 220-kV Substation,220,EirGrid,53.3400724,-6.2019353,prefix,98.0,,,agrees,'IRISHTOWN' is a prefix of exactly one OSM name and the voltage agrees. 3 objects share this name; only one is tagged at this station's voltage
+3190,KNOCKANURE,4,KNOCKANURE,220;110,IE,way/1003262502,Knockanure 220kV Substation,220;110,EirGrid,52.4345623,-9.3733302,exact,100.0,,,agrees,
+3191,KNOCKANURE,4,KNOCKANURE,220;110,IE,way/1003262502,Knockanure 220kV Substation,220;110,EirGrid,52.4345623,-9.3733302,exact,100.0,,,agrees,
+3192,KNOCKANURE,4,KNOCKANURE,220;110,IE,way/1003262502,Knockanure 220kV Substation,220;110,EirGrid,52.4345623,-9.3733302,exact,100.0,,,agrees,
+3201,KNOCKRAHA,4,KNOCKRAHA,220;110,IE,way/104388595,Knockraha 220kV Substation,220;110,EirGrid,51.9541985,-8.3194761,exact,100.0,,,agrees,
+3202,KNOCKRAHA,4,KNOCKRAHA,220;110,IE,way/104388595,Knockraha 220kV Substation,220;110,EirGrid,51.9541985,-8.3194761,exact,100.0,,,agrees,
+3203,KNOCKRAHA,4,KNOCKRAHA,220;110,IE,way/104388595,Knockraha 220kV Substation,220;110,EirGrid,51.9541985,-8.3194761,exact,100.0,,,agrees,
+3209,KNOCKRAHA,4,KNOCKRAHA,220;110,IE,way/104388595,Knockraha 220kV Substation,220;110,EirGrid,51.9541985,-8.3194761,exact,100.0,,,agrees,
+3221,KILBARRY,1,KILBARRY,110,IE,way/31330615,110kV Kilbarry Electrical Substation,110;38;10,EirGrid,51.9224604,-8.4769397,exact,100.0,,,agrees,
+3241,KILTEEL,2,KILTEEL|KILTEEL_CAP,110,IE,way/257893804,Kilteel 110kV Substation,110;38,EirGrid,53.2465815,-6.5400403,exact,100.0,,,agrees,
+3251,REAMORE,1,REAMORE,110,IE,way/218565935,Reamore 110kV Substation,110;38,EirGrid,52.302124,-9.5436255,exact,100.0,,,agrees,
+3261,KILKENNY,1,KILKENNY,110,IE,way/150242815,Kilkenny 110kV Substation,110;38,EirGrid,52.6405514,-7.1718695,exact,100.0,,,agrees,
+3271,KISHOGE,1,KISHOGE,110,IE,way/1231956439,Kishoge 110 kV Substation,110,EirGrid,53.3280353,-6.4600205,exact,100.0,,,agrees,
+3281,KILLONAN,2,KILLONAN,220;110,IE,way/180637986,Killonan 220kV Substation,220;110,EirGrid,52.6401871,-8.5454912,exact,100.0,,,agrees,
+3282,KILLONAN,2,KILLONAN,220;110,IE,way/180637986,Killonan 220kV Substation,220;110,EirGrid,52.6401871,-8.5454912,exact,100.0,,,agrees,
+3301,KNOCKEARAGH,1,KNOCKEARAGH,110,IE,way/236517264,Knockearagh 110kV Substation,110;38,EirGrid,52.0764652,-9.4387403,exact,100.0,,,agrees,
+3321,KNOCKUMBER,1,KNOCKUMBER,110,IE,way/361725341,Knockumber (1) 110kV Substation,110,EirGrid,53.6555904,-6.7147404,prefix,98.0,,,agrees,'KNOCKUMBER' is a prefix of exactly one OSM name and the voltage agrees.
+3330,BALLYNAHULLA,3,BALLYNAHULLA,220;110,IE,way/819997192,Ballynahulla 220kV Substation,220;110,EirGrid,52.1738656,-9.2611456,exact,100.0,,,agrees,
+3331,BALLYNAHULLA,3,BALLYNAHULLA,220;110,IE,way/819997192,Ballynahulla 220kV Substation,220;110,EirGrid,52.1738656,-9.2611456,exact,100.0,,,agrees,
+3332,BALLYNAHULLA,3,BALLYNAHULLA,220;110,IE,way/819997192,Ballynahulla 220kV Substation,220;110,EirGrid,52.1738656,-9.2611456,exact,100.0,,,agrees,
+3341,KELLIS,2,KELLIS,220;110,IE,way/89760546,Kellis 220kV Substation,220;110,EirGrid,52.7887081,-6.8163185,exact,100.0,,,agrees,
+3342,KELLIS,2,KELLIS,220;110,IE,way/89760546,Kellis 220kV Substation,220;110,EirGrid,52.7887081,-6.8163185,exact,100.0,,,agrees,
+3352,KELLYSTOWN,1,KELLYSTOWN,220,IE,way/887405637,Kellystown 220 kV Substation,220,EirGrid,53.3823502,-6.524176,exact,100.0,,,agrees,
+3381,KINNEGAD,1,KINNEGAD,110,IE,way/167102153,Kinnegad 110kV,110,EirGrid,53.4302536,-7.1427122,exact,100.0,,,agrees,
+3391,KNOCKACUMMER,1,KNOCKACUMMER,110,IE,way/508612114,Knockacummer 110kV Substation,110;20,EirGrid,52.2595355,-9.1006362,exact,100.0,,,agrees,
+3401,KILLOTERAN,1,KILLOTERAN,110,IE,way/235590779,Killoteran 110kV Substation,110;10,EirGrid,52.2518508,-7.1589941,exact,100.0,,,agrees,
+3421,KILMORE,1,KILMORE,110,IE,way/697464731,Kilmore 110kV Substation,110;10,EirGrid,53.4013032,-6.2208175,exact,100.0,,,agrees,
+3431,KILMAHUD,1,KILMAHUD,110,IE,way/437278179,Kilmahud 110kV Substation,110;10,EirGrid,53.3259419,-6.4540511,exact,100.0,,,agrees,
+3461,KILPADDOGE,3,KILPADDOGE,220;110,IE,way/516651650,Kilpaddoge 220kV Substation,220;110;20,EirGrid,52.5801792,-9.3963977,exact,100.0,,,agrees,
+3462,KILPADDOGE,3,KILPADDOGE,220;110,IE,way/516651650,Kilpaddoge 220kV Substation,220;110;20,EirGrid,52.5801792,-9.3963977,exact,100.0,,,agrees,
+3471,CASTLEBAGOT,2,CASTLEBAGOT,220;110,IE,way/710981639,Castlebaggot 220kV Substation,220;110,EirGrid,53.3166943,-6.4497194,fuzzy,95.65217391304348,CASTLEBAR,80.0,agrees,token-sort score 96 against 'CASTLEBAGGOT'.
+3472,CASTLEBAGOT,2,CASTLEBAGOT,220;110,IE,way/710981639,Castlebaggot 220kV Substation,220;110,EirGrid,53.3166943,-6.4497194,fuzzy,95.65217391304348,CASTLEBAR,80.0,agrees,token-sort score 96 against 'CASTLEBAGGOT'.
+3481,COOLNANOONAG,1,COOLNANOONAG,110,IE,way/744115145,Coolnanoonagh Substation,33,Statkraft,,,voltage-contradicts,99.0,,,contradicts,"PSS/E fills all twelve characters with 'COOLNANOONAG', a prefix of exactly one OSM name. - rejected: the only name match is tagged 33 kV"
+3491,LISLEA,1,LISLEA,110,IE,,,,,,,weak,66.66666666666667,BALLINCLEA,62.5,,"best candidate 'ISLAND' (way/211017951) scored 67, below 92"
+3501,LANESBORO_A1,1,LANESBORO_A1,110,IE,,,,,,,weak,75.0,BAILIEBOROUGH,56.00000000000001,,"best candidate 'LANESBOROUGH' (way/342820729) scored 75, below 92"
+3511,LICKNY,1,LICKNY,110,IE,,,,,,,weak,58.82352941176471,TRILLICK,57.14285714285714,,"best candidate 'BALLYLICKEY' (way/237476488) scored 59, below 92"
+3521,LOUTHA,1,LOUTHA,110,IE,way/264275258,Louth 275 kV Substation,,,53.9674714,-6.5657571,coupled,95.0,LOUGHREA,71.42857142857143,not applied: placed from a neighbour,"bus 3521 is joined to bus 3522 (LOUTH) by the station's own transformer, so it is inside the same station"
+3522,LOUTH,3,LOUTH,275;220,IE,way/264275258,Louth 275 kV Substation,275;220;110,EirGrid,53.9674714,-6.5657571,exact,100.0,,,agrees,
+3531,LYSAGHTSTOWN,1,LYSAGHTSTOWN,110,IE,relation/16383974,Lysaghtstown Solar Farm,,Voltalia,51.935749,-8.2307526,truncated,99.0,,,silent,"PSS/E fills all twelve characters with 'LYSAGHTSTOWN', a prefix of exactly one OSM name."
+3541,LIMERICK,1,LIMERICK,110,IE,way/96765746,Limerick 110kV Substation,110;38,EirGrid,52.634953,-8.6416309,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+3551,COOLNABACKY,1,COOLNABACKY,110,IE,,,,,,,weak,66.66666666666667,CLOONDARA,60.0,,"best candidate 'COOLOCK' (way/478916752) scored 67, below 92"
+3561,LISDRUM,1,LISDRUM,110,IE,way/267172950,Lisdrum 110 kV Substation,110;38;20,EirGrid,54.2447228,-6.9102424,exact,100.0,,,agrees,
+3571,DERRYCARNEY,1,DERRYCARNEY,110,IE,way/934879760,Derrycarney 110kV Substation,110;33,EirGrid,53.2271141,-7.7961871,exact,100.0,,,agrees,
+3581,LETTERKENNY,1,LETTERKENNY,110,IE,way/66493784,Letterkenny 110kV Station,110;38;10,EirGrid,54.9241287,-7.6977545,exact,100.0,,,agrees,
+3591,LENALEA,1,LENALEA,110,IE,way/1208368204,Lenalea 110 kV Substation,110,EirGrid,54.9028813,-7.8642829,exact,100.0,,,agrees,
+3601,LIBERTY ST,2,LIBERTY ST,110,IE,,,,,,,weak,74.07407407407408,BATH SAINT,69.56521739130434,,"best candidate 'LIBERTY STREET' (way/519190719) scored 74, below 92"
+3611,LIBERTY ST,2,LIBERTY ST,110,IE,,,,,,,weak,74.07407407407408,BATH SAINT,69.56521739130434,,"best candidate 'LIBERTY STREET' (way/519190719) scored 74, below 92"
+3621,LISHEEN,2,LISHEEN,110,IE,way/374709194,Lisheen 110kV Substation,110,EirGrid,52.7513555,-7.6819128,exact,100.0,,,agrees,
+3641,LODGEWOOD,2,LODGEWOOD,220;110,IE,way/185693432,Lodgewood 220kV Substation,220;110,EirGrid,52.579161,-6.5375093,exact,100.0,,,agrees,
+3642,LODGEWOOD,2,LODGEWOOD,220;110,IE,way/185693432,Lodgewood 220kV Substation,220;110,EirGrid,52.579161,-6.5375093,exact,100.0,,,agrees,
+3651,BARNAKYLE,1,BARNAKYLE,110,IE,way/605963605,Barnakyle 110 kV Substation,110,EirGrid,53.3146332,-6.4477366,exact,100.0,,,agrees,
+3662,LOUGHTOWN,1,LOUGHTOWN,220,IE,way/1154822210,Campile Converter Station,,,52.2816555,-6.9856001,coupled,95.0,LOGUESTOWN,73.6842105263158,not applied: placed from a neighbour,"bus 3662 is joined to bus 36671 (GREENLINK) by the station's own transformer, so it is inside the same station"
+3681,AUNGIERSTOWN,1,AUNGIERSTOWN,110,IE,way/935127343,Aungierstown 110 kV Substation,110,EirGrid,53.316073,-6.4523208,exact,100.0,,,agrees,
+3751,MISERY HILL,1,MISERY HILL,110,IE,way/102694971,Misery Hill Substation,110;10,EirGrid,53.3451982,-6.2393583,exact,100.0,,,agrees,
+3761,MACETOWN,1,MACETOWN,110,IE,way/374960358,Macetown 110kV Substation,110,EirGrid,53.4142091,-6.4151251,exact,100.0,,,agrees,
+3781,MCDERMOTT,1,MCDERMOTT,110,IE,way/440173457,McDermott 110kV Substation,110;38;10,EirGrid,53.3543732,-6.2509463,exact,100.0,,,agrees,
+3801,MIDLETON,1,MIDLETON,110,IE,way/243018345,Midleton 110kV Substation,110;38;10,EirGrid,51.9376618,-8.1872013,exact,100.0,,,agrees,
+3821,MEATH HILL,1,MEATH HILL,110,IE,way/266249997,Meath Hill 110kV Substation,110;38,EirGrid,53.8911239,-6.7310796,exact,100.0,,,agrees,
+3841,MAYNOOTH A,2,MAYNOOTH A,220;110,IE,,,,,,,weak,88.88888888888889,ARMAGH NORTH,63.63636363636363,,"best candidate 'MAYNOOTH' (way/88462768) scored 89, below 92"
+3842,MAYNOOTH A,2,MAYNOOTH A,220;110,IE,,,,,,,weak,88.88888888888889,ARMAGH NORTH,63.63636363636363,,"best candidate 'MAYNOOTH' (way/88462768) scored 89, below 92"
+3851,MAYNOOTH B,2,MAYNOOTH B,220;110,IE,,,,,,,weak,88.88888888888889,NORTH MAIN,60.0,,"best candidate 'MAYNOOTH' (way/88462768) scored 89, below 92"
+3852,MAYNOOTH B,2,MAYNOOTH B,220;110,IE,,,,,,,weak,88.88888888888889,NORTH MAIN,60.0,,"best candidate 'MAYNOOTH' (way/88462768) scored 89, below 92"
+3861,MILLTOWN,2,MILLTOWN,110,IE,way/438076106,Milltown 110kV Substation,110;38,EirGrid,53.3150328,-6.2522534,exact,100.0,,,agrees,
+3871,MILLTOWN,2,MILLTOWN,110,IE,way/438076106,Milltown 110kV Substation,110;38,EirGrid,53.3150328,-6.2522534,exact,100.0,,,agrees,
+3881,MACROOM,1,MACROOM,110,IE,way/235602041,Macroom 110kV Substation,110;38;20,EirGrid,51.8957884,-8.8921962,exact,100.0,,,agrees,
+3891,CARRIGDANGAN,1,CARRIGDANGAN,110,IE,way/1078394624,Carrigdangan 110 kV Substation,110;33,EirGrid,51.8043751,-9.1207652,exact,100.0,,,agrees,
+3901,MONETEEN,1,MONETEEN,110,IE,way/210298504,Moneteen 110kV Substation,110,EirGrid,52.6369214,-8.6881456,exact,100.0,,,agrees,
+3934,MNYPG1,1,MNYPG1,380,IE,way/207339053,Moneypoint 400kV Station,,,52.6103965,-9.4216875,coupled,95.0,MUNGRET,46.15384615384615,not applied: placed from a neighbour,"bus 3934 is joined to bus 3944 (MONEYPOINT) by a zero-impedance branch, so it is inside the same station"
+3940,MNYP B,1,MNYP B,220,IE,way/207339053,Moneypoint 400kV Station,,,52.6103965,-9.4216875,coupled,95.0,MVP 1,54.54545454545454,not applied: placed from a neighbour,"bus 3940 is joined to bus 3942 (MONEYPOINT) by a zero-impedance branch, so it is inside the same station"
+3941,MONEYPOINT,3,MONEYPOINT,380;220;110,IE,way/207339053,Moneypoint 400kV Station,400;380;220;110,EirGrid,52.6103965,-9.4216875,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+3942,MONEYPOINT,3,MONEYPOINT,380;220;110,IE,way/207339053,Moneypoint 400kV Station,400;380;220;110,EirGrid,52.6103965,-9.4216875,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+3944,MONEYPOINT,3,MONEYPOINT,380;220;110,IE,way/207339053,Moneypoint 400kV Station,400;380;220;110,EirGrid,52.6103965,-9.4216875,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+3954,MNYPG2,1,MNYPG2,380,IE,way/207339053,Moneypoint 400kV Station,,,52.6103965,-9.4216875,coupled,95.0,MUNGRET,46.15384615384615,not applied: placed from a neighbour,"bus 3954 is joined to bus 3944 (MONEYPOINT) by a zero-impedance branch, so it is inside the same station"
+3961,MARINA,2,MARINA,110,IE,way/773119702,Marina 110kV Substation,110;10,EirGrid,51.8991554,-8.4461681,exact,100.0,,,agrees,
+3981,MUNGRET A,1,MUNGRET A,110,IE,,,,,,,weak,87.5,MOUNT LUCAS,60.0,,"best candidate 'MUNGRET' (way/373218637) scored 88, below 92"
+3991,MUNGRET B,1,MUNGRET B,110,IE,,,,,,,weak,87.5,BANGOR WEST,60.0,,"best candidate 'MUNGRET' (way/373218637) scored 88, below 92"
+4001,MULLINGAR,1,MULLINGAR,110,IE,way/266999191,Mullingar 110kV Substation,110;38;10,EirGrid,53.5383686,-7.3716668,exact,100.0,,,agrees,
+4021,MALLOW,1,MALLOW,110,IE,way/129111454,Mallow 110kV Substation,110;38;10,EirGrid,52.1431365,-8.6206886,exact,100.0,,,agrees,
+4041,MOY,2,MOY|MOY_CAP,110,IE,way/200447504,Moy 110 kV Substation,110;38,EirGrid,54.1232614,-9.1879038,exact,100.0,,,agrees,
+4061,MULLAGHARLIN,1,MULLAGHARLIN,110,IE,way/265773388,Mullagharlin 110kV Substation,110,EirGrid,53.9755464,-6.4087276,exact,100.0,,,agrees,
+4071,MEENTYCAT,1,MEENTYCAT,110,IE,way/183549490,Meentycat 110kV Substation,110,EirGrid,54.8676656,-7.842446,exact,100.0,,,agrees,
+4081,MONREAD,1,MONREAD,110,IE,way/87982346,Monread 110kV Substation,110;10,EirGrid,53.2412035,-6.6456698,exact,100.0,,,agrees,
+4091,MULREAVY,1,MULREAVY,110,IE,way/547588242,Mulreavy 110kV Substation,110;33,EirGrid,54.6644867,-7.9692346,exact,100.0,,,agrees,
+4101,NEWBURY,1,NEWBURY,110,IE,way/820465119,Newbury 110kV Substation,110;10,EirGrid,53.3997557,-6.2162523,exact,100.0,,,agrees,
+4111,BANCROFT,1,BANCROFT,110,IE,relation/17186059,Bancroft 110kV Substation,110;10,EirGrid,53.2948465,-6.3505969,exact,100.0,,,agrees,
+4201,NEWBRIDGE,1,NEWBRIDGE,110,IE,way/264972202,Newbridge 110kV Substation,110;38,EirGrid,53.1955872,-6.8355084,exact,100.0,,,agrees,
+4211,NORTH QUAYS,1,NORTH QUAYS,110,IE,way/443081627,North Quays 110kV Substation,110;38;10,EirGrid,53.3504282,-6.2355586,exact,100.0,,,agrees,
+4221,NAVAN,1,NAVAN,110,IE,way/265890258,Navan 110kV Substation,110;38;10,EirGrid,53.6997602,-6.7064767,exact,100.0,,,agrees,
+4242,NORTH WALL,1,NORTH WALL,220,IE,way/37946568,North Wall Power Station,,ESB Generation and Wholesale Markets,53.3498314,-6.211276,exact-name,100.0,,,silent,
+4261,NENAGH,1,NENAGH,110,IE,way/374352169,Nenagh 110kV Substation,110;38;20;10,EirGrid,52.8610738,-8.1812103,exact,100.0,,,agrees,
+4281,NANGOR,1,NANGOR,110,IE,way/448726610,Nangor 110kV Substation,110;10,EirGrid,53.3241021,-6.4356661,exact,100.0,,,agrees,
+4341,OLDCOURT,2,OLDCOURT,110,IE,,,,,,,weak,61.53846153846154,OLDSTREET,58.82352941176471,,"best candidate 'LOUTH' (way/264275258) scored 62, below 92"
+4351,OLDCOURT,2,OLDCOURT,110,IE,,,,,,,weak,61.53846153846154,OLDSTREET,58.82352941176471,,"best candidate 'LOUTH' (way/264275258) scored 62, below 92"
+4361,OUGHTRAGH,1,OUGHTRAGH,110,IE,way/213508375,Oughtragh 110kV Substation,110;38,EirGrid,52.136625,-9.6927788,exact,100.0,,,agrees,
+4371,GLENREE,1,GLENREE,110,IE,way/181365675,Glenree 110 kV Substation,110;38,EirGrid,54.1053454,-8.9893244,exact,100.0,,,agrees,
+4382,OLDSTREET,2,OLDSTREET,380;220,IE,way/179121616,Oldstreet Substation,400;220,EirGrid,53.134326,-8.2688847,exact,100.0,,,agrees,
+4384,OLDSTREET,2,OLDSTREET,380;220,IE,way/179121616,Oldstreet Substation,400;220,EirGrid,53.134326,-8.2688847,exact,100.0,,,agrees,
+4391,PHILIPSTOWN,1,PHILIPSTOWN,110,IE,way/1209784406,Philipstown 110 kV Substation,110,EirGrid,53.2882569,-7.0878409,exact,100.0,,,agrees,
+4401,POPPINTREE,1,POPPINTREE,110,IE,way/443112369,Poppintree 110kV Substation,110;38,EirGrid,53.4059932,-6.2720237,exact,100.0,,,agrees,
+4441,POLLAPHUCA,1,POLLAPHUCA,110,IE,way/266025857,Pollaphuca 110kV Substation,110,EirGrid,53.1208504,-6.5904682,exact,100.0,,,agrees,
+4461,POOLBEG,2,POOLBEG,110,IE,way/443094721,Poolbeg 220kV Substation,220,EirGrid,,,voltage-contradicts,100.0,,,contradicts,2 objects share this name; the others are already matched to a station of their own - rejected: the only name match is tagged 220 kV
+4462,POOLBEG NORT,1,POOLBEG NORT,220,IE,,,,,,,weak,73.6842105263158,POOLBEG INCINERATOR,70.96774193548387,,"best candidate 'POOLBEG' (way/443094721) scored 74, below 92"
+4471,POOLBEG,2,POOLBEG,110,IE,way/443094721,Poolbeg 220kV Substation,220,EirGrid,,,voltage-contradicts,100.0,,,contradicts,2 objects share this name; the others are already matched to a station of their own - rejected: the only name match is tagged 220 kV
+4472,POOLBEG SOUT,1,POOLBEG SOUT,220,IE,,,,,,,weak,73.6842105263158,DROMORE SOUTH,64.0,,"best candidate 'POOLBEG' (way/443094721) scored 74, below 92"
+4481,PORTLAOISE,1,PORTLAOISE,110,IE,,,,,,,weak,70.58823529411764,PORTGLENONE,66.66666666666667,,"best candidate 'PORTLAW' (way/72615182) scored 71, below 92"
+4491,PELLETSTOWN,1,PELLETSTOWN,110,IE,way/445358256,Pelletstown 110kV Substation,110;10,EirGrid,53.3815035,-6.3275833,exact,100.0,,,agrees,
+4501,PLATIN,1,PLATIN,110,IE,way/235562808,Platin 110 kV Substation,110,EirGrid,53.6808422,-6.3861652,exact,100.0,,,agrees,
+4511,POTTERY ROAD,1,POTTERY ROAD,110,IE,way/443080676,Pottery Road 110-kV Substation,110;10,EirGrid,53.2734538,-6.1519907,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'POTTERY ROAD', a prefix of exactly one OSM name."
+4522,PROSPECT,1,PROSPECT,220,IE,way/207331199,Prospect 220kV Substation,220,EirGrid,52.6394329,-9.2533719,exact,100.0,,,agrees,
+4621,RYEBROOK,1,RYEBROOK,110,IE,way/235560256,Ryebrook 110kV Substation,110,EirGrid,53.3776928,-6.5224663,exact,100.0,,,agrees,
+4651,RINGSEND,1,RINGSEND,110,IE,way/359657275,Ringsend 110kV Substation,110,EirGrid,53.3397238,-6.2066748,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+4681,RATHKEALE,1,RATHKEALE,110,IE,way/211049457,Rathkeale 110kV Substation,110;38;20,EirGrid,52.5436993,-8.9685536,exact,100.0,,,agrees,
+4691,OLDBRIDGE,1,OLDBRIDGE,110,IE,way/1123268881,Oldbridge 110 kV Substation,110,EirGrid,53.7067579,-6.3878298,exact,100.0,,,agrees,
+4701,RICHMOND,2,RICHMOND,110,IE,way/151556697,Richmond 110kV Substation,110;38;20,EirGrid,53.743184,-7.857067,exact,100.0,,,agrees,
+4711,RICHMOND,2,RICHMOND,110,IE,way/151556697,Richmond 110kV Substation,110;38;20,EirGrid,53.743184,-7.857067,exact,100.0,,,agrees,
+4721,RAFFEEN,2,RAFFEEN,220;110,IE,way/79803767,Raffeen 220 kV Substation,220;110,EirGrid,51.8268181,-8.3695668,exact,100.0,,,agrees,
+4722,RAFFEEN,2,RAFFEEN,220;110,IE,way/79803767,Raffeen 220 kV Substation,220;110,EirGrid,51.8268181,-8.3695668,exact,100.0,,,agrees,
+4741,RINAWADE,1,RINAWADE,110,IE,way/33879852,Rinawade,110;38,EirGrid,53.355297,-6.5211765,exact,100.0,,,agrees,
+4761,RINGASKIDDY,1,RINGASKIDDY,110,IE,way/438019978,Ringaskiddy 110 kV Substation,110,EirGrid,51.8332719,-8.3445201,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+4781,RATRUSSAN,1,RATRUSSAN,110,IE,way/152447080,Ratrussan 110kV Substation,110,EirGrid,54.0013256,-7.1060697,exact,100.0,,,agrees,
+4791,RATHNASKILLO,1,RATHNASKILLO,110,IE,way/1487359615,Rathnaskilloge 110 kV Substation,110,EirGrid,52.1571371,-7.4519341,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'RATHNASKILLO', a prefix of exactly one OSM name. 5 objects share this name; only one is tagged at this station's voltage"
+4901,SHELTON ABBE,1,SHELTON ABBE,110,IE,way/384987120,Shelton Abbey 110kV Substation,110,EirGrid,52.8130651,-6.1795599,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'SHELTON ABBE', a prefix of exactly one OSM name."
+4941,SHANNONBRIDG,3,SHANNONBRIDG,220;110,IE,way/197846408,Shannonbridge 220/110kV,220;110,EirGrid,53.2710643,-8.0377635,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'SHANNONBRIDG', a prefix of exactly one OSM name. 2 objects share this name and lie within 0.3 km of each other - one site mapped more than once; the highest-voltage of them is taken"
+4942,SHANNONBRIDG,3,SHANNONBRIDG,220;110,IE,way/197846408,Shannonbridge 220/110kV,220;110,EirGrid,53.2710643,-8.0377635,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'SHANNONBRIDG', a prefix of exactly one OSM name. 2 objects share this name and lie within 0.3 km of each other - one site mapped more than once; the highest-voltage of them is taken"
+4943,SHANNONBRIDG,3,SHANNONBRIDG,220;110,IE,way/197846408,Shannonbridge 220/110kV,220;110,EirGrid,53.2710643,-8.0377635,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'SHANNONBRIDG', a prefix of exactly one OSM name. 2 objects share this name and lie within 0.3 km of each other - one site mapped more than once; the highest-voltage of them is taken"
+4951,SALTHILL,1,SALTHILL,110,IE,way/146157089,Salthill 110kV Substation,110;38;10,EirGrid,53.2741041,-9.0793907,exact,100.0,,,agrees,
+4961,SHANKILL,1,SHANKILL,110,IE,way/152444285,Shankill 110 kV Substation,110,EirGrid,53.9987866,-7.2988808,exact,100.0,,,agrees,
+4981,SLIGO,1,SLIGO,110,IE,way/124120112,Sligo 110kV Substation,110;38,EirGrid,54.2412252,-8.4672217,exact,100.0,,,agrees,
+4991,SORNE HILL,1,SORNE HILL,110,IE,way/201187920,Sorne Hill 110kV Substation,110;20,EirGrid,55.1313547,-7.3684232,exact,100.0,,,agrees,
+5001,SOMERSET,1,SOMERSET,110,IE,way/183080497,Somerset 110kV Substation,110;38,EirGrid,53.2666198,-8.2305405,exact,100.0,,,agrees,
+5022,SHELLYBANKS,2,SHELLYBANKS,220,IE,way/23582216,Poolbeg Power Station,,ESB Generation and Wholesale Markets,53.3393833,-6.1864314,exact-name,100.0,,,silent,
+5031,STEPHENSTOWN,1,STEPHENSTOWN,110,IE,way/442121651,Stephenstown 110kV Substation,110;38;10,EirGrid,53.6013247,-6.1895932,exact,100.0,,,agrees,
+5041,SRANANAGH,2,SRANANAGH,220;110,IE,way/185902319,Srananagh 220kV Substation,220;110,EirGrid,54.1777596,-8.383984,exact,100.0,,,agrees,
+5042,SRANANAGH,2,SRANANAGH,220;110,IE,way/185902319,Srananagh 220kV Substation,220;110,EirGrid,54.1777596,-8.383984,exact,100.0,,,agrees,
+5051,SEAL ROCK,2,SEAL ROCK,110,IE,,,,,,,weak,62.5,SPA ROAD,58.82352941176471,,"best candidate 'ROSCREA' (way/509453016) scored 62, below 92"
+5061,STRATFORD,1,STRATFORD,110,IE,way/170760036,Stratford 110kV Substation,110;38,EirGrid,52.9940643,-6.6498218,exact,100.0,,,agrees,
+5071,SEAL ROCK,2,SEAL ROCK,110,IE,,,,,,,weak,62.5,SPA ROAD,58.82352941176471,,"best candidate 'ROSCREA' (way/509453016) scored 62, below 92"
+5091,SINGLAND,1,SINGLAND,110,IE,way/220264906,Singland 110kV Substation,110;20;10,EirGrid,52.6634944,-8.5873819,exact,100.0,,,agrees,
+5111,SNUGBOROUGH,1,SNUGBOROUGH,110,IE,way/684124854,Snugborough 110kV Substation,110;20,EirGrid,53.4066092,-6.356603,exact,100.0,,,agrees,
+5122,SHELLYBANKS,2,SHELLYBANKS,220,IE,way/23582216,Poolbeg Power Station,,ESB Generation and Wholesale Markets,53.3393833,-6.1864314,exact-name,100.0,,,silent,
+5131,TANEY,1,TANEY,110,IE,way/1264633852,Taney 110 kV Substation,110,EirGrid,53.2885883,-6.245051,exact,100.0,,,agrees,
+5140,OLDPIER,1,OLDPIER,220,IE,way/208124159,Tarbert 220kV Substation,,,52.5885022,-9.3662608,coupled,95.0,OLDBRIDGE,62.5,not applied: placed from a neighbour,"bus 5140 is joined to bus 5142 (TARBERT) by a zero-impedance branch, so it is inside the same station"
+5141,TARBERT,3,TARBERT,220;110,IE,way/208124159,Tarbert 220kV Substation,220,EirGrid,52.5885022,-9.3662608,exact,100.0,,,agrees,2 objects share this name and lie within 0.2 km of each other - one site mapped more than once; the highest-voltage of them is taken
+5142,TARBERT,3,TARBERT,220;110,IE,way/208124159,Tarbert 220kV Substation,220,EirGrid,52.5885022,-9.3662608,exact,100.0,,,agrees,2 objects share this name and lie within 0.2 km of each other - one site mapped more than once; the highest-voltage of them is taken
+5172,TYNAGH,1,TYNAGH,220,IE,way/194614470,Tynagh 220kV Substation,220,EirGrid,53.1671713,-8.3827087,exact,100.0,,,agrees,
+5181,TRABEG,1,TRABEG,110,IE,way/437325462,Trabeg 110kV Substation,110;38;10,EirGrid,51.8827117,-8.4596882,exact,100.0,,,agrees,
+5191,TIEVEBRACK,1,TIEVEBRACK,110,IE,way/705034071,Tievebrack 110kV Substation,110;38,EirGrid,54.8102758,-8.2356174,exact,100.0,,,agrees,
+5202,TURLOUGH HIL,1,TURLOUGH HIL,220,IE,way/266025855,Turlough Hill,220,EirGrid,53.0439505,-6.4061441,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'TURLOUGH HIL', a prefix of exactly one OSM name. 2 objects share this name and lie within 1.4 km of each other - one site mapped more than once; the highest-voltage of them is taken"
+5211,TIMAHOE,1,TIMAHOE,110,IE,way/1190756188,Timahoe 110 kV Station,110,EirGrid,53.3500291,-6.8626861,exact,100.0,,,agrees,
+5221,TULLABRACK,1,TULLABRACK,110,IE,way/218901878,Tullabrack 110kV Substation,110;38,EirGrid,52.6730693,-9.4791123,exact,100.0,,,agrees,
+5222,SHELLYBANKSB,1,SHELLYBANKSB,220,IE,way/23582216,Poolbeg Power Station,,ESB Generation and Wholesale Markets,53.3393833,-6.1864314,fuzzy,95.65217391304348,SHELLYBANKS GIS,81.4814814814815,silent,token-sort score 96 against 'SHELLYBANKS'.
+5231,TRINITY,1,TRINITY,110,IE,way/245044213,Trinity 110kV Substation,110;38,EirGrid,53.3425325,-6.2491939,exact,100.0,,,agrees,
+5241,TAWNAGHMORE,1,TAWNAGHMORE,110,IE,way/616335906,Tawnaghmore 110kV Substation,110;38,EirGrid,54.1918026,-9.2178772,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+5251,TAWN_B,1,TAWN_B,110,IE,,,,,,,weak,57.14285714285714,BARNTOWN,57.14285714285714,,"best candidate 'OLD BAWN' (way/84590865) scored 57, below 92"
+5261,TRIEN,2,TRIEN,110,IE,way/235924790,Trien 110kV Substation,110;38,EirGrid,52.4245772,-9.426115,exact,100.0,,,agrees,
+5271,CAUTEEN,2,CAUTEEN,110,IE,way/236522320,Cauteen 110 kV Substation,110;38,EirGrid,52.5375573,-8.1938573,exact,100.0,,,agrees,
+5274,CAUTEEN,2,CAUTEEN,110,IE,way/236522320,Cauteen 110 kV Substation,110;38,EirGrid,52.5375573,-8.1938573,exact,100.0,,,agrees,
+5281,TRALEE,1,TRALEE,110,IE,way/91799111,Tralee 110kV Substation,110;38,EirGrid,52.2890467,-9.6740021,exact,100.0,,,agrees,
+5291,TULLABEG,1,TULLABEG,110,IE,way/1259120849,Tullabeg Solar Farm 110kV Substation,110,EirGrid,52.6126135,-6.3827622,prefix,98.0,,,agrees,'TULLABEG' is a prefix of exactly one OSM name and the voltage agrees. 2 objects share this name; only one is tagged at this station's voltage
+5301,THURLES,1,THURLES,110,IE,way/150770869,Thurles 110kV Substation,110,EirGrid,52.6919962,-7.7642805,exact,100.0,,,agrees,
+5321,THORNSBERRY,1,THORNSBERRY,110,IE,way/172726462,Thornsberry 110kV Substation,110;38,EirGrid,53.2949583,-7.4696537,exact,100.0,,,agrees,
+5331,YELLOWMEADOW,1,YELLOWMEADOW,110,IE,,,,,,,weak,60.86956521739131,MAYDOWN,52.63157894736843,,"best candidate 'BOG MEADOWS' (way/477255058) scored 61, below 92"
+5341,TONROE,1,TONROE,110,IE,way/219010656,Tonroe 110kV Substation,110;38,EirGrid,53.9098451,-8.5725217,exact,100.0,,,agrees,
+5361,TRILLICK,1,TRILLICK,110,IE,way/201298435,Trillick 110kV Substation,110;38,EirGrid,55.1127756,-7.4186417,exact,100.0,,,agrees,
+5381,TIPPERARY,1,TIPPERARY,110,IE,way/202739744,Tipperary 110kV Substation,110;38,EirGrid,52.4722096,-8.0672001,exact,100.0,,,agrees,
+5441,WATERFORD,1,WATERFORD,110,IE,way/42737549,Waterford 110kV Substation,110;38;10,EirGrid,52.2633036,-7.1249367,exact,100.0,,,agrees,
+5451,ROSSPILE,1,ROSSPILE,110,IE,way/1125145155,Rosspile 110 kV Substation,110,EirGrid,52.3018955,-6.7423279,exact,100.0,,,agrees,
+5462,WOODLAND,3,WOODLAND,380;220,IE,way/254158424,Woodland 400kV Transmission Substation,400;220,EirGrid,53.4746308,-6.5697981,exact,100.0,,,agrees,
+5464,WOODLAND,3,WOODLAND,380;220,IE,way/254158424,Woodland 400kV Transmission Substation,400;220,EirGrid,53.4746308,-6.5697981,exact,100.0,,,agrees,
+5481,WHITEGATE,1,WHITEGATE,110,IE,way/374906132,Whitegate 110kV Substation,110,EirGrid,51.8186651,-8.2389996,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+5501,WEXFORD,1,WEXFORD,110,IE,way/232344721,Wexford 110kV Substation,110;38;20;10,EirGrid,52.3403641,-6.5394499,exact,100.0,,,agrees,
+5521,WOLFE TONE,1,WOLFE TONE,110,IE,way/489671620,Wolfe Tone 110kV Substation,110;38,EirGrid,53.349714,-6.2679779,exact,100.0,,,agrees,
+6201,COOMATAGGART,1,COOMATAGGART,110,IE,way/690725011,Coomataggart 110 kV Substation,110;20,EirGrid,51.8735614,-9.3145611,exact,100.0,,,agrees,
+6371,WHITEBANK,1,WHITEBANK,110,IE,way/1346514561,Whitebank 110 kV substation,110,EirGrid,53.3398123,-6.1996317,exact,100.0,,,agrees,
+6931,WOODHOUSE,1,WOODHOUSE,110,IE,way/508026914,Woodhouse 110kV Substation,110;20,EirGrid,52.0822332,-7.7706666,exact,100.0,,,agrees,2 objects share this name; only one is in IE
+10210,ARDNACRUSHA,2,ARDNACRUSHA,110,IE,way/200626863,Ardnacrusha 110kV Substation,110,EirGrid,52.7049873,-8.6163685,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+10261,ARDNA,1,ARDNA_CAP,110,IE,way/200626863,Ardnacrusha 110kV Substation,,,52.7049873,-8.6163685,coupled,95.0,MARINA,72.72727272727273,not applied: placed from a neighbour,"bus 10261 is joined to bus 1021 (ARDNACRUSHA) by a zero-impedance branch, so it is inside the same station"
+10422,LONGPOINT,1,LONGPOINT,220,IE,way/71762783,Aghada Power Station,,ESB Generation and Wholesale Markets,51.8338841,-8.2332664,fuzzy,94.73684210526316,MONEYPOINT,73.6842105263158,silent,token-sort score 95 against 'LONG POINT'. 2 objects share this name; only one is in IE
+10619,ARIGNA_T,1,ARIGNA_T,110,IE,,,,,,,weak,85.71428571428572,MARINA,71.42857142857143,,"best candidate 'ARIGNA' (way/374819486) scored 86, below 92"
+11310,TOBERTOREEN,1,TOBERTOREEN,110,IE,way/439831815,Athea Substation,,,52.43755,-9.3004089,coupled,95.0,MONETEEN,63.1578947368421,not applied: placed from a neighbour,"bus 11310 is joined to bus 1131 (ATHEA) by a zero-impedance branch, so it is inside the same station"
+11461,ATH,1,ATH_CAP,110,IE,way/1131166134,Athlone 110 kV Substation,,,53.4230436,-7.9745082,coupled,95.0,ATHEA,75.0,not applied: placed from a neighbour,"bus 11461 is joined to bus 1141 (ATHLONE) by a zero-impedance branch, so it is inside the same station"
+12111,BALLYVOUSKIL,3,BALLYVOUSKIL,220;110,IE,way/547590959,Ballyvouskill 220kV Substation,220;110,EirGrid,52.0059847,-9.0797175,truncated,99.0,,,agrees,"PSS/E fills all twelve characters with 'BALLYVOUSKIL', a prefix of exactly one OSM name."
+13219,BLAKE,2,BLAKE|BLAKE T,110,IE,way/265386067,Blake 110 kV Substation,110;38;10,EirGrid,53.2886399,-6.8812414,exact,100.0,,,agrees,
+13810,BARNAHELYB,1,BARNAHELYB,110,IE,way/79803764,Barnahely 110 kV Substation,110;38;20,EirGrid,51.8284805,-8.3442652,fuzzy,94.73684210526316,BANAGHER,66.66666666666667,agrees,token-sort score 95 against 'BARNAHELY'.
+14010,BELLACORICK,2,BELLACORICK,110,IE,way/205659794,Bellacorick 110 kV Substation,110;38;20,EirGrid,54.1205007,-9.5787377,exact,100.0,,,agrees,
+14013,SRAHNAKILLY,1,SRAHNAKILLY,110,IE,,,,,,,weak,81.81818181818181,SHANKILL,73.6842105263158,,"best candidate 'SHRANAKILLA' (way/790605296) scored 82, below 92"
+14016,CROAGHAUN,1,CROAGHAUN,110,IE,,,,,,,weak,75.0,CLOGHRAN,70.58823529411764,,"best candidate 'CLOGHAN' (way/1110074753) scored 75, below 92"
+14461,BAN,1,BAN_CAP,110,IE,way/186166560,Bandon 110kV Substation,,,51.7739278,-8.733195,coupled,95.0,BANOGE,66.66666666666667,not applied: placed from a neighbour,"bus 14461 is joined to bus 1441 (BANDON) by a zero-impedance branch, so it is inside the same station"
+14619,BARRYM,1,BARRYM T,110,IE,,,,,,,weak,80.0,KILBARRY,71.42857142857143,,"best candidate 'BARRYMORE' (way/236651495) scored 80, below 92"
+15010,BRINNY,2,BRINNY,110,IE,way/235933652,Brinny 110kV Substation,110,EirGrid,51.7851436,-8.7045456,exact,100.0,,,agrees,
+15220,BRACETOWN,1,BRACETOWN,220,IE,way/819286958,Bracetown 220kV Substation,220;20,EirGrid,53.4222695,-6.4457133,exact,100.0,,,agrees,
+16011,CLASHAVOON,3,CLASHAVOON,220;110,IE,way/186889669,Clashavoon 220 kV Substation,220;110,EirGrid,51.938191,-8.9141082,exact,100.0,,,agrees,
+16110,CLONKEEN,2,CLONKEEN,110,IE,way/179214131,Clonkeen 110kV Substation,110,EirGrid,51.9841297,-9.2997624,exact,100.0,,,agrees,
+16411,CASHLA,3,CASHLA,220;110,IE,way/42998577,Cashla 220 kV Substation,220;110,EirGrid,53.3081124,-8.8534296,exact,100.0,,,agrees,
+16461,CASH,1,CASH_CAP,110,IE,way/42998577,Cashla 220 kV Substation,,,53.3081124,-8.8534296,coupled,95.0,CASHEL,80.0,not applied: placed from a neighbour,"bus 16461 is joined to bus 1641 (CASHLA) by a zero-impedance branch, so it is inside the same station"
+16661,CBAR,2,CBAR_CAP|CBAR_SVC,110,IE,way/200167853,Castlebar 110 kV Substation,,,53.8665266,-9.2692746,coupled,95.0,CLARA,66.66666666666667,not applied: placed from a neighbour,"bus 16661 is joined to bus 1661 (CASTLEBAR) by a zero-impedance branch, so it is inside the same station"
+16662,CBAR,2,CBAR_CAP|CBAR_SVC,110,IE,way/200167853,Castlebar 110 kV Substation,,,53.8665266,-9.2692746,coupled,95.0,CLARA,66.66666666666667,not applied: placed from a neighbour,"bus 16661 is joined to bus 1661 (CASTLEBAR) by a zero-impedance branch, so it is inside the same station"
+17010,CATH FALL,1,CATH FALL,110,IE,way/183986064,Cathleen's Fall 110kV Substation,110;38;10.5,EirGrid,54.4987533,-8.1769822,alias,100.0,,,agrees (not applied: alias),"TYTFS truncates Cathaleen's Fall to fit twelve characters; OSM spells it Cathleen's Fall, without the second 'a'. Neither reaches the other by truncation or by fuzzy match"
+17061,CATH,1,CATH_CAP,110,IE,way/183986064,Cathleen's Fall 110kV Substation,,,54.4987533,-8.1769822,coupled,95.0,CAHIR,66.66666666666667,not applied: placed from a neighbour,"bus 17061 is joined to bus 1701 (CATH_FALL) by a zero-impedance branch, so it is inside the same station"
+17261,CAHR,1,CAHR_CAP,110,IE,way/374590823,Cahir 110kV Substation,,,52.3769959,-7.8984212,coupled,95.0,CARK,75.0,not applied: placed from a neighbour,"bus 17261 is joined to bus 1721 (CAHIR) by a zero-impedance branch, so it is inside the same station"
+17411,CKM_COUNTRY,1,CKM_COUNTRY,110,IE,way/35150701,Carrickmines 220 kV Substation,,,53.2562454,-6.1967385,coupled,95.0,MOUNTRATH,60.0,not applied: placed from a neighbour,"bus 17411 is joined to bus 1742 (CARRICKMINES) by the station's own transformer, so it is inside the same station"
+17431,CKMN,1,CKMN_PST,220,IE,way/35150701,Carrickmines 220 kV Substation,,,53.2562454,-6.1967385,coupled,95.0,KNOCKMULLEN,53.333333333333336,not applied: placed from a neighbour,"bus 17431 is joined to bus 1742 (CARRICKMINES) by the station's own transformer, so it is inside the same station"
+17462,CKM_SR,1,CKM_SR,220,IE,way/35150701,Carrickmines 220 kV Substation,,,53.2562454,-6.1967385,coupled,95.0,SOLAR FARM,50.0,not applied: placed from a neighbour,"bus 17462 is joined to bus 1742 (CARRICKMINES) by a zero-impedance branch, so it is inside the same station"
+17810,CASTLEFARM,2,CASTLEFARM,110,IE,way/975408238,Castlefarm 110kV Substation,110;22,EirGrid,52.6298482,-9.0544843,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+18010,COOKSTOWN A,1,COOKSTOWN A,110,IE,,,,,,,weak,90.0,COOKSTOWN LUAS,72.0,,"best candidate 'COOKSTOWN' (way/98142043) scored 90, below 92"
+20411,CORDUFF,3,CORDUFF,220;110,IE,way/183749097,Corduff 220kV Substation,220;110,EirGrid,53.4193712,-6.3649353,exact,100.0,,,agrees,
+20416,CORDUFF HOT,1,CORDUFF HOT,110,IE,way/183749097,Corduff 220kV Substation,,,53.4193712,-6.3649353,coupled,95.0,CORDUFF FLEXGEN,61.53846153846154,not applied: placed from a neighbour,"bus 20416 is joined to bus 2042 (CORDUFF) by the station's own transformer, so it is inside the same station"
+20900,BUFFY,1,BUFFY,110,IE,way/1046795490,Buffy 110kV Substation,110,EirGrid,53.3580797,-9.2937884,exact,100.0,,,agrees,
+21261,DRU,1,DRU_CAP,110,IE,way/207628559,Drumline 110kV Substation,,,52.7239924,-8.8613742,coupled,95.0,DUNDRUM,60.0,not applied: placed from a neighbour,"bus 21261 is joined to bus 2121 (DRUMLINE) by a zero-impedance branch, so it is inside the same station"
+21661,DOON,2,DOON|DOON_CAP,110,IE,way/374590824,Doon 110kV Substation,110;38;20;10,EirGrid,52.3836007,-7.6676498,exact,100.0,,,agrees,
+22261,DUNM,1,DUNM_CAP,110,IE,way/235929741,Dunmanway 110kV Station,,,51.7232312,-9.0897487,coupled,95.0,DUNDRUM,72.72727272727273,not applied: placed from a neighbour,"bus 22261 is joined to bus 2221 (DUNMANWAY) by a zero-impedance branch, so it is inside the same station"
+22419,DALLOW,2,DALLOW|DALLOW T,110,IE,way/513993739,Dallow 110kV Substation,110;38,EirGrid,53.1259869,-7.928076,exact,100.0,,,agrees,
+22610,DERRYIRON,5,DERRYIRON,110,IE,way/219769028,Derryiron 110 kV Substation,110,EirGrid,53.3581344,-7.2138473,exact,100.0,,,agrees,
+22612,DERRYIRON,5,DERRYIRON,110,IE,way/219769028,Derryiron 110 kV Substation,110,EirGrid,53.3581344,-7.2138473,exact,100.0,,,agrees,
+22613,DERRYIRON,5,DERRYIRON,110,IE,way/219769028,Derryiron 110 kV Substation,110,EirGrid,53.3581344,-7.2138473,exact,100.0,,,agrees,
+22614,DERRYIRON,5,DERRYIRON,110,IE,way/219769028,Derryiron 110 kV Substation,110,EirGrid,53.3581344,-7.2138473,exact,100.0,,,agrees,
+22811,DALTON_A2,1,DALTON_A2,110,IE,,,,,,,weak,80.0,RANDALSTOWN,70.0,,"best candidate 'DALTON' (way/201208741) scored 80, below 92"
+22861,DALT,1,DALT_CAP,110,IE,,,,,,,weak,80.0,DALLOW,60.0,,"best candidate 'DALTON' (way/201208741) scored 80, below 92"
+23019,DUNFIR_T,1,DUNFIR_T,110,IE,,,,,,,weak,82.35294117647058,DUNMURRY WEST,57.14285714285714,,"best candidate 'DUNFIERTH' (way/266499715) scored 82, below 92"
+23610,SLIEVECALLAN,1,SLIEVECALLAN,110,IE,way/821276203,Slievecallan 110 kV Substation,110;33,EirGrid,52.8288117,-9.2836999,exact,100.0,,,agrees,
+24819,FASSAROE_T,1,FASSAROE_T,110,IE,,,,,,,weak,88.88888888888889,THE SQUARE,60.0,,"best candidate 'FASSAROE' (way/48915255) scored 89, below 92"
+25674,HUNTSTOW,1,TEG HUNTSTOW,110,IE,way/404371901,Huntstown Power Station,,Energia,53.4124627,-6.3257744,fuzzy,94.11764705882352,HUNTSTOWN TEG,76.19047619047619,silent,token-sort score 94 against 'HUNTSTOWN'. 2 objects share this name; the others are already matched to a station of their own
+27219,GRFRAT,1,GRFRAT T,110,IE,,,,,,,weak,70.58823529411764,GORT,60.0,,"best candidate 'GRIFFINRATH' (way/257886373) scored 71, below 92"
+27281,GRIFFINRATH,2,GRIFFINRATH,110,IE,way/257886373,Griffinrath 110kV Substation,110;38,EirGrid,53.3435573,-6.5644585,exact,100.0,,,agrees,
+28019,GOLAGH,2,GOLAGH|GOLAGH T,110,IE,way/183084855,Golagh 110kV Substation,110;38,EirGrid,54.6871253,-7.9351078,exact,100.0,,,agrees,
+28261,GWE,1,GWE_CAP,110,IE,way/199125367,Gortawee 110kV Station,,,54.1291946,-7.5811846,coupled,95.0,GORTAWEE,54.54545454545454,not applied: placed from a neighbour,"bus 28261 is joined to bus 2821 (GORTAWEE) by a zero-impedance branch, so it is inside the same station"
+28411,GORMAN,3,GORMAN|GORMAN ESS,220;110,IE,way/264852019,Gorman 220kV Substation,220;110,EirGrid,53.7009328,-6.6442071,exact,100.0,,,agrees,
+28710,CLOGHER,4,CLOGHER,110,IE,way/705880940,Clogher 110kV Substation,110,EirGrid,54.6870462,-7.9951038,exact,100.0,,,agrees,
+28712,CLOGHER,4,CLOGHER,110,IE,way/705880940,Clogher 110kV Substation,110,EirGrid,54.6870462,-7.9951038,exact,100.0,,,agrees,
+28810,GLENLARA,2,GLENLARA,110,IE,way/374587161,Glenlara 110kV Substation,110;38,EirGrid,52.2053487,-9.023808,exact,100.0,,,agrees,
+30820,INCHICORE,2,INCHICORE,220,IE,way/456199341,Inchicore 220kV Substation,220;110;38,EirGrid,53.3337774,-6.3391212,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+31019,IKERIN,1,IKERIN T,110,IE,way/158575778,Ikerrin 110kV Substation,110;38,EirGrid,52.91857,-7.7713595,fuzzy,92.3076923076923,VIRGINIA,57.14285714285714,agrees,token-sort score 92 against 'IKERRIN'.
+31911,KNOCKANURE B,1,KNOCKANURE B,110,IE,way/1003262502,Knockanure 220kV Substation,,,52.4345623,-9.3733302,coupled,95.0,KNOCKUMBER 1,66.66666666666667,not applied: placed from a neighbour,"bus 31911 is joined to bus 3191 (KNOCKANURE) by a zero-impedance branch, so it is inside the same station"
+31920,KNOCKANURE,4,KNOCKANURE,220;110,IE,way/1003262502,Knockanure 220kV Substation,220;110,EirGrid,52.4345623,-9.3733302,exact,100.0,,,agrees,
+32461,KILTEEL,2,KILTEEL|KILTEEL_CAP,110,IE,way/257893804,Kilteel 110kV Substation,110;38,EirGrid,53.2465815,-6.5400403,exact,100.0,,,agrees,
+32661,KKY,1,KKY_CAP,110,IE,way/150242815,Kilkenny 110kV Substation,,,52.6405514,-7.1718695,coupled,95.0,KNOCK,50.0,not applied: placed from a neighbour,"bus 32661 is joined to bus 3261 (KILKENNY) by a zero-impedance branch, so it is inside the same station"
+32810,KILLONAN2,1,KILLONAN2,110,IE,way/180637986,Killonan 220kV Substation,220;110,EirGrid,52.6401871,-8.5454912,fuzzy,94.11764705882352,KILDONAN,82.35294117647058,agrees,token-sort score 94 against 'KILLONAN'.
+34620,KILPADDOGE,3,KILPADDOGE,220;110,IE,way/516651650,Kilpaddoge 220kV Substation,220;110;20,EirGrid,52.5801792,-9.3963977,exact,100.0,,,agrees,
+35011,LANESBORO_A2,1,LANESBORO_A2,110,IE,,,,,,,weak,75.0,BAILIEBOROUGH,56.00000000000001,,"best candidate 'LANESBOROUGH' (way/342820729) scored 75, below 92"
+35211,LOUTHB,1,LOUTHB,110,IE,way/264275258,Louth 275 kV Substation,,,53.9674714,-6.5657571,coupled,95.0,LOUGHREA,57.14285714285714,not applied: placed from a neighbour,"bus 35211 is joined to bus 3522 (LOUTH) by the station's own transformer, so it is inside the same station"
+35231,LOUTH,3,LOUTH,275;220,IE,way/264275258,Louth 275 kV Substation,275;220;110,EirGrid,53.9674714,-6.5657571,exact,100.0,,,agrees,
+35232,LOUTH,3,LOUTH,275;220,IE,way/264275258,Louth 275 kV Substation,275;220;110,EirGrid,53.9674714,-6.5657571,exact,100.0,,,agrees,
+35261,LOU,1,LOU_CAP,110,IE,way/264275258,Louth 275 kV Substation,,,53.9674714,-6.5657571,coupled,95.0,LOUGHREA,54.54545454545454,not applied: placed from a neighbour,"bus 35261 is joined to bus 3521 (LOUTHA) by a zero-impedance branch, so it is inside the same station"
+35611,LISDRUMDOAGH,1,LISDRUMDOAGH,110,IE,way/1067393040,Lisdrumdoagh Energy Storage Facility,,Highfield Storage Ltd,54.2443142,-6.9122464,truncated,99.0,,,silent,"PSS/E fills all twelve characters with 'LISDRUMDOAGH', a prefix of exactly one OSM name."
+35661,LISD,1,LISD_CAP,110,IE,way/267172950,Lisdrum 110 kV Substation,,,54.2447228,-6.9102424,coupled,95.0,KELLIS,60.0,not applied: placed from a neighbour,"bus 35661 is joined to bus 3561 (LISDRUM) by a zero-impedance branch, so it is inside the same station"
+35861,LKY,2,LKY_CAP|LKY_SVC,110,IE,way/66493784,Letterkenny 110kV Station,,,54.9241287,-7.6977545,coupled,95.0,LLOYD,50.0,not applied: placed from a neighbour,"bus 35861 is joined to bus 3581 (LETTERKENNY) by a zero-impedance branch, so it is inside the same station"
+35862,LKY,2,LKY_CAP|LKY_SVC,110,IE,way/66493784,Letterkenny 110kV Station,,,54.9241287,-7.6977545,coupled,95.0,LLOYD,50.0,not applied: placed from a neighbour,"bus 35861 is joined to bus 3581 (LETTERKENNY) by a zero-impedance branch, so it is inside the same station"
+36210,LISHEEN,2,LISHEEN,110,IE,way/374709194,Lisheen 110kV Substation,110,EirGrid,52.7513555,-7.6819128,exact,100.0,,,agrees,
+36411,CRORY,1,CRORY,110,IE,way/540091715,Crory 110kV Substation,110;38,EirGrid,52.579165,-6.5358105,exact,100.0,,,agrees,
+36671,GREENLINK,1,GREENLINK,150,IE,way/1154822210,Campile Converter Station,320;220,EirGrid,52.2816555,-6.9856001,alias,100.0,,,contradicts (not applied: alias),"Greenlink's Irish converter station at Great Island, tagged in OSM as Campile after the townland; the adjacent 'Greenlink Interconnector Substation' way carries no voltage tag"
+39610,MARINA,2,MARINA,110,IE,way/773119702,Marina 110kV Substation,110;10,EirGrid,51.8991554,-8.4461681,exact,100.0,,,agrees,
+40061,MUL,1,MUL_CAP,110,IE,way/266999191,Mullingar 110kV Substation,,,53.5383686,-7.3716668,coupled,95.0,MULLAGH,60.0,not applied: placed from a neighbour,"bus 40061 is joined to bus 4001 (MULLINGAR) by a zero-impedance branch, so it is inside the same station"
+40461,MOY,2,MOY|MOY_CAP,110,IE,way/200447504,Moy 110 kV Substation,110;38,EirGrid,54.1232614,-9.1879038,exact,100.0,,,agrees,
+40462,MOYCAP2,1,MOYCAP2,110,IE,way/200447504,Moy 110 kV Substation,,,54.1232614,-9.1879038,coupled,95.0,MOATE,50.0,not applied: placed from a neighbour,"bus 40462 is joined to bus 4041 (MOY) by a zero-impedance branch, so it is inside the same station"
+43619,OUTAGH,1,OUTAGH T,110,IE,,,,,,,weak,80.0,OMAGH,72.72727272727273,,"best candidate 'OUGHTRAGH' (way/213508375) scored 80, below 92"
+44661,PBEG REACTOR,2,PBEG REACTOR,220,IE,,,,,,,weak,57.14285714285714,BENTRA CENTRAL,53.84615384615385,,"best candidate 'BRACETOWN' (way/819286958) scored 57, below 92"
+44662,PBEG REACTOR,2,PBEG REACTOR,220,IE,,,,,,,weak,57.14285714285714,BENTRA CENTRAL,53.84615384615385,,"best candidate 'BRACETOWN' (way/819286958) scored 57, below 92"
+47210,RAFFEENB,1,RAFFEENB,110,IE,way/79803767,Raffeen 220 kV Substation,220;110,EirGrid,51.8268181,-8.3695668,fuzzy,93.33333333333331,TRALEE,57.14285714285714,agrees,token-sort score 93 against 'RAFFEEN'.
+47261,RAFF,1,RAFF_CAP,110,IE,way/79803767,Raffeen 220 kV Substation,,,51.8268181,-8.3695668,coupled,95.0,BRUFF,66.66666666666667,not applied: placed from a neighbour,"bus 47261 is joined to bus 47210 (RAFFEENB) by a zero-impedance branch, so it is inside the same station"
+49662,MOB,1,MOB_CAP,110,IE,way/152444285,Shankill 110 kV Substation,,,53.9987866,-7.2988808,coupled,95.0,TYMON,50.0,not applied: placed from a neighbour,"bus 49662 is joined to bus 4961 (SHANKILL) by a zero-impedance branch, so it is inside the same station"
+49861,SLIG,1,SLIG_CAP,110,IE,way/124120112,Sligo 110kV Substation,,,54.2412252,-8.4672217,coupled,95.0,CUSHALING,61.53846153846154,not applied: placed from a neighbour,"bus 49861 is joined to bus 4981 (SLIGO) by a zero-impedance branch, so it is inside the same station"
+50019,SOMRST,1,SOMRST T,110,IE,,,,,,,weak,85.71428571428572,SWORDS,66.66666666666667,,"best candidate 'SOMERSET' (way/183080497) scored 86, below 92"
+50619,STRATF,1,STRATF T,110,IE,,,,,,,weak,80.0,SRAH,60.0,,"best candidate 'STRATFORD' (way/170760036) scored 80, below 92"
+51319,CENTRAL PARK,2,CENTRAL PARK,110,IE,way/470024318,Central Park 110kV Substation,110,EirGrid,53.2702392,-6.2060635,exact,100.0,,,agrees,
+51410,TARBERT,3,TARBERT,220;110,IE,way/208124159,Tarbert 220kV Substation,220,EirGrid,52.5885022,-9.3662608,exact,100.0,,,agrees,2 objects share this name and lie within 0.2 km of each other - one site mapped more than once; the highest-voltage of them is taken
+51911,CROAGHONAGH,1,CROAGHONAGH,110,IE,,,,,,,weak,66.66666666666667,CRONALAGHT,66.66666666666667,,"best candidate 'GRANAGH' (way/374332044) scored 67, below 92"
+52219,TULBRK,1,TULBRK T,110,IE,,,,,,,weak,75.0,KANTURK,61.53846153846154,,"best candidate 'TULLABRACK' (way/218901878) scored 75, below 92"
+52610,TRIEN,2,TRIEN,110,IE,way/235924790,Trien 110kV Substation,110;38,EirGrid,52.4245772,-9.426115,exact,100.0,,,agrees,
+52661,TRIE,1,TRIE_CAP,110,IE,way/235924790,Trien 110kV Substation,,,52.4245772,-9.426115,coupled,95.0,TRIM,75.0,not applied: placed from a neighbour,"bus 52661 is joined to bus 5261 (TRIEN) by a zero-impedance branch, so it is inside the same station"
+52861,TRAL,1,TRAL_CAP,110,IE,way/91799111,Tralee 110kV Substation,,,52.2890467,-9.6740021,coupled,95.0,CENTRAL,72.72727272727273,not applied: placed from a neighbour,"bus 52861 is joined to bus 5281 (TRALEE) by a zero-impedance branch, so it is inside the same station"
+53061,THUR,1,THUR_CAP,110,IE,way/150770869,Thurles 110kV Substation,,,52.6919962,-7.7642805,coupled,95.0,TOGHER,60.0,not applied: placed from a neighbour,"bus 53061 is joined to bus 5301 (THURLES) by a zero-impedance branch, so it is inside the same station"
+54622,WOODLAND,3,WOODLAND,380;220,IE,way/254158424,Woodland 400kV Transmission Substation,400;220,EirGrid,53.4746308,-6.5697981,exact,100.0,,,agrees,
+54630,EASTWEST,1,EASTWEST,260,IE,way/260836695,Portan Converter Station,400,EirGrid,53.4712157,-6.5675597,alias,100.0,,,contradicts (not applied: alias),"the East-West Interconnector's converter station is at Portan, Co. Meath, beside Woodland 400 kV; TYTFS names the 260 kV converter bus EASTWEST and the 400 kV station PORTAN"
+54640,PORTAN,1,PORTAN,380,IE,way/260836695,Portan Converter Station,400,EirGrid,53.4712157,-6.5675597,exact,100.0,,,agrees (380 kV base / 400 kV nominal),
+55061,WEXF,1,WEXF_CAP,110,IE,way/232344721,Wexford 110kV Substation,,,52.3403641,-6.5394499,coupled,95.0,WATERFORD,46.15384615384615,not applied: placed from a neighbour,"bus 55061 is joined to bus 5501 (WEXFORD) by a zero-impedance branch, so it is inside the same station"
+66094,SLIABH BAWN,1,SLIABH BAWN,110,IE,way/793255383,Sliabh Bawn 110 kV Substation,110,EirGrid,53.7511805,-8.0518963,exact,100.0,,,agrees,
+68090,KNOCKNAMONA,1,KNOCKNAMONA,110,IE,,,,,,,weak,72.72727272727273,KNOCKRAHA,70.0,,"best candidate 'KNOCKNAGOUM' (way/512636965) scored 73, below 92"
+70010,AGHYOULE,1,AGHYOULE,110,NI,way/494785976,Aghyoule 110kV Substation,110,NIE Networks,54.1627134,-7.5851248,exact,100.0,,,agrees,
+70311,ANTR1,2,ANTR1A|ANTR1B,110,NI,way/246804766,Antrim 110kV Substation,110,NIE Networks,54.7277414,-6.2208116,ni-code,97.0,,,agrees,"'ANTR' sits in 'Antrim 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+70312,ANTR1,2,ANTR1A|ANTR1B,110,NI,way/246804766,Antrim 110kV Substation,110,NIE Networks,54.7277414,-6.2208116,ni-code,97.0,,,agrees,"'ANTR' sits in 'Antrim 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+70510,BAFD1,1,BAFD1-,110,NI,way/375457082,Ballylumford 110kV Substation,110,NIE Networks,54.8423899,-5.7822124,ni-code,97.0,,,agrees,"'BAFD' sits in 'Ballylumford 110kV Substation' within 12 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+70520,BAFD2,1,BAFD2-,275,NI,way/137050528,Ballylumford 275kV Substation,275,NIE Networks,54.8451971,-5.7840555,ni-code,97.0,,,agrees,"'BAFD' sits in 'Ballylumford 275kV Substation' within 12 characters, tighter than in any other Northern Ireland substation at 275 kV; the code's digit 2 is the voltage class"
+71011,BAME1,2,BAME1A|BAME1B,110,NI,way/366946550,Ballymena 110 kV Substation,110,NIE Networks,54.8512107,-6.2853537,ni-code,97.0,,,agrees,"'BAME' sits in 'Ballymena 110 kV Substation' within 7 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+71012,BAME1,2,BAME1A|BAME1B,110,NI,way/366946550,Ballymena 110 kV Substation,110,NIE Networks,54.8512107,-6.2853537,ni-code,97.0,,,agrees,"'BAME' sits in 'Ballymena 110 kV Substation' within 7 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+71511,BANB1,2,BANB1A|BANB1B,110,NI,way/335771580,Banbridge 110kV Substation,110,NIE Networks,54.3439696,-6.2458547,ni-code,97.0,,,agrees,"'BANB' sits in 'Banbridge 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+71512,BANB1,2,BANB1A|BANB1B,110,NI,way/335771580,Banbridge 110kV Substation,110,NIE Networks,54.3439696,-6.2458547,ni-code,97.0,,,agrees,"'BANB' sits in 'Banbridge 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+72010,BAVA1,1,BAVA1-,110,NI,way/375066696,Ballyvallagh 110 kV Substation,110,NIE Networks,54.7841741,-5.8612268,ni-code,97.0,,,agrees,"'BAVA' sits in 'Ballyvallagh 110 kV Substation' within 7 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+72511,BNCH1,2,BNCH1A|BNCH1B,110,NI,way/166809466,Ballynahinch Main 110 kV Substation,110,NIE Networks,54.3907852,-5.8782828,ni-code,97.0,,,agrees,"'BNCH' sits in 'Ballynahinch Main 110 kV Substation' within 12 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+72512,BNCH1,2,BNCH1A|BNCH1B,110,NI,way/166809466,Ballynahinch Main 110 kV Substation,110,NIE Networks,54.3907852,-5.8782828,ni-code,97.0,,,agrees,"'BNCH' sits in 'Ballynahinch Main 110 kV Substation' within 12 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+73011,BELN1,2,BELN1A|BELN1B,110,NI,,,,,,,weak,54.54545454545454,BWEENG,54.54545454545454,,"'BELN' is a subsequence of no unclaimed Northern Ireland substation name tagged at 110 kV. best candidate 'DELVIN' (way/504620130) scored 55, below 92"
+73012,BELN1,2,BELN1A|BELN1B,110,NI,,,,,,,weak,54.54545454545454,BWEENG,54.54545454545454,,"'BELN' is a subsequence of no unclaimed Northern Ireland substation name tagged at 110 kV. best candidate 'DELVIN' (way/504620130) scored 55, below 92"
+73500,BROCK1,1,BROCK1,110,NI,way/685222120,Brockaghboy 110kV Substation,110,NIE Networks,54.9371278,-6.7382085,ni-code,97.0,,,agrees,"'BROCK' sits in 'Brockaghboy 110kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+73510,GARVAGH NI,1,GARVAGH NI,110,NI,,,,,,,weak,81.81818181818181,ARVAGH,75.0,,"best candidate 'GARVAGH MAIN' (way/1037295507) scored 82, below 92"
+74011,CARN1,2,CARN1A|CARN1B,110,NI,way/166809471,Carnmoney 110kV Substation,110,NIE Networks,54.6869153,-5.9538319,ni-code,97.0,,,agrees,"'CARN' sits in 'Carnmoney 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+74012,CARN1,2,CARN1A|CARN1B,110,NI,way/166809471,Carnmoney 110kV Substation,110,NIE Networks,54.6869153,-5.9538319,ni-code,97.0,,,agrees,"'CARN' sits in 'Carnmoney 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+74511,CAST1,2,CAST1A|CAST1B,110,NI,way/148266260,Castlereagh 275kV Substation,275,NIE Networks,54.5629404,-5.8784287,ni-site,94.0,CASTLEREA,57.14285714285714,not applied: the two voltage classes are one site,"'CAST' is the site and '1' the voltage class in the NIE naming; CAST2 is the same site, matched to 'Castlereagh 275kV Substation', and OSM does not map this voltage level separately"
+74512,CAST1,2,CAST1A|CAST1B,110,NI,way/148266260,Castlereagh 275kV Substation,275,NIE Networks,54.5629404,-5.8784287,ni-site,94.0,CASTLEREA,57.14285714285714,not applied: the two voltage classes are one site,"'CAST' is the site and '1' the voltage class in the NIE naming; CAST2 is the same site, matched to 'Castlereagh 275kV Substation', and OSM does not map this voltage level separately"
+74520,CAST2,1,CAST2-,275,NI,way/148266260,Castlereagh 275kV Substation,275,NIE Networks,54.5629404,-5.8784287,ni-code,97.0,,,agrees,"'CAST' sits in 'Castlereagh 275kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 275 kV; the code's digit 2 is the voltage class"
+74711,CENT1,2,CENT1A|CENT1B,110,NI,way/1037941300,Central 110kV Substation,110,NIE Networks,54.6048411,-5.9247406,ni-code,97.0,,,agrees,"'CENT' sits in 'Central 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+74712,CENT1,2,CENT1A|CENT1B,110,NI,way/1037941300,Central 110kV Substation,110,NIE Networks,54.6048411,-5.9247406,ni-code,97.0,,,agrees,"'CENT' sits in 'Central 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+75010,COLE1,2,COLE1-|COLE1_CAP,110,NI,way/374863965,Coleraine 110kV Substation,110;33;11,NIE Networks,55.1094142,-6.6873926,ni-code,97.0,,,agrees,"'COLE' sits in 'Coleraine 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+75011,COLE1,2,COLE1-|COLE1_CAP,110,NI,way/374863965,Coleraine 110kV Substation,110;33;11,NIE Networks,55.1094142,-6.6873926,ni-code,97.0,,,agrees,"'COLE' sits in 'Coleraine 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+75510,COOL1,2,COOL1|COOL1-,110,NI,way/402783212,Coolkeeragh 275 kV Substation,275,NIE Networks,55.0424072,-7.2472407,ni-site,94.0,COOLOCK,66.66666666666667,not applied: the two voltage classes are one site,"'COOL' is the site and '1' the voltage class in the NIE naming; COOL2 is the same site, matched to 'Coolkeeragh 275 kV Substation', and OSM does not map this voltage level separately"
+75511,COOL1,2,COOL1|COOL1-,110,NI,way/402783212,Coolkeeragh 275 kV Substation,275,NIE Networks,55.0424072,-7.2472407,ni-site,94.0,COOLOCK,66.66666666666667,not applied: the two voltage classes are one site,"'COOL' is the site and '1' the voltage class in the NIE naming; COOL2 is the same site, matched to 'Coolkeeragh 275 kV Substation', and OSM does not map this voltage level separately"
+75514,COOL,1,COOL_CAP,110,NI,way/402783212,Coolkeeragh 275 kV Substation,,,55.0424072,-7.2472407,coupled,95.0,COOLOCK,72.72727272727273,not applied: placed from a neighbour,"bus 75514 is joined to bus 75510 (COOL1) by a zero-impedance branch, so it is inside the same station"
+75520,COOLKEER,1,COOLKEER,275,NI,way/402783212,Coolkeeragh 275 kV Substation,275,NIE Networks,55.0424072,-7.2472407,prefix,98.0,,,agrees,'COOLKEER' is a prefix of exactly one OSM name and the voltage agrees.
+75521,COOL2,2,COOL2A|COOL2B,275,NI,way/402783212,Coolkeeragh 275 kV Substation,275,NIE Networks,55.0424072,-7.2472407,ni-code,97.0,,,agrees,"'COOL' sits in 'Coolkeeragh 275 kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 275 kV; the code's digit 2 is the voltage class"
+75522,COOL2,2,COOL2A|COOL2B,275,NI,way/402783212,Coolkeeragh 275 kV Substation,275,NIE Networks,55.0424072,-7.2472407,ni-code,97.0,,,agrees,"'COOL' sits in 'Coolkeeragh 275 kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 275 kV; the code's digit 2 is the voltage class"
+75610,AUGHT,1,AUGHT,110,NI,,,,,,,weak,60.0,OUGHTRAGH,57.14285714285714,,"best candidate 'OMAGH' (way/194825184) scored 60, below 92"
+75611,CULMORE_RD,1,CULMORE_RD,110,NI,,,,,,,weak,63.1578947368421,COES ROAD,63.1578947368421,,"best candidate 'TULLAMORE' (way/1460630355) scored 63, below 92"
+75810,CREAGH,1,CREAGH,110,NI,way/477217601,Creagh 110kV Substation,110,NIE Networks,54.7612165,-6.4927469,exact,100.0,,,agrees,2 objects share this name; only one is in NI
+76011,CREG1,2,CREG1A|CREG1B,110,NI,way/444183605,Cregagh 110kV Substation,110,NIE Networks,54.5825064,-5.8958778,ni-code,97.0,,,agrees,"'CREG' sits in 'Cregagh 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+76012,CREG1,2,CREG1A|CREG1B,110,NI,way/444183605,Cregagh 110kV Substation,110,NIE Networks,54.5825064,-5.8958778,ni-code,97.0,,,agrees,"'CREG' sits in 'Cregagh 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+76511,DONE1C,1,DONE1C,110,NI,,,,,,,weak,61.53846153846154,DOON,60.0,,"best candidate 'DONEGAL' (way/627428621) scored 62, below 92"
+76512,DONE1,2,DONE1A|DONE1B,110,NI,way/429456205,Donegall 110kV Substation,110,NIE Networks,54.5909011,-5.9540897,ni-code,97.0,,,agrees,"'DONE' sits in 'Donegall 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+76513,DONE1D,1,DONE1D,110,NI,,,,,,,weak,61.53846153846154,DONEGAL,61.53846153846154,,"best candidate 'MONREAD' (way/87982346) scored 62, below 92"
+76514,DONE1,2,DONE1A|DONE1B,110,NI,way/429456205,Donegall 110kV Substation,110,NIE Networks,54.5909011,-5.9540897,ni-code,97.0,,,agrees,"'DONE' sits in 'Donegall 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+76810,DROMORE,1,DROMORE,110,NI,way/1001935824,Dromore 110 kV Substation,110,NIE Networks,54.5291488,-7.3879666,exact,100.0,,,agrees,2 objects share this name; only one is tagged at this station's voltage
+77010,DRUM1,1,DRUM1-,110,NI,,,,,,,ambiguous,,,,,"'DRUM' sits equally tightly in 2 Northern Ireland substation names at 110 kV: Drumlins Park Wind Farm 110 kV Substation, Drumnakelly 110kV Substation"
+77210,DRUMQUIN,1,DRUMQUIN,110,NI,way/1001921828,Drumquin 110 kV Substation,110,NIE Networks,54.575301,-7.4862623,exact,100.0,,,agrees,3 objects share this name; only one is in NI
+77511,DUNG1,2,DUNG1-|DUNG1B,110,NI,way/377711903,Dungannon 110 kV Substation,110,NIE Networks,54.5330816,-6.7496081,ni-code,97.0,,,agrees,"'DUNG' sits in 'Dungannon 110 kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+77512,DUNG1,2,DUNG1-|DUNG1B,110,NI,way/377711903,Dungannon 110 kV Substation,110,NIE Networks,54.5330816,-6.7496081,ni-code,97.0,,,agrees,"'DUNG' sits in 'Dungannon 110 kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+78511,EDEN1,2,EDEN1A|EDEN1B,110,NI,way/166764822,Eden 110kV Substation,110,NIE Networks,54.7377509,-5.7827614,ni-code,97.0,,,agrees,"'EDEN' sits in 'Eden 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+78512,EDEN1,2,EDEN1A|EDEN1B,110,NI,way/166764822,Eden 110kV Substation,110,NIE Networks,54.7377509,-5.7827614,ni-code,97.0,,,agrees,"'EDEN' sits in 'Eden 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+79010,ENNISKIL,1,ENNISKIL,110,NI,way/194793393,Enniskillen 110kV Substation,110,NIE Networks,54.3671413,-7.6326094,prefix,98.0,,,agrees,'ENNISKIL' is a prefix of exactly one OSM name and the voltage agrees. 2 objects share this name; only one is tagged at this station's voltage
+79015,ENNK,2,ENNK_PST,110,NI,way/194793393,Enniskillen 110kV Substation,,,54.3671413,-7.6326094,coupled,95.0,GREENLINK,61.53846153846154,not applied: placed from a neighbour,"bus 79015 is joined to bus 79010 (ENNISKIL) by the station's own transformer, so it is inside the same station"
+79016,ENNK,2,ENNK_PST,110,NI,way/194793393,Enniskillen 110kV Substation,,,54.3671413,-7.6326094,coupled,95.0,GREENLINK,61.53846153846154,not applied: placed from a neighbour,"bus 79015 is joined to bus 79010 (ENNISKIL) by the station's own transformer, so it is inside the same station"
+79017,ENNISKILLEN,1,ENNISKILLEN,110,NI,way/194793393,Enniskillen 110kV Substation,110,NIE Networks,54.3671413,-7.6326094,exact,100.0,,,agrees,
+80011,FINY1,2,FINY1A|FINY1B,110,NI,way/166764805,Finaghy 110kV Substation,110,NIE Networks,54.5699203,-5.9944128,ni-code,97.0,,,agrees,"'FINY' sits in 'Finaghy 110kV Substation' within 7 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+80012,FINY1,2,FINY1A|FINY1B,110,NI,way/166764805,Finaghy 110kV Substation,110,NIE Networks,54.5699203,-5.9944128,ni-code,97.0,,,agrees,"'FINY' sits in 'Finaghy 110kV Substation' within 7 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+80511,GLEN1,2,GLEN1A|GLEN1B,110,NI,,,,,,,ambiguous,,,,,"'GLEN' sits equally tightly in 2 Northern Ireland substation names at 110 kV: Glenconway 110 kV Substation, Glengormley 110kV Substation"
+80512,GLEN1,2,GLEN1A|GLEN1B,110,NI,,,,,,,ambiguous,,,,,"'GLEN' sits equally tightly in 2 Northern Ireland substation names at 110 kV: Glenconway 110 kV Substation, Glengormley 110kV Substation"
+80710,GORT,1,GORT,110,NI,way/1001603724,Gort 110 kV Substation,110,NIE Networks,54.4851717,-7.1171035,exact,100.0,,,agrees,2 objects share this name; only one is in NI
+81010,HANA1,2,HANA1A|HANA1B,110,NI,way/166764802,Hannahstown 275kV Substation,275,NIE Networks,54.5747551,-6.0273784,ni-site,94.0,RAHANS,54.54545454545454,not applied: the two voltage classes are one site,"'HANA' is the site and '1' the voltage class in the NIE naming; HANA2 is the same site, matched to 'Hannahstown 275kV Substation', and OSM does not map this voltage level separately"
+81011,HANA1,2,HANA1A|HANA1B,110,NI,way/166764802,Hannahstown 275kV Substation,275,NIE Networks,54.5747551,-6.0273784,ni-site,94.0,RAHANS,54.54545454545454,not applied: the two voltage classes are one site,"'HANA' is the site and '1' the voltage class in the NIE naming; HANA2 is the same site, matched to 'Hannahstown 275kV Substation', and OSM does not map this voltage level separately"
+81020,HANA2,1,HANA2A,275,NI,way/166764802,Hannahstown 275kV Substation,275,NIE Networks,54.5747551,-6.0273784,ni-code,97.0,,,agrees,"'HANA' sits in 'Hannahstown 275kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 275 kV; the code's digit 2 is the voltage class"
+81510,KELS1,1,KELS1-,110,NI,way/1132372558,Kells BESS 110 kV Substation,110,NIE Networks,54.8036875,-6.1653631,ni-code,97.0,,,agrees,"'KELS' sits in 'Kells BESS 110 kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+81520,KELS2,1,KELS2-,275,NI,way/142185552,Kells 275kV Substation,275,NIE Networks,54.8014668,-6.167332,ni-code,97.0,,,agrees,"'KELS' sits in 'Kells 275kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 275 kV; the code's digit 2 is the voltage class"
+81810,KILL1-CL,1,KILL1-CL,110,NI,,,,,,,weak,70.58823529411764,KILLIN HILL,63.1578947368421,,"best candidate 'KILL HILL' (way/521548109) scored 71, below 92"
+82020,KILR2,1,KILR2-,275,NI,way/339008021,Kilroot 275kV Substation,275,NIE Networks,54.727135,-5.7679308,ni-code,97.0,,,agrees,"'KILR' sits in 'Kilroot 275kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 275 kV; the code's digit 2 is the voltage class"
+82511,KNCK1,2,KNCK1A|KNCK1B,110,NI,way/721044855,Knock 110kV Substation,110,NIE Networks,54.5941754,-5.8560999,ni-code,97.0,,,agrees,"'KNCK' sits in 'Knock 110kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+82512,KNCK1,2,KNCK1A|KNCK1B,110,NI,way/721044855,Knock 110kV Substation,110,NIE Networks,54.5941754,-5.8560999,ni-code,97.0,,,agrees,"'KNCK' sits in 'Knock 110kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+83011,LARN1,2,LARN1A|LARN1B,110,NI,way/166764804,Larne 110kV Substation,110,NIE Networks,54.847707,-5.8553653,ni-code,97.0,,,agrees,"'LARN' sits in 'Larne 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+83012,LARN1,2,LARN1A|LARN1B,110,NI,way/166764804,Larne 110kV Substation,110,NIE Networks,54.847707,-5.8553653,ni-code,97.0,,,agrees,"'LARN' sits in 'Larne 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+83510,LIMA1,1,LIMA1-,110,NI,way/374858231,Limavady 110 kV Substation,110,NIE Networks,55.0242354,-6.9158482,ni-code,97.0,,,agrees,"'LIMA' sits in 'Limavady 110 kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+84011,LISB1,2,LISB1A|LISB1B,110,NI,way/166809454,Lisburn 110kV Substation,110,NIE Networks,54.5211635,-6.0904031,ni-code,97.0,,,agrees,"'LISB' sits in 'Lisburn 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+84012,LISB1,2,LISB1A|LISB1B,110,NI,way/166809454,Lisburn 110kV Substation,110,NIE Networks,54.5211635,-6.0904031,ni-code,97.0,,,agrees,"'LISB' sits in 'Lisburn 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+84411,LSMR1,2,LSMR1A|LSMR1B,110,NI,way/374873312,Lisaghmore 110kV Substation,110,NIE Networks,54.9806374,-7.3049906,ni-code,97.0,,,agrees,"'LSMR' sits in 'Lisaghmore 110kV Substation' within 9 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+84412,LSMR1,2,LSMR1A|LSMR1B,110,NI,way/374873312,Lisaghmore 110kV Substation,110,NIE Networks,54.9806374,-7.3049906,ni-code,97.0,,,agrees,"'LSMR' sits in 'Lisaghmore 110kV Substation' within 9 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+84511,LOGE1,2,LOGE1A|LOGE1B,110,NI,way/193197077,Loguestown 110kV Substation,110,NIE Networks,55.1478388,-6.6561595,ni-code,97.0,,,agrees,"'LOGE' sits in 'Loguestown 110kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+84512,LOGE1,2,LOGE1A|LOGE1B,110,NI,way/193197077,Loguestown 110kV Substation,110,NIE Networks,55.1478388,-6.6561595,ni-code,97.0,,,agrees,"'LOGE' sits in 'Loguestown 110kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+85020,MAGF2,1,MAGF2-,275,NI,way/230134599,Magherafelt 275 kV Substation,275,NIE Networks,54.73025,-6.6158563,ni-code,97.0,,,agrees,"'MAGF' sits in 'Magherafelt 275 kV Substation' within 8 characters, tighter than in any other Northern Ireland substation at 275 kV; the code's digit 2 is the voltage class"
+85510,MAKL1-CL,1,MAKL1-CL,110,NI,,,,,,,weak,55.55555555555556,COLLEGE PARK,50.0,,"best candidate 'CLONAKILTY' (way/514667250) scored 56, below 92"
+86220,BALLYCRO,1,BALLYCRO,275,NI,way/137050527,Ballycronan More HVDC Static Inverter Plant,275;250,Mutual Energy,54.8432016,-5.7704674,alias,100.0,,,agrees (not applied: alias),Moyle's Northern Ireland terminal; TYTFS truncates Ballycronan More to BALLYCRO
+86221,SCOTLAND,1,SCOTLAND,275,NI,,,,,,,deliberately-unplaced,,,,,"the GB end of Moyle. It is a boundary bus, not a place in Ireland, and is left without a coordinate rather than being put at Auchencrosh"
+86280,MOYL,1,MOYL_DUM,110,NI,way/137050527,Ballycronan More HVDC Static Inverter Plant,275;250,Mutual Energy,54.8432016,-5.7704674,alias,100.0,,,contradicts (not applied: alias),"the 110 kV dummy bus at the Moyle terminal, same site"
+86311,NARD1,2,NARD1A|NARD1B,110,NI,way/1037971160,Newtownards 110 kV Substation,110,NIE Networks,54.602727,-5.6775437,ni-code,97.0,,,agrees,"'NARD' sits in 'Newtownards 110 kV Substation' within 10 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+86312,NARD1,2,NARD1A|NARD1B,110,NI,way/1037971160,Newtownards 110 kV Substation,110,NIE Networks,54.602727,-5.6775437,ni-code,97.0,,,agrees,"'NARD' sits in 'Newtownards 110 kV Substation' within 10 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+86511,NEWY1,2,NEWY1A|NEWY1B,110,NI,way/113626759,Newry 110kV Substation,110,NIE Networks,54.1790704,-6.3198565,ni-code,97.0,,,agrees,"'NEWY' sits in 'Newry 110kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+86512,NEWY1,2,NEWY1A|NEWY1B,110,NI,way/113626759,Newry 110kV Substation,110,NIE Networks,54.1790704,-6.3198565,ni-code,97.0,,,agrees,"'NEWY' sits in 'Newry 110kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+87510,OMAH1,1,OMAH1-,110,NI,way/194825184,Omagh 110kV Substation,110,NIE Networks,54.5779193,-7.2810517,ni-code,97.0,,,agrees,"'OMAH' sits in 'Omagh 110kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+87900,RASHARK1,1,RASHARK1,110,NI,,,,,,,weak,82.35294117647058,RAHANS,57.14285714285714,,"best candidate 'RASHARKIN' (way/485027264) scored 82, below 92"
+88011,RATH1,2,RATH1A|RATH1B,110,NI,way/166809462,Rathgael 110kV Substation,110,NIE Networks,54.6465345,-5.6724001,ni-code,97.0,,,agrees,"'RATH' sits in 'Rathgael 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+88012,RATH1,2,RATH1A|RATH1B,110,NI,way/166809462,Rathgael 110kV Substation,110,NIE Networks,54.6465345,-5.6724001,ni-code,97.0,,,agrees,"'RATH' sits in 'Rathgael 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+88511,ROSE1,2,ROSE1A|ROSE1B,110,NI,way/166809457,Rosebank 110kV Substation,110,NIE Networks,54.5759299,-5.8678235,ni-code,97.0,,,agrees,"'ROSE' sits in 'Rosebank 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+88512,ROSE1,2,ROSE1A|ROSE1B,110,NI,way/166809457,Rosebank 110kV Substation,110,NIE Networks,54.5759299,-5.8678235,ni-code,97.0,,,agrees,"'ROSE' sits in 'Rosebank 110kV Substation' within 4 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+89210,SKRK1,1,SKRK1-,110,NI,,,,,,,ambiguous,,,,,"'SKRK' sits equally tightly in 2 Northern Ireland substation names at 110 kV: Slieve Kirk 110 kV Substation, Slieve Kirk 110kV Substation"
+89311,SPRN1,2,SPRN1A|SPRN1B,110,NI,way/439612273,Springtown 110kV Substation,110,NIE Networks,55.0198941,-7.3333798,ni-code,97.0,,,agrees,"'SPRN' sits in 'Springtown 110kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+89312,SPRN1,2,SPRN1A|SPRN1B,110,NI,way/439612273,Springtown 110kV Substation,110,NIE Networks,55.0198941,-7.3333798,ni-code,97.0,,,agrees,"'SPRN' sits in 'Springtown 110kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+89510,STRABANE,1,STRABANE,110,NI,way/374848631,Strabane 110kV Substation,110,NIE Networks,54.8524826,-7.4307015,exact,100.0,,,agrees,
+89515,STRA,2,STRA_PST,110,NI,way/374848631,Strabane 110kV Substation,,,54.8524826,-7.4307015,coupled,95.0,STRABANE,66.66666666666667,not applied: placed from a neighbour,"bus 89515 is joined to bus 89510 (STRABANE) by the station's own transformer, so it is inside the same station"
+89516,STRA,2,STRA_PST,110,NI,way/374848631,Strabane 110kV Substation,,,54.8524826,-7.4307015,coupled,95.0,STRABANE,66.66666666666667,not applied: placed from a neighbour,"bus 89515 is joined to bus 89510 (STRABANE) by the station's own transformer, so it is inside the same station"
+89517,STRABANE ZER,1,STRABANE ZER,110,NI,way/374848631,Strabane 110kV Substation,,,54.8524826,-7.4307015,coupled,95.0,RAMSEY WATER TURBINE,56.25,not applied: placed from a neighbour,"bus 89517 is joined to bus 89515 (STRA) by the station's own transformer, so it is inside the same station"
+90011,TAND1,2,TAND1A|TAND1B,110,NI,way/227767019,Tandragee 275kV Substation,,,54.3700948,-6.425216,coupled,95.0,OUTLANDS,61.53846153846154,not applied: placed from a neighbour,"bus 90011 is joined to bus 90020 (TANDRAGEE) by the station's own transformer, so it is inside the same station"
+90012,TAND1,2,TAND1A|TAND1B,110,NI,way/227767019,Tandragee 275kV Substation,,,54.3700948,-6.425216,coupled,95.0,OUTLANDS,61.53846153846154,not applied: placed from a neighbour,"bus 90011 is joined to bus 90020 (TANDRAGEE) by the station's own transformer, so it is inside the same station"
+90020,TANDRAGEE,1,TANDRAGEE,275,NI,way/227767019,Tandragee 275kV Substation,275,NIE Networks,54.3700948,-6.425216,exact,100.0,,,agrees,
+90210,TREM,1,TREM,110,NI,,,,,,,weak,75.0,TREMOGE,72.72727272727273,,"best candidate 'TRIM' (way/499678809) scored 75, below 92"
+90310,TAMNAMOR,2,TAMNAMOR,275;110,NI,way/227767022,Tamnamore 275kV Substation,275,NIE Networks,54.5119455,-6.6816791,prefix,98.0,,,agrees,'TAMNAMOR' is a prefix of exactly one OSM name and the voltage agrees. 2 objects share this name and lie within 0.2 km of each other - one site mapped more than once; the highest-voltage of them is taken
+90320,TAMNAMOR,2,TAMNAMOR,275;110,NI,way/227767022,Tamnamore 275kV Substation,275,NIE Networks,54.5119455,-6.6816791,prefix,98.0,,,agrees,'TAMNAMOR' is a prefix of exactly one OSM name and the voltage agrees. 2 objects share this name and lie within 0.2 km of each other - one site mapped more than once; the highest-voltage of them is taken
+90511,WARN1,2,WARN1A|WARN1B,110,NI,way/231161975,Waringstown 110kV Substation,110,NIE Networks,54.450423,-6.3078693,ni-code,97.0,,,agrees,"'WARN' sits in 'Waringstown 110kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"
+90512,WARN1,2,WARN1A|WARN1B,110,NI,way/231161975,Waringstown 110kV Substation,110,NIE Networks,54.450423,-6.3078693,ni-code,97.0,,,agrees,"'WARN' sits in 'Waringstown 110kV Substation' within 5 characters, tighter than in any other Northern Ireland substation at 110 kV; the code's digit 1 is the voltage class"

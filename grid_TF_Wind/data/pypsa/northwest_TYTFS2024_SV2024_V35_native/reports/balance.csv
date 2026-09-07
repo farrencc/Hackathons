@@ -1,0 +1,25 @@
+station,machines,machines_in_service,capacity_mw,dispatched_mw,demand_mw,net_mw
+Tawnaghmore,4,2,134.6,96.0,0.0,96.0
+Mulreavy,4,0,95.25,0.0,0.0,0.0
+Croaghonagh,1,0,91.2,0.0,0.0,0.0
+Meentycat,3,0,84.96,0.0,0.0,0.0
+Garvagh,3,0,82.0,0.0,0.0,0.0
+Glenree,4,0,77.3,0.0,0.0,0.0
+Binbane,14,0,75.1,0.0,7.04,-7.04
+Corderry,11,0,63.253,0.0,0.0,0.0
+Sorne Hill,10,0,63.24999999999999,0.0,0.0,0.0
+Cathaleen's Fall,3,0,63.0,0.0,6.0,-6.0
+Trillick,6,0,44.69,0.0,6.29,-6.29
+Letterkenny,6,0,40.27,0.0,17.68,-17.68
+Cunghill,3,0,34.8,0.0,0.0,0.0
+Lenalea,1,0,30.5,0.0,0.0,0.0
+Ardnagappary,3,0,22.94,0.0,3.0,-3.0
+Cliff,2,0,20.0,0.0,0.0,0.0
+Golagh,2,0,15.0,0.0,0.0,0.0
+Sligo,2,0,13.65,0.0,19.66,-19.66
+Moy,1,0,6.0,0.0,13.53,-13.53
+Clogher,0,0,0.0,0.0,0.0,0.0
+Drumkeen,0,0,0.0,0.0,0.0,0.0
+Srananagh 110,0,0,0.0,0.0,0.0,0.0
+Srananagh 220,0,0,0.0,0.0,0.0,0.0
+Tievebrack,0,0,0.0,0.0,0.0,0.0

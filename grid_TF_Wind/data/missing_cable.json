@@ -1,0 +1,30 @@
+{
+  "kilkenny": {
+    "label": "County Kilkenny, Ireland",
+    "n_assets": 128,
+    "mst_lower_bound_km": 201.1,
+    "mapped_sub38kV_km": 1211.6,
+    "mapped_over_lower_bound": 6.024
+  },
+  "mayo": {
+    "label": "County Mayo, Ireland",
+    "n_assets": 154,
+    "mst_lower_bound_km": 307.3,
+    "mapped_sub38kV_km": 4039.8,
+    "mapped_over_lower_bound": 13.147
+  },
+  "dublin_city": {
+    "label": "Dublin, Ireland (Dublin City Council)",
+    "n_assets": 874,
+    "mst_lower_bound_km": 153.8,
+    "mapped_sub38kV_km": 7.8,
+    "mapped_over_lower_bound": 0.051
+  },
+  "dublin_county": {
+    "label": "County Dublin, Ireland",
+    "n_assets": 2141,
+    "mst_lower_bound_km": 512.6,
+    "mapped_sub38kV_km": 872.3,
+    "mapped_over_lower_bound": 1.701
+  }
+}

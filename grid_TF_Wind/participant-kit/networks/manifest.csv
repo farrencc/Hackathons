@@ -1,0 +1,9 @@
+scenario,scope,buses,lines,transformers,links,generators,loads,snapshots,anchor_snapshot,peak_demand_mw,generation_capacity_mw,netcdf,csv_folder
+SV2024,all-island,639,640,203,4,225,231,168,2030-07-09 05:00:00,4947.9,14590.5,networks/SV2024_all-island.nc,networks/SV2024_all-island/
+SV2024,north-west,15,19,0,0,29,7,168,2030-07-09 05:00:00,106.5,2364.4,networks/SV2024_north-west.nc,networks/SV2024_north-west/
+SV2033,all-island,754,755,225,4,264,246,168,2030-07-09 05:00:00,6058.0,18282.9,networks/SV2033_all-island.nc,networks/SV2033_all-island/
+SV2033,north-west,15,18,0,0,35,7,168,2030-07-09 05:00:00,107.5,3386.4,networks/SV2033_north-west.nc,networks/SV2033_north-west/
+WP2024,all-island,646,645,203,4,295,232,168,2030-01-17 18:00:00,7324.5,22650.0,networks/WP2024_all-island.nc,networks/WP2024_all-island/
+WP2024,north-west,15,19,0,0,29,7,168,2030-01-17 18:00:00,212.6,2830.7,networks/WP2024_north-west.nc,networks/WP2024_north-west/
+WP2033,all-island,754,755,225,4,929,246,168,2030-01-17 18:00:00,8791.8,42573.9,networks/WP2033_all-island.nc,networks/WP2033_all-island/
+WP2033,north-west,15,18,0,0,35,7,168,2030-01-17 18:00:00,238.9,3844.4,networks/WP2033_north-west.nc,networks/WP2033_north-west/

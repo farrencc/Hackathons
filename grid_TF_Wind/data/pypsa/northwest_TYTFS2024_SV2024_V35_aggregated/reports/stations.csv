@@ -1,0 +1,16 @@
+station,kv,buses,folds_into,note
+Ardnagappary,110.0,1571,,nodes.xlsx folds Clady into this station; TYTFS has no Clady bus at any voltage - see the reconciliation
+Binbane,110.0,1341,,
+Cathaleen's Fall,110.0,"1701,1761,17010,17061",Cliff,"two 110 kV busbars (1701 CATH_FALL, 17010 CATH FALL) and a capacitor (17061 CATH_CAP), joined by zero-impedance branches; one station"
+Clogher,110.0,"2801,2870,2871,4091,28019,28710,28712",Golagh+Mulreavy,"four 110 kV busbars at one site, joined by zero-impedance couplers"
+Corderry,110.0,"1631,2671",Garvagh,
+Croaghonagh,110.0,51911,,
+Drumkeen,110.0,"2321,4071",Meentycat,
+Glenree,110.0,4371,,
+Letterkenny,110.0,"3581,3591,35861,35862",Lenalea,with its capacitor and SVC
+Moy,110.0,"4041,5241,5251,40461,40462",Tawnaghmore,with its two capacitors
+Sligo,110.0,"1931,4981,49861",Cunghill,with its capacitor
+Sorne Hill,110.0,4991,,
+Srananagh 220,220.0,"5041,5042",Srananagh 110,"the region's connection to the 220 kV network, and the boundary this extraction slacks at.  nodes.xlsx has one Srananagh node, at 220 kV, so the 110 kV busbar folds into it and the transformer becomes internal"
+Tievebrack,110.0,5191,,
+Trillick,110.0,5361,,

@@ -1,0 +1,364 @@
+{
+  "kilkenny": {
+    "label": "County Kilkenny, Ireland",
+    "ge_38kV": {
+      "n_nodes": 2184,
+      "n_edges": 2161,
+      "n_components": 25,
+      "largest": 959,
+      "largest_share": 0.4391025641025641,
+      "median": 46.0,
+      "mean": 87.36,
+      "n_size_le_2": 0,
+      "n_size_le_5": 2,
+      "n_size_ge_50": 12,
+      "share_nodes_in_comps_le_5": 0.003205128205128205,
+      "km": 313.8,
+      "n_features": 2159,
+      "top_5_sizes": [
+        959,
+        208,
+        112,
+        104,
+        95
+      ]
+    },
+    "ge_110kV": {
+      "n_nodes": 671,
+      "n_edges": 664,
+      "n_components": 7,
+      "largest": 350,
+      "largest_share": 0.5216095380029806,
+      "median": 58.0,
+      "mean": 95.85714285714286,
+      "n_size_le_2": 1,
+      "n_size_le_5": 2,
+      "n_size_ge_50": 5,
+      "share_nodes_in_comps_le_5": 0.007451564828614009,
+      "km": 129.1,
+      "n_features": 664,
+      "top_5_sizes": [
+        350,
+        112,
+        95,
+        58,
+        51
+      ]
+    },
+    "mv_only": {
+      "n_nodes": 5583,
+      "n_edges": 5378,
+      "n_components": 208,
+      "largest": 432,
+      "largest_share": 0.07737775389575496,
+      "median": 11.0,
+      "mean": 26.841346153846153,
+      "n_size_le_2": 12,
+      "n_size_le_5": 60,
+      "n_size_ge_50": 27,
+      "share_nodes_in_comps_le_5": 0.03707684040838259,
+      "km": 458.7,
+      "n_features": 5377,
+      "top_5_sizes": [
+        432,
+        311,
+        271,
+        244,
+        215
+      ]
+    },
+    "untagged": {
+      "n_nodes": 8848,
+      "n_edges": 8291,
+      "n_components": 562,
+      "largest": 463,
+      "largest_share": 0.05232820976491863,
+      "median": 6.0,
+      "mean": 15.743772241992882,
+      "n_size_le_2": 63,
+      "n_size_le_5": 268,
+      "n_size_ge_50": 38,
+      "share_nodes_in_comps_le_5": 0.10307414104882459,
+      "km": 740.9,
+      "n_features": 8292,
+      "top_5_sizes": [
+        463,
+        458,
+        180,
+        177,
+        168
+      ]
+    }
+  },
+  "mayo": {
+    "label": "County Mayo, Ireland",
+    "ge_38kV": {
+      "n_nodes": 3845,
+      "n_edges": 3812,
+      "n_components": 34,
+      "largest": 1723,
+      "largest_share": 0.44811443433029907,
+      "median": 50.5,
+      "mean": 113.08823529411765,
+      "n_size_le_2": 2,
+      "n_size_le_5": 4,
+      "n_size_ge_50": 17,
+      "share_nodes_in_comps_le_5": 0.002600780234070221,
+      "km": 578.3,
+      "n_features": 3812,
+      "top_5_sizes": [
+        1723,
+        240,
+        213,
+        193,
+        141
+      ]
+    },
+    "ge_110kV": {
+      "n_nodes": 1099,
+      "n_edges": 1096,
+      "n_components": 3,
+      "largest": 1071,
+      "largest_share": 0.9745222929936306,
+      "median": 14.0,
+      "mean": 366.3333333333333,
+      "n_size_le_2": 0,
+      "n_size_le_5": 0,
+      "n_size_ge_50": 1,
+      "share_nodes_in_comps_le_5": 0.0,
+      "km": 210.2,
+      "n_features": 1096,
+      "top_5_sizes": [
+        1071,
+        14,
+        14
+      ]
+    },
+    "mv_only": {
+      "n_nodes": 9891,
+      "n_edges": 9725,
+      "n_components": 169,
+      "largest": 1017,
+      "largest_share": 0.10282074613284804,
+      "median": 11.0,
+      "mean": 58.52662721893491,
+      "n_size_le_2": 20,
+      "n_size_le_5": 54,
+      "n_size_ge_50": 44,
+      "share_nodes_in_comps_le_5": 0.017389546051966433,
+      "km": 811.3,
+      "n_features": 9727,
+      "top_5_sizes": [
+        1017,
+        782,
+        530,
+        413,
+        376
+      ]
+    },
+    "untagged": {
+      "n_nodes": 40152,
+      "n_edges": 38847,
+      "n_components": 1323,
+      "largest": 7953,
+      "largest_share": 0.19807232516437537,
+      "median": 5.0,
+      "mean": 30.349206349206348,
+      "n_size_le_2": 254,
+      "n_size_le_5": 663,
+      "n_size_ge_50": 97,
+      "share_nodes_in_comps_le_5": 0.05142956764295677,
+      "km": 3179.7,
+      "n_features": 38855,
+      "top_5_sizes": [
+        7953,
+        1955,
+        1681,
+        1529,
+        1060
+      ]
+    }
+  },
+  "dublin_city": {
+    "label": "Dublin, Ireland (Dublin City Council)",
+    "ge_38kV": {
+      "n_nodes": 1801,
+      "n_edges": 1886,
+      "n_components": 36,
+      "largest": 628,
+      "largest_share": 0.34869516935036093,
+      "median": 7.0,
+      "mean": 50.02777777777778,
+      "n_size_le_2": 5,
+      "n_size_le_5": 14,
+      "n_size_ge_50": 4,
+      "share_nodes_in_comps_le_5": 0.024430871737923375,
+      "km": 128.2,
+      "n_features": 1817,
+      "top_5_sizes": [
+        628,
+        418,
+        324,
+        53,
+        44
+      ]
+    },
+    "ge_110kV": {
+      "n_nodes": 1339,
+      "n_edges": 1393,
+      "n_components": 29,
+      "largest": 418,
+      "largest_share": 0.3121732636295743,
+      "median": 13.0,
+      "mean": 46.172413793103445,
+      "n_size_le_2": 2,
+      "n_size_le_5": 9,
+      "n_size_ge_50": 7,
+      "share_nodes_in_comps_le_5": 0.022404779686333084,
+      "km": 99.0,
+      "n_features": 1357,
+      "top_5_sizes": [
+        418,
+        266,
+        113,
+        79,
+        78
+      ]
+    },
+    "mv_only": {
+      "n_nodes": 209,
+      "n_edges": 209,
+      "n_components": 17,
+      "largest": 45,
+      "largest_share": 0.215311004784689,
+      "median": 5.0,
+      "mean": 12.294117647058824,
+      "n_size_le_2": 4,
+      "n_size_le_5": 10,
+      "n_size_ge_50": 0,
+      "share_nodes_in_comps_le_5": 0.16267942583732056,
+      "km": 4.4,
+      "n_features": 200,
+      "top_5_sizes": [
+        45,
+        43,
+        36,
+        17,
+        17
+      ]
+    },
+    "untagged": {
+      "n_nodes": 281,
+      "n_edges": 255,
+      "n_components": 39,
+      "largest": 45,
+      "largest_share": 0.1601423487544484,
+      "median": 3.0,
+      "mean": 7.205128205128205,
+      "n_size_le_2": 9,
+      "n_size_le_5": 31,
+      "n_size_ge_50": 0,
+      "share_nodes_in_comps_le_5": 0.33451957295373663,
+      "km": 3.1,
+      "n_features": 242,
+      "top_5_sizes": [
+        45,
+        35,
+        34,
+        34,
+        18
+      ]
+    }
+  },
+  "dublin_county": {
+    "label": "County Dublin, Ireland",
+    "ge_38kV": {
+      "n_nodes": 6192,
+      "n_edges": 6348,
+      "n_components": 84,
+      "largest": 2691,
+      "largest_share": 0.43459302325581395,
+      "median": 13.5,
+      "mean": 73.71428571428571,
+      "n_size_le_2": 12,
+      "n_size_le_5": 25,
+      "n_size_ge_50": 15,
+      "share_nodes_in_comps_le_5": 0.011627906976744186,
+      "km": 570.4,
+      "n_features": 6281,
+      "top_5_sizes": [
+        2691,
+        547,
+        483,
+        305,
+        198
+      ]
+    },
+    "ge_110kV": {
+      "n_nodes": 4057,
+      "n_edges": 4180,
+      "n_components": 53,
+      "largest": 1160,
+      "largest_share": 0.2859255607591817,
+      "median": 10.0,
+      "mean": 76.54716981132076,
+      "n_size_le_2": 8,
+      "n_size_le_5": 21,
+      "n_size_ge_50": 15,
+      "share_nodes_in_comps_le_5": 0.016021690904609316,
+      "km": 375.6,
+      "n_features": 4144,
+      "top_5_sizes": [
+        1160,
+        483,
+        325,
+        320,
+        305
+      ]
+    },
+    "mv_only": {
+      "n_nodes": 10272,
+      "n_edges": 9914,
+      "n_components": 384,
+      "largest": 3481,
+      "largest_share": 0.3388823987538941,
+      "median": 7.0,
+      "mean": 26.75,
+      "n_size_le_2": 49,
+      "n_size_le_5": 172,
+      "n_size_ge_50": 28,
+      "share_nodes_in_comps_le_5": 0.05500389408099689,
+      "km": 680.2,
+      "n_features": 9901,
+      "top_5_sizes": [
+        3481,
+        286,
+        272,
+        264,
+        221
+      ]
+    },
+    "untagged": {
+      "n_nodes": 4404,
+      "n_edges": 3797,
+      "n_components": 625,
+      "largest": 233,
+      "largest_share": 0.05290644868301544,
+      "median": 4.0,
+      "mean": 7.0464,
+      "n_size_le_2": 141,
+      "n_size_le_5": 446,
+      "n_size_ge_50": 4,
+      "share_nodes_in_comps_le_5": 0.31584922797456855,
+      "km": 133.6,
+      "n_features": 3781,
+      "top_5_sizes": [
+        233,
+        218,
+        99,
+        83,
+        49
+      ]
+    }
+  }
+}

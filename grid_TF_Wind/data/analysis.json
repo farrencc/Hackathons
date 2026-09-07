@@ -1,0 +1,1139 @@
+{
+  "kilkenny": {
+    "key": "kilkenny",
+    "label": "County Kilkenny, Ireland",
+    "osm_relation": 285980,
+    "admin_level": "6",
+    "area_km2": 2071.0,
+    "line_counts_by_power": {
+      "minor_line": 15184,
+      "line": 657,
+      "cable": 219,
+      "portal": 18
+    },
+    "node_counts_by_power": {
+      "pole": 20266,
+      "tower": 396,
+      "transformer": 99,
+      "generator": 83,
+      "terminal": 14,
+      "portal": 4,
+      "switch": 4,
+      "compensator": 2,
+      "connection": 1,
+      "proposed": 1
+    },
+    "area_counts_by_power": {
+      "generator": 110,
+      "substation": 26,
+      "switchgear": 4,
+      "plant": 4,
+      "transformer": 3,
+      "construction": 2,
+      "proposed": 2,
+      "planned": 1
+    },
+    "n_line_features": 16078,
+    "n_line_features_with_voltage": 7786,
+    "frac_lines_with_voltage": 0.4843,
+    "total_km": 1525.4,
+    "frac_km_with_voltage": 0.5143,
+    "by_power_tag": {
+      "minor_line": {
+        "n": 15184,
+        "km": 1385.4,
+        "frac_with_voltage": 0.4555
+      },
+      "line": {
+        "n": 657,
+        "km": 129.0,
+        "frac_with_voltage": 0.9954
+      },
+      "cable": {
+        "n": 219,
+        "km": 10.8,
+        "frac_with_voltage": 0.9863
+      }
+    },
+    "km_by_band": {
+      "38 kV": 184.7,
+      "HV >=110 kV (transmission)": 129.1,
+      "LV (<1 kV)": 12.0,
+      "MV (1-<38 kV)": 458.7,
+      "unknown (no voltage tag)": 740.9
+    },
+    "count_by_band": {
+      "38 kV": 1495,
+      "HV >=110 kV (transmission)": 664,
+      "LV (<1 kV)": 250,
+      "MV (1-<38 kV)": 5377,
+      "unknown (no voltage tag)": 8292
+    },
+    "km_by_band_per_1000km2": {
+      "38 kV": 89.2,
+      "HV >=110 kV (transmission)": 62.4,
+      "LV (<1 kV)": 5.8,
+      "MV (1-<38 kV)": 221.5,
+      "unknown (no voltage tag)": 357.8
+    },
+    "distinct_voltages": {
+      "10000": 4891,
+      "38000": 1495,
+      "110000": 607,
+      "20000": 486,
+      "230": 228,
+      "220000": 57,
+      "400": 13,
+      "110": 9
+    },
+    "cable_vs_minor_line": {
+      "n_cable": 219,
+      "n_minor_line": 15184,
+      "count_ratio": 0.01442,
+      "km_cable": 10.85,
+      "km_minor_line": 1385.4,
+      "km_ratio": 0.00783
+    },
+    "location_tag_counts": {
+      "underground": 219,
+      "indoor": 11
+    },
+    "n_lines_location_underground": 219,
+    "n_distribution_line_features": 15414,
+    "distribution_km": 1396.2,
+    "graph_all_lines_snap1m": {
+      "n_nodes": 16755,
+      "n_edges": 16095,
+      "n_components": 685,
+      "largest": 1583,
+      "largest_share": 0.09447925992241123,
+      "median": 7.0,
+      "mean": 24.45985401459854,
+      "n_size_le_2": 60,
+      "n_size_le_5": 273,
+      "n_size_ge_50": 72,
+      "share_nodes_in_comps_le_5": 0.056102655923604895,
+      "histogram": {
+        "1": {
+          "n_components": 0,
+          "n_nodes": 0
+        },
+        "2": {
+          "n_components": 60,
+          "n_nodes": 120
+        },
+        "3-5": {
+          "n_components": 213,
+          "n_nodes": 820
+        },
+        "6-10": {
+          "n_components": 141,
+          "n_nodes": 1068
+        },
+        "11-25": {
+          "n_components": 131,
+          "n_nodes": 2096
+        },
+        "26-50": {
+          "n_components": 72,
+          "n_nodes": 2493
+        },
+        "51-100": {
+          "n_components": 45,
+          "n_nodes": 3076
+        },
+        "101-500": {
+          "n_components": 21,
+          "n_nodes": 4933
+        },
+        "501+": {
+          "n_components": 2,
+          "n_nodes": 2149
+        }
+      },
+      "top_10_sizes": [
+        1583,
+        566,
+        463,
+        458,
+        395,
+        392,
+        366,
+        315,
+        219,
+        216
+      ]
+    },
+    "graph_distribution_only_snap1m": {
+      "n_nodes": 16093,
+      "n_edges": 15429,
+      "n_components": 686,
+      "largest": 1222,
+      "largest_share": 0.07593363574224818,
+      "median": 7.0,
+      "mean": 23.459183673469386,
+      "n_size_le_2": 60,
+      "n_size_le_5": 276,
+      "n_size_ge_50": 68,
+      "share_nodes_in_comps_le_5": 0.0590318772136954,
+      "histogram": {
+        "1": {
+          "n_components": 0,
+          "n_nodes": 0
+        },
+        "2": {
+          "n_components": 60,
+          "n_nodes": 120
+        },
+        "3-5": {
+          "n_components": 216,
+          "n_nodes": 830
+        },
+        "6-10": {
+          "n_components": 142,
+          "n_nodes": 1074
+        },
+        "11-25": {
+          "n_components": 131,
+          "n_nodes": 2096
+        },
+        "26-50": {
+          "n_components": 73,
+          "n_nodes": 2537
+        },
+        "51-100": {
+          "n_components": 42,
+          "n_nodes": 2872
+        },
+        "101-500": {
+          "n_components": 20,
+          "n_nodes": 4776
+        },
+        "501+": {
+          "n_components": 2,
+          "n_nodes": 1788
+        }
+      },
+      "top_10_sizes": [
+        1222,
+        566,
+        463,
+        458,
+        395,
+        392,
+        366,
+        315,
+        219,
+        216
+      ]
+    }
+  },
+  "mayo": {
+    "key": "mayo",
+    "label": "County Mayo, Ireland",
+    "osm_relation": 338539,
+    "admin_level": "6",
+    "area_km2": 5594.2,
+    "line_counts_by_power": {
+      "minor_line": 52022,
+      "line": 1103,
+      "cable": 125,
+      "portal": 8
+    },
+    "node_counts_by_power": {
+      "pole": 54292,
+      "generator": 285,
+      "tower": 209,
+      "transformer": 124,
+      "terminal": 24,
+      "portal": 15,
+      "substation": 1
+    },
+    "area_counts_by_power": {
+      "generator": 31,
+      "substation": 29,
+      "plant": 10,
+      "switchgear": 3,
+      "proposed": 1
+    },
+    "n_line_features": 53258,
+    "n_line_features_with_voltage": 14403,
+    "frac_lines_with_voltage": 0.2704,
+    "total_km": 4618.1,
+    "frac_km_with_voltage": 0.3115,
+    "by_power_tag": {
+      "minor_line": {
+        "n": 52022,
+        "km": 4395.8,
+        "frac_with_voltage": 0.2545
+      },
+      "line": {
+        "n": 1103,
+        "km": 208.1,
+        "frac_with_voltage": 1.0
+      },
+      "cable": {
+        "n": 125,
+        "km": 14.2,
+        "frac_with_voltage": 0.504
+      }
+    },
+    "km_by_band": {
+      "38 kV": 368.1,
+      "HV >=110 kV (transmission)": 210.2,
+      "LV (<1 kV)": 48.8,
+      "MV (1-<38 kV)": 811.3,
+      "unknown (no voltage tag)": 3179.7
+    },
+    "count_by_band": {
+      "38 kV": 2716,
+      "HV >=110 kV (transmission)": 1096,
+      "LV (<1 kV)": 864,
+      "MV (1-<38 kV)": 9727,
+      "unknown (no voltage tag)": 38855
+    },
+    "km_by_band_per_1000km2": {
+      "38 kV": 65.8,
+      "HV >=110 kV (transmission)": 37.6,
+      "LV (<1 kV)": 8.7,
+      "MV (1-<38 kV)": 145.0,
+      "unknown (no voltage tag)": 568.4
+    },
+    "distinct_voltages": {
+      "20000": 8134,
+      "38000": 2716,
+      "10000": 1593,
+      "110000": 1096,
+      "230": 861,
+      "400": 3
+    },
+    "cable_vs_minor_line": {
+      "n_cable": 125,
+      "n_minor_line": 52022,
+      "count_ratio": 0.0024,
+      "km_cable": 14.2,
+      "km_minor_line": 4395.8,
+      "km_ratio": 0.00323
+    },
+    "location_tag_counts": {
+      "underground": 106,
+      "overground": 19
+    },
+    "n_lines_location_underground": 106,
+    "n_distribution_line_features": 52162,
+    "distribution_km": 4408.0,
+    "graph_all_lines_snap1m": {
+      "n_nodes": 53909,
+      "n_edges": 53253,
+      "n_components": 687,
+      "largest": 8111,
+      "largest_share": 0.15045725203583818,
+      "median": 7.0,
+      "mean": 78.47016011644833,
+      "n_size_le_2": 125,
+      "n_size_le_5": 292,
+      "n_size_ge_50": 115,
+      "share_nodes_in_comps_le_5": 0.016360904487191377,
+      "histogram": {
+        "1": {
+          "n_components": 0,
+          "n_nodes": 0
+        },
+        "2": {
+          "n_components": 125,
+          "n_nodes": 250
+        },
+        "3-5": {
+          "n_components": 167,
+          "n_nodes": 632
+        },
+        "6-10": {
+          "n_components": 124,
+          "n_nodes": 924
+        },
+        "11-25": {
+          "n_components": 109,
+          "n_nodes": 1800
+        },
+        "26-50": {
+          "n_components": 47,
+          "n_nodes": 1698
+        },
+        "51-100": {
+          "n_components": 52,
+          "n_nodes": 3781
+        },
+        "101-500": {
+          "n_components": 41,
+          "n_nodes": 8548
+        },
+        "501+": {
+          "n_components": 22,
+          "n_nodes": 36276
+        }
+      },
+      "top_10_sizes": [
+        8111,
+        5103,
+        2616,
+        2343,
+        1956,
+        1723,
+        1549,
+        1264,
+        1243,
+        1241
+      ]
+    },
+    "graph_distribution_only_snap1m": {
+      "n_nodes": 52813,
+      "n_edges": 52157,
+      "n_components": 686,
+      "largest": 8111,
+      "largest_share": 0.15357961108060517,
+      "median": 7.0,
+      "mean": 76.9868804664723,
+      "n_size_le_2": 125,
+      "n_size_le_5": 293,
+      "n_size_ge_50": 115,
+      "share_nodes_in_comps_le_5": 0.01679510726525666,
+      "histogram": {
+        "1": {
+          "n_components": 0,
+          "n_nodes": 0
+        },
+        "2": {
+          "n_components": 125,
+          "n_nodes": 250
+        },
+        "3-5": {
+          "n_components": 168,
+          "n_nodes": 637
+        },
+        "6-10": {
+          "n_components": 124,
+          "n_nodes": 924
+        },
+        "11-25": {
+          "n_components": 107,
+          "n_nodes": 1768
+        },
+        "26-50": {
+          "n_components": 47,
+          "n_nodes": 1698
+        },
+        "51-100": {
+          "n_components": 52,
+          "n_nodes": 3781
+        },
+        "101-500": {
+          "n_components": 41,
+          "n_nodes": 8548
+        },
+        "501+": {
+          "n_components": 22,
+          "n_nodes": 35207
+        }
+      },
+      "top_10_sizes": [
+        8111,
+        5103,
+        2616,
+        2343,
+        1956,
+        1549,
+        1264,
+        1243,
+        1241,
+        935
+      ]
+    }
+  },
+  "dublin_city": {
+    "key": "dublin_city",
+    "label": "Dublin, Ireland (Dublin City Council)",
+    "osm_relation": 1109531,
+    "admin_level": "7",
+    "area_km2": 118.6,
+    "line_counts_by_power": {
+      "cable": 1603,
+      "minor_line": 324,
+      "line": 213,
+      "portal": 138
+    },
+    "node_counts_by_power": {
+      "transformer": 767,
+      "catenary_mast": 448,
+      "generator": 261,
+      "pole": 202,
+      "connection": 64,
+      "tower": 61,
+      "terminal": 23,
+      "substation": 17,
+      "inverter": 14,
+      "compensator": 11,
+      "switch": 9,
+      "portal": 1,
+      "transition": 1,
+      "construction": 1
+    },
+    "area_counts_by_power": {
+      "generator": 1058,
+      "substation": 90,
+      "plant": 10,
+      "switchgear": 8,
+      "compensator": 1,
+      "proposed": 1
+    },
+    "n_line_features": 2278,
+    "n_line_features_with_voltage": 2036,
+    "frac_lines_with_voltage": 0.8938,
+    "total_km": 136.0,
+    "frac_km_with_voltage": 0.9773,
+    "by_power_tag": {
+      "minor_line": {
+        "n": 324,
+        "km": 10.7,
+        "frac_with_voltage": 0.8704
+      },
+      "line": {
+        "n": 213,
+        "km": 9.1,
+        "frac_with_voltage": 1.0
+      },
+      "cable": {
+        "n": 1603,
+        "km": 115.7,
+        "frac_with_voltage": 0.9613
+      }
+    },
+    "km_by_band": {
+      "38 kV": 29.2,
+      "HV >=110 kV (transmission)": 99.0,
+      "LV (<1 kV)": 0.3,
+      "MV (1-<38 kV)": 4.4,
+      "unknown (no voltage tag)": 3.1
+    },
+    "count_by_band": {
+      "38 kV": 460,
+      "HV >=110 kV (transmission)": 1357,
+      "LV (<1 kV)": 19,
+      "MV (1-<38 kV)": 200,
+      "unknown (no voltage tag)": 242
+    },
+    "km_by_band_per_1000km2": {
+      "38 kV": 246.5,
+      "HV >=110 kV (transmission)": 834.4,
+      "LV (<1 kV)": 2.2,
+      "MV (1-<38 kV)": 37.4,
+      "unknown (no voltage tag)": 26.0
+    },
+    "distinct_voltages": {
+      "110000": 1207,
+      "38000": 460,
+      "10000": 160,
+      "220000": 150,
+      "33000": 40,
+      "230": 12,
+      "110": 7
+    },
+    "cable_vs_minor_line": {
+      "n_cable": 1603,
+      "n_minor_line": 324,
+      "count_ratio": 4.94753,
+      "km_cable": 115.69,
+      "km_minor_line": 10.7,
+      "km_ratio": 10.81179
+    },
+    "location_tag_counts": {
+      "underground": 1579,
+      "indoor": 109,
+      "outdoor": 28,
+      "underwater": 3
+    },
+    "n_lines_location_underground": 1579,
+    "n_distribution_line_features": 921,
+    "distribution_km": 37.0,
+    "graph_all_lines_snap1m": {
+      "n_nodes": 2220,
+      "n_edges": 2372,
+      "n_components": 56,
+      "largest": 776,
+      "largest_share": 0.34954954954954953,
+      "median": 7.0,
+      "mean": 39.642857142857146,
+      "n_size_le_2": 7,
+      "n_size_le_5": 25,
+      "n_size_ge_50": 4,
+      "share_nodes_in_comps_le_5": 0.036036036036036036,
+      "histogram": {
+        "1": {
+          "n_components": 0,
+          "n_nodes": 0
+        },
+        "2": {
+          "n_components": 7,
+          "n_nodes": 14
+        },
+        "3-5": {
+          "n_components": 18,
+          "n_nodes": 66
+        },
+        "6-10": {
+          "n_components": 10,
+          "n_nodes": 77
+        },
+        "11-25": {
+          "n_components": 11,
+          "n_nodes": 179
+        },
+        "26-50": {
+          "n_components": 6,
+          "n_nodes": 226
+        },
+        "51-100": {
+          "n_components": 1,
+          "n_nodes": 53
+        },
+        "101-500": {
+          "n_components": 2,
+          "n_nodes": 829
+        },
+        "501+": {
+          "n_components": 1,
+          "n_nodes": 776
+        }
+      },
+      "top_10_sizes": [
+        776,
+        493,
+        336,
+        53,
+        45,
+        44,
+        39,
+        34,
+        34,
+        30
+      ]
+    },
+    "graph_distribution_only_snap1m": {
+      "n_nodes": 956,
+      "n_edges": 958,
+      "n_components": 57,
+      "largest": 349,
+      "largest_share": 0.36506276150627615,
+      "median": 5.0,
+      "mean": 16.771929824561404,
+      "n_size_le_2": 5,
+      "n_size_le_5": 33,
+      "n_size_ge_50": 2,
+      "share_nodes_in_comps_le_5": 0.11506276150627615,
+      "histogram": {
+        "1": {
+          "n_components": 0,
+          "n_nodes": 0
+        },
+        "2": {
+          "n_components": 5,
+          "n_nodes": 10
+        },
+        "3-5": {
+          "n_components": 28,
+          "n_nodes": 100
+        },
+        "6-10": {
+          "n_components": 8,
+          "n_nodes": 62
+        },
+        "11-25": {
+          "n_components": 7,
+          "n_nodes": 123
+        },
+        "26-50": {
+          "n_components": 8,
+          "n_nodes": 312
+        },
+        "51-100": {
+          "n_components": 0,
+          "n_nodes": 0
+        },
+        "101-500": {
+          "n_components": 1,
+          "n_nodes": 349
+        },
+        "501+": {
+          "n_components": 0,
+          "n_nodes": 0
+        }
+      },
+      "top_10_sizes": [
+        349,
+        50,
+        47,
+        45,
+        39,
+        35,
+        34,
+        34,
+        28,
+        19
+      ]
+    }
+  },
+  "dublin_county": {
+    "key": "dublin_county",
+    "label": "County Dublin, Ireland",
+    "osm_relation": 282800,
+    "admin_level": "6",
+    "area_km2": 928.0,
+    "line_counts_by_power": {
+      "minor_line": 15266,
+      "cable": 4023,
+      "line": 1549,
+      "portal": 417,
+      "proposed": 217
+    },
+    "node_counts_by_power": {
+      "pole": 15623,
+      "generator": 3029,
+      "transformer": 1899,
+      "catenary_mast": 1473,
+      "tower": 887,
+      "terminal": 613,
+      "connection": 129,
+      "portal": 65,
+      "substation": 25,
+      "switch": 23,
+      "inverter": 22,
+      "compensator": 12,
+      "transition": 3,
+      "yes": 3,
+      "switchgear": 1,
+      "construction": 1
+    },
+    "area_counts_by_power": {
+      "generator": 6200,
+      "substation": 217,
+      "switchgear": 56,
+      "plant": 27,
+      "proposed": 5,
+      "controls": 2,
+      "compensator": 1
+    },
+    "n_line_features": 21472,
+    "n_line_features_with_voltage": 17691,
+    "frac_lines_with_voltage": 0.8239,
+    "total_km": 1442.7,
+    "frac_km_with_voltage": 0.9074,
+    "by_power_tag": {
+      "minor_line": {
+        "n": 15266,
+        "km": 948.0,
+        "frac_with_voltage": 0.8045
+      },
+      "line": {
+        "n": 1549,
+        "km": 187.9,
+        "frac_with_voltage": 1.0
+      },
+      "cable": {
+        "n": 4023,
+        "km": 287.2,
+        "frac_with_voltage": 0.9597
+      }
+    },
+    "km_by_band": {
+      "38 kV": 194.9,
+      "HV >=110 kV (transmission)": 375.6,
+      "LV (<1 kV)": 58.5,
+      "MV (1-<38 kV)": 680.2,
+      "unknown (no voltage tag)": 133.6
+    },
+    "count_by_band": {
+      "38 kV": 2137,
+      "HV >=110 kV (transmission)": 4144,
+      "LV (<1 kV)": 1509,
+      "MV (1-<38 kV)": 9901,
+      "unknown (no voltage tag)": 3781
+    },
+    "km_by_band_per_1000km2": {
+      "38 kV": 210.0,
+      "HV >=110 kV (transmission)": 404.7,
+      "LV (<1 kV)": 63.1,
+      "MV (1-<38 kV)": 732.9,
+      "unknown (no voltage tag)": 144.0
+    },
+    "distinct_voltages": {
+      "10000": 5758,
+      "20000": 4060,
+      "110000": 3231,
+      "38000": 2137,
+      "230": 1394,
+      "220000": 913,
+      "400": 108,
+      "33000": 78,
+      "110": 7,
+      "10500": 5
+    },
+    "cable_vs_minor_line": {
+      "n_cable": 4023,
+      "n_minor_line": 15266,
+      "count_ratio": 0.26353,
+      "km_cable": 287.17,
+      "km_minor_line": 948.0,
+      "km_ratio": 0.30292
+    },
+    "location_tag_counts": {
+      "underground": 4097,
+      "indoor": 211,
+      "outdoor": 108,
+      "overhead": 11,
+      "underwater": 3,
+      "surface": 1
+    },
+    "n_lines_location_underground": 4097,
+    "n_distribution_line_features": 17328,
+    "distribution_km": 1067.1,
+    "graph_all_lines_snap1m": {
+      "n_nodes": 21874,
+      "n_edges": 21582,
+      "n_components": 704,
+      "largest": 5137,
+      "largest_share": 0.23484502148669653,
+      "median": 6.0,
+      "mean": 31.071022727272727,
+      "n_size_le_2": 139,
+      "n_size_le_5": 348,
+      "n_size_ge_50": 53,
+      "share_nodes_in_comps_le_5": 0.049190820151778364,
+      "histogram": {
+        "1": {
+          "n_components": 0,
+          "n_nodes": 0
+        },
+        "2": {
+          "n_components": 139,
+          "n_nodes": 278
+        },
+        "3-5": {
+          "n_components": 209,
+          "n_nodes": 798
+        },
+        "6-10": {
+          "n_components": 125,
+          "n_nodes": 953
+        },
+        "11-25": {
+          "n_components": 117,
+          "n_nodes": 1958
+        },
+        "26-50": {
+          "n_components": 62,
+          "n_nodes": 2244
+        },
+        "51-100": {
+          "n_components": 26,
+          "n_nodes": 1871
+        },
+        "101-500": {
+          "n_components": 22,
+          "n_nodes": 4444
+        },
+        "501+": {
+          "n_components": 4,
+          "n_nodes": 9328
+        }
+      },
+      "top_10_sizes": [
+        5137,
+        3073,
+        560,
+        558,
+        343,
+        325,
+        313,
+        307,
+        283,
+        278
+      ]
+    },
+    "graph_distribution_only_snap1m": {
+      "n_nodes": 18048,
+      "n_edges": 17379,
+      "n_components": 788,
+      "largest": 5137,
+      "largest_share": 0.28462987588652483,
+      "median": 5.0,
+      "mean": 22.903553299492387,
+      "n_size_le_2": 137,
+      "n_size_le_5": 446,
+      "n_size_ge_50": 44,
+      "share_nodes_in_comps_le_5": 0.07934397163120567,
+      "histogram": {
+        "1": {
+          "n_components": 0,
+          "n_nodes": 0
+        },
+        "2": {
+          "n_components": 137,
+          "n_nodes": 274
+        },
+        "3-5": {
+          "n_components": 309,
+          "n_nodes": 1158
+        },
+        "6-10": {
+          "n_components": 125,
+          "n_nodes": 946
+        },
+        "11-25": {
+          "n_components": 114,
+          "n_nodes": 1913
+        },
+        "26-50": {
+          "n_components": 61,
+          "n_nodes": 2223
+        },
+        "51-100": {
+          "n_components": 22,
+          "n_nodes": 1580
+        },
+        "101-500": {
+          "n_components": 18,
+          "n_nodes": 3730
+        },
+        "501+": {
+          "n_components": 2,
+          "n_nodes": 6224
+        }
+      },
+      "top_10_sizes": [
+        5137,
+        1087,
+        325,
+        313,
+        307,
+        283,
+        278,
+        261,
+        243,
+        206
+      ]
+    }
+  },
+  "_snap_sweep_kilkenny": [
+    {
+      "n_nodes": 16097,
+      "n_edges": 15414,
+      "n_components": 694,
+      "largest": 1222,
+      "largest_share": 0.07591476672671926,
+      "median": 7.0,
+      "mean": 23.194524495677232,
+      "n_size_le_2": 60,
+      "n_size_le_5": 280,
+      "n_size_ge_50": 69,
+      "share_nodes_in_comps_le_5": 0.06001118220786482,
+      "snap_m": 0.1,
+      "top_5_sizes": [
+        1222,
+        567,
+        463,
+        458,
+        395
+      ]
+    },
+    {
+      "n_nodes": 16093,
+      "n_edges": 15429,
+      "n_components": 686,
+      "largest": 1222,
+      "largest_share": 0.07593363574224818,
+      "median": 7.0,
+      "mean": 23.459183673469386,
+      "n_size_le_2": 60,
+      "n_size_le_5": 276,
+      "n_size_ge_50": 68,
+      "share_nodes_in_comps_le_5": 0.0590318772136954,
+      "snap_m": 1.0,
+      "top_5_sizes": [
+        1222,
+        566,
+        463,
+        458,
+        395
+      ]
+    },
+    {
+      "n_nodes": 15983,
+      "n_edges": 15429,
+      "n_components": 663,
+      "largest": 1570,
+      "largest_share": 0.09822936870424827,
+      "median": 7.0,
+      "mean": 24.10708898944193,
+      "n_size_le_2": 59,
+      "n_size_le_5": 270,
+      "n_size_ge_50": 63,
+      "share_nodes_in_comps_le_5": 0.05812425702308703,
+      "snap_m": 5.0,
+      "top_5_sizes": [
+        1570,
+        567,
+        470,
+        457,
+        394
+      ]
+    },
+    {
+      "n_nodes": 15249,
+      "n_edges": 14972,
+      "n_components": 570,
+      "largest": 3777,
+      "largest_share": 0.2476883730080661,
+      "median": 7.0,
+      "mean": 26.75263157894737,
+      "n_size_le_2": 54,
+      "n_size_le_5": 240,
+      "n_size_ge_50": 42,
+      "share_nodes_in_comps_le_5": 0.05436422060462981,
+      "snap_m": 25.0,
+      "top_5_sizes": [
+        3777,
+        980,
+        530,
+        474,
+        433
+      ]
+    },
+    {
+      "n_nodes": 5081,
+      "n_edges": 4906,
+      "n_components": 364,
+      "largest": 1361,
+      "largest_share": 0.2678606573509152,
+      "median": 5.0,
+      "mean": 13.958791208791208,
+      "n_size_le_2": 72,
+      "n_size_le_5": 210,
+      "n_size_ge_50": 12,
+      "share_nodes_in_comps_le_5": 0.12930525487108838,
+      "snap_m": 100.0,
+      "top_5_sizes": [
+        1361,
+        290,
+        147,
+        144,
+        141
+      ]
+    }
+  ],
+  "_snap_sweep_dublin_city": [
+    {
+      "n_nodes": 977,
+      "n_edges": 921,
+      "n_components": 63,
+      "largest": 357,
+      "largest_share": 0.3654042988741044,
+      "median": 5.0,
+      "mean": 15.507936507936508,
+      "n_size_le_2": 5,
+      "n_size_le_5": 33,
+      "n_size_ge_50": 2,
+      "share_nodes_in_comps_le_5": 0.11258955987717502,
+      "snap_m": 0.1,
+      "top_5_sizes": [
+        357,
+        55,
+        47,
+        39,
+        35
+      ]
+    },
+    {
+      "n_nodes": 956,
+      "n_edges": 958,
+      "n_components": 57,
+      "largest": 349,
+      "largest_share": 0.36506276150627615,
+      "median": 5.0,
+      "mean": 16.771929824561404,
+      "n_size_le_2": 5,
+      "n_size_le_5": 33,
+      "n_size_ge_50": 2,
+      "share_nodes_in_comps_le_5": 0.11506276150627615,
+      "snap_m": 1.0,
+      "top_5_sizes": [
+        349,
+        50,
+        47,
+        45,
+        39
+      ]
+    },
+    {
+      "n_nodes": 582,
+      "n_edges": 651,
+      "n_components": 41,
+      "largest": 176,
+      "largest_share": 0.3024054982817869,
+      "median": 5.0,
+      "mean": 14.195121951219512,
+      "n_size_le_2": 5,
+      "n_size_le_5": 21,
+      "n_size_ge_50": 1,
+      "share_nodes_in_comps_le_5": 0.11855670103092783,
+      "snap_m": 5.0,
+      "top_5_sizes": [
+        176,
+        47,
+        34,
+        31,
+        28
+      ]
+    },
+    {
+      "n_nodes": 330,
+      "n_edges": 326,
+      "n_components": 29,
+      "largest": 81,
+      "largest_share": 0.24545454545454545,
+      "median": 5.0,
+      "mean": 11.379310344827585,
+      "n_size_le_2": 5,
+      "n_size_le_5": 15,
+      "n_size_ge_50": 1,
+      "share_nodes_in_comps_le_5": 0.13333333333333333,
+      "snap_m": 25.0,
+      "top_5_sizes": [
+        81,
+        39,
+        26,
+        20,
+        18
+      ]
+    },
+    {
+      "n_nodes": 94,
+      "n_edges": 90,
+      "n_components": 11,
+      "largest": 29,
+      "largest_share": 0.30851063829787234,
+      "median": 6.0,
+      "mean": 8.545454545454545,
+      "n_size_le_2": 4,
+      "n_size_le_5": 5,
+      "n_size_ge_50": 0,
+      "share_nodes_in_comps_le_5": 0.13829787234042554,
+      "snap_m": 100.0,
+      "top_5_sizes": [
+        29,
+        19,
+        11,
+        8,
+        8
+      ]
+    }
+  ]
+}

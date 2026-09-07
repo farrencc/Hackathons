@@ -1,0 +1,31 @@
+name,bus,control,p_nom,p_min_pu,p_max_pu,p_set,carrier,marginal_cost
+Tawnaghmore generation,Tawnaghmore,PV,183.6,0.0,1.0,101.92,AC,0.0
+Croaghonagh generation,Croaghonagh,PV,139.2,0.0,1.0,13.919999999999998,AC,0.0
+Cathaleen's Fall generation,Cathaleen's Fall,PV,100.5,0.0,1.0,50.5,AC,0.0
+Mulreavy generation,Mulreavy,PV,95.25,0.0,1.0,9.524999999999999,AC,0.0
+Binbane generation,Binbane,PV,93.6,0.0,1.0,8.931000000000001,AC,0.0
+Meentycat generation,Meentycat,PV,84.96,0.0,1.0,8.496,AC,0.0
+Garvagh generation,Garvagh,PV,82.0,0.0,1.0,8.2,AC,0.0
+Corderry generation,Corderry,PV,79.60300000000001,0.0,1.0,7.961,AC,0.0
+Glenree generation,Glenree,PV,77.3,0.0,1.0,7.7299999999999995,AC,0.0
+Sorne Hill generation,Sorne Hill,PV,63.24999999999999,0.0,1.0,6.325,AC,0.0
+Golagh generation,Golagh,PV,63.0,0.0,1.0,6.0,AC,0.0
+Letterkenny generation,Letterkenny,PV,60.27,0.0,1.0,6.026999999999999,AC,0.0
+Trillick generation,Trillick,PV,44.69,0.0,1.0,4.468999999999999,AC,0.0
+Cunghill generation,Cunghill,PV,34.8,0.0,1.0,3.48,AC,0.0
+Lenalea generation,Lenalea,PV,30.5,0.0,1.0,3.05,AC,0.0
+Tievebrack generation,Tievebrack,PV,29.9,0.0,1.0,2.99,AC,0.0
+Ardnagappary generation,Ardnagappary,PV,22.94,0.0,1.0,2.294,AC,0.0
+Cliff generation,Cliff,PV,20.0,0.0,1.0,20.0,AC,0.0
+Sligo generation,Sligo,PV,17.73,0.0,1.0,1.7730000000000001,AC,0.0
+Moy generation,Moy,PV,6.0,0.0,1.0,0.6,AC,0.0
+boundary Cathaleen's Fall - CORRACLASSY 1,Cathaleen's Fall,PV,210.0,-0.06370211262691283,-0.06370211262691283,-13.377443651651696,boundary,0.0
+boundary Corderry - ARIGNA_T 1,Corderry,PV,210.0,0.013720370272380662,0.013720370272380662,2.881277757199939,boundary,0.0
+boundary Garvagh - AGHALEAGUE 1,Garvagh,PV,140.0,0.02857142857142857,0.02857142857142857,4.0,boundary,0.0
+boundary Glenree - FIRLOUGH 1,Glenree,PV,210.0,0.2833100922083174,0.2833100922083174,59.49511936374665,boundary,0.0
+boundary Letterkenny - STRA_PST 1,Letterkenny,PV,123.0,-0.5647089823160808,-0.5647089823160808,-69.45920482487794,boundary,0.0
+boundary Moy - FIRLOUGH 1,Moy,PV,210.0,-0.24731009220831657,-0.24731009220831657,-51.93511936374648,boundary,0.0
+boundary Moy - LAGHTANVACK 1,Moy,PV,192.0,0.32793758855796246,0.32793758855796246,62.96401700312879,boundary,0.0
+boundary Moy - TONROE 1,Moy,PV,228.0,-0.3655653405236622,-0.3655653405236622,-83.34889763939498,boundary,0.0
+boundary Sligo - FLAGFORD 1,Sligo,PV,121.0,0.08448559873556179,0.08448559873556179,10.222757447002977,boundary,0.0
+boundary Srananagh 220 - FLAGFORD 1,Srananagh 220,Slack,513.0,-1.0,1.0,43.25649390862111,boundary,100.0

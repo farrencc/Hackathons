@@ -1,0 +1,644 @@
+<meta charset="utf-8">
+<title>Ireland OSM Distribution Network</title>
+<style>/*__LEAFLET_CSS__*/</style>
+<style>
+:root {
+  --surface: #fcfcfb;
+  --panel: #ffffff;
+  --ink: #0b0b0b;
+  --ink-2: #52514e;
+  --ink-3: #898781;
+  --hairline: #e1e0d9;
+  --coast: #b6b5aa;
+  --county: #e6e5dd;
+  --land: #f4f3ee;
+  --accent: #1c5cab;
+  --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06);
+  --tile-filter: none;
+}
+:root:not([data-theme="light"]) {
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --surface: #131311;
+    --panel: #1b1b18;
+    --ink: #f2f1ec;
+    --ink-2: #b8b6ae;
+    --ink-3: #86847d;
+    --hairline: #2c2b27;
+    --coast: #4d4c44;
+    --county: #2b2a26;
+    --land: #1a1a17;
+    --accent: #7fb0f2;
+    --shadow: 0 1px 2px rgba(0,0,0,.5), 0 8px 24px rgba(0,0,0,.4);
+    --tile-filter: invert(1) hue-rotate(180deg) brightness(.85) contrast(.95);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --surface: #131311;
+  --panel: #1b1b18;
+  --ink: #f2f1ec;
+  --ink-2: #b8b6ae;
+  --ink-3: #86847d;
+  --hairline: #2c2b27;
+  --coast: #4d4c44;
+  --county: #2b2a26;
+  --land: #1a1a17;
+  --accent: #7fb0f2;
+  --shadow: 0 1px 2px rgba(0,0,0,.5), 0 8px 24px rgba(0,0,0,.4);
+  --tile-filter: invert(1) hue-rotate(180deg) brightness(.85) contrast(.95);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0; background: var(--surface); color: var(--ink);
+  font: 13px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+#app { display: flex; height: 100%; }
+#map { flex: 1 1 auto; background: var(--surface); }
+.leaflet-container { background: var(--surface); font: inherit; }
+.leaflet-tile-pane { filter: var(--tile-filter); opacity: .55; }
+
+/* ---------- sidebar ---------- */
+#side {
+  flex: 0 0 330px; width: 330px; height: 100%; overflow-y: auto;
+  background: var(--panel); border-right: 1px solid var(--hairline);
+  padding: 18px 18px 40px;
+}
+#side h1 { font-size: 15px; line-height: 1.35; margin: 0 0 4px; letter-spacing: -.01em; }
+#side .sub { color: var(--ink-2); margin: 0 0 14px; font-size: 12px; }
+h2 {
+  font-size: 10.5px; text-transform: uppercase; letter-spacing: .09em;
+  color: var(--ink-3); font-weight: 600; margin: 22px 0 8px;
+}
+h2:first-of-type { margin-top: 16px; }
+
+.row {
+  display: flex; align-items: baseline; gap: 9px; padding: 5px 6px;
+  border-radius: 5px; cursor: pointer; user-select: none;
+}
+.row:hover { background: color-mix(in srgb, var(--ink) 5%, transparent); }
+.row input { margin: 0; accent-color: var(--accent); flex: 0 0 auto; position: relative; top: 2px; }
+.swatch { flex: 0 0 16px; height: 3px; border-radius: 2px; position: relative; top: -3px; }
+.swatch.dot { height: 9px; width: 9px; flex-basis: 9px; border-radius: 50%; top: 1px; margin: 0 3px; }
+.row .lab { flex: 1 1 auto; }
+.row .num { color: var(--ink-3); font-variant-numeric: tabular-nums; font-size: 11.5px; white-space: nowrap; }
+.row.off .lab, .row.off .num { color: var(--ink-3); }
+
+#search {
+  width: 100%; padding: 7px 9px; border: 1px solid var(--hairline); border-radius: 6px;
+  background: var(--surface); color: var(--ink); font: inherit;
+}
+#search:focus { outline: 2px solid color-mix(in srgb, var(--accent) 40%, transparent); outline-offset: 1px; }
+#results { margin-top: 6px; max-height: 260px; overflow-y: auto; }
+#results .hit {
+  padding: 6px 8px; border-radius: 5px; cursor: pointer; border-bottom: 1px solid var(--hairline);
+}
+#results .hit:last-child { border-bottom: 0; }
+#results .hit:hover { background: color-mix(in srgb, var(--ink) 5%, transparent); }
+#results .hit b { font-weight: 600; }
+#results .hit span { color: var(--ink-3); display: block; font-size: 11.5px; }
+
+#detail { margin-top: 6px; }
+#detail .empty { color: var(--ink-3); font-size: 12px; }
+#detail .card {
+  border: 1px solid var(--hairline); border-radius: 8px; padding: 11px 12px; background: var(--surface);
+}
+#detail .kind { font-size: 10.5px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-3); }
+#detail .title { font-size: 14px; font-weight: 600; margin: 2px 0 8px; letter-spacing: -.01em; }
+table.attrs { width: 100%; border-collapse: collapse; font-size: 12px; }
+table.attrs td { padding: 3px 0; vertical-align: top; border-top: 1px solid var(--hairline); }
+table.attrs tr:first-child td { border-top: 0; }
+table.attrs td.k { color: var(--ink-3); width: 42%; padding-right: 8px; }
+table.attrs td.v { font-variant-numeric: tabular-nums; word-break: break-word; }
+a { color: var(--accent); }
+a.osm { display: inline-block; margin-top: 9px; font-size: 12px; }
+
+.note { color: var(--ink-2); font-size: 11.5px; margin: 0 0 9px; }
+.note b { color: var(--ink); font-weight: 600; }
+.foot { color: var(--ink-3); font-size: 11px; margin-top: 18px; border-top: 1px solid var(--hairline); padding-top: 12px; }
+.foot code { font-size: 10.5px; }
+
+#toggles { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+button.mini {
+  font: inherit; font-size: 11.5px; padding: 4px 9px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--hairline); background: var(--surface); color: var(--ink-2);
+}
+button.mini:hover { border-color: var(--ink-3); color: var(--ink); }
+
+#busy {
+  position: absolute; z-index: 900; left: 50%; top: 14px; transform: translateX(-50%);
+  background: var(--panel); border: 1px solid var(--hairline); border-radius: 999px;
+  padding: 5px 14px; font-size: 12px; color: var(--ink-2); box-shadow: var(--shadow); display: none;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: var(--panel); color: var(--ink); box-shadow: var(--shadow);
+}
+.leaflet-popup-content { margin: 9px 12px; font-size: 12.5px; }
+.leaflet-popup-content .pk { color: var(--ink-3); }
+.leaflet-bar a, .leaflet-control-attribution {
+  background: var(--panel); color: var(--ink-2); border-color: var(--hairline);
+}
+.leaflet-bar a { color: var(--ink); }
+.leaflet-control-attribution a { color: var(--accent); }
+.leaflet-control-scale-line { background: color-mix(in srgb, var(--panel) 75%, transparent); color: var(--ink-2); border-color: var(--ink-3); }
+
+#burger {
+  display: none; position: absolute; z-index: 901; left: 10px; top: 10px;
+  background: var(--panel); border: 1px solid var(--hairline); border-radius: 6px;
+  padding: 6px 10px; font: inherit; cursor: pointer; color: var(--ink); box-shadow: var(--shadow);
+}
+@media (max-width: 760px) {
+  #side { position: absolute; z-index: 902; left: 0; top: 0; box-shadow: var(--shadow); }
+  body.nav-closed #side { display: none; }
+  #burger { display: block; }
+  body:not(.nav-closed) #burger { left: 296px; }
+}
+</style>
+
+<div id="app">
+  <aside id="side"></aside>
+  <div id="map"></div>
+</div>
+<button id="burger" aria-label="Toggle panel">☰</button>
+<div id="busy">building layer…</div>
+
+<script>/*__LEAFLET_JS__*/</script>
+<script>
+const DATA = /*__DATA__*/null;
+</script>
+<script>
+/* ------------------------------------------------------------------ *
+ * Payload decoding.
+ *
+ * Geometry arrives delta-encoded on a 1e-5 degree grid - about a metre
+ * here, finer than the simplification already applied - which is about
+ * a third the size of the equivalent GeoJSON. Attribute tables arrive
+ * as arrays of arrays with every string replaced by an index into one
+ * shared pool, so "ESB Networks" is stored once rather than eleven
+ * thousand times.
+ * ------------------------------------------------------------------ */
+const S = DATA.strings;
+const P = 1e5;
+
+function decodeLine(enc) {
+  const out = new Array(enc.length >> 1);
+  let x = enc[0], y = enc[1];
+  out[0] = [y / P, x / P];
+  for (let i = 2, j = 1; i < enc.length; i += 2, j++) {
+    x += enc[i]; y += enc[i + 1];
+    out[j] = [y / P, x / P];
+  }
+  return out;
+}
+
+function rowToObj(spec, row) {
+  const o = {};
+  for (let i = 0; i < spec.cols.length; i++) {
+    let v = row[i];
+    if (v === null || v === undefined) continue;
+    if (spec.strCols[i]) v = S[v];
+    o[spec.cols[i]] = v;
+  }
+  return o;
+}
+
+/* ------------------------------------------------------------------ *
+ * Palette.
+ *
+ * Distribution (ESB Networks, 38 kV and below) takes a single-hue blue
+ * ramp ordered by voltage; transmission (EirGrid, 110 kV and above)
+ * takes a warm ramp. The ownership split at 110 kV is the substantive
+ * division in this data - it is the line either side of which the data
+ * is trustworthy or is not - so it should be visible without reading
+ * the legend. Sites sit off both ramps entirely. In dark mode the ramps
+ * invert so that higher voltage stays the more prominent of the two
+ * against the background rather than the less.
+ * ------------------------------------------------------------------ */
+const PALETTE = {
+  light: {
+    unk: "#a9a7a0", lv: "#8fbcf0", mv: "#3987e5", kv38: "#1c5cab",
+    t110: "#dd8a1c", t220: "#a63207",
+    substation: "#7c3aed", transformer: "#0f766e", plant: "#be185d",
+    wind: "#15803d", othergen: "#4d7c0f", solar: "#a16207", switch: "#78716c"
+  },
+  dark: {
+    unk: "#6f6d66", lv: "#3f6ea6", mv: "#5b9cf0", kv38: "#a5c8f8",
+    t110: "#eda846", t220: "#f4744c",
+    substation: "#c084fc", transformer: "#2dd4bf", plant: "#f472b6",
+    wind: "#4ade80", othergen: "#a3e635", solar: "#fbbf24", switch: "#a8a29e"
+  }
+};
+
+function isDark() {
+  const t = document.documentElement.getAttribute("data-theme");
+  if (t) return t === "dark";
+  return window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
+let pal = PALETTE[isDark() ? "dark" : "light"];
+
+function baseColours() {
+  const cs = getComputedStyle(document.documentElement);
+  return {
+    coast: cs.getPropertyValue("--coast").trim(),
+    county: cs.getPropertyValue("--county").trim(),
+    land: cs.getPropertyValue("--land").trim()
+  };
+}
+
+/* ------------------------------------------------------------------ *
+ * Map and rendering.
+ *
+ * Every drawn layer shares one canvas renderer. The obvious alternative
+ * - a pane and a canvas per layer, with z-index doing the stacking -
+ * looks tidier and silently breaks clicking: a canvas covers the whole
+ * viewport, so the topmost one swallows every mouse event and no line
+ * underneath a site layer can ever be selected.
+ *
+ * One canvas means draw order is insertion order, so a layer switched
+ * on late would paint over everything already there. restack() below
+ * fixes that by re-adding the enabled layers bottom-up.
+ * ------------------------------------------------------------------ */
+const map = L.map("map", {
+  preferCanvas: true,
+  minZoom: 6,
+  maxZoom: 18
+}).fitBounds(DATA.bounds);
+
+const tiles = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 19,
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.control.scale({ imperial: false, position: "bottomleft" }).addTo(map);
+
+const renderer = L.canvas({ padding: 0.35, tolerance: 4 });
+
+/* The base sits in its own pane below the overlay pane, and is not
+   interactive, so its canvas never intercepts a click. */
+map.createPane("pane-base");
+map.getPane("pane-base").style.zIndex = "395";
+const baseRenderer = L.canvas({ pane: "pane-base", padding: 0.35 });
+
+/* Vector base: the map has to stay legible with no tile server -
+   offline, or behind a policy that blocks third-party image hosts - so
+   the coastline and county lines are drawn from embedded geometry
+   rather than borrowed from the raster basemap. */
+function baseStyle(f) {
+  const bc = baseColours();
+  const coast = f.properties.kind === "coast";
+  return {
+    color: coast ? bc.coast : bc.county,
+    weight: coast ? 1.1 : 0.6,
+    fill: !coast,
+    fillColor: bc.land,
+    fillOpacity: 0.9,
+    interactive: false
+  };
+}
+const baseLayer = L.geoJSON(DATA.base, { renderer: baseRenderer, style: baseStyle }).addTo(map);
+
+/* Bottom to top: lowest voltage first, transmission over it, sites over
+   everything, so a substation is never buried under the lines reaching
+   it. The sidebar lists each group the other way round, most important
+   first, which is why both arrays are reversed here. */
+const STACK = DATA.lineOrder.slice().reverse()
+  .concat(DATA.siteOrder.slice().reverse())
+  .map(k => ({ key: k, kind: k in DATA.lines ? "line" : "site" }));
+
+/* ------------------------------------------------------------------ *
+ * Layers, built lazily.
+ *
+ * MV, LV and the untagged remainder are a hundred and thirty thousand
+ * features between them. Building all of it on open costs seconds for
+ * layers most sessions never switch on, so a layer is materialised the
+ * first time it is enabled and kept from then on.
+ * ------------------------------------------------------------------ */
+const busy = document.getElementById("busy");
+const groups = { line: {}, site: {} };
+
+function buildLineLayer(key) {
+  const spec = DATA.lines[key];
+  const style = {
+    color: pal[key], weight: spec.weight, opacity: spec.opacity,
+    lineCap: "butt", lineJoin: "round", renderer
+  };
+  const group = L.featureGroup();
+  for (let i = 0; i < spec.geom.length; i++) {
+    const pl = L.polyline(decodeLine(spec.geom[i]), style);
+    pl._idx = i;
+    group.addLayer(pl);
+  }
+  group.on("click", ev => {
+    if (ev.layer && ev.layer._idx !== undefined) selectLine(key, ev.layer._idx, ev.latlng);
+  });
+  return group;
+}
+
+/* Site markers are sized by zoom.  At national zoom there are eight
+   thousand of them on screen and a 4.5 px disc each turns the substation
+   layer into a solid mass that hides the network underneath it; zoomed in,
+   the same 4.5 px is barely a dot. The scale is stepped rather than
+   continuous so that restyling runs only when a threshold is crossed, not on
+   every wheel click - setStyle over the solar layer touches 28,000 markers. */
+const ZOOM_STEPS = [[8, 0.4], [10, 0.6], [12, 0.8]];
+
+function zoomScale(z) {
+  for (const [limit, scale] of ZOOM_STEPS) if (z < limit) return scale;
+  return 1;
+}
+let zoomBucket = zoomScale(map.getZoom());
+
+function siteStyle(key, spec) {
+  return {
+    radius: Math.max(1.3, spec.radius * zoomBucket),
+    weight: zoomBucket < 0.7 ? 0.6 : 1.1,
+    color: pal[key], fillColor: pal[key], fillOpacity: 0.5, renderer
+  };
+}
+
+map.on("zoomend", () => {
+  const next = zoomScale(map.getZoom());
+  if (next === zoomBucket) return;
+  zoomBucket = next;
+  Object.entries(groups.site).forEach(([k, g]) => {
+    if (map.hasLayer(g)) g.setStyle(siteStyle(k, DATA.sites[k]));
+  });
+});
+
+function buildSiteLayer(key) {
+  const spec = DATA.sites[key];
+  const style = siteStyle(key, spec);
+  const group = L.featureGroup();
+  for (let i = 0; i < spec.rows.length; i++) {
+    const r = spec.rows[i];
+    const mk = L.circleMarker([r[spec.lat] / P, r[spec.lon] / P], style);
+    mk._idx = i;
+    group.addLayer(mk);
+  }
+  group.on("click", ev => {
+    if (ev.layer && ev.layer._idx !== undefined) selectSite(key, ev.layer._idx, ev.latlng);
+  });
+  return group;
+}
+
+const enabled = { line: {}, site: {} };
+
+/* Re-add every enabled layer bottom-up so a late arrival lands in the
+   right place in the shared canvas's draw order. Only the layers that
+   belong above the one just switched on have to move, which is why this
+   takes a starting index rather than always redoing the whole stack -
+   switching on the untagged layer at the bottom is the expensive case
+   and it is the one that needs the least work above it. */
+function restack(fromKey) {
+  const start = STACK.findIndex(e => e.key === fromKey);
+  for (let i = start + 1; i < STACK.length; i++) {
+    const g = groups[STACK[i].kind][STACK[i].key];
+    if (g && map.hasLayer(g)) { map.removeLayer(g); g.addTo(map); }
+  }
+}
+
+function setLayer(kind, key, on) {
+  enabled[kind][key] = on;
+  const store = groups[kind];
+  if (!on) {
+    if (store[key]) map.removeLayer(store[key]);
+    return Promise.resolve();
+  }
+  const show = () => {
+    if (!store[key]) store[key] = (kind === "line" ? buildLineLayer : buildSiteLayer)(key);
+    store[key].addTo(map);
+    restack(key);
+  };
+  if (store[key]) { show(); return Promise.resolve(); }
+  busy.style.display = "block";
+  return new Promise(res => setTimeout(() => {
+    show();
+    busy.style.display = "none";
+    res();
+  }, 16));
+}
+
+/* ------------------------------------------------------------------ *
+ * Selection detail
+ * ------------------------------------------------------------------ */
+function esc(s) {
+  return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
+
+function fmtV(v) {
+  if (v === undefined || v === null) return null;
+  return v >= 1000
+    ? (v / 1000).toLocaleString(undefined, { maximumFractionDigits: 1 }) + " kV"
+    : v + " V";
+}
+
+function card(kindLabel, title, pairs, osmType, osmId) {
+  const rows = pairs
+    .filter(p => p[1] !== null && p[1] !== undefined && p[1] !== "")
+    .map(p => `<tr><td class="k">${esc(p[0])}</td><td class="v">${esc(p[1])}</td></tr>`).join("");
+  const link = osmId
+    ? `<a class="osm" href="https://www.openstreetmap.org/${osmType || "way"}/${osmId}" target="_blank" rel="noopener">View on OpenStreetMap &rarr;</a>`
+    : "";
+  const el = document.getElementById("detail");
+  el.innerHTML =
+    `<div class="card"><div class="kind">${esc(kindLabel)}</div>
+     <div class="title">${esc(title)}</div><table class="attrs">${rows}</table>${link}</div>`;
+  // The panel scrolls independently of the map, so a click on a feature can
+  // fill a card the reader cannot see. Only pull it into view when it is
+  // actually off-screen, so ordinary clicking does not jitter the sidebar.
+  const box = el.getBoundingClientRect();
+  if (box.top < 0 || box.bottom > window.innerHeight) {
+    el.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+}
+
+function popup(latlng, title, sub) {
+  if (!latlng) return;
+  L.popup({ closeButton: false, autoPan: false })
+    .setLatLng(latlng)
+    .setContent(`<b>${esc(title)}</b><br><span class="pk">${esc(sub)}</span>`)
+    .openOn(map);
+}
+
+function selectLine(key, idx, latlng) {
+  const spec = DATA.lines[key];
+  const o = rowToObj(spec, spec.rows[idx]);
+  const title = o.name || o.ref || `Untitled ${o.power || "line"}`;
+  card(spec.label, title, [
+    ["OSM feature", o.power],
+    ["Voltage", fmtV(o.voltage_v) || "not tagged"],
+    ["Operator", o.operator],
+    ["Reference", o.ref],
+    ["Circuits", o.circuits],
+    ["Cables", o.cables],
+    ["Placement", o.location],
+    ["Mapped length", o.length_km !== undefined ? Number(o.length_km).toFixed(2) + " km" : null],
+    ["OSM id", o.id]
+  ], o.osm_type, o.id);
+  popup(latlng, title, spec.label);
+}
+
+function siteKind(o) {
+  return [o.substation, o["generator:source"], o["plant:source"], o.power]
+    .filter(Boolean)[0];
+}
+
+function selectSite(key, idx, latlng) {
+  const spec = DATA.sites[key];
+  const o = rowToObj(spec, spec.rows[idx]);
+  const title = o.name || o.ref || ("Unnamed " + spec.singular);
+  card(spec.label, title, [
+    ["Site type", siteKind(o)],
+    ["OSM feature", o.power],
+    ["Voltage", fmtV(o.voltage_v)],
+    ["Operator", o.operator],
+    ["Reference", o.ref],
+    ["Output", o["generator:output:electricity"] || o["plant:output:electricity"]],
+    ["Method", o["generator:method"]],
+    ["Commissioned", o.start_date],
+    ["Footprint", o.area_m2 ? Math.round(o.area_m2).toLocaleString() + " m²" : "mapped as a point"],
+    ["OSM id", o.id]
+  ], o.osm_type, o.id);
+  popup(latlng, title, siteKind(o) || spec.singular);
+}
+
+/* ------------------------------------------------------------------ *
+ * Sidebar
+ * ------------------------------------------------------------------ */
+const side = document.getElementById("side");
+
+const fmtN = n => n.toLocaleString();
+const fmtKm = n => (n >= 10 ? fmtN(Math.round(n)) : n.toFixed(1)) + " km";
+
+function layerRow(kind, key, spec) {
+  const on = enabled[kind][key];
+  const id = `chk-${kind}-${key}`;
+  const swatch = kind === "line"
+    ? `<span class="swatch" data-sw="${key}" style="background:${pal[key]}"></span>`
+    : `<span class="swatch dot" data-sw="${key}" style="background:${pal[key]}"></span>`;
+  const num = kind === "line" ? fmtKm(spec.km) : fmtN(spec.rows.length);
+  return `<label class="row${on ? "" : " off"}" for="${id}">
+    <input type="checkbox" id="${id}" data-kind="${kind}" data-key="${key}"${on ? " checked" : ""}>
+    ${swatch}<span class="lab">${esc(spec.label)}</span><span class="num">${num}</span></label>`;
+}
+
+DATA.lineOrder.forEach(k => { enabled.line[k] = DATA.lines[k].on; });
+DATA.siteOrder.forEach(k => { enabled.site[k] = DATA.sites[k].on; });
+
+side.innerHTML = `
+  <h1>${esc(DATA.meta.title)}</h1>
+  <p class="sub">${esc(DATA.meta.subtitle)}</p>
+
+  <h2>Network layers</h2>
+  ${DATA.lineOrder.map(k => layerRow("line", k, DATA.lines[k])).join("")}
+
+  <h2>Sites</h2>
+  ${DATA.siteOrder.map(k => layerRow("site", k, DATA.sites[k])).join("")}
+
+  <h2>Find a site</h2>
+  <input id="search" type="search" placeholder="Name, operator or reference…" autocomplete="off">
+  <div id="results"></div>
+
+  <h2>Selected feature</h2>
+  <div id="detail"><p class="empty">Click any line or site on the map.</p></div>
+
+  <h2>How to read this map</h2>
+  ${DATA.meta.notes.map(n => `<p class="note">${n}</p>`).join("")}
+
+  <div id="toggles">
+    <button class="mini" id="btn-theme">Toggle theme</button>
+    <button class="mini" id="btn-tiles">Toggle basemap</button>
+    <button class="mini" id="btn-reset">Reset view</button>
+  </div>
+
+  <p class="foot">${DATA.meta.footer}</p>`;
+
+side.addEventListener("change", ev => {
+  const el = ev.target;
+  if (el.tagName !== "INPUT" || el.type !== "checkbox") return;
+  el.closest(".row").classList.toggle("off", !el.checked);
+  setLayer(el.dataset.kind, el.dataset.key, el.checked);
+});
+
+/* ---- search ---- */
+const searchIndex = [];
+DATA.siteOrder.forEach(key => {
+  const spec = DATA.sites[key];
+  spec.rows.forEach((r, i) => {
+    const o = rowToObj(spec, r);
+    const label = o.name || o.ref;
+    if (!label) return;
+    searchIndex.push({
+      key, i, label,
+      sub: [siteKind(o), o.operator, fmtV(o.voltage_v)].filter(Boolean).join(" · "),
+      hay: `${label} ${o.operator || ""} ${o.ref || ""} ${o.substation || ""}`.toLowerCase(),
+      ll: [r[spec.lat] / P, r[spec.lon] / P]
+    });
+  });
+});
+searchIndex.sort((a, b) => a.label.localeCompare(b.label));
+let hits = [];
+
+side.addEventListener("input", ev => {
+  if (ev.target.id !== "search") return;
+  const results = document.getElementById("results");
+  const q = ev.target.value.trim().toLowerCase();
+  if (q.length < 2) { results.innerHTML = ""; hits = []; return; }
+  hits = searchIndex.filter(h => h.hay.includes(q)).slice(0, 40);
+  results.innerHTML = hits.length
+    ? hits.map((h, n) => `<div class="hit" data-n="${n}"><b>${esc(h.label)}</b><span>${esc(h.sub)}</span></div>`).join("")
+    : `<p class="note">Nothing matching “${esc(q)}”. Only named or referenced sites are searchable — most OSM substations carry neither.</p>`;
+});
+
+side.addEventListener("click", ev => {
+  const el = ev.target.closest("#results .hit");
+  if (!el) return;
+  const h = hits[+el.dataset.n];
+  if (!h) return;
+  const chk = document.getElementById(`chk-site-${h.key}`);
+  let ready = Promise.resolve();
+  if (chk && !chk.checked) {
+    chk.checked = true;
+    chk.closest(".row").classList.remove("off");
+    ready = setLayer("site", h.key, true);
+  }
+  ready.then(() => {
+    map.setView(h.ll, Math.max(map.getZoom(), 14));
+    selectSite(h.key, h.i, h.ll);
+  });
+});
+
+/* ---- buttons ---- */
+document.getElementById("btn-theme").addEventListener("click", () => {
+  const next = isDark() ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  pal = PALETTE[next];
+  Object.entries(groups.line).forEach(([k, g]) => g.setStyle({ color: pal[k] }));
+  Object.entries(groups.site).forEach(([k, g]) => g.setStyle(siteStyle(k, DATA.sites[k])));
+  baseLayer.setStyle(baseStyle);
+  side.querySelectorAll("[data-sw]").forEach(el => {
+    el.style.background = pal[el.dataset.sw];
+  });
+});
+
+document.getElementById("btn-tiles").addEventListener("click", () => {
+  if (map.hasLayer(tiles)) map.removeLayer(tiles); else tiles.addTo(map);
+});
+document.getElementById("btn-reset").addEventListener("click", () => map.fitBounds(DATA.bounds));
+document.getElementById("burger").addEventListener("click", () => {
+  document.body.classList.toggle("nav-closed");
+  setTimeout(() => map.invalidateSize(), 220);
+});
+
+/* ---- initial layers ---- */
+(async () => {
+  for (const k of DATA.lineOrder) if (enabled.line[k]) await setLayer("line", k, true);
+  for (const k of DATA.siteOrder) if (enabled.site[k]) await setLayer("site", k, true);
+})();
+</script>

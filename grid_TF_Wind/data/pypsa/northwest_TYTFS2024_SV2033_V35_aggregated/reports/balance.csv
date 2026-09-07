@@ -1,0 +1,16 @@
+station,machines,machines_in_service,capacity_mw,dispatched_mw,demand_mw,net_mw
+Moy,6,0,189.6,0.0,13.49,-13.49
+Corderry,15,0,161.603,0.0,0.0,0.0
+Clogher,6,0,158.25,0.0,0.0,0.0
+Croaghonagh,2,0,139.2,0.0,0.0,0.0
+Cathaleen's Fall,6,2,120.5,40.0,5.98,34.019999999999996
+Binbane,18,0,93.6,0.0,7.02,-7.02
+Letterkenny,8,0,90.77000000000001,0.0,17.63,-17.63
+Drumkeen,3,0,84.96,0.0,0.0,0.0
+Glenree,4,0,77.3,0.0,0.0,0.0
+Sorne Hill,10,0,63.24999999999999,0.0,0.0,0.0
+Sligo,6,1,52.529999999999994,0.0,19.6,-19.6
+Trillick,6,0,44.69,0.0,6.27,-6.27
+Tievebrack,1,0,29.9,0.0,0.0,0.0
+Ardnagappary,3,0,22.94,0.0,2.99,-2.99
+Srananagh 220,0,0,0.0,0.0,0.0,0.0

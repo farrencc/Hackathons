@@ -1,0 +1,5 @@
+name,bus0,bus1,carrier,efficiency,p_nom,p_set,p_min_pu,p_max_pu
+Moyle pole 1,86221,86220,DC,0.9916176,250.0,40.0,-1.0,1.0
+Moyle pole 2,86221,86220,DC,0.9916176,250.0,40.0,-1.0,1.0
+EWIC,GB_EWIC,54630,DC,1.0,530.0,300.0,-1.0,0.9433962264150944
+Greenlink,GB_GREENLINK,36671,DC,1.0,530.0,300.0,-1.0,0.9509433962264151

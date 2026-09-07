@@ -1,0 +1,5 @@
+link,bus0,bus1,bus0_name,bus1_name,p_nom,p_set,efficiency,source,far_terminal
+Moyle pole 1,86221,86220,SCOTLAND,BALLYCRO,250.0,40.0,0.9916176,two_terminal_dc record,in the case
+Moyle pole 2,86221,86220,SCOTLAND,BALLYCRO,250.0,40.0,0.9916176,two_terminal_dc record,in the case
+EWIC,GB_EWIC,54630,EWIC far terminal,EASTWEST,530.0,300.0,1.0,"PV bus generator record (PT import, PB export)",created here
+Greenlink,GB_GREENLINK,36671,Greenlink far terminal,GREENLINK,530.0,300.0,1.0,"PV bus generator record (PT import, PB export)",created here

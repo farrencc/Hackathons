@@ -1,0 +1,5 @@
+bus,psse_name,v_nom,sub_network,reason
+52071,TURLG1,10.5,0,PSS/E swing bus (IDE=3)
+86221,SCOTLAND,275.0,1,PSS/E swing bus (IDE=3)
+GB_EWIC,EWIC far terminal,260.0,2,largest generation in the sub-network; no IDE=3 bus here
+GB_GREENLINK,Greenlink far terminal,150.0,3,largest generation in the sub-network; no IDE=3 bus here

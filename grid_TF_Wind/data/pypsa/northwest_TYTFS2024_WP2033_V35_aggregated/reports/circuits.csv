@@ -1,0 +1,19 @@
+route,from,to,kind,ckt,bus_i,bus_i_name,bus_j,bus_j_name,km,r_pu,x_pu,b_pu,rate1_mva,in_service
+Ardnagappary - Tievebrack,Ardnagappary,Tievebrack,line,1,1571,ARDNAGAPPARY,5191,TIEVEBRACK,35.0,0.0544,0.1204,0.0112,91.0,True
+Binbane - Cathaleen's Fall,Binbane,Cathaleen's Fall,line,1,1341,BINBANE,1701,CATH_FALL,34.3,0.0216,0.1115,0.0121,210.0,True
+Binbane - Tievebrack,Binbane,Tievebrack,line,1,1341,BINBANE,5191,TIEVEBRACK,23.2,0.0242,0.0774,0.0079,159.0,True
+Cathaleen's Fall - Clogher,Clogher,Cathaleen's Fall,line,1,2870,CLOGHER,17010,CATH FALL,26.07,0.0163,0.088356,0.01578,209.0,True
+Cathaleen's Fall - Clogher,Cathaleen's Fall,Clogher,line,2,1701,CATH_FALL,28712,CLOGHER,25.74,0.0386,0.088356,0.00948,210.0,True
+Cathaleen's Fall - Srananagh 220,Cathaleen's Fall,Srananagh 220,line,1,1701,CATH_FALL,5041,SRANANAGH,52.63,0.0649,0.1787,0.0211,191.0,True
+Cathaleen's Fall - Srananagh 220,Srananagh 220,Cathaleen's Fall,line,2,5041,SRANANAGH,17010,CATH FALL,49.67,0.0309,0.1599,0.0174,210.0,True
+Clogher - Croaghonagh,Clogher,Croaghonagh,line,1,28710,CLOGHER,51911,CROAGHONAGH,9.61,0.0017,0.008,0.1304,183.0,True
+Clogher - Drumkeen,Drumkeen,Clogher,line,1,2321,DRUMKEEN,28710,CLOGHER,27.0,0.0386,0.0909,0.0152,123.0,True
+Clogher - Letterkenny,Letterkenny,Clogher,line,1,3581,LETTERKENNY,28019,GOLAGH T,38.4,0.0577,0.1316,0.01359,121.0,True
+Corderry - Srananagh 220,Corderry,Srananagh 220,line,1,1631,CORDERRY,5041,SRANANAGH,12.7,0.0198,0.0437,0.0041,210.0,True
+Drumkeen - Letterkenny,Drumkeen,Letterkenny,line,1,2321,DRUMKEEN,3581,LETTERKENNY,8.35,0.0125,0.0276,0.0026,123.0,True
+Glenree - Sligo,Sligo,Glenree,line,1,1931,CUNGHILL,4371,GLENREE,26.29,0.039385,0.090417,0.00874,210.0,True
+Letterkenny - Tievebrack,Letterkenny,Tievebrack,line,1,3591,LENALEA,5191,TIEVEBRACK,33.13,0.0345,0.1106,0.0113,159.0,True
+Letterkenny - Trillick,Letterkenny,Trillick,line,1,3581,LETTERKENNY,5361,TRILLICK,34.05,0.051021,0.116965,0.01187,123.0,True
+Sligo - Srananagh 220,Sligo,Srananagh 220,line,1,4981,SLIGO,5041,SRANANAGH,10.77,0.0168,0.0371,0.0035,123.0,True
+Sligo - Srananagh 220,Sligo,Srananagh 220,line,2,4981,SLIGO,5041,SRANANAGH,11.19,0.0173,0.0382,0.0036,123.0,True
+Sorne Hill - Trillick,Sorne Hill,Trillick,line,1,4991,SORNE HILL,5361,TRILLICK,4.4,0.0069,0.0152,0.0015,123.0,True

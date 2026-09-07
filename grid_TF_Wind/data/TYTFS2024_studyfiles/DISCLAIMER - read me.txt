@@ -1,0 +1,3 @@
+Disclaimer:
+The demand, generation and associated power flow data represented in these files is provided for reference purposes only. The actual power flow within the system will vary at any given time due to a number of factors including the demand and generation profile. The power flow analysis has been performed solely to assist users and should not be interpreted as a reflection of real-time operational conditions. 
+Furthermore, the generation used in these simulations have been selected independently and are not intended to reflect compliance with future energy policies or sustainability goals.

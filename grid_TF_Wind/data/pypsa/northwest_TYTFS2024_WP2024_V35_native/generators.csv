@@ -1,0 +1,26 @@
+name,bus,control,p_nom,p_min_pu,p_max_pu,p_set,carrier,marginal_cost
+Tawnaghmore generation,Tawnaghmore,PV,183.6,0.0,1.0,0.0,AC,0.0
+Croaghonagh generation,Croaghonagh,PV,139.2,0.0,1.0,0.0,AC,0.0
+Mulreavy generation,Mulreavy,PV,95.25,0.0,1.0,0.0,AC,0.0
+Meentycat generation,Meentycat,PV,84.96,0.0,1.0,0.0,AC,0.0
+Garvagh generation,Garvagh,PV,82.0,0.0,1.0,0.0,AC,0.0
+Glenree generation,Glenree,PV,77.3,0.0,1.0,0.0,AC,0.0
+Binbane generation,Binbane,PV,75.1,0.0,1.0,4.3,AC,0.0
+Corderry generation,Corderry,PV,63.253,0.0,1.0,0.0,AC,0.0
+Sorne Hill generation,Sorne Hill,PV,63.24999999999999,0.0,1.0,0.0,AC,0.0
+Cathaleen's Fall generation,Cathaleen's Fall,PV,63.0,0.0,1.0,45.0,AC,0.0
+Trillick generation,Trillick,PV,44.69,0.0,1.0,0.0,AC,0.0
+Letterkenny generation,Letterkenny,PV,40.27,0.0,1.0,0.0,AC,0.0
+Cunghill generation,Cunghill,PV,34.8,0.0,1.0,0.0,AC,0.0
+Lenalea generation,Lenalea,PV,30.5,0.0,1.0,0.0,AC,0.0
+Ardnagappary generation,Ardnagappary,PV,22.94,0.0,1.0,0.0,AC,0.0
+Cliff generation,Cliff,PV,20.0,0.0,1.0,20.0,AC,0.0
+Golagh generation,Golagh,PV,15.0,0.0,1.0,0.0,AC,0.0
+Sligo generation,Sligo,PV,13.65,0.0,1.0,0.0,AC,0.0
+Moy generation,Moy,PV,6.0,0.0,1.0,0.0,AC,0.0
+boundary Cathaleen's Fall - CORRACLASSY 1,Cathaleen's Fall,PV,210.0,0.03887643212984535,0.03887643212984535,8.164050747267524,boundary,0.0
+boundary Corderry - ARIGNA_T 1,Corderry,PV,210.0,0.08509788498544518,0.08509788498544518,17.87055584694349,boundary,0.0
+boundary Letterkenny - STRA_PST 1,Letterkenny,PV,93.0,-0.22014970016789814,-0.22014970016789814,-20.473922115614528,boundary,0.0
+boundary Moy - BELLACORICK 1,Moy,PV,210.0,0.09758143055203204,0.09758143055203204,20.49210041592673,boundary,0.0
+boundary Sligo - FLAGFORD 1,Sligo,PV,121.0,0.20131614338453976,0.20131614338453976,24.35925334952931,boundary,0.0
+boundary Srananagh 220 - FLAGFORD 1,Srananagh 220,Slack,513.0,-1.0,1.0,92.92796175599005,boundary,100.0

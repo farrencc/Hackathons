@@ -1,0 +1,17 @@
+geopandas>=1.0
+pyogrio>=0.7
+shapely>=2.0
+numpy
+pandas
+networkx
+matplotlib
+pyrosm
+osmium>=4.0      # pyosmium: FileProcessor, filter.KeyFilter, BackReferenceWriter
+scipy            # scipy.spatial.cKDTree for the MST candidate graph
+requests>=2.31   # EirGrid ArcGIS paging
+pypsa>=1.0       # the network model the TYTFS cases are converted into
+highspy          # the LP solver pypsa_net.py verifies the LOPF with
+rapidfuzz        # geocode.py: name matching against OpenStreetMap
+openpyxl         # northwest.py: reading the hand-built node list
+# profiles.py needs only requests, numpy and pandas, all already above.
+pytest

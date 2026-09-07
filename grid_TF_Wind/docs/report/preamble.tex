@@ -1,0 +1,83 @@
+% Shared preamble: fonts, colours, code listings, tables.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[table]{xcolor}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+
+\graphicspath{{../figures/}{../../participant-kit/figures/}{../../data/}}
+
+% Colours lifted from participant-kit/plotstyle.py, so the document and the
+% charts in it are the same palette.
+\definecolor{ink}{HTML}{0B0B0B}
+\definecolor{inksoft}{HTML}{52514E}
+\definecolor{inkmuted}{HTML}{8A8983}
+\definecolor{accent}{HTML}{2A78D6}
+\definecolor{warn}{HTML}{EC835A}
+\definecolor{good}{HTML}{0CA30C}
+\definecolor{rule}{HTML}{E6E5E1}
+\definecolor{surface}{HTML}{FCFCFB}
+
+\hypersetup{colorlinks=true, linkcolor=accent, urlcolor=accent}
+
+\captionsetup{font=small, labelfont={bf,color=ink},
+              textfont={color=inksoft}, skip=6pt}
+\captionsetup[table]{skip=4pt}
+
+\titleformat{\section}{\Large\bfseries\color{ink}}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\large\bfseries\color{ink}}{\thesubsection}{0.7em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{inksoft}}%
+            {\thesubsubsection}{0.7em}{}
+\titlespacing*{\section}{0pt}{2.2ex plus 1ex minus .2ex}{1.2ex plus .2ex}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{inkmuted}TYTFS 2024 as a PyPSA network}
+\fancyfoot[C]{\small\color{inkmuted}\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\lstdefinestyle{code}{
+  basicstyle=\ttfamily\scriptsize\color{ink},
+  keywordstyle=\color{accent}\bfseries,
+  commentstyle=\color{inkmuted}\itshape,
+  stringstyle=\color{good},
+  numberstyle=\ttfamily\tiny\color{inkmuted},
+  backgroundcolor=\color{surface},
+  frame=leftline, framerule=1.6pt, rulecolor=\color{rule},
+  framexleftmargin=6pt, xleftmargin=10pt,
+  breaklines=true, breakatwhitespace=true,
+  showstringspaces=false, tabsize=4,
+  aboveskip=1.1em, belowskip=1.1em,
+  columns=fullflexible, keepspaces=true,
+}
+\lstset{style=code, language=Python}
+\lstdefinelanguage{shell}{morekeywords={python,pip,pytest,git},
+  sensitive=true, morecomment=[l]{\#}}
+
+% \code{...} for an inline identifier, \file{...} for a path.
+\newcommand{\code}[1]{\texttt{\small #1}}
+\newcommand{\file}[1]{\texttt{\small\color{inksoft} #1}}
+% \where{file}{symbol} - the standard "this lives here" pointer.
+% A long identifier list has no break points once it is in \texttt, so the
+% box is set ragged-right with plenty of stretch rather than overfull.
+\newcommand{\where}[2]{\par\smallskip\noindent%
+  \begingroup\small\color{inksoft}\raggedright\emergencystretch=3em%
+  \textbf{Code:}~\texttt{#1}~$\rightarrow$~\texttt{#2}\par\endgroup\smallskip}
+
+\setlist[itemize]{leftmargin=1.3em, itemsep=2pt, topsep=4pt}
+\setlist[enumerate]{leftmargin=1.6em, itemsep=2pt, topsep=4pt}
+\renewcommand{\arraystretch}{1.15}

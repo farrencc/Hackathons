@@ -1,0 +1,16 @@
+name,v_nom,x,y,control,station_buses,folds_in,coordinate_source,has_coordinates
+Ardnagappary,110.0,-8.2688178,55.0566404,PQ,1571,,geocoded,True
+Binbane,110.0,-8.2634291,54.7189369,PQ,1341,,geocoded,True
+Cathaleen's Fall,110.0,-8.15878725,54.49594499999999,PQ,"1701,1761,17010,17061",Cliff,geocoded,True
+Clogher,110.0,-7.974266485714286,54.68384601428571,PQ,"2801,2870,2871,4091,28019,28710,28712",Golagh+Mulreavy,geocoded,True
+Corderry,110.0,-8.1950632,54.17466345,PQ,"1631,2671",Garvagh,geocoded,True
+Croaghonagh,110.0,-7.974266485714286,54.68384601428571,PQ,51911,,neighbour mean,False
+Drumkeen,110.0,-7.8073381,54.8654152,PQ,"2321,4071",Meentycat,geocoded,True
+Glenree,110.0,-8.9893244,54.1053454,PQ,4371,,geocoded,True
+Letterkenny,110.0,-7.7393866,54.91881685,PQ,"3581,3591,35861,35862",Lenalea,geocoded,True
+Moy,110.0,-9.195397150000002,54.1403967,PQ,"4041,5241,5251,40461,40462",Tawnaghmore,geocoded,True
+Sligo,110.0,-8.527880699999999,54.19786756666667,PQ,"1931,4981,49861",Cunghill,geocoded,True
+Sorne Hill,110.0,-7.3684232,55.1313547,PQ,4991,,geocoded,True
+Srananagh 220,220.0,-8.383984,54.1777596,Slack,"5041,5042",Srananagh 110,geocoded,True
+Tievebrack,110.0,-8.2356174,54.8102758,PQ,5191,,geocoded,True
+Trillick,110.0,-7.4186417,55.1127756,PQ,5361,,geocoded,True

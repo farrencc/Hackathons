@@ -1,0 +1,8 @@
+file,rows,answers
+reports/aggregation.csv,1824,"every bus below the voltage floor, the retained bus its load and generation moved to, the series reactance to it, and the runner-up where there was one"
+reports/rating_exceptions.csv,1644,"every element the file left unrated (RATE1 of 0 or 9999), what it actually is, and the bound it was given"
+reports/severed.csv,2120,every element dropped because at least one end is below the voltage floor
+reports/slack.csv,4,the reference bus of each AC sub-network and why it was chosen
+reports/links.csv,4,"the interconnectors, their ratings, and which of the case's two representations each came from"
+reports/orphans.csv,0,"records whose bus survived neither the floor nor the aggregation, and so were dropped outright"
+reports/geocoding.csv,646,"bus coordinates from OpenStreetMap, with the match method and confidence for each, and a reason for each failure"

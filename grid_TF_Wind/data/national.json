@@ -1,0 +1,180 @@
+{
+  "n_features": 606290,
+  "total_km": 56336.9,
+  "ge_220kV": {
+    "n_nodes": 10241,
+    "n_edges": 10520,
+    "n_components": 22,
+    "largest": 9680,
+    "largest_share": 0.9452201933404941,
+    "median": 4.5,
+    "mean": 465.5,
+    "n_size_le_2": 4,
+    "n_size_le_5": 12,
+    "n_size_ge_50": 4,
+    "share_nodes_in_comps_le_5": 0.0036129284249585003,
+    "n_features": 10502,
+    "km": 2639.6,
+    "top_5_sizes": [
+      9680,
+      253,
+      155,
+      60,
+      18
+    ]
+  },
+  "110kV": {
+    "n_nodes": 42830,
+    "n_edges": 43251,
+    "n_components": 124,
+    "largest": 20598,
+    "largest_share": 0.48092458557086154,
+    "median": 21.5,
+    "mean": 345.4032258064516,
+    "n_size_le_2": 20,
+    "n_size_le_5": 42,
+    "n_size_ge_50": 48,
+    "share_nodes_in_comps_le_5": 0.0029185150595377072,
+    "n_features": 43167,
+    "km": 6190.4,
+    "top_5_sizes": [
+      20598,
+      4491,
+      3951,
+      1725,
+      989
+    ]
+  },
+  "38kV": {
+    "n_nodes": 50416,
+    "n_edges": 50261,
+    "n_components": 347,
+    "largest": 9608,
+    "largest_share": 0.1905744208187877,
+    "median": 68.0,
+    "mean": 145.29106628242076,
+    "n_size_le_2": 23,
+    "n_size_le_5": 36,
+    "n_size_ge_50": 204,
+    "share_nodes_in_comps_le_5": 0.0018049825452237385,
+    "n_features": 50221,
+    "km": 6278.0,
+    "top_5_sizes": [
+      9608,
+      3837,
+      1601,
+      943,
+      779
+    ]
+  },
+  "ge_38kV_all": {
+    "n_nodes": 103301,
+    "n_edges": 104221,
+    "n_components": 419,
+    "largest": 66047,
+    "largest_share": 0.639364575367131,
+    "median": 52.0,
+    "mean": 246.54176610978521,
+    "n_size_le_2": 40,
+    "n_size_le_5": 70,
+    "n_size_ge_50": 213,
+    "share_nodes_in_comps_le_5": 0.0018683265408853738,
+    "n_features": 103890,
+    "km": 15108.0,
+    "top_5_sizes": [
+      66047,
+      989,
+      932,
+      854,
+      655
+    ]
+  },
+  "MV_1to38kV": {
+    "n_nodes": 293381,
+    "n_edges": 287154,
+    "n_components": 6707,
+    "largest": 25420,
+    "largest_share": 0.086645011094788,
+    "median": 9.0,
+    "mean": 43.74250782764276,
+    "n_size_le_2": 597,
+    "n_size_le_5": 2284,
+    "n_size_ge_50": 1041,
+    "share_nodes_in_comps_le_5": 0.02635821678977166,
+    "n_features": 287021,
+    "km": 23885.9,
+    "top_5_sizes": [
+      25420,
+      7964,
+      7374,
+      6131,
+      4006
+    ]
+  },
+  "LV_lt1kV": {
+    "n_nodes": 17495,
+    "n_edges": 12826,
+    "n_components": 4682,
+    "largest": 149,
+    "largest_share": 0.008516719062589311,
+    "median": 3.0,
+    "mean": 3.736651003844511,
+    "n_size_le_2": 1908,
+    "n_size_le_5": 4019,
+    "n_size_ge_50": 3,
+    "share_nodes_in_comps_le_5": 0.6573306659045441,
+    "n_features": 12822,
+    "km": 619.2,
+    "top_5_sizes": [
+      149,
+      72,
+      55,
+      47,
+      41
+    ]
+  },
+  "untagged": {
+    "n_nodes": 214298,
+    "n_edges": 202544,
+    "n_components": 11920,
+    "largest": 8480,
+    "largest_share": 0.03957106459229671,
+    "median": 5.0,
+    "mean": 17.97802013422819,
+    "n_size_le_2": 2230,
+    "n_size_le_5": 6606,
+    "n_size_ge_50": 691,
+    "share_nodes_in_comps_le_5": 0.09721975940046104,
+    "n_features": 202557,
+    "km": 16723.8,
+    "top_5_sizes": [
+      8480,
+      2661,
+      2454,
+      1955,
+      1830
+    ]
+  },
+  "all_sub110kV": {
+    "n_nodes": 565436,
+    "n_edges": 552936,
+    "n_components": 13633,
+    "largest": 49165,
+    "largest_share": 0.08695060095218557,
+    "median": 7.0,
+    "mean": 41.47553729920047,
+    "n_size_le_2": 1653,
+    "n_size_le_5": 5700,
+    "n_size_ge_50": 1684,
+    "share_nodes_in_comps_le_5": 0.03309127823484886,
+    "n_features": 552621,
+    "km": 47506.9,
+    "top_5_sizes": [
+      49165,
+      9830,
+      9553,
+      8169,
+      8168
+    ]
+  }
+}

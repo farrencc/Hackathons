@@ -1,0 +1,17 @@
+route,circuits,km,rate1_mva,kinds
+Ardnagappary - Tievebrack,1,35.0,91.0,line
+Binbane - Cathaleen's Fall,1,34.3,178.0,line
+Binbane - Tievebrack,1,23.2,134.0,line
+Cathaleen's Fall - Clogher,2,26.07,356.0,line
+Cathaleen's Fall - Srananagh 220,2,52.63,369.0,line
+Clogher - Croaghonagh,1,9.61,183.0,line
+Clogher - Drumkeen,1,27.0,103.0,line
+Clogher - Letterkenny,1,38.4,99.0,line
+Corderry - Srananagh 220,1,12.7,178.0,line
+Drumkeen - Letterkenny,1,8.35,99.0,line
+Glenree - Moy,1,13.96,105.0,line
+Glenree - Sligo,1,26.29,178.0,line
+Letterkenny - Tievebrack,1,33.13,136.0,line
+Letterkenny - Trillick,1,34.05,105.0,line
+Sligo - Srananagh 220,2,11.19,198.0,line
+Sorne Hill - Trillick,1,4.4,105.0,line
