@@ -1,0 +1,14 @@
+name,bus0,bus1,r,x,s_nom
+w_link1,wind_bus1,wind_bus2,0.01,0.02,6
+w_link2,wind_bus2,wind_bus3,0.01,0.02,6
+w_link3,wind_bus3,wind_bus1,0.01,0.02,6
+lo_link1,load_bus1,load_bus2,0.01,0.02,10
+lo_link2,load_bus2,load_bus3,0.01,0.02,10
+lo_link3,load_bus3,load_bus4,0.01,0.02,10
+lo_link4,load_bus4,load_bus5,0.01,0.02,10
+lo_link5,load_bus5,load_bus1,0.01,0.02,10
+g_link1,gas_bus1,load_bus3,0.01,0.02,20
+g_link2,gas_bus2,load_bus4,0.01,0.02,20
+g_link3,gas_bus3,load_bus5,0.01,0.02,10
+g_link4,gas_bus3,load_bus2,0.01,0.02,10
+big_link,wind_bus1,load_bus1,0.01,0.02,20

@@ -1,0 +1,12 @@
+name,x,y,v_nom
+wind_bus1,0,1,11
+wind_bus2,1,2,11
+wind_bus3,-1,2,11
+gas_bus1,0.75,-2.5,11
+gas_bus2,-0.75,-2.5,11
+gas_bus3,0,-1.5,11
+load_bus1,0,-1,11
+load_bus2,1,-1.5,11
+load_bus3,0.75,-2,11
+load_bus4,-0.75,-2,11
+load_bus5,-1,-1.5,11

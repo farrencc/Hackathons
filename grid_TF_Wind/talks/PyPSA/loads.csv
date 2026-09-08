@@ -1,0 +1,6 @@
+name,bus,p_set
+load1,load_bus1,10
+load2,load_bus2,10
+load3,load_bus3,10
+load4,load_bus4,10
+load5,load_bus5,10
