@@ -199,3 +199,164 @@ def test_windy_hour_runs_near_the_floor(windy, units):
     status = windy["n"].generators_t.status.loc[t]
     floor = sum(m.MIN_UNITS.values())
     assert floor <= int((status > 0.5).sum()) <= floor + 4
+
+
+# --------------------------------------------------------------------------- #
+# SNSP, EirGrid's way
+# --------------------------------------------------------------------------- #
+
+def test_snsp_hand_worked_with_pumping():
+    """(wind + solar + net import) / (demand + pumping + net export).
+
+    2,000 MW wind, 100 MW solar, EWIC importing 300 and Moyle exporting 100
+    (net import 200), 4,000 MW demand with Turlough Hill pumping 200 MW::
+
+        (2000 + 100 + 200) / (4000 + 200 + 0) = 2300 / 4200 = 0.547619
+    """
+    got = m.snsp(2000.0, 100.0, {"EWIC": 300.0, "Moyle": -100.0}, 4000.0,
+                 pump_load_mw=200.0)
+    assert got == pytest.approx(2300.0 / 4200.0)
+
+
+def test_snsp_net_export_goes_on_the_bottom():
+    got = m.snsp(3000.0, 0.0, {"EWIC": -500.0, "Moyle": 100.0}, 4000.0)
+    assert got == pytest.approx(3000.0 / 4400.0)
+
+
+def test_snsp_is_not_the_naive_wind_ratio():
+    naive = 2000.0 / 4000.0
+    assert m.snsp(2000.0, 0.0, {"EWIC": 400.0}, 4000.0) != \
+        pytest.approx(naive)
+
+
+# --------------------------------------------------------------------------- #
+# The design
+# --------------------------------------------------------------------------- #
+
+def test_same_seed_same_design(units):
+    a = m.design(20, units, (3400.0, 7300.0), seed=11)
+    b = m.design(20, units, (3400.0, 7300.0), seed=11)
+    c = m.design(20, units, (3400.0, 7300.0), seed=12)
+    key = lambda ds: [(d.hour, d.demand_mw, d.setting) for d in ds]  # noqa
+    assert key(a) == key(b)
+    assert key(a) != key(c)
+
+
+def test_design_spans_every_dimension(units):
+    draws = m.design(50, units, (3400.0, 7300.0))
+    u_hour = np.array([d.u["hour"] for d in draws])
+    demand = np.array([d.demand_mw for d in draws])
+    ewic = np.array([d.setting.interconnectors["EWIC"] for d in draws])
+    sc = np.array([d.setting.condensers for d in draws])
+    # A Latin hypercube puts exactly one draw in each of n strata.
+    assert len(np.unique(np.floor(u_hour * 50))) == 50
+    assert demand.min() < 3500 and demand.max() > 7200
+    assert ewic.min() < -400 and ewic.max() > 400
+    assert set(sc) == set(range(0, 7))
+
+
+def test_outages_never_break_the_minimum_units_rule(units):
+    for d in m.design(200, units, (3400.0, 7300.0), seed=3):
+        for j, k in m.MIN_UNITS.items():
+            pool = units[units["large"] & (units["jurisdiction"] == j)]
+            assert len([u for u in pool.index
+                        if u not in d.setting.outages]) >= k
+
+
+# --------------------------------------------------------------------------- #
+# The ensemble itself
+#
+# These read the in-session ensemble if it has been run (python ensemble.py
+# run), and otherwise solve a small one.  They are the acceptance tests.
+# --------------------------------------------------------------------------- #
+
+SMOKE = os.path.join(m.ENSEMBLE_DIR, f"{m.DEFAULT_VINTAGE}_seed{m.SEED}"
+                     f"_n{m.DEFAULT_N}")
+
+
+@pytest.fixture(scope="module")
+def ens(tmp_path_factory):
+    if not os.path.exists(WP2024):
+        pytest.skip("TYTFS study files not present")
+    directory = os.environ.get("ENSEMBLE_DIR", SMOKE)
+    if len(m.done(directory)) < m.DEFAULT_N:
+        directory = str(tmp_path_factory.mktemp("ensemble"))
+        m.run(n=16, directory=directory, workers=os.cpu_count() or 1,
+              verbose=False)
+    return dict(directory=directory, **m.load(directory))
+
+
+def test_every_scenario_solved(ens):
+    s = ens["scenarios"]
+    assert (s["condition"] == "optimal").all()
+    assert (s["shed_mw"] < 1.0).all()
+
+
+def test_minimum_units_online_in_every_scenario(ens):
+    s = ens["scenarios"]
+    assert (s["large_online_IE"] >= m.MIN_UNITS["IE"]).all()
+    assert (s["large_online_NI"] >= m.MIN_UNITS["NI"]).all()
+
+
+def test_ensemble_reaches_the_insecure_region(ens):
+    """If this fails, a constraint has leaked into the optimisation.
+
+    With no SNSP or inertia limit in the MILP, windy low-demand states run on
+    the minimum-units floor and go past both operational limits.
+    """
+    import inertia
+
+    s = ens["scenarios"]
+    assert (s["snsp"] > 0.75).any()
+    assert (s["E_pre_mws"] < inertia.OPERATIONAL_INERTIA_FLOOR_MWS).any()
+
+
+def test_lsi_moves_and_falls_with_wind(ens):
+    """LSI is a function of dispatch, not a constant."""
+    import inertia
+    from scipy.stats import spearmanr
+
+    s = ens["scenarios"]
+    assert s["lsi_mw"].std() > 25.0
+    assert s["lsi_mw"].max() <= inertia.LSI_CELTIC_MW
+    assert spearmanr(s["wind_mw"], s["lsi_mw"]).statistic < 0
+
+
+def test_post_trip_inertia_by_incident_type(ens):
+    s = ens["scenarios"]
+    unit = s[s["incident_type"] == "unit"]
+    hvdc = s[s["incident_type"] == "hvdc"]
+    assert (unit["E_post_mws"] < unit["E_pre_mws"]).all()
+    assert (hvdc["E_post_mws"] == hvdc["E_pre_mws"]).all()
+
+
+def test_record_is_enough_to_recompute_inertia(ens):
+    """E_pre from the per-unit rows equals the scenario row, to the MWs."""
+    import inertia
+
+    s = ens["scenarios"].set_index("scenario")
+    u = ens["units"]
+    machines = u[u["online"]].groupby("scenario")["E_mws"].sum()
+    rebuilt = machines.reindex(s.index).fillna(0.0) \
+        + s["condensers"] * inertia.SYNC_CONDENSER_MWS
+    assert np.allclose(rebuilt, s["E_pre_mws"])
+
+
+def test_same_seed_reproduces_the_ensemble(ens):
+    """Re-solve two scenarios from scratch and compare every field."""
+    ctx = m.context(m.DEFAULT_VINTAGE, m.SEED)
+    s = ens["scenarios"].set_index("scenario")
+    n = int(len(s)) if len(s) < m.DEFAULT_N else m.DEFAULT_N
+    draws = m.design(n, ctx.units, ctx.demand_range,
+                     hours=len(ctx.year["demand"]))
+    for d in draws[:2]:
+        row, _, _ = m.run_draw(d, ctx)
+        for key, value in row.items():
+            if key in ("solve_s", "scenario"):
+                continue
+            stored = s.at[d.scenario, key]
+            if isinstance(value, float):
+                assert value == pytest.approx(float(stored), rel=1e-6,
+                                              abs=1e-6), key
+            else:
+                assert value == stored, key

@@ -153,10 +153,11 @@ COST_SPREAD = 0.05
 #: Turlough Hill, the island's pumped storage.  Modelled as four storage units
 #: rather than committable generators: a committable machine has no energy
 #: balance, and one that can pump for free will.  A unit is synchronised
-#: whenever it is generating or pumping.
+#: whenever it is generating or pumping.  ``por`` and ``sor`` apply to a
+#: generating unit's headroom; a pumping unit's reserve is its pump load.
 PUMPED_STORAGE = dict(max_hours=5.0, efficiency_store=0.85,
-                      efficiency_dispatch=0.85, marginal_cost=2.0, por=1.0,
-                      sor=1.0)
+                      efficiency_dispatch=0.85, marginal_cost=2.0, por=0.30,
+                      sor=0.50)
 
 #: Below this a synchronous record is left out of the dispatch.  In WP2024 the
 #: excluded records sum to a few tens of MW, mostly embedded CHP and biogas
@@ -736,18 +737,16 @@ def _extra_functionality(units: pd.DataFrame, setting: Setting):
 
         stores = [u for u in units.index if u in n.storage_units.index]
         if stores:
-            s_nom = xr.DataArray(units.loc[stores, "p_nom"].to_numpy(),
-                                 coords={"name": stores}, dims="name")
-            disp = m["StorageUnit-p_dispatch"].sel(name=stores)
             store = m["StorageUnit-p_store"].sel(name=stores)
             rs = m.add_variables(lower=0, coords=[snap_ix,
                                                   pd.Index(stores, name="name")],
                                  name="StorageUnit-por")
-            # Headroom to full output, which for a pumping unit includes
-            # dropping its pump load.
-            m.add_constraints(rs - store + disp <= s_nom, name="ps_headroom")
-            m.add_constraints(rs <= PUMPED_STORAGE["por"] * s_nom,
-                              name="ps_capability")
+            # Only a pumping unit is counted: it gives POR by dropping its
+            # pump load.  A standstill unit cannot reach output inside 5 s
+            # and the storage model has no status to say it is spinning, so
+            # a generating unit's headroom is left out here (conservative)
+            # and counted in the post-hoc volume, where "online" is known.
+            m.add_constraints(rs - store <= 0, name="ps_pump_trip")
             total = total + rs.sum("name")
 
         short = m.add_variables(lower=0, coords=[snap_ix],
@@ -768,9 +767,14 @@ def solve(n, units: pd.DataFrame, setting: Setting,
           solver_options: dict | None = None) -> dict:
     """Solve one scenario's commitment problem; return status and timing."""
     import logging
+    import warnings
 
     for name in ("pypsa", "linopy"):
         logging.getLogger(name).setLevel(logging.ERROR)
+    # PyPSA 1.x announces default changes coming in 2.0 on every solve.
+    # They do not change this model; the defaults in force are used.
+    warnings.filterwarnings("ignore", category=FutureWarning,
+                            module="pypsa")
     options = dict(SOLVER_OPTIONS, **(solver_options or {}))
     start = time.perf_counter()
     status, condition = n.optimize(
@@ -849,6 +853,409 @@ def window(year: dict, wind: pd.DataFrame, solar: pd.DataFrame,
 
 
 # --------------------------------------------------------------------------- #
+# SNSP, EirGrid's way
+# --------------------------------------------------------------------------- #
+
+def snsp(wind_mw: float, solar_mw: float, flows: dict, demand_mw: float,
+         pump_load_mw: float = 0.0, other_nonsync_mw: float = 0.0) -> float:
+    """System non-synchronous penetration, as EirGrid defines it::
+
+        SNSP = (non-synchronous generation + net interconnector imports)
+               / (demand + net interconnector exports)
+
+    with demand including pumped-storage consumption while pumping.  Wind,
+    solar and HVDC imports are the non-synchronous sources.  It is not the
+    wind/demand ratio: that omits imports from the top and pumping and
+    exports from the bottom, and it biases the comparison against SNSP by
+    making it a noisier function of the state than EirGrid's number is.
+    """
+    net = float(sum(flows.values()))
+    num = float(wind_mw) + float(solar_mw) + float(other_nonsync_mw) \
+        + max(net, 0.0)
+    den = float(demand_mw) + float(pump_load_mw) + max(-net, 0.0)
+    if den <= 0:
+        raise ValueError("SNSP denominator must be positive")
+    return num / den
+
+
+# --------------------------------------------------------------------------- #
+# The sampling design
+#
+# The ensemble is over dispatch states.  dP is derived from each state rather
+# than sampled, which keeps both predictors functions of system state and the
+# comparison fair: neither gets an input the other cannot see.
+# --------------------------------------------------------------------------- #
+
+#: Probability that a large unit is on forced outage for a scenario.  Irish
+#: thermal plant has run forced-outage rates well above the European norm in
+#: recent years; 10% is a round figure in that range, not a statistic.
+FORCED_OUTAGE_RATE = 0.10
+
+#: Default ensemble size.  **A smoke test, not a result**: enough to run the
+#: whole pipeline inside one session.  scripts/run_ensemble.py is for the
+#: 500-2,000 scenario run.
+DEFAULT_N = 50
+
+ENSEMBLE_DIR = "data/ensemble"
+
+#: The fixed dimensions of the Latin hypercube, in order.  One more dimension
+#: per large unit follows them, for its outage.
+LHS_DIMENSIONS = ("hour", "demand", "EWIC", "Moyle", "Greenlink",
+                  "condensers")
+
+
+@dataclass
+class Draw:
+    """One row of the design, decoded."""
+
+    scenario: int
+    seed: int
+    hour: int
+    demand_mw: float
+    setting: Setting
+    restored: tuple = ()
+    u: dict = field(default_factory=dict)
+
+
+def design(n: int, units: pd.DataFrame, demand_range: tuple,
+           vintage: str = DEFAULT_VINTAGE, seed: int = SEED,
+           hours: int = 8784) -> list[Draw]:
+    """A seeded Latin hypercube over weather, demand, flows, condensers, outages.
+
+    ``demand_range`` is the vintage's own (SV, WP) demand pair.  Outages are
+    drawn per large unit; where a draw would leave a jurisdiction unable to
+    meet the minimum-units rule, the units with the least-extreme draws are
+    returned to service until it can, and that is recorded - a state the real
+    system cannot be put in is not a state worth sampling.
+    """
+    from scipy.stats import qmc
+
+    import inertia
+
+    large = list(units.index[units["large"]])
+    dims = len(LHS_DIMENSIONS) + len(large)
+    sample = qmc.LatinHypercube(d=dims, seed=seed).random(n)
+    limits = INTERCONNECTOR_LIMITS[vintage]
+    lo, hi = demand_range
+    draws = []
+    for k, row in enumerate(sample):
+        u = dict(zip(LHS_DIMENSIONS, row[:len(LHS_DIMENSIONS)]))
+        flows = {}
+        for link in ("EWIC", "Moyle", "Greenlink"):
+            a, b = limits[link]
+            flows[link] = float(a + u[link] * (b - a))
+        out_u = dict(zip(large, row[len(LHS_DIMENSIONS):]))
+        out = [m for m in large if out_u[m] < FORCED_OUTAGE_RATE]
+        restored = []
+        for j, need in (MIN_UNITS.items() if MIN_UNITS_RULE == "split"
+                        else [("all", MIN_UNITS_ALL_ISLAND)]):
+            pool = [m for m in large
+                    if j == "all" or units.at[m, "jurisdiction"] == j]
+            while len([m for m in pool if m not in out]) < need:
+                back = max((m for m in out if m in pool), key=out_u.get)
+                out.remove(back)
+                restored.append(back)
+        draws.append(Draw(
+            scenario=k, seed=seed,
+            hour=int(min(hours - 1, u["hour"] * hours)),
+            demand_mw=float(lo + u["demand"] * (hi - lo)),
+            setting=Setting(interconnectors=flows, outages=tuple(out),
+                            condensers=int(min(inertia.LCIS_UNITS,
+                                               u["condensers"]
+                                               * (inertia.LCIS_UNITS + 1)))),
+            restored=tuple(restored), u={**u, **{f"out:{m}": v for m, v in
+                                                  out_u.items()}}))
+    return draws
+
+
+# --------------------------------------------------------------------------- #
+# The scenario record
+#
+# Enough to recompute every predictor and every outcome without re-solving:
+# per-unit dispatch, commitment and kinetic energy, per-bus injection,
+# demand, flows, both energies, SNSP, reserve by category, the reference
+# incident and what it was, and the seed.
+# --------------------------------------------------------------------------- #
+
+@dataclass
+class Context:
+    """Everything a worker needs, built once per process."""
+
+    vintage: str
+    seed: int
+    case_name: str
+    topo: Topology
+    units: pd.DataFrame
+    ren: pd.DataFrame
+    shares: pd.Series
+    year: dict
+    wind: pd.DataFrame
+    solar: pd.DataFrame
+    demand_range: tuple
+
+
+def context(vintage: str = DEFAULT_VINTAGE, seed: int = SEED) -> Context:
+    import synthetic
+
+    wp, sv = VINTAGES[vintage]
+    case = psse.read_raw(case_path(wp))
+    topo = topology(case, seed=seed)
+    units = fleet(case, topo)
+    ren = renewables(case, topo)
+    shares = load_shares(case, topo)
+    year = weather_year(case, seed=seed)
+    wind, solar = cluster_profiles(year, ren)
+    states = synthetic.anchors()
+    demand = states.set_index("case")["demand_mw"]
+    return Context(vintage=vintage, seed=seed, case_name=case.name,
+                   topo=topo, units=units, ren=ren, shares=shares, year=year,
+                   wind=wind, solar=solar,
+                   demand_range=(float(demand[sv]), float(demand[wp])))
+
+
+def reserve_available(units: pd.DataFrame, p: pd.Series, online: pd.Series,
+                      pmax_pu: pd.Series, category: str,
+                      exclude: str | None = None) -> float:
+    """Reserve the synchronised fleet can physically give, MW.
+
+    Each online unit gives the lesser of its headroom and its technology's
+    capability for the category; the tripped unit, if named, gives nothing.
+    This is the volume the frequency layer uses: what the governors of the
+    machines still spinning can deliver, not merely what was scheduled.
+    """
+    total = 0.0
+    for name, row in units.iterrows():
+        if not online.get(name, False) or name == exclude:
+            continue
+        if row["technology"] == "pumped_storage":
+            output = float(p.get(name, 0.0))
+            if output < 0:
+                # A pumping unit's reserve is its pump load, dropped.
+                total += -output
+                continue
+            frac = PUMPED_STORAGE[category]
+            head = row["p_nom"] - output
+        else:
+            frac = TECHNOLOGY[row["technology"]][category]
+            head = row["p_nom"] * float(pmax_pu.get(name, 1.0)) \
+                - float(p.get(name, 0.0))
+        total += max(0.0, min(frac * row["p_nom"], head))
+    return total
+
+
+def record(ctx: Context, draw: Draw, n, info: dict) -> tuple:
+    """The scenario row, its per-unit rows and its per-bus rows."""
+    import inertia
+
+    units = ctx.units
+    t = n.snapshots[TARGET_HOUR]
+    gp = n.generators_t.p.loc[t]
+    gstatus = n.generators_t.status.loc[t] if len(
+        n.generators_t.status.columns) else pd.Series(dtype=float)
+    sp = n.storage_units_t.p.loc[t] if len(n.storage_units) else \
+        pd.Series(dtype=float)
+    pmax = n.get_switchable_as_dense("Generator", "p_max_pu").loc[t]
+
+    p = pd.Series(0.0, index=units.index)
+    online = pd.Series(False, index=units.index)
+    for name in units.index:
+        if name in gstatus.index:
+            p[name] = float(gp[name])
+            online[name] = bool(gstatus[name] > 0.5)
+        elif name in sp.index:
+            p[name] = float(sp[name])
+            online[name] = abs(float(sp[name])) > inertia.ONLINE_TOLERANCE_MW
+    pump = (-p[(units["technology"] == "pumped_storage") & (p < 0)])
+
+    carrier = n.generators["carrier"]
+    wind_mw = float(gp[carrier == "wind"].sum())
+    solar_mw = float(gp[carrier == "solar"].sum())
+    avail = pmax * n.generators["p_nom"]
+    shed_mw = float(gp[carrier == "shed"].sum())
+    flows = {}
+    for link in draw.setting.interconnectors:
+        poles = n.links.index[n.links.index.str.startswith(link)]
+        # Flow at the island end, positive into the island.
+        flows[link] = float(-n.links_t.p1.loc[t, poles].sum()) \
+            if len(poles) else 0.0
+    demand = float(n.loads_t.p_set.loc[t].sum())
+
+    energy = inertia.system_energy(units, online, draw.setting.condensers)
+    infeed = p[online & (units["technology"] != "pumped_storage")]
+    infeed = pd.concat([infeed, p[online & (units["technology"]
+                                            == "pumped_storage") & (p > 0)]])
+    ri = inertia.reference_incident(infeed, flows, pump_load=pump)
+    e_post = inertia.post_trip_energy(energy["E_mws"], energy["components"],
+                                      ri["incident_element"],
+                                      ri["incident_type"])
+    trip = ri["incident_element"] if ri["incident_type"] == "unit" else None
+
+    sol = n.model.solution
+    por_sched = float(sol["Generator-por"].sel(snapshot=t).sum())
+    if "StorageUnit-por" in sol:
+        por_sched += float(sol["StorageUnit-por"].sel(snapshot=t).sum())
+
+    large = units["large"] & online
+    row = {
+        "scenario": draw.scenario, "seed": draw.seed, "vintage": ctx.vintage,
+        "case": ctx.case_name, "hour_of_year": draw.hour,
+        "snapshot": str(t),
+        **{f"u_{k}": float(v) for k, v in draw.u.items()
+           if not k.startswith("out:")},
+        "demand_mw": demand, "demand_sampled_mw": draw.demand_mw,
+        "pump_load_mw": float(pump.sum()),
+        "wind_mw": wind_mw, "wind_available_mw":
+            float(avail[carrier == "wind"].sum()),
+        "solar_mw": solar_mw, "solar_available_mw":
+            float(avail[carrier == "solar"].sum()),
+        "wind_cf": float(ctx.year["fleet"]["wind"].loc[t]),
+        "sync_generation_mw": float(p[online & (p > 0)].sum()),
+        **{f"flow_{k}_mw": v for k, v in flows.items()},
+        "net_import_mw": float(sum(flows.values())),
+        "shed_mw": shed_mw,
+        "snsp": snsp(wind_mw, solar_mw, flows, demand, float(pump.sum())),
+        "units_online": int(online.sum()),
+        "large_online_IE": int((large & (units["jurisdiction"] == "IE")).sum()),
+        "large_online_NI": int((large & (units["jurisdiction"] == "NI")).sum()),
+        "condensers": draw.setting.condensers,
+        "E_pre_mws": energy["E_mws"],
+        "E_machines_mws": energy["E_machines_mws"],
+        "E_condensers_mws": energy["E_condensers_mws"],
+        "E_post_mws": e_post,
+        **ri,
+        "incident_mw": float(ri["lsi_mw"]),
+        "incident_h_s": inertia.machine_h(units.at[trip, "technology"])
+        if trip else 0.0,
+        "incident_mbase": float(units.at[trip, "mbase"]) if trip else 0.0,
+        "por_scheduled_mw": por_sched,
+        "por_available_mw": reserve_available(units, p, online, pmax, "por",
+                                              exclude=trip),
+        "sor_available_mw": reserve_available(units, p, online, pmax, "sor",
+                                              exclude=trip),
+        "por_shortfall_mw": info.get("por_shortfall_mw", np.nan),
+        "outages": ";".join(draw.setting.outages),
+        "outages_restored": ";".join(draw.restored),
+        "condition": info["condition"], "solve_s": info["solve_s"],
+    }
+    unit_rows = pd.DataFrame({
+        "scenario": draw.scenario, "module": units.index,
+        "technology": units["technology"].values,
+        "jurisdiction": units["jurisdiction"].values,
+        "bus": units["bus"].values, "p_nom": units["p_nom"].values,
+        "mbase": units["mbase"].values, "p_mw": p.values,
+        "online": online.values,
+        "forced_out": units.index.isin(draw.setting.outages),
+        "H_s": [inertia.machine_h(tc) for tc in units["technology"]],
+        "E_mws": energy["components"].reindex(units.index).values,
+    })
+    bus_rows = pd.DataFrame({
+        "scenario": draw.scenario, "bus": n.buses.index,
+        "injection_mw": n.buses_t.p.loc[t].reindex(n.buses.index).values,
+    })
+    return row, unit_rows, bus_rows
+
+
+# --------------------------------------------------------------------------- #
+# Running it
+# --------------------------------------------------------------------------- #
+
+_CTX: Context | None = None
+
+
+def _init_worker(vintage: str, seed: int) -> None:
+    global _CTX
+    _CTX = context(vintage, seed)
+
+
+def run_draw(draw: Draw, ctx: Context | None = None) -> tuple:
+    """Solve one scenario and return its three record tables."""
+    ctx = ctx or _CTX
+    win = window(ctx.year, ctx.wind, ctx.solar, draw.hour, draw.demand_mw)
+    n = dispatch_network(ctx.topo, ctx.units, ctx.ren, ctx.shares, win,
+                         draw.setting)
+    info = solve(n, ctx.units, draw.setting)
+    return record(ctx, draw, n, info)
+
+
+def _write(directory: str, scenario: int, tables: tuple) -> None:
+    row, unit_rows, bus_rows = tables
+    for name, frame in (("scenarios", pd.DataFrame([row])),
+                        ("units", unit_rows), ("buses", bus_rows)):
+        path = os.path.join(directory, name)
+        os.makedirs(path, exist_ok=True)
+        frame.to_parquet(os.path.join(path, f"part-{scenario:05d}.parquet"),
+                         index=False)
+
+
+def done(directory: str) -> set:
+    path = os.path.join(directory, "scenarios")
+    if not os.path.isdir(path):
+        return set()
+    return {int(f[5:10]) for f in os.listdir(path)
+            if f.startswith("part-") and f.endswith(".parquet")}
+
+
+def run(n: int = DEFAULT_N, seed: int = SEED, vintage: str = DEFAULT_VINTAGE,
+        directory: str | None = None, workers: int = 1,
+        verbose: bool = True) -> str:
+    """Solve the ensemble, writing each scenario as soon as it is solved.
+
+    One parquet part per scenario per table, so a run that is stopped is a
+    usable partial ensemble and a re-run with the same arguments resumes
+    where it left off.  The design is computed up front from the seed, so a
+    scenario's inputs do not depend on which worker solves it or when.
+    """
+    directory = directory or os.path.join(ENSEMBLE_DIR,
+                                          f"{vintage}_seed{seed}_n{n}")
+    os.makedirs(directory, exist_ok=True)
+    ctx = context(vintage, seed)
+    draws = design(n, ctx.units, ctx.demand_range, vintage, seed,
+                   hours=len(ctx.year["demand"]))
+    with open(os.path.join(directory, "design.json"), "w") as fh:
+        json.dump({"n": n, "seed": seed, "vintage": vintage,
+                   "case": ctx.case_name, "window_h": WINDOW_H,
+                   "target_hour": TARGET_HOUR,
+                   "forced_outage_rate": FORCED_OUTAGE_RATE,
+                   "min_units_rule": MIN_UNITS_RULE,
+                   "demand_range_mw": ctx.demand_range}, fh, indent=2)
+    todo = [d for d in draws if d.scenario not in done(directory)]
+    start = time.perf_counter()
+    if workers <= 1:
+        for k, d in enumerate(todo, 1):
+            _write(directory, d.scenario, run_draw(d, ctx))
+            if verbose:
+                print(f"  {k}/{len(todo)} scenario {d.scenario} "
+                      f"({time.perf_counter() - start:.0f} s)", flush=True)
+    else:
+        from concurrent.futures import ProcessPoolExecutor, as_completed
+
+        with ProcessPoolExecutor(workers, initializer=_init_worker,
+                                 initargs=(vintage, seed)) as pool:
+            futures = {pool.submit(run_draw, d): d for d in todo}
+            for k, fut in enumerate(as_completed(futures), 1):
+                d = futures[fut]
+                _write(directory, d.scenario, fut.result())
+                if verbose:
+                    print(f"  {k}/{len(todo)} scenario {d.scenario} "
+                          f"({time.perf_counter() - start:.0f} s)",
+                          flush=True)
+    return directory
+
+
+def load(directory: str) -> dict:
+    """Read an ensemble back, complete or partial."""
+    out = {}
+    for name in ("scenarios", "units", "buses"):
+        path = os.path.join(directory, name)
+        out[name] = pd.read_parquet(path) if os.path.isdir(path) \
+            else pd.DataFrame()
+    if len(out["scenarios"]):
+        out["scenarios"] = out["scenarios"].sort_values("scenario") \
+            .reset_index(drop=True)
+    return out
+
+
+# --------------------------------------------------------------------------- #
 # Command line
 # --------------------------------------------------------------------------- #
 
@@ -904,9 +1311,18 @@ def main(argv=None) -> int:
     t.add_argument("--vintage", default=DEFAULT_VINTAGE, choices=VINTAGES)
     t.add_argument("--hour", type=int, default=400)
     t.add_argument("--out", default="docs/ensemble_timing.json")
+    r = sub.add_parser("run", help="solve the ensemble")
+    r.add_argument("--n", type=int, default=DEFAULT_N)
+    r.add_argument("--seed", type=int, default=SEED)
+    r.add_argument("--vintage", default=DEFAULT_VINTAGE, choices=VINTAGES)
+    r.add_argument("--workers", type=int, default=1)
+    r.add_argument("--out", default=None, help="output directory")
     args = parser.parse_args(argv)
     if args.command == "time":
         return run_time(args.vintage, args.hour, args.out)
+    if args.command == "run":
+        print(run(args.n, args.seed, args.vintage, args.out, args.workers))
+        return 0
     return 1
 
 

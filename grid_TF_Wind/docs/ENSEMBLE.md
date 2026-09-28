@@ -236,3 +236,77 @@ plausibility bounds in tests, never the value.
 A tripping unit takes its rotor with it, `E_post = E_pre − H_trip·S_trip`; an
 HVDC import takes none. The incident type is kept in every scenario record so
 the comparison can be split on it.
+
+---
+
+## 3. The sampling design
+
+The ensemble is over **dispatch states**. ΔP is derived from each solved
+state, never sampled, so both predictors are functions of system state and
+neither sees an input the other cannot.
+
+A seeded Latin hypercube (`scipy.stats.qmc`, seed 42) over:
+
+| dimension | range | how |
+|---|---|---|
+| weather | hour of the synthetic 2024 year | spatially correlated wind and solar per cluster from `synthetic.py`, and the window's demand *shape* |
+| demand level | 3,402–7,325 MW | the 2024 vintage's own SV and WP totals; the window is rescaled so its target hour sits at the draw |
+| EWIC, Moyle | −526…+504, −400…+442 MW | pinned over the window, both directions |
+| condensers | 0–6 × 2,000 MWs | `inertia.LCIS_UNITS` |
+| forced outages | one dimension per large unit | out if its draw < `FORCED_OUTAGE_RATE` = 10% |
+
+An outage draw that would leave a jurisdiction unable to meet the
+minimum-units rule is partly undone — the least-extreme draws come back first
+— and that is recorded (`outages_restored`, 5 of 50 scenarios). A state the
+real system cannot be put in is not a state worth sampling.
+
+**Default ensemble: 50 scenarios, a smoke test and not a result.** It runs
+the pipeline end to end inside one session (205 s on 4 workers). For a real
+run, `scripts/run_ensemble.py --n 1000` (~35 min on 4 cores).
+
+### SNSP, EirGrid's way
+
+```
+SNSP = (wind + solar + net interconnector imports)
+       / (demand + pump-storage pumping load + net interconnector exports)
+```
+
+Not wind/demand. `test_snsp_hand_worked_with_pumping` pins it on a worked
+case: (2000 + 100 + 200) / (4000 + 200) = 0.5476.
+
+### The record
+
+`data/ensemble/<vintage>_seed<seed>_n<n>/` (gitignored), one parquet part per
+scenario per table, written as each scenario is solved — a stopped run is a
+usable partial ensemble, and re-running resumes it.
+
+| table | one row per | carries |
+|---|---|---|
+| `scenarios/` | scenario | the LHS coordinates and seed, demand, pump load, wind/solar dispatched and available, flows, SNSP, units online, E pre/post with machine and condenser parts, LSI, RI⁺ and RI⁻ with element and type, H and MVA of the tripped unit, POR scheduled/available and SOR available, shortfall, shed, solve status and time |
+| `units/` | scenario × module | technology, jurisdiction, cluster bus, p_nom, MBASE, dispatch, online, forced-out, H, E component |
+| `buses/` | scenario × node | net injection |
+
+Enough to recompute every predictor and outcome without re-solving;
+`test_record_is_enough_to_recompute_inertia` rebuilds E from the unit rows.
+POR *available* is what the machines still spinning after the trip can give
+from their headroom, capped per technology; a pumping Turlough Hill unit gives
+its pump load. That, not the scheduled figure, is what `frequency.py` uses.
+
+### What the 50-scenario ensemble contains
+
+| | min | median | max |
+|---|---|---|---|
+| SNSP | 0.045 | 0.424 | **0.860** |
+| E pre-trip, MWs | **19,296** | 35,830 | 59,654 |
+| LSI, MW | 188 | 468 | 501 |
+| units online | 8 | 21.5 | 62 |
+
+- 9 scenarios above 75% SNSP, 6 below 23,000 MWs pre-trip (9 post-trip), 4
+  both. No constraint leaked.
+- LSI correlates with wind output at Spearman **−0.62**: windy states run
+  units at minimum load and LSI falls.
+- Incident: 41 unit trips (26 of them Ballylumford C, the largest module at
+  487 MW), 9 HVDC.
+- Every scenario solved optimal, with no load shed and no POR shortfall.
+  Solve time under contention from 4 parallel workers: median 9.8 s, max
+  41.8 s.
