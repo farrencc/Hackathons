@@ -24,6 +24,7 @@ sys.path.insert(0, ROOT)
 os.chdir(ROOT)
 
 import ensemble  # noqa: E402
+import frequency  # noqa: E402
 
 
 def main(argv=None) -> int:
@@ -37,6 +38,7 @@ def main(argv=None) -> int:
     args = parser.parse_args(argv)
     directory = ensemble.run(args.n, args.seed, args.vintage, args.out,
                              args.workers)
+    frequency.run(directory)
     print(directory)
     return 0
 

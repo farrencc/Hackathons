@@ -310,3 +310,116 @@ its pump load. That, not the scheduled figure, is what `frequency.py` uses.
 - Every scenario solved optimal, with no load shed and no POR shortfall.
   Solve time under contention from 4 parallel workers: median 9.8 s, max
   41.8 s.
+
+---
+
+## 4. The frequency layer
+
+```
+(2 E_post / f₀) · d(Δf)/dt = P_response(t) − ΔP − D·Δf
+```
+
+Single-mass, centre of inertia. Integrated over 20 s at 1 ms (Heun),
+vectorised across scenarios in blocks of 256; 50 scenarios take 0.6 s per
+mode. The integrator reproduces the no-response swing equation and the
+damping-only exponential to 1e-6 (`test_frequency.py`).
+
+| component | model | constants (`frequency.py`) |
+|---|---|---|
+| load damping | `D = 1.5% of connected load per Hz`, linear | `DAMPING_PCT_PER_HZ` |
+| FFR, `"ramp"` (default) | open-loop linear ramp to full over 0.3 s (DASSA Cat. 2), held to 10 s, released over 2 s | `FFR_FULL_ACTIVATION_S`, `FFR_SUSTAIN_S`, `FFR_RELEASE_S` |
+| FFR volume | 70% of RI⁺ | `FFR_FRACTION_OF_RI` |
+| FFR, `"instant"` | the whole volume at 0⁺ — **degenerate**, a control only | |
+| POR | available volume ramps to full by 5 s, held to 15 s | `POR_FULL_S`, `POR_HOLD_S` |
+| SOR | available moves from POR to SOR volume over 5–15 s, held to 90 s | `SOR_END_S` |
+| governor droop | delivered = available × clip(−Δf / 0.5 Hz, 0, 1) | `RESERVE_FULL_DEVIATION_HZ` |
+
+POR and SOR volumes are the scenario record's *available* figures. The droop
+factor is the one modelling choice beyond the service timings. Without it, a
+POR volume delivered open-loop on top of FFR (together about 145% of ΔP)
+would push frequency above 50 Hz after every trip.
+`test_reserve_does_not_overshoot_fifty_hertz` holds that. The FFR release
+ramp is there so that the handover is not a step that the 500 ms measurement
+would then report as the event.
+
+Outputs per scenario: **RoCoF_500ms** (largest fall over any 500 ms window in
+the run, ÷ 0.5 s, positive when frequency is falling), the analytic
+`f₀ΔP/2E_post` and its net-of-FFR form, nadir and time to nadir, frequency at
+20 s, and flags for RoCoF > 0.5 Hz/s, > 1 Hz/s (Grid Code), nadir < 49.5 Hz
+and < 49.0 Hz. Written next to the ensemble as `frequency_ramp.parquet` and
+`frequency_instant.parquet`.
+
+`frequency.multi_mass()` is the documented, unbuilt hook for a bus-level
+version: per-cluster swing equations fed by the per-unit `bus` and `E_mws`
+already in the record, coupled through the clustered network's reactances.
+The COI model is its one-mass limit.
+
+### ⚠ The non-circularity test fails. The comparison is circular under these parameters
+
+The brief makes this the proof that the study means anything: with
+`ffr_mode="instant"` measured RoCoF should converge on the closed form, and
+with `"ramp"` it should not. **Both halves fail** on the 50-scenario ensemble.
+Per the brief, the test was not adjusted and the work stops here: §5, the
+comparison, was not built.
+
+The test's definition of "collapsed" comes from what `compare.py` would
+report. Spearman and ROC AUC are rank statistics, so Spearman ≥ 0.99 means
+the predictor's rank metrics *are* the closed form's. A ratio
+measured/closed-form with a coefficient of variation under 5% is a
+rescaling, and R² does not change under a rescaling. The observed values are
+nowhere near either threshold, so no reasonable choice of threshold changes
+the verdict.
+
+| | Spearman | R² | measured / closed form | CV of that ratio |
+|---|---|---|---|---|
+| **ramp**, RoCoF_500ms vs f₀ΔP/2E_post | **0.9996** | 0.9986 | 0.493 | **1.0%** |
+| instant, RoCoF_500ms vs f₀(ΔP−FFR)/2E_post | 0.906 | 0.788 | 1.096 | 12.1% |
+| instant, *first* 500 ms window only | 0.9998 | 0.9991 | 0.973 | 0.8% |
+
+**Why ramp collapses.** Over the first 500 ms a 0.3 s ramp delivers on
+average 70% of its volume, and the volume is 70% of ΔP. So FFR removes
+0.49·ΔP from the imbalance, *in proportion to ΔP*. Inside the window,
+damping averages 1.0% of ΔP and POR 0.6%, the only terms that do not scale
+with ΔP. The measured value is therefore about 0.49 × the closed form in
+every scenario. The gap is large (0.175 Hz/s, or 51%, on average) but it is
+a constant factor, and a constant factor is invisible to every metric the
+comparison would use. Unit and HVDC incidents collapse the same way (ratio
+0.495 and 0.488).
+
+**Why instant does not converge.** At 0⁺ it does, exactly
+(`test_instant_mode_is_exact_at_0_plus`). Over the first 500 ms window it
+matches the net closed form at ratio 0.973. But RoCoF_500ms is the maximum
+over the run, and in 33 of 50 scenarios the steepest window is the **FFR
+release at ≈11.6 s**, not t = 0. Once 70% of ΔP has been subtracted at 0⁺,
+taking it away again at 10–12 s is the larger event.
+
+**What the diagnosis says would change it.** This is reported, not adopted,
+because adopting it would be tuning the model until the test passes:
+
+- With FFR switched off entirely, ramp mode still collapses (Spearman 0.9998,
+  ratio 0.973). Damping and POR do not act inside 500 ms at these
+  parameters. The only term that could break the proportionality within the
+  window is FFR.
+- With FFR as a **fixed procured volume** (350 MW in every scenario, whatever
+  trips), the collapse breaks: Spearman 0.88, CV 14%. The proportionality
+  comes from sizing FFR as a fraction of the realised incident. In
+  operation FFR is scheduled against the forecast LSI, not re-sized to
+  whatever trips, so a fixed or LSI-forecast-sized volume is arguably the
+  more faithful model. It is still a change to a brief-specified default,
+  and the decision belongs to the study owner.
+
+### Other things the 50 scenarios show
+
+These are diagnostics, not the comparison.
+
+- **No scenario violates a RoCoF limit.** Measured RoCoF_500ms runs 0.10–0.29
+  Hz/s. The analytic value runs 0.21–0.58 and exceeds 0.5 Hz/s in 2
+  scenarios. A ROC for RoCoF violation would have one class.
+- **Nadir is not circular.** Its Spearman correlation with f₀ΔP/2E is 0.29,
+  with ΔP 0.64, and with SNSP **−0.71**: high-SNSP states have *shallower*
+  nadirs because their LSI is smaller.
+- **The nadir is mostly the post-FFR sag, not a first-seconds dip.** Median
+  time to nadir is 14.9 s. All 6 scenarios below 49.5 Hz reach their lowest
+  point at 20 s, still falling, because the SOR available after FFR is
+  released is less than ΔP. The 75%-of-LSI POR requirement and the 10 s FFR
+  sustain decide that outcome, and neither predictor can see them.
