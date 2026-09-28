@@ -423,3 +423,79 @@ These are diagnostics, not the comparison.
   point at 20 s, still falling, because the SOR available after FFR is
   released is less than ΔP. The 75%-of-LSI POR requirement and the 10 s FFR
   sustain decide that outcome, and neither predictor can see them.
+
+---
+
+## 5. The comparison — not built
+
+`compare.py` does not exist. The brief makes the non-circularity test a stop
+condition: if it fails, stop and report rather than adjust. It failed (§4).
+Two predictors scored against RoCoF_500ms would give dP/H_COI a Spearman of
+0.9996. That number would describe the closed form's agreement with a
+rescaled copy of itself, not predictive skill, and publishing it next to
+SNSP's would be the result this study was designed to rule out.
+
+Two things were computed while diagnosing the failure; the rest of the
+comparison needs a decision first:
+
+- **The RoCoF_500ms gap:** mean 0.175 Hz/s (51% of the analytic value), range
+  0.108–0.293 Hz/s. Large but constant: CV 1.0%.
+- **Nadir** is the non-circular outcome: Spearman vs f₀ΔP/2E 0.29, vs SNSP
+  −0.71 (50 scenarios, no confidence intervals).
+
+What `compare.py` needs before it can be built: a decision on the FFR
+volume. Either keep 70% of RI and accept that the RoCoF half of the study is
+tautological, reporting nadir only; or size FFR against something other than
+the realised incident (a fixed procured volume, or the forecast LSI), which
+breaks the collapse in the diagnostic (§4). A larger ensemble does not help
+either way: the collapse is structural, not sampling noise.
+
+---
+
+## 6. Realism check
+
+`python validate.py --ensemble <dir>` compares the ensemble's SNSP and
+pre-trip inertia marginals with history. It reports the overlap coefficient,
+the KS statistic, the share of the ensemble inside the historical range, and
+the share beyond each operational limit, alongside history's.
+
+**It did not run against history.** The Smart Grid Dashboard is refused at
+the proxy, so the live fetch raises `Unavailable` and both the CLI and
+`test_marginals_overlap_history` skip with that message. Nothing here is a
+validation.
+
+`data/validation/format_fixture.csv` is committed, but it is **not historical
+data**: 24 evenly spaced hand-made values in the year 2000, and every row
+says so. It exists to test the reader and the metric. `validate()` refuses it
+unless called with `allow_fixture=True`, which only the tests do.
+
+The dashboard area names in `validate.DASHBOARD_AREAS` are unverified
+because the host could not be reached. A hand-downloaded CSV in
+`data/raw/eirgrid/` (`snsp_<year>.csv`, `inertia_<year>.csv`) does not depend
+on them.
+
+---
+
+## 7. Every assumption that would change the answer
+
+Inertia first, because it is the largest.
+
+| assumption | value | where | what it moves |
+|---|---|---|---|
+| **H by technology** | CCGT 6.0, OCGT 4.5, steam 4.0, hydro 3.0, PS 3.0 s | `inertia.H_SECONDS` | E, both RoCoF forms, every inertia statistic. No `.dyr` data exists to replace it. |
+| condenser inertia | 2,000 MWs per unit, chosen | `inertia.SYNC_CONDENSER_MWS` | E in 6/7 of scenarios |
+| **FFR volume ∝ incident** | 70% of RI⁺ | `frequency.FFR_FRACTION_OF_RI` | **decides whether the RoCoF comparison is circular** (§4) |
+| FFR timing | 0.3 s ramp, 10 s sustain, 2 s release | `frequency.FFR_*` | RoCoF_500ms level; where the instant-mode maximum lands |
+| governor droop saturation | full reserve at 0.5 Hz deviation | `frequency.RESERVE_FULL_DEVIATION_HZ` | nadir, settling |
+| load damping | 1.5 %/Hz | `frequency.DAMPING_PCT_PER_HZ` | nadir; ≈1% of ΔP inside 500 ms |
+| POR requirement | 75% of each contingency | `ensemble.POR_REQUIREMENT_FRACTION` | commitment at low demand; the post-FFR sag |
+| POR/SOR capability | 6–30% of p_nom by technology | `ensemble.TECHNOLOGY` | reserve volumes → nadir |
+| minimum units | 5 IE + 3 NI large (≥100 MW thermal) | `ensemble.MIN_UNITS`, `LARGE_UNIT_MW` | the floor under E; the low-inertia tail |
+| unit technology | read from PSS/E bus names | `ensemble.STATION_TECHNOLOGY` | which H each machine gets |
+| dispatch costs and dynamics | p_min, up/down, ramps, start costs, marginal costs | `ensemble.TECHNOLOGY` | which units are committed |
+| forced outage rate | 10% per large unit | `ensemble.FORCED_OUTAGE_RATE` | LSI spread |
+| weather | synthetic, not ERA5 | `synthetic.py` | *when* states occur; the joint wind/demand distribution |
+| demand level independent of hour | LHS dimension | `ensemble.design` | e.g. 7 GW at a summer night is sampled |
+| RoCoF limit | 0.5 Hz/s (brief); 1 Hz/s (Grid Code) reported too | `frequency.ROCOF_LIMIT_*` | violation counts (zero either way here) |
+| batteries | exogenous FFR only, no POR in the MILP | `ensemble.fleet` | reserve adequacy; commitment |
+| C_loss | 0 | `inertia.C_LOSS_FRACTION` | ΔP |
