@@ -177,3 +177,62 @@ needed. Written to `docs/ensemble_timing.json`. A windy summer night solves
 in about the same time and runs exactly at the minimum-units floor: eight
 units, roughly 13,000 MWs — the insecure region is reachable without anything
 pushing it there.
+
+---
+
+## 2. Inertia and the contingency
+
+### The largest assumption in the study
+
+**The inertia constants are assumed, not measured.** A `.raw` file is a load
+flow: it gives each machine's MVA (`MBASE`) and nothing about its rotor.
+Inertia constants live in `.dyr` dynamics files, which EirGrid does not
+publish. Every H below is a typical value for the technology, applied to
+every machine of that technology. The system kinetic energy that the whole
+comparison turns on is only as good as this table:
+
+| technology | H (s, on MBASE) | constant |
+|---|---|---|
+| CCGT | 6.0 | `inertia.H_SECONDS` |
+| OCGT | 4.5 | |
+| coal / peat steam | 4.0 | |
+| hydro | 3.0 | |
+| pumped storage | 3.0 | |
+| synchronous condenser | **2,000 MWs per unit, chosen** | `inertia.SYNC_CONDENSER_MWS` |
+
+`inertia.py` holds the only inertia numbers in the codebase, and
+`test_no_other_module_carries_an_inertia_number` fails if a second file
+grows one. The condenser figure is a representative large condenser with a
+flywheel, not a published LCIS number; the sampler draws 0 to 6 of them.
+
+### What is computed
+
+```
+E        = Σ_i H_i · S_i  (synchronised machines, S = MBASE)  + n_SC · 2,000 MWs
+df/dt|₀₊ = f₀ · ΔP / (2E),   f₀ = 50 Hz
+```
+
+Wind, solar, batteries and HVDC contribute nothing. At the 23,000 MWs floor,
+500 MW gives **0.543 Hz/s** — asserted to ±0.001 in `test_inertia.py`.
+
+> The brief's 0.5 Hz/s limit is the pre-DS3 one. `papers/MPID229a` records
+> that EirGrid now operates to **1 Hz/s measured over 500 ms**, against which
+> the 23,000 MWs floor is conservative. Both thresholds are reported in §5.
+
+### ΔP is the reference incident, per scenario
+
+`RI⁺ = LSI + C_loss`, with LSI the largest of any **committed synchronous
+module's dispatched output** and any **interconnector's import** at the
+island end — per the SOGL definition, a single generating module or single
+HVDC interconnector. A multi-shaft CCGT is one module and trips whole; Moyle
+is one interconnector (both poles). `C_LOSS_FRACTION` defaults to 0. RI⁻ —
+the largest export or single pump load — is recorded but not simulated.
+
+The ~500 MW today / ~700 MW with Celtic / ~7.5 GW peak figures are
+plausibility bounds in tests, never the value.
+
+### Post-trip inertia
+
+A tripping unit takes its rotor with it, `E_post = E_pre − H_trip·S_trip`; an
+HVDC import takes none. The incident type is kept in every scenario record so
+the comparison can be split on it.
