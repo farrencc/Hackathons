@@ -1,0 +1,25 @@
+{
+  "vintage": "2024",
+  "hour_of_year": 400,
+  "target": "2024-01-17 16:00:00",
+  "buses": 43,
+  "lines": 76,
+  "committable_units": 76,
+  "storage_units": 4,
+  "snapshots": 24,
+  "build_s": 8.6,
+  "solve_s": 7.96,
+  "status": "ok",
+  "condition": "optimal",
+  "units_on_at_target": 50,
+  "demand_mw": 7295.4,
+  "por_shortfall_mw": 0.0,
+  "solver": "highs",
+  "solver_options": {
+    "mip_rel_gap": 0.005,
+    "time_limit": 120.0,
+    "threads": 1,
+    "output_flag": false
+  },
+  "cpu_count": 4
+}
